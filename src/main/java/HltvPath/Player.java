@@ -2,6 +2,7 @@ package HltvPath;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -18,7 +19,7 @@ public class Player {
                 .get();
     }
     private final String playerStatLink;
-    public Player(String playerStatLinkLink) {
+    public Player(String playerStatLinkLink) throws IOException {
         this.playerStatLink = playerStatLinkLink;
     }
 
@@ -123,7 +124,14 @@ public class Player {
     public void loadPlayerMapsStatsToFile() throws IOException {
         File file = new File("src\\main\\java\\players\\" + hltv.getNickName(playerStatLink));
         FileWriter writer = new FileWriter(file);
-        writer.append("Rating: ");
+        writer.append("Rating: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue")).text());
+//        writer.append("\nDPR: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div.summaryStatBreakdown.belowAverage > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue")).text());
+//        writer.append("\nKAST: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue")).text());
+//        writer.append("\nIMPACT: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue")).text());
+//        writer.append("\nADR: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue")).text());
+//        writer.append("\nKPR: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue")).text());
+//        writer.append("\nHeadshot %: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.statistics > div > div:nth-child(1) > div:nth-child(2) > span:nth-child(2)")).text());
+//        writer.append("\nK/D Ratio %: ").append(new Elements(getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.statistics > div > div:nth-child(1) > div:nth-child(4) > span:nth-child(2)")).text());
         writer.flush();
     }
 
