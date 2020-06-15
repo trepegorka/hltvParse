@@ -1,0 +1,8 @@
+Rating: 1.06
+DPR: 
+KAST: 72.3%
+IMPACT: 1.06
+ADR: 77.4
+KPR: 0.70
+Headshot %: 45.2%
+K/D Ratio %: 1.12
