@@ -1,7 +1,16 @@
 import HltvPath.Hltv;
 import HltvPath.Player;
+import proxy.UserParser;
 
-public class Main {
+import java.io.FileNotFoundException;
+
+public class Main{
+    UserParser parser = new UserParser();
+    public String userAgent = parser.getRandomAgent();
+
+    public Main() throws FileNotFoundException {
+    }
+
     public static void main(String[] args) throws Exception {
         Hltv hltv = new Hltv();
         for (String matchLink : hltv.liveMatches()) {
@@ -10,7 +19,7 @@ public class Main {
             System.out.println("\nteam1: ");
             for (String playerLink : hltv.PlayersLinks(hltv.getTeamLink1(matchLink))) {
                 Player player = new Player(hltv.statLink(playerLink));
-                player.loadPlayerMapsStatsToFile();
+                player.loadPlayerMapsStatsToFile(hltv.mapPick(matchLink));
                 System.out.println(playerLink);
                 System.out.println(hltv.statLink(playerLink));
             }
@@ -21,7 +30,7 @@ public class Main {
             System.out.println("\nteam2: ");
             for (String playerLink : hltv.PlayersLinks(hltv.getTeamLink2(matchLink))) {
                 Player player = new Player(hltv.statLink(playerLink));
-                player.loadPlayerMapsStatsToFile();
+                player.loadPlayerMapsStatsToFile(hltv.mapPick(matchLink));
                 System.out.println(playerLink);
                 System.out.println(hltv.statLink(playerLink));
             }

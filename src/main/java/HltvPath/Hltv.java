@@ -63,12 +63,18 @@ public class Hltv {
         StringBuilder mainPick = new StringBuilder();
         ArrayList<String> list = new ArrayList<>();
         for (int i = 1; i < 7; i++) {
-            list.add(mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
+            list.add("de_"+mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
             mainPick.setLength(0);
         }
-        list.add(mainPick.append(pick, pick.indexOf(7 + "."), pick.indexOf("\n")).toString());
         list.removeIf(i -> i.contains("removed"));
-        mainPick.append(pick.substring(pick.indexOf("7.")));
+        for(int i=0; i<list.size(); i++){
+             list.set(i, "de_"+list.get(i).substring(list.get(i).indexOf("picked")+6).toLowerCase());
+        }
+
+        String leftMap = mainPick.append(pick, pick.indexOf(7 + "."), pick.indexOf("was")).toString();
+        leftMap = leftMap.substring(2);
+        list.add("de_"+leftMap.toLowerCase());
+
         return list;
     }
 

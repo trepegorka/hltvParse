@@ -1,0 +1,8 @@
+ating: 0.97
+DPR: 
+KAST: 67.2%
+IMPACT: 0.96
+ADR: 71.7
+KPR: 0.64
+Headshot %: 49.0%
+K/D Ratio %: 0.91
