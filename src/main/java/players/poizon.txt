@@ -1,0 +1,4 @@
+
+train Rating: 1.21 DPR: 0.62 KAST: 71.5% IMPACT: 1.29 ADR: 80.6 KPR: 0.80 Headshot: 31.6% K/D Ratio: 1.28
+mirage Rating: 1.18 DPR: 0.63 KAST: 71.9% IMPACT: 1.21 ADR: 81.3 KPR: 0.77 Headshot: 32.4% K/D Ratio: 1.22
+nuke Rating: 1.11 DPR: 0.68 KAST: 68.8% IMPACT: 1.21 ADR: 79.6 KPR: 0.73 Headshot: 36.8% K/D Ratio: 1.08

@@ -1,27 +1,29 @@
 package HltvPath;
 
+import com.sun.tools.javac.Main;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 import proxy.UserParser;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Player {
     private final Hltv hltv = new Hltv();
-    UserParser proxy = new UserParser();
 
     private Document getHltvPlayerStatHtml(String playerStatLink) throws IOException {
-            return Jsoup.connect(playerStatLink)
-                    .userAgent(proxy.getRandomAgent())
-                    .referrer("http://www.google.com")
+        return Jsoup.connect(playerStatLink)
+                .userAgent(UserParser.userAgent)
+                .referrer("http://www.google.com")
 //                    .proxy(proxy.getRandomIpAndPort().get(0), Integer.parseInt(proxy.getRandomIpAndPort().get(1)))
-                    .get();
+                .get();
 
     }
 
@@ -134,22 +136,38 @@ public class Player {
     }
 
     public void loadPlayerMapsStatsToFile(ArrayList<String> map) throws IOException {
+        File file = new File("src\\main\\java\\players\\" + hltv.getNickName(playerStatLink) + ".txt");
+        FileWriter writer = new FileWriter(file);
         for (String i : map) {
-            File file = new File("src\\main\\java\\players\\" + hltv.getNickName(playerStatLink) + ".txt");
-            FileWriter writer = new FileWriter(file);
-            Elements elements = getHltvPlayerStatHtml(getPlayerStatLink()).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview");
-            writer.append("Rating: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
-                    .append(" DPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
-                    .append(" KAST: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
-                    .append(" IMPACT: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
-                    .append(" ADR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
-                    .append(" KPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
-                    .append(" Headshot: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(2) > span:nth-child(2)").text())
-                    .append(" K/D Ratio: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(4) > span:nth-child(2)").text());
-            writer.flush();
 
+            Scanner scanner = new Scanner(file);
+            if (file.length() != 0) {
+                while (scanner.hasNextLine()) {
+                    String line = scanner.nextLine();
+                    if (line.contains(i)) {
+
+                    } else {
+                        elem(writer, i);
+                    }
+                }
+            } else {
+                elem(writer, i);
+            }
         }
-
+        writer.flush();
+        writer.close();
     }
 
+    private void elem(FileWriter writer, String i) throws IOException {
+        Elements elements = getHltvPlayerStatHtml((getPlayerStatLink() + "?maps=de_" + i)).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview");
+        writer.append("\n").append(i).append("Rating: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
+                .append(" DPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
+                .append(" KAST: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
+                .append(" IMPACT: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
+                .append(" ADR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
+                .append(" KPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
+                .append(" Headshot: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(2) > span:nth-child(2)").text())
+                .append(" K/D Ratio: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(4) > span:nth-child(2)").text());
+    }
 }
+

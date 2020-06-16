@@ -1,0 +1,4 @@
+
+nuke Rating: 0.92 DPR: 0.67 KAST: 68.4% IMPACT: 0.77 ADR: 63.7 KPR: 0.59 Headshot: 31.4% K/D Ratio: 0.89
+dust2 Rating: 1.45 DPR: 0.62 KAST: 75.9% IMPACT: 1.70 ADR: 94.2 KPR: 0.86 Headshot: 28.0% K/D Ratio: 1.39
+train Rating: 1.20 DPR: 0.68 KAST: 69.1% IMPACT: 1.39 ADR: 79.1 KPR: 0.80 Headshot: 35.4% K/D Ratio: 1.18

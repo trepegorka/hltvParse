@@ -4,6 +4,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import proxy.UserParser;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -14,28 +15,28 @@ public class Hltv {
 
     private Document getHltvHtml() throws IOException {
         return Jsoup.connect("https://www.hltv.org/")
-                .userAgent("OPR/68.0.3618.125")
+                .userAgent(UserParser.userAgent)
                 .referrer("http://www.google.com")
                 .get();
     }
 
     private Document getHltvMatchHtml(String matchLink) throws IOException {
         return Jsoup.connect(matchLink)
-                .userAgent("OPR/68.0.3618.125")
+                .userAgent(UserParser.userAgent)
                 .referrer("http://www.google.com")
                 .get();
     }
 
     private Document getHltvTeamHtml(String teamLink) throws IOException {
         return Jsoup.connect(teamLink)
-                .userAgent("OPR/68.0.3618.125")
+                .userAgent(UserParser.userAgent)
                 .referrer("http://www.google.com")
                 .get();
     }
 
     private Document getHltvPlayerHtml(String playerLink) throws IOException {
         return Jsoup.connect(playerLink)
-                .userAgent("OPR/68.0.3618.125")
+                .userAgent(UserParser.userAgent)
                 .referrer("http://www.google.com")
                 .get();
     }
@@ -59,22 +60,25 @@ public class Hltv {
         Elements matches = getHltvMatchHtml(matchLink).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small > div:nth-child(3) > div");
         StringBuilder builder = new StringBuilder();
         builder.append(matches.select("div").text()).append("\n");
-        String pick = builder.toString().substring(builder.toString().lastIndexOf("1"));
+        String pick = "";
+        pick = builder.toString().substring(builder.toString().lastIndexOf("1"));
         StringBuilder mainPick = new StringBuilder();
         ArrayList<String> list = new ArrayList<>();
         for (int i = 1; i < 7; i++) {
-            list.add("de_"+mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
-            mainPick.setLength(0);
+            try {
+                list.add(mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
+                mainPick.setLength(0);
+            }catch (Exception ignored){
+            }
         }
         list.removeIf(i -> i.contains("removed"));
-        for(int i=0; i<list.size(); i++){
-             list.set(i, "de_"+list.get(i).substring(list.get(i).indexOf("picked")+6).toLowerCase());
+        for (int i = 0; i < list.size(); i++) {
+            list.set(i, (list.get(i).substring(list.get(i).indexOf("picked") + 6).toLowerCase()).substring(1));
         }
 
         String leftMap = mainPick.append(pick, pick.indexOf(7 + "."), pick.indexOf("was")).toString();
-        leftMap = leftMap.substring(2);
-        list.add("de_"+leftMap.toLowerCase());
-
+        leftMap = leftMap.substring(3);
+        list.add(leftMap.toLowerCase());
         return list;
     }
 
@@ -114,7 +118,7 @@ public class Hltv {
     public String getNickName(String playerLink) {
         return playerLink.substring(playerLink.lastIndexOf("/"));
     }
-
+    
     public String statLink(String playerLink) throws IOException {
         Elements matches = getHltvPlayerHtml(playerLink).select("#infoBox > div:nth-child(4) > a");
         if (matches.attr("href").equals("")) {

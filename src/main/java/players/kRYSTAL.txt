@@ -1,1 +1,4 @@
-Rating: 0.92 DPR: 0.67 KAST: 68.2% IMPACT: 0.90 ADR: 67.6 KPR: 0.62 Headshot: 36.3% K/D Ratio: 0.92
+
+dust2 Rating: 0.97 DPR: 0.66 KAST: 68.7% IMPACT: 0.85 ADR: 65.4 KPR: 0.64 Headshot: 36.1% K/D Ratio: 0.98
+overpass Rating: 0.88 DPR: 0.68 KAST: 69.0% IMPACT: 0.90 ADR: 68.7 KPR: 0.60 Headshot: 37.5% K/D Ratio: 0.87
+train Rating: 0.87 DPR: 0.68 KAST: 66.8% IMPACT: 0.85 ADR: 65.7 KPR: 0.59 Headshot: 36.0% K/D Ratio: 0.86

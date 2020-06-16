@@ -9,10 +9,30 @@ import java.util.*;
 
 public class UserParser {
 
+    public static String userAgent = "";
+
+    static {
+        try {
+            userAgent = getRandomAgent();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+//    public String getUserAgent(){
+//        return userAgent;
+//    }
+//
+//    public void setUserAgent(String userAgent){
+//        this.userAgent = userAgent;
+//    }
+
     private Document getProxyListNetHtml() throws IOException {
         return Jsoup.connect("https://free-proxy-list.net")
-//                .userAgent(getRandomAgent())
-//                .referrer("http://www.google.com")
+                .userAgent(userAgent)
+                .referrer("http://www.google.com")
                 .get();
     }
 
@@ -34,7 +54,7 @@ public class UserParser {
         return retList;
     }
 
-        public String getRandomAgent() throws FileNotFoundException {
+        public static String getRandomAgent() throws FileNotFoundException {
         File f = new File("src\\main\\java\\proxy\\UserAgents");
         String result = null;
         Random rand = new Random();
