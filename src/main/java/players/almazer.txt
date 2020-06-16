@@ -1,4 +1,0 @@
-
-inferno Rating: 1.10 DPR: 0.64 KAST: 72.0% IMPACT: 1.08 ADR: 75.8 KPR: 0.68 Headshot: 48.8% K/D Ratio: 1.06
-overpass Rating: 1.09 DPR: 0.70 KAST: 71.8% IMPACT: 1.10 ADR: 80.1 KPR: 0.72 Headshot: 51.7% K/D Ratio: 1.03
-dust2 Rating: 1.07 DPR: 0.66 KAST: 71.1% IMPACT: 1.04 ADR: 75.4 KPR: 0.68 Headshot: 52.8% K/D Ratio: 1.03

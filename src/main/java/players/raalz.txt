@@ -1,4 +1,4 @@
 
 train Rating: 0.92 DPR: 0.70 KAST: 68.1% IMPACT: 0.94 ADR: 68.2 KPR: 0.64 Headshot: 66.2% K/D Ratio: 0.91
-inferno Rating: 0.97 DPR: 0.65 KAST: 70.1% IMPACT: 0.95 ADR: 70.2 KPR: 0.64 Headshot: 62.5% K/D Ratio: 0.98
+inferno Rating: 0.99 DPR: 0.65 KAST: 70.3% IMPACT: 0.98 ADR: 71.3 KPR: 0.65 Headshot: 62.5% K/D Ratio: 0.99
 dust2 Rating: 0.96 DPR: 0.67 KAST: 67.0% IMPACT: 0.91 ADR: 66.8 KPR: 0.65 Headshot: 65.6% K/D Ratio: 0.97

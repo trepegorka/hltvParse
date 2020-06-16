@@ -19,16 +19,6 @@ public class UserParser {
         }
     }
 
-
-
-//    public String getUserAgent(){
-//        return userAgent;
-//    }
-//
-//    public void setUserAgent(String userAgent){
-//        this.userAgent = userAgent;
-//    }
-
     private Document getProxyListNetHtml() throws IOException {
         return Jsoup.connect("https://free-proxy-list.net")
                 .userAgent(userAgent)

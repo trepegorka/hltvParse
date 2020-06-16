@@ -1,4 +1,4 @@
 
 inferno Rating: 0.99 DPR: 0.72 KAST: 68.3% IMPACT: 1.00 ADR: 73.8 KPR: 0.64 Headshot: 54.7% K/D Ratio: 0.90
-nuke Rating: 0.99 DPR: 0.72 KAST: 65.1% IMPACT: 1.04 ADR: 73.8 KPR: 0.68 Headshot: 58.8% K/D Ratio: 0.94
-train Rating: 1.00 DPR: 0.68 KAST: 67.7% IMPACT: 0.94 ADR: 73.1 KPR: 0.68 Headshot: 51.2% K/D Ratio: 1.01
+nuke Rating: 0.99 DPR: 0.72 KAST: 64.8% IMPACT: 1.04 ADR: 73.7 KPR: 0.68 Headshot: 57.7% K/D Ratio: 0.94
+train Rating: 0.99 DPR: 0.68 KAST: 67.5% IMPACT: 0.92 ADR: 72.4 KPR: 0.67 Headshot: 50.9% K/D Ratio: 0.99

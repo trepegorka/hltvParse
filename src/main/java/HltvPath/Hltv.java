@@ -68,7 +68,7 @@ public class Hltv {
             try {
                 list.add(mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
                 mainPick.setLength(0);
-            }catch (Exception ignored){
+            } catch (Exception ignored) {
             }
         }
         list.removeIf(i -> i.contains("removed"));
@@ -107,10 +107,20 @@ public class Hltv {
         return links;
     }
 
+    public ArrayList<String> playerNames(ArrayList<String> playerLinks){
+        ArrayList<String> names = new ArrayList<>();
+        String name;
+        for(String i : playerLinks){
+            name = i.substring(i.lastIndexOf("/")+1);
+            names.add(name);
+        }
+        return names;
+    }
+
     public ArrayList<String> getPlayersNickNames(ArrayList<String> listOfLinksOfPlayers) {
         ArrayList<String> names = new ArrayList<>();
         for (String link : listOfLinksOfPlayers) {
-            names.add(link.substring(28));
+            names.add(link.substring(28).substring(link.substring(28).lastIndexOf("/")+1));
         }
         return names;
     }
@@ -118,7 +128,12 @@ public class Hltv {
     public String getNickName(String playerLink) {
         return playerLink.substring(playerLink.lastIndexOf("/"));
     }
-    
+
+    public String getSimpleNickName(String playerLink) {
+        String simpleNickname = playerLink.substring(playerLink.lastIndexOf("/"));
+        return simpleNickname.substring(simpleNickname.lastIndexOf("/")+1);
+    }
+
     public String statLink(String playerLink) throws IOException {
         Elements matches = getHltvPlayerHtml(playerLink).select("#infoBox > div:nth-child(4) > a");
         if (matches.attr("href").equals("")) {

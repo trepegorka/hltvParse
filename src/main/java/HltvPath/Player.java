@@ -168,6 +168,7 @@ public class Player {
                 .append(" KPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
                 .append(" Headshot: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(2) > span:nth-child(2)").text())
                 .append(" K/D Ratio: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(4) > span:nth-child(2)").text());
+        String link = "https://www.hltv.org/stats/players/individual/"+getPlayerStatLink().substring(getPlayerStatLink().lastIndexOf("/"));
     }
 }
 

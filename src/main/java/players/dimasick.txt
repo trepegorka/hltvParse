@@ -1,2 +1,0 @@
-
-train Rating: 0.99 DPR: 0.67 KAST: 67.5% IMPACT: 0.94 ADR: 71.6 KPR: 0.67 Headshot: 48.8% K/D Ratio: 0.99
