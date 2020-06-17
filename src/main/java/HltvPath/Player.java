@@ -143,7 +143,7 @@ public class Player {
 
     private void appender(FileWriter writer, String i) throws IOException {
         Document documentPlayerStatLink;
-        documentPlayerStatLink = Jsoup.connect((playerStatLink + "?maps=de_" + i)).userAgent(UserParser.userAgent).get();
+        documentPlayerStatLink = Jsoup.connect((playerStatLink + "?maps=de_" + i)).userAgent(UserParser.getRandomAgent()).get();
         Elements elements = documentPlayerStatLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview");
         writer.append("\n").append(i).append("Rating: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
                 .append(" DPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())

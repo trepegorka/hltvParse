@@ -14,8 +14,9 @@ public class HltvBuilder {
 
     private static Document getHtml(String link) throws IOException {
         return Jsoup.connect(link)
+                .userAgent(UserParser.userAgent)
                 .referrer("http://www.google.com")
-//                .proxy("176.36.89.203", 53325)
+//                .proxy("86.123.166.109", 8080)
                 .get();
     }
 
