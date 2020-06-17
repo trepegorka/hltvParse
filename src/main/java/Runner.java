@@ -12,12 +12,19 @@ public class Runner {
                     "vs  " + hltv.getTeamLink2(matchLink).substring(hltv.getTeamLink2(matchLink).lastIndexOf("/") + 1));
 
             System.out.println("\nteam1: " + hltv.getTeamLink1(matchLink).substring(hltv.getTeamLink1(matchLink).lastIndexOf("/") + 1));
+            for (String playerLink:  hltv.PlayersLinks(hltv.getTeamLink1(matchLink))){
+                Player player = new Player(hltv.statLink(playerLink));
+                player.loadPlayerMapsStatsToFile(hltv.mapPick(matchLink));
+            }
             for (String map : hltv.mapPick(matchLink)) {
                 System.out.println(map + " " + calculator.calculateAverageParam(hltv.getPlayersNickNames(hltv.PlayersLinks(hltv.getTeamLink1(matchLink))), map.substring(0, map.length() - 1)));
             }
 
             System.out.println("\nteam2: " + hltv.getTeamLink2(matchLink).substring(hltv.getTeamLink2(matchLink).lastIndexOf("/") + 1));
-            ;
+            for (String playerLink:  hltv.PlayersLinks(hltv.getTeamLink1(matchLink))){
+                Player player = new Player(hltv.statLink(playerLink));
+                player.loadPlayerMapsStatsToFile(hltv.mapPick(matchLink));
+            }
             for (String map : hltv.mapPick(matchLink)) {
                 System.out.println(map + " " + calculator.calculateAverageParam(hltv.getPlayersNickNames(hltv.PlayersLinks(hltv.getTeamLink2(matchLink))), map.substring(0, map.length() - 1)));
             }
