@@ -1,4 +1,4 @@
 
-train Rating: 0.94 DPR: 0.70 KAST: 66.1% IMPACT: 0.98 ADR: 74.6 KPR: 0.65 Headshot: 51.4% K/D Ratio: 0.92
+overpass Rating: 1.02 DPR: 0.71 KAST: 69.6% IMPACT: 1.17 ADR: 81.9 KPR: 0.71 Headshot: 51.7% K/D Ratio: 1.01
 mirage Rating: 1.00 DPR: 0.67 KAST: 69.2% IMPACT: 1.01 ADR: 75.7 KPR: 0.69 Headshot: 51.8% K/D Ratio: 1.02
-nuke Rating: 1.08 DPR: 0.64 KAST: 69.9% IMPACT: 1.01 ADR: 76.7 KPR: 0.73 Headshot: 55.4% K/D Ratio: 1.13
+inferno Rating: 1.01 DPR: 0.66 KAST: 70.0% IMPACT: 1.04 ADR: 73.7 KPR: 0.67 Headshot: 53.8% K/D Ratio: 1.02

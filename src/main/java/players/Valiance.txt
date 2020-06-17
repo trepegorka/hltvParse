@@ -1,0 +1,4 @@
+
+inferno Rating: 1.09 DPR: 0.64 KAST: 70.8% IMPACT: 1.05 ADR: 75.4 KPR: 0.70 Headshot: 52.7% K/D Ratio: 1.09
+vertigo Rating: 1.41 DPR: 0.53 KAST: 83.7% IMPACT: 1.36 ADR: 86.9 KPR: 0.83 Headshot: 53.9% K/D Ratio: 1.57
+nuke Rating: 1.07 DPR: 0.65 KAST: 71.2% IMPACT: 1.01 ADR: 74.1 KPR: 0.71 Headshot: 50.8% K/D Ratio: 1.09
