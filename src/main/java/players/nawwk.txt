@@ -1,4 +1,0 @@
-
-overpass Rating: 1.19 DPR: 0.62 KAST: 73.1% IMPACT: 1.20 ADR: 78.0 KPR: 0.78 Headshot: 35.4% K/D Ratio: 1.25
-mirage Rating: 1.17 DPR: 0.62 KAST: 71.1% IMPACT: 1.17 ADR: 77.1 KPR: 0.78 Headshot: 36.3% K/D Ratio: 1.25
-inferno Rating: 1.17 DPR: 0.61 KAST: 73.7% IMPACT: 1.18 ADR: 75.9 KPR: 0.74 Headshot: 37.4% K/D Ratio: 1.23

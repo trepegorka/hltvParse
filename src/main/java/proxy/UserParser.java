@@ -7,36 +7,49 @@ import org.jsoup.select.Elements;
 import java.io.*;
 import java.util.*;
 
-public class UserParser {
+public class UserParser{
 
     public static String userAgent = "";
 
+
+    static {
+        try {
+            userAgent = getRandomAgent();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     private Document getProxyListNetHtml() throws IOException {
         return Jsoup.connect("https://free-proxy-list.net")
+                .userAgent(userAgent)
                 .referrer("http://www.google.com")
                 .get();
     }
 
-    public ArrayList<String> getRandomIpAndPort() throws IOException {
+    public String getRandomProxy() throws IOException {
         ArrayList<String> list = new ArrayList<>();
-        for (int i = 1; i < 21; i++) {
-            Elements ipAndPort = getProxyListNetHtml().select("#proxylisttable > tbody > tr:nth-child(" + i + ")");
-            list.add(ipAndPort.select("td:nth-child(1)").text());
-            list.add(ipAndPort.select("td:nth-child(2)").text());
+        Document doc = getProxyListNetHtml();
+        for (int i = 1; i < 70; i++) {
+
+            Elements ipAndPort = doc.select("#proxylisttable > tbody > tr:nth-child(" + i + ")");
+
+            if(ipAndPort.select("tr:nth-child("+i+") >td.hx").text().equals("no")){
+               list.add(ipAndPort.select("td:nth-child(1)").text() + ":" + ipAndPort.select("td:nth-child(2)").text());
+           }
         }
         Random random = new Random();
         int a = random.nextInt((list.size() - 1));
-        if (a % 2 != 0) {
-            a++;
-        }
-        ArrayList<String> retList = new ArrayList<>();
-        retList.add(list.get(a));
-        retList.add(list.get(a + 1));
-        return retList;
+        return list.get(a);
+    }
+
+
+    public static void setUserAgent(String userAgent) {
+        UserParser.userAgent = userAgent;
     }
 
     public static String getRandomAgent() throws FileNotFoundException {
-        File f = new File("src\\main\\java\\proxy\\UserAgents");
+        File f = new File("src/main/java/proxy/UserAgents");
         String result = null;
         Random rand = new Random();
         int n = 0;
@@ -49,11 +62,7 @@ public class UserParser {
         return result;
     }
 
-    public static void SetRandomAgent(String agent) {
-        userAgent = agent;
-    }
-
-    public void stripDuplicatesFromFile(String filename) throws IOException {
+    public static void stripDuplicatesFromFile(String filename) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
         Set<String> lines = new HashSet<String>(10000); // maybe should be bigger
         String line;
@@ -68,4 +77,31 @@ public class UserParser {
         }
         writer.close();
     }
+
+    public static void deleteDuplicatesMap(String filename) throws IOException {
+
+        BufferedReader reader = new BufferedReader(new FileReader(filename));
+        ArrayList<String> lines = new ArrayList<>();
+        ArrayList<String> write = new ArrayList<>();
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String map = line.substring(0,line.lastIndexOf(" Rating:"));
+            if (lines.contains(map)){
+
+            } else {
+                write.add(line);
+                lines.add(map);
+            }
+        }
+        reader.close();
+        BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
+        for (String unique : write) {
+            writer.write(unique);
+            writer.newLine();
+        }
+        writer.close();
+    }
+
+
+
 }

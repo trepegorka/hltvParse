@@ -1,0 +1,1 @@
+nuke Rating: 1.16 DPR: 0.53 KAST: 81.2% IMPACT: 0.84 ADR: 71.2 KPR: 0.67 Headshot: 48.8% K/D Ratio: 1.26 OpenKillRatio: 0.29 WinAfterFB: 100.0% 

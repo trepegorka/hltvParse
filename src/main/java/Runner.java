@@ -1,8 +1,13 @@
+import proxy.UserParser;
 import starter.HltvBuilder;
+import starter.HltvCheker;
 
 public class Runner {
 
     public static void main(String[] args) throws Exception {
-        HltvBuilder.start();
+
+        HltvCheker.start();
+        //HltvBuilder.start();
+
     }
 }

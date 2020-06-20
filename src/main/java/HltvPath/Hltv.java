@@ -1,5 +1,6 @@
 package HltvPath;
 
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -10,6 +11,13 @@ import java.util.List;
 
 
 public class Hltv {
+
+
+
+
+    public Hltv() throws IOException {
+    }
+
 
     public List<String> liveMatches(Document documentHltvLink) throws IOException {
         Elements matches = documentHltvLink.select("body > div.bgPadding > div > div.colCon > div.rightCol > aside:nth-child(1) > div.top-border-hide");
@@ -26,30 +34,56 @@ public class Hltv {
         return links;
     }
 
-    public ArrayList<String> mapPick(Document documentMatchLink) throws Exception {
-        Elements matches = documentMatchLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small > div:nth-child(3) > div");
-        StringBuilder builder = new StringBuilder();
-        builder.append(matches.select("div").text()).append("\n");
-        String pick = "";
-        pick = builder.toString().substring(builder.toString().lastIndexOf("1"));
-        StringBuilder mainPick = new StringBuilder();
-        ArrayList<String> list = new ArrayList<>();
-        for (int i = 1; i < 7; i++) {
-            try {
-                list.add(mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
-                mainPick.setLength(0);
-            } catch (Exception ignored) {
-            }
+    public List<String> resultMatches(Document documentHltvLink) throws IOException {
+        Elements matches = documentHltvLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.results > div.results-holder > div.results-all");
+        List<Element> list = new ArrayList<>();
+        for (Element element : matches.select("a")) {
+                list.add(element);
         }
-        list.removeIf(i -> i.contains("removed"));
-        for (int i = 0; i < list.size(); i++) {
-            list.set(i, (list.get(i).substring(list.get(i).indexOf("picked") + 6).toLowerCase()).substring(1));
+        List<String> links = new ArrayList<>();
+        for (Element e : list) {
+            links.add("https://www.hltv.org" + e.attr("href"));
         }
+        return links;
+    }
 
-        String leftMap = mainPick.append(pick, pick.indexOf(7 + "."), pick.indexOf("was")).toString();
-        leftMap = leftMap.substring(3);
-        list.add(leftMap.toLowerCase());
-        return list;
+
+    public ArrayList<String> mapPick(Document documentMatchLink) throws Exception {
+        try {
+            Elements matches = documentMatchLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small > div:nth-child(3) > div");
+            StringBuilder builder = new StringBuilder();
+            builder.append(matches.select("div").text()).append("\n");
+            String pick = "";
+            pick = builder.toString().substring(builder.toString().lastIndexOf("1"));
+            StringBuilder mainPick = new StringBuilder();
+            ArrayList<String> list = new ArrayList<>();
+            for (int i = 1; i < 7; i++) {
+                try {
+                    list.add(mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
+                    mainPick.setLength(0);
+                } catch (Exception ignored) {
+                }
+            }
+            list.removeIf(i -> i.contains("removed"));
+            for (int i = 0; i < list.size(); i++) {
+                list.set(i, (list.get(i).substring(list.get(i).indexOf("picked") + 6).toLowerCase()).substring(1));
+            }
+
+            try {
+                String leftMap = mainPick.append(pick, pick.indexOf(7 + "."), pick.indexOf("was")).toString();
+                leftMap = leftMap.substring(3);
+                list.add(leftMap.toLowerCase());
+                return list;
+            } catch (java.lang.IndexOutOfBoundsException e) {
+
+            }
+            return list;
+        } catch (Exception e){
+            Elements matches = documentMatchLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small > div:nth-child(3) > div");
+            ArrayList<String> list = new ArrayList<>();
+            list.add(matches.select("div").text());
+            return list;
+        }
     }
 
     public String getTeamLink1(Document documentMatchLink) throws IOException {
@@ -111,4 +145,5 @@ public class Hltv {
         }
         return ("https://www.hltv.org" + matches.attr("href"));
     }
+
 }
