@@ -10,6 +10,8 @@ import resultMatches.MatchResult;
 
 import javax.print.Doc;
 import java.io.*;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 
 public class HltvBuilder {
@@ -50,15 +52,23 @@ public class HltvBuilder {
         Logic logic = new Logic();
         UserParser.setUserAgent(UserParser.getRandomAgent());
         Document hltvMainDoc = getHtml("https://www.hltv.org/");
+        ArrayList<String> list = new ArrayList<>();
         for (String matchLink : hltv.liveMatches(hltvMainDoc)) {
             System.out.println("\n****************DOWNLOADING****************\n");
             Document matchDoc = getHtml(matchLink);
             Document team1Doc = getHtml(hltv.getTeamLink1(matchDoc));
             Document team2Doc = getHtml(hltv.getTeamLink2(matchDoc));
 
+
             teamInit(hltv, matchDoc, team1Doc);
             teamInit(hltv, matchDoc, team2Doc);
-            showStats(hltv, logic, matchDoc, team1Doc, team2Doc);
+
+            for (String map : hltv.mapPick(matchDoc)) {
+                try {
+                    list.add("%0A" + logic.calculateAdvantage(hltv, logic, matchDoc, team1Doc, team2Doc, map) + "%0A");
+                } catch (Exception ignored) {
+                }
+            }
         }
     }
 
@@ -68,15 +78,5 @@ public class HltvBuilder {
             player.loadPlayerMapsStatsToFile(hltv.mapPick(matchDoc));
         }
     }
-
-    private static void showStats(Hltv hltv, Logic logic, Document matchDoc, Document team1Doc, Document team2Doc) throws Exception {
-        System.out.println(hltv.getTeam1Name(matchDoc) + "  " +
-                "vs  " + hltv.getTeam2Name(matchDoc));
-        for (String map : hltv.mapPick(matchDoc)) {
-            for (int i = 0; i < 30; i++) {
-                System.out.print("-");
-            }
-            System.out.println("\n" + logic.calculateAdvantage(hltv, logic, matchDoc, team1Doc, team2Doc, map) + " " + map);
-        }
-    }
+    
 }
