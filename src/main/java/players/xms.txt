@@ -1,0 +1,3 @@
+inferno Rating: 0.92 DPR: 0.67 KAST: 70.3% IMPACT: 0.93 ADR: 67.0 KPR: 0.60 Headshot: 59.8% K/D Ratio: 0.91 OpenKillRatio: 0.82 WinAfterFB: 72.6% 
+vertigo Rating: 1.04 DPR: 0.65 KAST: 69.7% IMPACT: 1.04 ADR: 72.3 KPR: 0.65 Headshot: 56.9% K/D Ratio: 1.00 OpenKillRatio: 0.81 WinAfterFB: 54.3% 
+nuke Rating: 0.99 DPR: 0.68 KAST: 70.3% IMPACT: 0.93 ADR: 69.3 KPR: 0.65 Headshot: 58.7% K/D Ratio: 0.95 OpenKillRatio: 0.66 WinAfterFB: 69.9% 

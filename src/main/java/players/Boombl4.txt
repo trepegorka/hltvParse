@@ -1,0 +1,5 @@
+mirage Rating: 1.09 DPR: 0.68 KAST: 68.7% IMPACT: 1.15 ADR: 80.0 KPR: 0.71 Headshot: 42.2% K/D Ratio: 1.04 OpenKillRatio: 1.07 WinAfterFB: 72.0% 
+train Rating: 1.14 DPR: 0.69 KAST: 69.2% IMPACT: 1.27 ADR: 83.9 KPR: 0.74 Headshot: 42.2% K/D Ratio: 1.07 OpenKillRatio: 1.01 WinAfterFB: 72.2% 
+nuke Rating: 1.01 DPR: 0.70 KAST: 66.4% IMPACT: 1.07 ADR: 74.7 KPR: 0.68 Headshot: 39.2% K/D Ratio: 0.96 OpenKillRatio: 0.78 WinAfterFB: 72.1% 
+dust2 Rating: 1.06 DPR: 0.67 KAST: 68.3% IMPACT: 1.11 ADR: 75.4 KPR: 0.67 Headshot: 43.0% K/D Ratio: 1.01 OpenKillRatio: 0.89 WinAfterFB: 72.2% 
+overpass Rating: 1.11 DPR: 0.68 KAST: 68.7% IMPACT: 1.21 ADR: 81.3 KPR: 0.72 Headshot: 39.9% K/D Ratio: 1.05 OpenKillRatio: 0.94 WinAfterFB: 67.3% 

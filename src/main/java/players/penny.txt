@@ -1,0 +1,3 @@
+train Rating: 1.14 DPR: 0.69 KAST: 69.0% IMPACT: 1.28 ADR: 80.2 KPR: 0.78 Headshot: 50.2% K/D Ratio: 1.14 OpenKillRatio: 1.28 WinAfterFB: 70.7% 
+nuke Rating: 1.19 DPR: 0.70 KAST: 72.8% IMPACT: 1.25 ADR: 85.1 KPR: 0.79 Headshot: 44.3% K/D Ratio: 1.14 OpenKillRatio: 1.28 WinAfterFB: 72.4% 
+mirage Rating: 1.11 DPR: 0.69 KAST: 72.6% IMPACT: 1.12 ADR: 80.6 KPR: 0.75 Headshot: 53.3% K/D Ratio: 1.08 OpenKillRatio: 0.85 WinAfterFB: 75.4% 

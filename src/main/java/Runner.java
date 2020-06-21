@@ -6,8 +6,8 @@ public class Runner {
 
     public static void main(String[] args) throws Exception {
 
-        HltvCheker.start();
-        //HltvBuilder.start();
+//        HltvCheker.start();
+        HltvBuilder.start();
 
     }
 }

@@ -24,9 +24,9 @@ public class MatchResult {
             String _1mapleft = documentMatchLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small > div.flexbox-column > div:nth-child(" + i + ") > div.results > div.results-left > div.results-teamname-container.text-ellipsis > div.results-team-score").text();
             try {
                 if (Integer.parseInt(_1mapleft)<Integer.parseInt(_1mapright)) {
-                    list.add("2 Team Win Map ");
+                    list.add("2");
                 } else {
-                    list.add("1 Team Win Map ");
+                    list.add("1");
                 }
             } catch (Exception e) {
                 list.add("Not played");

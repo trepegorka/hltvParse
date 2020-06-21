@@ -1,0 +1,3 @@
+dust2 Rating: 0.88 DPR: 0.68 KAST: 62.0% IMPACT: 0.88 ADR: 63.5 KPR: 0.58 Headshot: 52.3% K/D Ratio: 0.86 OpenKillRatio: 0.85 WinAfterFB: 80.0% 
+vertigo Rating: 1.13 DPR: 0.70 KAST: 72.4% IMPACT: 1.26 ADR: 82.0 KPR: 0.73 Headshot: 45.5% K/D Ratio: 1.04 OpenKillRatio: 1.00 WinAfterFB: 73.1% 
+train Rating: 0.94 DPR: 0.71 KAST: 64.0% IMPACT: 1.03 ADR: 72.8 KPR: 0.65 Headshot: 43.0% K/D Ratio: 0.91 OpenKillRatio: 0.86 WinAfterFB: 72.6% 

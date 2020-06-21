@@ -14,7 +14,8 @@ import java.util.stream.Stream;
 
 public class UserParser{
     public static void main(String[] args) throws IOException {
-        deleteDuplicatesMapsFromDirectory();
+//        deleteDuplicatesMapsFromDirectory();
+    deleteDuplicatesMap("Winrate.txt");
     }
 
     public static String userAgent = "";

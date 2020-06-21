@@ -1,0 +1,1 @@
+train Rating: 0.99 DPR: 0.67 KAST: 68.5% IMPACT: 0.93 ADR: 68.2 KPR: 0.67 Headshot: 23.0% K/D Ratio: 1.00 OpenKillRatio: 1.00 WinAfterFB: 61.5% 

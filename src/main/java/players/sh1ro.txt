@@ -1,3 +1,6 @@
 vertigo Rating: 1.32 DPR: 0.55 KAST: 77.9% IMPACT: 1.28 ADR: 83.7 KPR: 0.83 Headshot: 29.7% K/D Ratio: 1.49 OpenKillRatio: 1.76 WinAfterFB: 75.7% 
 inferno Rating: 1.21 DPR: 0.55 KAST: 75.8% IMPACT: 1.13 ADR: 76.2 KPR: 0.74 Headshot: 29.8% K/D Ratio: 1.35 OpenKillRatio: 1.95 WinAfterFB: 72.2% 
 mirage Rating: 1.25 DPR: 0.57 KAST: 74.5% IMPACT: 1.23 ADR: 81.1 KPR: 0.80 Headshot: 28.3% K/D Ratio: 1.40 OpenKillRatio: 1.54 WinAfterFB: 79.7% 
+overpass Rating: 1.26 DPR: 0.56 KAST: 76.4% IMPACT: 1.26 ADR: 78.7 KPR: 0.77 Headshot: 27.6% K/D Ratio: 1.39 OpenKillRatio: 1.51 WinAfterFB: 74.0% 
+train Rating: 1.25 DPR: 0.56 KAST: 75.6% IMPACT: 1.19 ADR: 78.5 KPR: 0.80 Headshot: 23.9% K/D Ratio: 1.43 OpenKillRatio: 2.16 WinAfterFB: 75.8% 
+dust2 Rating: 1.28 DPR: 0.54 KAST: 74.8% IMPACT: 1.32 ADR: 81.3 KPR: 0.76 Headshot: 30.6% K/D Ratio: 1.41 OpenKillRatio: 2.18 WinAfterFB: 73.0% 

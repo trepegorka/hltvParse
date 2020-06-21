@@ -2,3 +2,4 @@ mirage Rating: 0.96 DPR: 0.72 KAST: 66.4% IMPACT: 0.95 ADR: 72.8 KPR: 0.65 Heads
 inferno Rating: 1.08 DPR: 0.71 KAST: 70.0% IMPACT: 1.07 ADR: 79.0 KPR: 0.76 Headshot: 56.5% K/D Ratio: 1.06 OpenKillRatio: 1.05 WinAfterFB: 68.2% 
 dust2 Rating: 1.06 DPR: 0.68 KAST: 70.5% IMPACT: 1.08 ADR: 74.7 KPR: 0.70 Headshot: 59.6% K/D Ratio: 1.02 OpenKillRatio: 1.12 WinAfterFB: 65.8% 
 vertigo Rating: 0.87 DPR: 0.69 KAST: 63.0% IMPACT: 0.86 ADR: 63.9 KPR: 0.58 Headshot: 58.4% K/D Ratio: 0.84 OpenKillRatio: 0.45 WinAfterFB: 70.0% 
+train Rating: 0.94 DPR: 0.77 KAST: 65.7% IMPACT: 0.97 ADR: 73.0 KPR: 0.65 Headshot: 53.6% K/D Ratio: 0.85 OpenKillRatio: 0.78 WinAfterFB: 63.8% 

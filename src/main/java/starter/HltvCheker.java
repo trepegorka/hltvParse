@@ -8,12 +8,8 @@ import org.jsoup.nodes.Document;
 import proxy.UserParser;
 import resultMatches.MatchResult;
 
-import javax.print.Doc;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Set;
+
 
 public class HltvCheker {
 
@@ -23,7 +19,6 @@ public class HltvCheker {
             //String proxy = parser.getRandomProxy();
             //String ip = proxy.substring(0, proxy.lastIndexOf(":"));
             //String port = proxy.substring(proxy.lastIndexOf(":") + 1);
-            System.out.println(UserParser.userAgent);
 
             Thread.sleep(1000);
             return Jsoup.connect(link)
@@ -53,8 +48,9 @@ public class HltvCheker {
         Hltv hltv = new Hltv();
         Logic logic = new Logic();
         UserParser.setUserAgent(UserParser.getRandomAgent());
-        Document hltvMainDoc = getHtml("https://www.hltv.org/results");
+        Document hltvMainDoc = getHtml("https://www.hltv.org/results?offset=100");
         for (String matchLink : hltv.resultMatches(hltvMainDoc)) {
+            System.out.println("\n****************DOWNLOADING****************\n");
             Document matchDoc = getHtml(matchLink);
             Document team1Doc = getHtml(hltv.getTeamLink1(matchDoc));
             Document team2Doc = getHtml(hltv.getTeamLink2(matchDoc));
@@ -68,7 +64,7 @@ public class HltvCheker {
 
     private static void teamInit(Hltv hltv, Document matchDoc, Document teamDoc) throws Exception {
         for (String playerLink : hltv.PlayersLinks(teamDoc)) {
-            Player player = new Player(hltv.statLink(getHtml(playerLink)));
+            Player player = new Player(hltv.getStatLink(playerLink));
             player.loadPlayerMapsStatsToFile(hltv.mapPick(matchDoc));
         }
     }
@@ -90,12 +86,12 @@ public class HltvCheker {
             System.out.println("\n" + map + " " + calc1);
             System.out.println(map + " " + calc2);
             System.out.println("-_-_-_-_-_-_-_-_-_-_-_-ADVANTAGE-_-_-_-_-_-_-_-_-_-_-_-");
-            System.out.println(map + " " + logic.calculateAdvantage(calc1, calc2));
-            System.out.println(map + " " + logic.calculateSumAdvantage(logic.calculateAdvantage(calc1, calc2)));
+//            System.out.println(map + " " + logic.calculateAdvantage(calc1, calc2));
+//            System.out.println(map + " " + logic.calculateSumAdvantage(logic.calculateAdvantage(calc1, calc2)));
             try {
                 PrintWriter out = new PrintWriter(new FileWriter("Winrate", true));
                 System.out.println(MatchResult.getMapWinners(matchDoc).get(mapGett));
-                out.println(logic.calculateAdvantage(calc1, calc2) + " " + MatchResult.getMapWinners(matchDoc).get(mapGett));
+//                out.println(logic.calculateAdvantage(calc1, calc2) + " " + MatchResult.getMapWinners(matchDoc).get(mapGett));
                 mapGett++;
                 out.close();
                 UserParser.stripDuplicatesFromFile("Winrate");

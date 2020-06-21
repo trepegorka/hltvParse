@@ -1,5 +1,7 @@
 package HltvPath;
 
+import org.jsoup.nodes.Document;
+
 import java.io.*;
 import java.util.ArrayList;
 
@@ -164,16 +166,19 @@ public class Logic {
         return output.toString();
     }
 
-    public String calculateAdvantage(String team_param_1 , String team_param_2) throws IOException {
+    public String calculateAdvantage(Hltv hltv, Logic logic,Document matchDoc, Document team1Doc, Document team2Doc,String map) throws IOException {
 
+        String str_map = map.substring(0, map.length() - 1);
+        String calc1 = calculateAverageParam(hltv.getPlayersNickNames(hltv.PlayersLinks(team1Doc)), str_map);
 
+        String calc2 = logic.calculateAverageParam(hltv.getPlayersNickNames(hltv.PlayersLinks(team2Doc)), str_map);
 
         ArrayList<Double> sum_team_1 = new ArrayList<>();
         ArrayList<Double> sum_team_2 = new ArrayList<>();
 
         try {
             int val = 0;
-            for (String parametr : team_param_1.split(",")) {
+            for (String parametr : calc1.split(",")) {
                 val++;
                 if (val==11){
                     break;
@@ -181,7 +186,7 @@ public class Logic {
                 sum_team_1.add(Double.parseDouble(parametr));
             }
             int val1 = 0;
-            for (String parametr2 : team_param_2.split(",")) {
+            for (String parametr2 : calc2.split(",")) {
                 val1++;
                 if(val1==11){
                     break;
@@ -205,8 +210,27 @@ public class Logic {
             String sum = String.format("%.3f", advantage.get(i)).replace(",", ".");
             builder.append(sum+", ");
         }
-            return builder.toString();
+            return RatingAndKastToWin(builder.toString(), hltv.getTeam1Name(matchDoc), hltv.getTeam2Name(matchDoc));
     }
 
+    private String RatingAndKastToWin(String statLine, String team1Name, String team2Name){
+        int value =0;
+        String s1 ="";
+        String s2 = "";
+        for (String parametr : statLine.split(",")) {
+            if(value == 0){
+                s1=parametr;
+            } else if(value ==2){
+                s2 = parametr;
+            }
+            value++;
+        }
+        if(Double.parseDouble(s1)>0 && Double.parseDouble(s2)>0){
+            return (team1Name+" win");
+        } else if (Double.parseDouble(s1)<0 && Double.parseDouble(s2)<0){
+            return (team2Name+" win");
+        }
+        return "";
+    }
 
 }

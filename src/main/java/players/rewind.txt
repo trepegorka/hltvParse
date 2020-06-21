@@ -1,0 +1,1 @@
+mirage Rating: 0.91 DPR: 0.70 KAST: 65.0% IMPACT: 0.85 ADR: 67.5 KPR: 0.59 Headshot: 50.0% K/D Ratio: 0.85 OpenKillRatio: 0.80 WinAfterFB: 62.5% 

@@ -44,7 +44,7 @@ public class Hltv {
         for (Element e : list) {
             links.add("https://www.hltv.org" + e.attr("href"));
         }
-        links.subList(0, 25).clear();
+//        links.subList(0, 25).clear();
         return links;
     }
 
@@ -147,4 +147,33 @@ public class Hltv {
         return ("https://www.hltv.org" + matches.attr("href"));
     }
 
+    public String getStatLink(String playerLink){
+
+        String https_link = "";
+        String hltv_link = "";
+        String id = "";
+        String name = "";
+        int a = 0;
+        for (String parametr : playerLink.split("/")) {
+            a++;
+            if (a == 1) {
+                https_link = parametr;
+            } else if (a == 3) {
+                hltv_link = parametr;
+            } else if (a == 5) {
+                id = parametr;
+            } else if (a == 6) {
+                name = parametr;
+            }
+        }
+
+        return https_link + "//" + hltv_link + "/" + "stats/" + "players/" + id + "/" + name;
+    }
+
+    public String getTeam1Name(Document matchDoc) throws IOException {
+       return getTeamLink1(matchDoc).substring(getTeamLink1(matchDoc).lastIndexOf("/") + 1);
+    }
+    public String getTeam2Name(Document matchDoc) throws IOException {
+        return getTeamLink2(matchDoc).substring(getTeamLink2(matchDoc).lastIndexOf("/") + 1);
+    }
 }

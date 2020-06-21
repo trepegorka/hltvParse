@@ -1,3 +1,4 @@
 inferno Rating: 1.05 DPR: 0.66 KAST: 70.2% IMPACT: 1.04 ADR: 72.1 KPR: 0.69 Headshot: 38.2% K/D Ratio: 1.04 OpenKillRatio: 1.06 WinAfterFB: 66.3% 
 mirage Rating: 1.07 DPR: 0.73 KAST: 69.1% IMPACT: 1.19 ADR: 77.7 KPR: 0.72 Headshot: 41.1% K/D Ratio: 0.99 OpenKillRatio: 1.17 WinAfterFB: 77.1% 
 dust2 Rating: 1.14 DPR: 0.69 KAST: 72.0% IMPACT: 1.16 ADR: 82.0 KPR: 0.74 Headshot: 41.2% K/D Ratio: 1.08 OpenKillRatio: 1.00 WinAfterFB: 84.1% 
+vertigo Rating: 1.07 DPR: 0.72 KAST: 68.3% IMPACT: 1.18 ADR: 80.0 KPR: 0.72 Headshot: 36.4% K/D Ratio: 1.00 OpenKillRatio: 0.89 WinAfterFB: 68.8% 
