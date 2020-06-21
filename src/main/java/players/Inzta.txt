@@ -1,3 +1,4 @@
 dust2 Rating: 0.92 DPR: 0.68 KAST: 68.4% IMPACT: 0.81 ADR: 67.3 KPR: 0.62 Headshot: 45.5% K/D Ratio: 0.91 OpenKillRatio: 0.77 WinAfterFB: 70.9% 
-vertigo Rating: 0.94 DPR: 0.67 KAST: 64.7% IMPACT: 0.95 ADR: 66.9 KPR: 0.61 Headshot: 34.1% K/D Ratio: 0.91 OpenKillRatio: 0.85 WinAfterFB: 78.3% 
-overpass Rating: 0.97 DPR: 0.68 KAST: 70.0% IMPACT: 1.01 ADR: 76.7 KPR: 0.67 Headshot: 42.2% K/D Ratio: 0.98 OpenKillRatio: 0.81 WinAfterFB: 72.1% 
+vertigo Rating: 0.96 DPR: 0.66 KAST: 66.1% IMPACT: 0.97 ADR: 67.0 KPR: 0.62 Headshot: 36.0% K/D Ratio: 0.94 OpenKillRatio: 0.89 WinAfterFB: 79.2% 
+overpass Rating: 0.96 DPR: 0.69 KAST: 69.8% IMPACT: 1.00 ADR: 76.4 KPR: 0.67 Headshot: 42.3% K/D Ratio: 0.97 OpenKillRatio: 0.80 WinAfterFB: 71.8% 
+nuke Rating: 1.00 DPR: 0.67 KAST: 68.0% IMPACT: 1.03 ADR: 74.5 KPR: 0.68 Headshot: 45.3% K/D Ratio: 1.01 OpenKillRatio: 0.87 WinAfterFB: 72.7% 

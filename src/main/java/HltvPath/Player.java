@@ -12,15 +12,13 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Player {
 
     private final Hltv hltv = new Hltv();
 
-    private  String playerStatLink="";
+    private String playerStatLink = "";
 
     private String RATING;
     private String DPR;
@@ -35,11 +33,10 @@ public class Player {
     private String TeamWinPercentAfterFirstKill;
     private String OpeningKillRatio;
 
-    public Player() throws IOException {
 
-    }
-    public Player(String playerStatLinkLink) throws IOException {
-        this.playerStatLink = playerStatLinkLink;
+
+    public Player(String playerStatLink) throws IOException {
+        this.playerStatLink = playerStatLink;
     }
 
     public String getPlayerStatLink() {
@@ -126,34 +123,30 @@ public class Player {
         OpeningKillRatio = openingKillRatio;
     }
 
-    public void loadPlayerMapsStatsToFile(ArrayList<String> map) throws IOException, InterruptedException {
-        String path ="src/main/java/players/" + hltv.getNickName(playerStatLink) + ".txt";
+    public void loadPlayerMapsStatsToFile(ArrayList<String> maps) throws IOException, InterruptedException {
+        String path = "src/main/java/players/" + hltv.getNickName(playerStatLink) + ".txt";
         File file = new File(path);
-        FileWriter writer = new FileWriter(file,true);
-        UserParser.deleteDuplicatesMap(path);
-
-        for (String i : map) {
+        FileWriter writer = new FileWriter(file, true);
+        Set<String> fileMaps = new HashSet<>();
+        for (String map : maps) {
             Scanner scanner = new Scanner(file);
             if (file.length() != 0) {
                 while (scanner.hasNextLine()) {
                     String line = scanner.nextLine();
-                    if (!line.contains(i)) {
-                        appender(writer, i);
-                        writer.flush();
-                    }
+                    fileMaps.add(line.substring(0, line.lastIndexOf("Rating:")));
+                }
+                if (!fileMaps.contains(map)) {
+                    appender(writer, map);
                 }
             } else {
-                appender(writer, i);
+                appender(writer, map);
             }
         }
-        writer.flush();
-        writer.close();
-
     }
 
     private void appender(FileWriter writer, String i) throws IOException, InterruptedException {
         Thread.sleep(1000);
-        Document documentPlayerStatLink  = HltvBuilder.getHtml(playerStatLink + "?maps=de_" + i);
+        Document documentPlayerStatLink = HltvBuilder.getHtml(playerStatLink + "?maps=de_" + i);
 
         Elements elements = documentPlayerStatLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview");
         writer.append(i).append("Rating: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
@@ -166,10 +159,11 @@ public class Player {
                 .append(" K/D Ratio: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(4) > span:nth-child(2)").text());
 
 
-        Elements individualElement = HltvBuilder.getHtml(("https://www.hltv.org/stats/players/individual/" + playerStatLink.substring(playerStatLink.lastIndexOf("players/")+8))+"?maps=de_"+i).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-individual > div.statistics > div > div:nth-child(1) > div:nth-child(5)");
+        Elements individualElement = HltvBuilder.getHtml(("https://www.hltv.org/stats/players/individual/" + playerStatLink.substring(playerStatLink.lastIndexOf("players/") + 8)) + "?maps=de_" + i).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-individual > div.statistics > div > div:nth-child(1) > div:nth-child(5)");
         writer.append(" OpenKillRatio: ").append(individualElement.select("div:nth-child(5) > div:nth-child(3) > span:nth-child(2)").text())
                 .append(" WinAfterFB: ").append(individualElement.select("div:nth-child(5) > div:nth-child(5) > span:nth-child(2)").text()).append(" \n");
 
+        writer.flush();
     }
 
 }

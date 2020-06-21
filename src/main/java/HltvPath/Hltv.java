@@ -44,6 +44,7 @@ public class Hltv {
         for (Element e : list) {
             links.add("https://www.hltv.org" + e.attr("href"));
         }
+        links.subList(0, 25).clear();
         return links;
     }
 

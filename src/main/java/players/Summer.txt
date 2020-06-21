@@ -1,3 +1,5 @@
-mirage Rating: 1.07 DPR: 0.65 KAST: 72.8% IMPACT: 1.14 ADR: 81.3 KPR: 0.74 Headshot: 49.0% K/D Ratio: 1.13 OpenKillRatio: 1.19 WinAfterFB: 75.8% 
-train Rating: 1.10 DPR: 0.63 KAST: 72.5% IMPACT: 1.13 ADR: 79.0 KPR: 0.73 Headshot: 46.8% K/D Ratio: 1.16 OpenKillRatio: 1.27 WinAfterFB: 77.5% 
+mirage Rating: 1.07 DPR: 0.65 KAST: 72.8% IMPACT: 1.14 ADR: 81.2 KPR: 0.74 Headshot: 48.9% K/D Ratio: 1.13 OpenKillRatio: 1.19 WinAfterFB: 75.8% 
+train Rating: 1.10 DPR: 0.63 KAST: 72.5% IMPACT: 1.13 ADR: 79.0 KPR: 0.73 Headshot: 46.9% K/D Ratio: 1.16 OpenKillRatio: 1.29 WinAfterFB: 77.1% 
 inferno Rating: 1.08 DPR: 0.64 KAST: 73.5% IMPACT: 1.11 ADR: 79.7 KPR: 0.73 Headshot: 48.8% K/D Ratio: 1.13 OpenKillRatio: 1.33 WinAfterFB: 78.2% 
+vertigo Rating: 1.05 DPR: 0.71 KAST: 67.3% IMPACT: 1.09 ADR: 79.2 KPR: 0.71 Headshot: 41.8% K/D Ratio: 1.00 OpenKillRatio: 1.31 WinAfterFB: 79.4% 
+dust2 Rating: 1.10 DPR: 0.66 KAST: 72.0% IMPACT: 1.13 ADR: 81.5 KPR: 0.75 Headshot: 50.4% K/D Ratio: 1.15 OpenKillRatio: 1.09 WinAfterFB: 73.8% 

@@ -1,3 +1,0 @@
-vertigo Rating: 1.06 DPR: 0.67 KAST: 71.5% IMPACT: 1.01 ADR: 73.9 KPR: 0.70 Headshot: 52.6% K/D Ratio: 1.04 OpenKillRatio: 1.11 WinAfterFB: 77.7% 
-inferno Rating: 1.08 DPR: 0.65 KAST: 71.7% IMPACT: 1.03 ADR: 74.9 KPR: 0.69 Headshot: 54.0% K/D Ratio: 1.07 OpenKillRatio: 1.08 WinAfterFB: 73.2% 
-mirage Rating: 1.09 DPR: 0.66 KAST: 69.0% IMPACT: 1.11 ADR: 77.1 KPR: 0.72 Headshot: 55.7% K/D Ratio: 1.09 OpenKillRatio: 1.08 WinAfterFB: 70.8% 

@@ -1,1 +1,0 @@
-package starter;import java.util.ArrayList;public class testThread implements Runnable{    String name;    Thread t;    ArrayList<String> list = new ArrayList<>();    testThread (String thread){        name=thread;        t=new Thread(this.name);        t.start();    }    @Override    public void run() {    }}

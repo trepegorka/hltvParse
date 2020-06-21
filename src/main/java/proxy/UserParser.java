@@ -5,9 +5,17 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class UserParser{
+    public static void main(String[] args) throws IOException {
+        deleteDuplicatesMapsFromDirectory();
+    }
 
     public static String userAgent = "";
 
@@ -102,6 +110,19 @@ public class UserParser{
         writer.close();
     }
 
+    public static void deleteDuplicatesMapsFromDirectory() throws IOException {
+        try (Stream<Path> walk = Files.walk(Paths.get("src\\main\\java\\players"))) {
 
+            List<String> result = walk.filter(Files::isRegularFile)
+                    .map(Path::toString).collect(Collectors.toList());
+
+            for(String i : result){
+                deleteDuplicatesMap(i);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

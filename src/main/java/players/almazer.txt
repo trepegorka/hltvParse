@@ -1,0 +1,3 @@
+inferno Rating: 1.10 DPR: 0.64 KAST: 71.9% IMPACT: 1.09 ADR: 75.7 KPR: 0.68 Headshot: 48.8% K/D Ratio: 1.06 OpenKillRatio: 1.06 WinAfterFB: 77.3% 
+dust2 Rating: 1.07 DPR: 0.66 KAST: 71.0% IMPACT: 1.04 ADR: 75.2 KPR: 0.68 Headshot: 52.6% K/D Ratio: 1.03 OpenKillRatio: 1.11 WinAfterFB: 67.9% 
+train Rating: 1.05 DPR: 0.67 KAST: 70.0% IMPACT: 1.02 ADR: 75.2 KPR: 0.68 Headshot: 51.4% K/D Ratio: 1.01 OpenKillRatio: 1.05 WinAfterFB: 75.1% 

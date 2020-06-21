@@ -1,0 +1,3 @@
+overpass Rating: 1.08 DPR: 0.69 KAST: 70.5% IMPACT: 1.09 ADR: 78.2 KPR: 0.69 Headshot: 55.0% K/D Ratio: 1.01 OpenKillRatio: 1.12 WinAfterFB: 76.5% 
+dust2 Rating: 0.87 DPR: 0.72 KAST: 68.4% IMPACT: 0.89 ADR: 69.9 KPR: 0.60 Headshot: 57.2% K/D Ratio: 0.84 OpenKillRatio: 0.91 WinAfterFB: 71.7% 
+nuke Rating: 0.91 DPR: 0.74 KAST: 66.4% IMPACT: 0.96 ADR: 75.8 KPR: 0.65 Headshot: 53.9% K/D Ratio: 0.88 OpenKillRatio: 1.01 WinAfterFB: 74.1% 
