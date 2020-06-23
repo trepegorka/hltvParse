@@ -1,17 +1,12 @@
 package HltvPath;
 
-import com.sun.tools.javac.Main;
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
-import proxy.UserParser;
 import starter.HltvBuilder;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Player {
@@ -127,7 +122,7 @@ public class Player {
         String path = "src/main/java/players/" + hltv.getNickName(playerStatLink) + ".txt";
         File file = new File(path);
         FileWriter writer = new FileWriter(file, true);
-        Set<String> fileMaps = new HashSet<>();
+        Set<String> fileMaps = new HashSet<String>();
         for (String map : maps) {
             Scanner scanner = new Scanner(file);
             if (file.length() != 0) {

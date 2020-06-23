@@ -1,11 +1,12 @@
 package HltvPath;
 
-import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,15 +20,35 @@ public class Hltv {
     }
 
 
+
+    public static void requestTelegram(ArrayList<String> list,String chat_id) throws IOException, InterruptedException {
+
+        String api = "1278410888:AAHaO2JkgP4NjGrVJSSS91t4fNJt0aCc2js";
+
+        String bank="%F0%9F%92%B0";
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < list.size(); i++) {
+            stringBuilder.append("%0A"+bank+list.get(i)+bank);
+        }
+
+        URL url1 = new URL("https://api.telegram.org/bot"+api+"/sendMessage?chat_id="+chat_id+"&text= "+stringBuilder.toString());
+        HttpURLConnection con1 = (HttpURLConnection) url1.openConnection();
+
+        con1.setRequestMethod("GET");
+        con1.connect();
+        con1.getContent();
+
+
+    }
     public List<String> liveMatches(Document documentHltvLink) throws IOException {
         Elements matches = documentHltvLink.select("body > div.bgPadding > div > div.colCon > div.rightCol > aside:nth-child(1) > div.top-border-hide");
-        List<Element> list = new ArrayList<>();
+        List<Element> list = new ArrayList<Element>();
         for (Element element : matches.select("a")) {
             if (element.getElementsByAttribute("filteraslive").equals(element.getElementsByAttributeValueContaining("filteraslive", "true"))) {
                 list.add(element);
             }
         }
-        List<String> links = new ArrayList<>();
+        List<String> links = new ArrayList<String>();
         for (Element e : list) {
             links.add("https://www.hltv.org" + e.attr("href"));
         }
@@ -36,11 +57,11 @@ public class Hltv {
 
     public List<String> resultMatches(Document documentHltvLink) throws IOException {
         Elements matches = documentHltvLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.results > div.results-holder > div.results-all");
-        List<Element> list = new ArrayList<>();
+        List<Element> list = new ArrayList<Element>();
         for (Element element : matches.select("a")) {
                 list.add(element);
         }
-        List<String> links = new ArrayList<>();
+        List<String> links = new ArrayList<String>();
         for (Element e : list) {
             links.add("https://www.hltv.org" + e.attr("href"));
         }
@@ -57,7 +78,7 @@ public class Hltv {
             String pick = "";
             pick = builder.toString().substring(builder.toString().lastIndexOf("1"));
             StringBuilder mainPick = new StringBuilder();
-            ArrayList<String> list = new ArrayList<>();
+            ArrayList<String> list = new ArrayList<String>();
             for (int i = 1; i < 7; i++) {
                 try {
                     list.add(mainPick.append(pick, pick.indexOf(i + "."), pick.indexOf((i + 1) + ".")).toString());
@@ -65,7 +86,9 @@ public class Hltv {
                 } catch (Exception ignored) {
                 }
             }
+
             list.removeIf(i -> i.contains("removed"));
+
             for (int i = 0; i < list.size(); i++) {
                 list.set(i, (list.get(i).substring(list.get(i).indexOf("picked") + 6).toLowerCase()).substring(1));
             }
@@ -81,7 +104,7 @@ public class Hltv {
             return list;
         } catch (Exception e){
             Elements matches = documentMatchLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small > div:nth-child(3) > div");
-            ArrayList<String> list = new ArrayList<>();
+            ArrayList<String> list = new ArrayList<String>();
             list.add(matches.select("div").text());
             return list;
         }
@@ -99,13 +122,13 @@ public class Hltv {
 
     public ArrayList<String> PlayersLinks(Document documentTeamLink) throws IOException {
         Elements matches = documentTeamLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.teamProfile > div.bodyshot-team-bg > div.bodyshot-team.g-grid");
-        List<Element> list = new ArrayList<>();
+        List<Element> list = new ArrayList<Element>();
         for (Element element : matches.select("a")) {
             if (element.getElementsByAttribute("filteraslive").equals(element.getElementsByAttributeValueContaining("filteraslive", "true"))) {
                 list.add(element);
             }
         }
-        ArrayList<String> links = new ArrayList<>();
+        ArrayList<String> links = new ArrayList<String>();
         for (Element e : list) {
             links.add("https://www.hltv.org" + e.attr("href"));
         }
@@ -113,7 +136,7 @@ public class Hltv {
     }
 
     public ArrayList<String> playerNames(ArrayList<String> playerLinks){
-        ArrayList<String> names = new ArrayList<>();
+        ArrayList<String> names = new ArrayList<String>();
         String name;
         for(String i : playerLinks){
             name = i.substring(i.lastIndexOf("/")+1);
@@ -123,7 +146,7 @@ public class Hltv {
     }
 
     public ArrayList<String> getPlayersNickNames(ArrayList<String> listOfLinksOfPlayers) {
-        ArrayList<String> names = new ArrayList<>();
+        ArrayList<String> names = new ArrayList<String>();
         for (String link : listOfLinksOfPlayers) {
             names.add(link.substring(28).substring(link.substring(28).lastIndexOf("/")+1));
         }

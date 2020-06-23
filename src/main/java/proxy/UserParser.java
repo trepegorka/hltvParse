@@ -5,18 +5,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class UserParser{
-    public static void main(String[] args) throws IOException {
-//        deleteDuplicatesMapsFromDirectory();
-    deleteDuplicatesMap("Winrate.txt");
-    }
 
     public static String userAgent = "";
 
@@ -29,15 +20,15 @@ public class UserParser{
         }
     }
 
-    private Document getProxyListNetHtml() throws IOException {
+    private static Document getProxyListNetHtml() throws IOException {
         return Jsoup.connect("https://free-proxy-list.net")
                 .userAgent(userAgent)
                 .referrer("http://www.google.com")
                 .get();
     }
 
-    public String getRandomProxy() throws IOException {
-        ArrayList<String> list = new ArrayList<>();
+    public static String getRandomProxy() throws IOException {
+        ArrayList<String> list = new ArrayList<String>();
         Document doc = getProxyListNetHtml();
         for (int i = 1; i < 70; i++) {
 
@@ -51,6 +42,21 @@ public class UserParser{
         int a = random.nextInt((list.size() - 1));
         return list.get(a);
     }
+
+    private static void getProxyByApi() throws IOException {
+
+        String url = "https://gimmeproxy.com/api/getProxy";
+        Document doc = Jsoup.connect(url)
+                .userAgent(userAgent)
+                .referrer("http://www.google.com")
+                //.header("Content-Type","text/*, application/xml, or application/*+xml. Mimetype=application/json; charset=utf-8,"+url)
+                .get();
+
+        String content = doc.text();
+        System.out.println(content);
+
+    }
+
 
 
     public static void setUserAgent(String userAgent) {
@@ -90,13 +96,12 @@ public class UserParser{
     public static void deleteDuplicatesMap(String filename) throws IOException {
 
         BufferedReader reader = new BufferedReader(new FileReader(filename));
-        ArrayList<String> lines = new ArrayList<>();
-        ArrayList<String> write = new ArrayList<>();
+        ArrayList<String> lines = new ArrayList<String>();
+        ArrayList<String> write = new ArrayList<String>();
         String line;
         while ((line = reader.readLine()) != null) {
             String map = line.substring(0,line.lastIndexOf(" Rating:"));
             if (lines.contains(map)){
-
             } else {
                 write.add(line);
                 lines.add(map);
@@ -110,20 +115,4 @@ public class UserParser{
         }
         writer.close();
     }
-
-    public static void deleteDuplicatesMapsFromDirectory() throws IOException {
-        try (Stream<Path> walk = Files.walk(Paths.get("src\\main\\java\\players"))) {
-
-            List<String> result = walk.filter(Files::isRegularFile)
-                    .map(Path::toString).collect(Collectors.toList());
-
-            for(String i : result){
-                deleteDuplicatesMap(i);
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
 }
