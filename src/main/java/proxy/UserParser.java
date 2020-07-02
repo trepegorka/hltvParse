@@ -5,7 +5,12 @@ import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class UserParser{
 
@@ -64,7 +69,7 @@ public class UserParser{
     }
 
     public static String getRandomAgent() throws FileNotFoundException {
-        File f = new File("src/main/java/proxy/UserAgents");
+        File f = new File("src\\main\\java\\proxy\\UserAgents");
         String result = null;
         Random rand = new Random();
         int n = 0;
@@ -114,5 +119,20 @@ public class UserParser{
             writer.newLine();
         }
         writer.close();
+    }
+
+    public static void deleteDuplicatesMapsFromDirectory() throws IOException {
+        try (Stream<Path> walk = Files.walk(Paths.get("src\\main\\java\\players"))) {
+
+            List<String> result = walk.filter(Files::isRegularFile)
+                    .map(Path::toString).collect(Collectors.toList());
+
+            for(String i : result){
+                deleteDuplicatesMap(i);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,1 +1,0 @@
-overpass Rating: 0.89 DPR: 0.78 KAST: 67.1% IMPACT: 1.05 ADR: 75.7 KPR: 0.67 Headshot: 48.0% K/D Ratio: 0.86 OpenKillRatio: 0.89 WinAfterFB: 67.6% 

@@ -1,8 +1,0 @@
-inferno Rating: 1.09 DPR: 0.65 KAST: 69.6% IMPACT: 1.19 ADR: 76.4 KPR: 0.74 Headshot: 36.8% K/D Ratio: 1.13 OpenKillRatio: 1.18 WinAfterFB: 74.1% 
-train Rating: 1.21 DPR: 0.61 KAST: 72.5% IMPACT: 1.22 ADR: 79.3 KPR: 0.80 Headshot: 29.5% K/D Ratio: 1.31 OpenKillRatio: 1.50 WinAfterFB: 78.3% 
-dust2 Rating: 1.10 DPR: 0.67 KAST: 68.6% IMPACT: 1.25 ADR: 79.2 KPR: 0.75 Headshot: 31.1% K/D Ratio: 1.13 OpenKillRatio: 1.40 WinAfterFB: 74.9% 
-vertigo Rating: 1.07 DPR: 0.69 KAST: 68.3% IMPACT: 1.13 ADR: 75.2 KPR: 0.74 Headshot: 41.7% K/D Ratio: 1.07 OpenKillRatio: 1.03 WinAfterFB: 76.8% 
-overpass Rating: 1.04 DPR: 0.68 KAST: 66.9% IMPACT: 1.11 ADR: 73.3 KPR: 0.70 Headshot: 34.2% K/D Ratio: 1.03 OpenKillRatio: 1.29 WinAfterFB: 75.3% 
-1. MIBR removed Nuke 2. Evil Geniuses removed Train 3. MIBR picked Dust2 4. Evil Geniuses picked Inferno 5. MIBR removed Mirage 6. Evil Geniuses removed Vertigo 7. Overpass was left over 1. MIBR removed Nuke 2. Evil Geniuses removed Train 3. MIBR picked Dust2 4. Evil Geniuses picked Inferno 5. MIBR removed Mirage 6. Evil Geniuses removed Vertigo 7. Overpass was left overRating: 1.13 DPR: 0.65 KAST: 70.7% IMPACT: 1.23 ADR: 79.2 KPR: 0.77 Headshot: 32.3% K/D Ratio: 1.19 OpenKillRatio: 1.37 WinAfterFB: 75.4% 
-l geniuses removed train Rating: 1.13 DPR: 0.65 KAST: 70.7% IMPACT: 1.23 ADR: 79.2 KPR: 0.77 Headshot: 32.3% K/D Ratio: 1.19 OpenKillRatio: 1.37 WinAfterFB: 75.4% 
-l geniuses removed vertigo Rating: 1.13 DPR: 0.65 KAST: 70.7% IMPACT: 1.23 ADR: 79.2 KPR: 0.77 Headshot: 32.3% K/D Ratio: 1.19 OpenKillRatio: 1.37 WinAfterFB: 75.4% 

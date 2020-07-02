@@ -1,5 +1,0 @@
-overpass Rating: 0.90 DPR: 0.69 KAST: 67.3% IMPACT: 0.81 ADR: 65.2 KPR: 0.58 Headshot: 48.0% K/D Ratio: 0.84 OpenKillRatio: 0.70 WinAfterFB: 63.5% 
-inferno Rating: 0.98 DPR: 0.72 KAST: 68.2% IMPACT: 0.99 ADR: 73.5 KPR: 0.64 Headshot: 54.4% K/D Ratio: 0.89 OpenKillRatio: 0.99 WinAfterFB: 62.4% 
-dust2 Rating: 1.02 DPR: 0.70 KAST: 65.9% IMPACT: 1.08 ADR: 74.5 KPR: 0.68 Headshot: 58.4% K/D Ratio: 0.97 OpenKillRatio: 0.86 WinAfterFB: 69.2% 
-nuke Rating: 0.99 DPR: 0.72 KAST: 64.8% IMPACT: 1.04 ADR: 73.7 KPR: 0.68 Headshot: 57.7% K/D Ratio: 0.94 OpenKillRatio: 0.76 WinAfterFB: 80.6% 
-train Rating: 0.99 DPR: 0.68 KAST: 67.5% IMPACT: 0.92 ADR: 72.4 KPR: 0.67 Headshot: 50.9% K/D Ratio: 0.99 OpenKillRatio: 0.70 WinAfterFB: 71.6% 

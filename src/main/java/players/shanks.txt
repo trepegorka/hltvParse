@@ -1,2 +1,0 @@
-overpass Rating: 1.04 DPR: 0.75 KAST: 70.6% IMPACT: 1.08 ADR: 77.6 KPR: 0.70 Headshot: 39.4% K/D Ratio: 0.94 OpenKillRatio: 1.02 WinAfterFB: 59.1% 
-inferno Rating: 1.08 DPR: 0.73 KAST: 69.1% IMPACT: 1.21 ADR: 78.6 KPR: 0.73 Headshot: 41.3% K/D Ratio: 0.99 OpenKillRatio: 0.88 WinAfterFB: 73.6% 

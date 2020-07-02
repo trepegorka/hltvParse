@@ -1,7 +1,7 @@
-inferno Rating: 1.12 DPR: 0.61 KAST: 73.1% IMPACT: 1.11 ADR: 69.7 KPR: 0.70 Headshot: 26.8% K/D Ratio: 1.15 OpenKillRatio: 1.32 WinAfterFB: 74.2% 
-train Rating: 1.22 DPR: 0.62 KAST: 73.0% IMPACT: 1.28 ADR: 79.1 KPR: 0.81 Headshot: 25.1% K/D Ratio: 1.29 OpenKillRatio: 1.63 WinAfterFB: 78.5% 
-dust2 Rating: 1.08 DPR: 0.62 KAST: 70.1% IMPACT: 1.13 ADR: 71.2 KPR: 0.67 Headshot: 31.0% K/D Ratio: 1.08 OpenKillRatio: 1.28 WinAfterFB: 76.3% 
-1. MIBR removed Nuke 2. Evil Geniuses removed Train 3. MIBR picked Dust2 4. Evil Geniuses picked Inferno 5. MIBR removed Mirage 6. Evil Geniuses removed Vertigo 7. Overpass was left over 1. MIBR removed Nuke 2. Evil Geniuses removed Train 3. MIBR picked Dust2 4. Evil Geniuses picked Inferno 5. MIBR removed Mirage 6. Evil Geniuses removed Vertigo 7. Overpass was left overRating: 1.16 DPR: 0.62 KAST: 72.4% IMPACT: 1.21 ADR: 75.8 KPR: 0.75 Headshot: 27.5% K/D Ratio: 1.21 OpenKillRatio: 1.47 WinAfterFB: 76.1% 
-l geniuses removed train Rating: 1.16 DPR: 0.62 KAST: 72.4% IMPACT: 1.21 ADR: 75.8 KPR: 0.75 Headshot: 27.5% K/D Ratio: 1.21 OpenKillRatio: 1.47 WinAfterFB: 76.1% 
-l geniuses removed vertigo Rating: 1.16 DPR: 0.62 KAST: 72.4% IMPACT: 1.21 ADR: 75.8 KPR: 0.75 Headshot: 27.5% K/D Ratio: 1.21 OpenKillRatio: 1.47 WinAfterFB: 76.1% 
-overpass Rating: 1.25 DPR: 0.60 KAST: 74.7% IMPACT: 1.33 ADR: 79.9 KPR: 0.79 Headshot: 27.3% K/D Ratio: 1.31 OpenKillRatio: 1.73 WinAfterFB: 77.5% 
+dust2 Rating: 1.09 DPR: 0.62 KAST: 70.1% IMPACT: 1.13 ADR: 71.6 KPR: 0.67 Headshot: 31.2% K/D Ratio: 1.08
+inferno Rating: 1.12 DPR: 0.61 KAST: 73.2% IMPACT: 1.11 ADR: 69.8 KPR: 0.70 Headshot: 26.5% K/D Ratio: 1.16
+train Rating: 1.22 DPR: 0.62 KAST: 72.9% IMPACT: 1.28 ADR: 79.2 KPR: 0.81 Headshot: 25.2% K/D Ratio: 1.29
+vertigo Rating: 1.01 DPR: 0.67 KAST: 67.8% IMPACT: 1.04 ADR: 69.5 KPR: 0.65 Headshot: 29.3% K/D Ratio: 0.98
+mirage Rating: 1.17 DPR: 0.63 KAST: 71.4% IMPACT: 1.23 ADR: 77.6 KPR: 0.78 Headshot: 26.9% K/D Ratio: 1.24
+nuke Rating: 1.17 DPR: 0.64 KAST: 71.6% IMPACT: 1.23 ADR: 78.3 KPR: 0.76 Headshot: 30.7% K/D Ratio: 1.19
+overpass Rating: 1.25 DPR: 0.60 KAST: 74.7% IMPACT: 1.33 ADR: 79.9 KPR: 0.79 Headshot: 27.3% K/D Ratio: 1.31

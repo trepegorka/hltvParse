@@ -1,1 +1,0 @@
-inferno Rating: 0.97 DPR: 0.69 KAST: 72.2% IMPACT: 0.86 ADR: 67.5 KPR: 0.61 Headshot: 52.9% K/D Ratio: 0.88 OpenKillRatio: 0.69 WinAfterFB: 72.2% 

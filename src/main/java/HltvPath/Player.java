@@ -7,134 +7,44 @@ import starter.HltvBuilder;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Player {
 
     private final Hltv hltv = new Hltv();
 
-    private String playerStatLink = "";
-
-    private String RATING;
-    private String DPR;
-    private String KAST;
-    private String IMPACT;
-    private String ADR;
-    private String KPR;
-    private String HeadshotPercent;
-    private String KillDeathRatio;
-
-    // с 3 го линка
-    private String TeamWinPercentAfterFirstKill;
-    private String OpeningKillRatio;
-
-
+    private final String playerStatLink;
 
     public Player(String playerStatLink) throws IOException {
         this.playerStatLink = playerStatLink;
-    }
-
-    public String getPlayerStatLink() {
-        return playerStatLink;
-    }
-
-    public String getRATING() {
-        return RATING;
-    }
-
-    public void setRATING(String RATING) {
-        this.RATING = RATING;
-    }
-
-    public String getDPR() {
-        return DPR;
-    }
-
-    public void setDPR(String DPR) {
-        this.DPR = DPR;
-    }
-
-    public String getKAST() {
-        return KAST;
-    }
-
-    public void setKAST(String KAST) {
-        this.KAST = KAST;
-    }
-
-    public String getIMPACT() {
-        return IMPACT;
-    }
-
-    public void setIMPACT(String IMPACT) {
-        this.IMPACT = IMPACT;
-    }
-
-    public String getADR() {
-        return ADR;
-    }
-
-    public void setADR(String ADR) {
-        this.ADR = ADR;
-    }
-
-    public String getKPR() {
-        return KPR;
-    }
-
-    public void setKPR(String KPR) {
-        this.KPR = KPR;
-    }
-
-    public String getHeadshotPercent() {
-        return HeadshotPercent;
-    }
-
-    public void setHeadshotPercent(String headshotPercent) {
-        HeadshotPercent = headshotPercent;
-    }
-
-    public String getKillDeathRatio() {
-        return KillDeathRatio;
-    }
-
-    public void setKillDeathRatio(String killDeathRatio) {
-        KillDeathRatio = killDeathRatio;
-    }
-
-    public String getTeamWinPercentAfterFirstKill() {
-        return TeamWinPercentAfterFirstKill;
-    }
-
-    public void setTeamWinPercentAfterFirstKill(String teamWinPercentAfterFirstKill) {
-        TeamWinPercentAfterFirstKill = teamWinPercentAfterFirstKill;
-    }
-
-    public String getOpeningKillRatio() {
-        return OpeningKillRatio;
-    }
-
-    public void setOpeningKillRatio(String openingKillRatio) {
-        OpeningKillRatio = openingKillRatio;
     }
 
     public void loadPlayerMapsStatsToFile(ArrayList<String> maps) throws IOException, InterruptedException {
         String path = "src/main/java/players/" + hltv.getNickName(playerStatLink) + ".txt";
         File file = new File(path);
         FileWriter writer = new FileWriter(file, true);
-        Set<String> fileMaps = new HashSet<String>();
+
+        String m3path = "src/main/java/players3month/" + hltv.getNickName(playerStatLink) + ".txt";
+        File file3m = new File(m3path);
+        FileWriter writer3m = new FileWriter(file3m, true);
+
+        Set<String> fileMaps = new HashSet<>();
         for (String map : maps) {
             Scanner scanner = new Scanner(file);
-            if (file.length() != 0) {
+            if (file.length() != 0 && file3m.length() != 0) {
                 while (scanner.hasNextLine()) {
                     String line = scanner.nextLine();
                     fileMaps.add(line.substring(0, line.lastIndexOf("Rating:")));
                 }
                 if (!fileMaps.contains(map)) {
                     appender(writer, map);
+                    appender3m(writer3m, map);
                 }
             } else {
                 appender(writer, map);
+                appender3m(writer3m, map);
             }
         }
     }
@@ -143,6 +53,23 @@ public class Player {
         Thread.sleep(1000);
         Document documentPlayerStatLink = HltvBuilder.getHtml(playerStatLink + "?maps=de_" + i);
 
+        flusher(writer, i, documentPlayerStatLink);
+    }
+
+    private void appender3m(FileWriter writer, String i) throws IOException, InterruptedException {
+        Thread.sleep(1000);
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date today = new Date();
+        Calendar cal = Calendar.getInstance();
+        cal.add(Calendar.MONTH, -3);
+        Date m3ago = cal.getTime();
+
+        Document documentPlayerStatLink = HltvBuilder.getHtml(playerStatLink + "?startDate=" + dateFormat.format(m3ago) + "&endDate=" + dateFormat.format(today) + "&maps=de_" + i);
+
+        flusher(writer, i, documentPlayerStatLink);
+    }
+
+    private void flusher(FileWriter writer, String i, Document documentPlayerStatLink) throws IOException {
         Elements elements = documentPlayerStatLink.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview");
         writer.append(i).append("Rating: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(1) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
                 .append(" DPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(2) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
@@ -151,15 +78,8 @@ public class Player {
                 .append(" ADR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(2) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
                 .append(" KPR: ").append(elements.select("> div.playerSummaryStatBox > div.summaryBreakdownContainer > div:nth-child(3) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text())
                 .append(" Headshot: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(2) > span:nth-child(2)").text())
-                .append(" K/D Ratio: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(4) > span:nth-child(2)").text());
-
-
-        Elements individualElement = HltvBuilder.getHtml(("https://www.hltv.org/stats/players/individual/" + playerStatLink.substring(playerStatLink.lastIndexOf("players/") + 8)) + "?maps=de_" + i).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-individual > div.statistics > div > div:nth-child(1) > div:nth-child(5)");
-        writer.append(" OpenKillRatio: ").append(individualElement.select("div:nth-child(5) > div:nth-child(3) > span:nth-child(2)").text())
-                .append(" WinAfterFB: ").append(individualElement.select("div:nth-child(5) > div:nth-child(5) > span:nth-child(2)").text()).append(" \n");
-
+                .append(" K/D Ratio: ").append(elements.select("> div.statistics > div > div:nth-child(1) > div:nth-child(4) > span:nth-child(2)").text()).append("\n");
         writer.flush();
     }
-
 }
 

@@ -1,3 +1,0 @@
-train Rating: 0.91 DPR: 0.77 KAST: 65.4% IMPACT: 0.92 ADR: 71.8 KPR: 0.64 Headshot: 57.1% K/D Ratio: 0.83 OpenKillRatio: 0.68 WinAfterFB: 51.2% 
-inferno Rating: 0.98 DPR: 0.63 KAST: 72.9% IMPACT: 0.79 ADR: 63.9 KPR: 0.62 Headshot: 57.3% K/D Ratio: 0.98 OpenKillRatio: 0.75 WinAfterFB: 60.0% 
-overpass Rating: 0.97 DPR: 0.71 KAST: 69.8% IMPACT: 0.90 ADR: 71.9 KPR: 0.62 Headshot: 56.0% K/D Ratio: 0.87 OpenKillRatio: 0.60 WinAfterFB: 68.4% 

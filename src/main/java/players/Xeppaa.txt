@@ -1,2 +1,7 @@
-train Rating: 1.13 DPR: 0.67 KAST: 70.5% IMPACT: 1.15 ADR: 81.6 KPR: 0.76 Headshot: 55.9% K/D Ratio: 1.12 OpenKillRatio: 1.08 WinAfterFB: 76.9% 
-nuke Rating: 1.10 DPR: 0.66 KAST: 74.6% IMPACT: 0.99 ADR: 77.0 KPR: 0.73 Headshot: 55.0% K/D Ratio: 1.10 OpenKillRatio: 0.81 WinAfterFB: 75.9% 
+dust2 Rating: 1.05 DPR: 0.73 KAST: 71.0% IMPACT: 0.98 ADR: 79.1 KPR: 0.71 Headshot: 57.4% K/D Ratio: 0.97
+inferno Rating: 1.15 DPR: 0.66 KAST: 75.0% IMPACT: 1.13 ADR: 79.5 KPR: 0.75 Headshot: 53.5% K/D Ratio: 1.14
+train Rating: 1.16 DPR: 0.66 KAST: 71.5% IMPACT: 1.17 ADR: 83.5 KPR: 0.78 Headshot: 54.4% K/D Ratio: 1.18
+vertigo Rating: 1.13 DPR: 0.78 KAST: 73.4% IMPACT: 1.15 ADR: 86.8 KPR: 0.76 Headshot: 53.0% K/D Ratio: 0.98
+mirage Rating: 1.16 DPR: 0.71 KAST: 70.5% IMPACT: 1.25 ADR: 85.2 KPR: 0.78 Headshot: 55.2% K/D Ratio: 1.11
+nuke Rating: 1.11 DPR: 0.66 KAST: 74.7% IMPACT: 0.99 ADR: 77.2 KPR: 0.73 Headshot: 55.8% K/D Ratio: 1.11
+overpass Rating: 1.09 DPR: 0.68 KAST: 73.1% IMPACT: 1.05 ADR: 76.9 KPR: 0.73 Headshot: 53.5% K/D Ratio: 1.07
