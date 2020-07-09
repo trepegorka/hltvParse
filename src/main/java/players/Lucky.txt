@@ -1,3 +1,4 @@
 mirage Rating: 1.15 DPR: 0.66 KAST: 69.1% IMPACT: 1.19 ADR: 80.6 KPR: 0.75 Headshot: 42.8% K/D Ratio: 1.14
 nuke Rating: 1.16 DPR: 0.65 KAST: 71.1% IMPACT: 1.19 ADR: 78.0 KPR: 0.77 Headshot: 44.0% K/D Ratio: 1.18
 inferno Rating: 1.03 DPR: 0.69 KAST: 70.1% IMPACT: 1.04 ADR: 71.8 KPR: 0.67 Headshot: 52.3% K/D Ratio: 0.97
+overpass Rating: 1.03 DPR: 0.63 KAST: 68.6% IMPACT: 1.02 ADR: 68.0 KPR: 0.66 Headshot: 42.8% K/D Ratio: 1.05

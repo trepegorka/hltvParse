@@ -1,3 +1,5 @@
 mirage Rating: 1.33 DPR: 0.64 KAST: 74.7% IMPACT: 1.46 ADR: 88.6 KPR: 0.87 Headshot: 41.2% K/D Ratio: 1.35
 nuke Rating: 1.11 DPR: 0.75 KAST: 70.1% IMPACT: 1.20 ADR: 86.0 KPR: 0.78 Headshot: 37.7% K/D Ratio: 1.04
 inferno Rating: 1.14 DPR: 0.64 KAST: 71.1% IMPACT: 1.21 ADR: 74.5 KPR: 0.73 Headshot: 34.6% K/D Ratio: 1.14
+vertigo Rating: 0.93 DPR: 0.67 KAST: 63.6% IMPACT: 1.08 ADR: 66.4 KPR: 0.58 Headshot: 50.0% K/D Ratio: 0.86
+dust2 Rating: 1.01 DPR: 0.67 KAST: 69.5% IMPACT: 0.98 ADR: 71.5 KPR: 0.62 Headshot: 39.2% K/D Ratio: 0.92

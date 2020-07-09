@@ -13,20 +13,50 @@ import java.util.*;
 
 public class Player {
 
-    private final Hltv hltv = new Hltv();
+    private final String statLink;
+    private final String link;
 
-    private final String playerStatLink;
-
-    public Player(String playerStatLink) throws IOException {
-        this.playerStatLink = playerStatLink;
+    public Player(String playerLink) {
+        this.link = playerLink;
+        this.statLink = getStatLink();
     }
 
-    public void loadPlayerMapsStatsToFile(ArrayList<String> maps) throws IOException, InterruptedException {
-        String path = "src/main/java/players/" + hltv.getNickName(playerStatLink) + ".txt";
+    public String getStatLink() {
+        String https_link = "";
+        String hltv_link = "";
+        String id = "";
+        String name = "";
+        int a = 0;
+        for (String parametr : link.split("/")) {
+            a++;
+            if (a == 1) {
+                https_link = parametr;
+            } else if (a == 3) {
+                hltv_link = parametr;
+            } else if (a == 5) {
+                id = parametr;
+            } else if (a == 6) {
+                name = parametr;
+            }
+        }
+        return https_link + "//" + hltv_link + "/" + "stats/" + "players/" + id + "/" + name;
+    }
+
+    private String getName() {
+        return link.substring(link.lastIndexOf("/"));
+    }
+
+//    public static String getSimpleNickName(String playerLink) {
+//        String simpleNickname = playerLink.substring(playerLink.lastIndexOf("/"));
+//        return simpleNickname.substring(simpleNickname.lastIndexOf("/") + 1);
+//    }
+
+    public void loadMapsStatsToFile(ArrayList<String> maps) throws Exception {
+        String path = "src/main/java/players/" + getName() + ".txt";
         File file = new File(path);
         FileWriter writer = new FileWriter(file, true);
 
-        String m3path = "src/main/java/players3month/" + hltv.getNickName(playerStatLink) + ".txt";
+        String m3path = "src/main/java/players3month/" + getName() + ".txt";
         File file3m = new File(m3path);
         FileWriter writer3m = new FileWriter(file3m, true);
 
@@ -49,14 +79,15 @@ public class Player {
         }
     }
 
-    private void appender(FileWriter writer, String i) throws IOException, InterruptedException {
+    private void appender(FileWriter writer, String i) throws Exception {
         Thread.sleep(1000);
-        Document documentPlayerStatLink = HltvBuilder.getHtml(playerStatLink + "?maps=de_" + i);
+        Document documentPlayerStatLink = HltvBuilder.getHtml(statLink + "?maps=de_" + i);
 
+        assert documentPlayerStatLink != null;
         flusher(writer, i, documentPlayerStatLink);
     }
 
-    private void appender3m(FileWriter writer, String i) throws IOException, InterruptedException {
+    private void appender3m(FileWriter writer, String i) throws Exception {
         Thread.sleep(1000);
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date today = new Date();
@@ -64,8 +95,9 @@ public class Player {
         cal.add(Calendar.MONTH, -3);
         Date m3ago = cal.getTime();
 
-        Document documentPlayerStatLink = HltvBuilder.getHtml(playerStatLink + "?startDate=" + dateFormat.format(m3ago) + "&endDate=" + dateFormat.format(today) + "&maps=de_" + i);
+        Document documentPlayerStatLink = HltvBuilder.getHtml(statLink + "?startDate=" + dateFormat.format(m3ago) + "&endDate=" + dateFormat.format(today) + "&maps=de_" + i);
 
+        assert documentPlayerStatLink != null;
         flusher(writer, i, documentPlayerStatLink);
     }
 

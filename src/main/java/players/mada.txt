@@ -1,0 +1,2 @@
+dust2 Rating: 1.02 DPR: 0.80 KAST: 66.2% IMPACT: 1.22 ADR: 76.6 KPR: 0.72 Headshot: 60.4% K/D Ratio: 0.90
+inferno Rating: 0.92 DPR: 0.75 KAST: 67.9% IMPACT: 1.06 ADR: 61.9 KPR: 0.57 Headshot: 64.9% K/D Ratio: 0.77
