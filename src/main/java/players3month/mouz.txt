@@ -1,3 +1,0 @@
-nuke Rating: 1.08 DPR: 0.64 KAST: 71.8% IMPACT: 1.05 ADR: 72.3 KPR: 0.68 Headshot: 59.8% K/D Ratio: 1.07
-vertigo Rating: 0.97 DPR: 0.64 KAST: 67.1% IMPACT: 0.88 ADR: 65.7 KPR: 0.66 Headshot: 50.4% K/D Ratio: 1.03
-mirage Rating: 0.93 DPR: 0.65 KAST: 69.8% IMPACT: 0.79 ADR: 64.0 KPR: 0.57 Headshot: 54.3% K/D Ratio: 0.88

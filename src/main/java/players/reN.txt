@@ -1,3 +1,0 @@
-overpass Rating: 0.96 DPR: 0.64 KAST: 70.4% IMPACT: 0.84 ADR: 63.6 KPR: 0.61 Headshot: 47.3% K/D Ratio: 0.94
-train Rating: 0.96 DPR: 0.69 KAST: 65.7% IMPACT: 0.87 ADR: 73.3 KPR: 0.67 Headshot: 49.7% K/D Ratio: 0.97
-nuke Rating: 1.00 DPR: 0.68 KAST: 70.5% IMPACT: 0.89 ADR: 72.8 KPR: 0.66 Headshot: 51.5% K/D Ratio: 0.96

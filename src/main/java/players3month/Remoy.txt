@@ -1,3 +1,0 @@
-vertigo Rating: 0.88 DPR: 0.68 KAST: 63.1% IMPACT: 0.88 ADR: 64.1 KPR: 0.59 Headshot: 60.6% K/D Ratio: 0.87
-dust2 Rating: 0.79 DPR: 0.68 KAST: 64.6% IMPACT: 0.65 ADR: 60.9 KPR: 0.50 Headshot: 60.4% K/D Ratio: 0.74
-mirage Rating: 0.85 DPR: 0.73 KAST: 62.5% IMPACT: 0.91 ADR: 61.0 KPR: 0.56 Headshot: 55.6% K/D Ratio: 0.77

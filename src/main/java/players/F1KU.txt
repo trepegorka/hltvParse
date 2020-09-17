@@ -1,8 +1,0 @@
-dust2 Rating: 1.09 DPR: 0.63 KAST: 70.5% IMPACT: 1.08 ADR: 72.5 KPR: 0.70 Headshot: 56.3% K/D Ratio: 1.12
-inferno Rating: 1.05 DPR: 0.64 KAST: 69.9% IMPACT: 1.01 ADR: 75.4 KPR: 0.66 Headshot: 56.2% K/D Ratio: 1.02
-train Rating: 1.11 DPR: 0.66 KAST: 69.7% IMPACT: 1.15 ADR: 78.1 KPR: 0.74 Headshot: 54.0% K/D Ratio: 1.11
-vertigo Rating: 1.09 DPR: 0.66 KAST: 69.7% IMPACT: 1.10 ADR: 77.3 KPR: 0.72 Headshot: 49.3% K/D Ratio: 1.09
-mirage Rating: 0.96 DPR: 0.71 KAST: 67.0% IMPACT: 0.95 ADR: 72.2 KPR: 0.64 Headshot: 55.2% K/D Ratio: 0.90
-nuke Rating: 1.07 DPR: 0.66 KAST: 69.5% IMPACT: 1.08 ADR: 74.5 KPR: 0.70 Headshot: 52.3% K/D Ratio: 1.06
-overpass Rating: 0.97 DPR: 0.68 KAST: 67.3% IMPACT: 0.90 ADR: 72.9 KPR: 0.64 Headshot: 59.7% K/D Ratio: 0.94
-Mirage AGO - Syman - Mirage Mirage Mirage AGO - Syman - AGO -  AGO - AGO -   Syman - Syman - Dust2 AGO - Syman - Dust2 Dust2 Dust2 AGO - Syman - AGO -  AGO - AGO -   Syman - Syman - Inferno AGO - Syman - Inferno Inferno Inferno AGO - Syman - AGO -  AGO - AGO -   Syman - Syman -Rating: 1.06 DPR: 0.67 KAST: 69.1% IMPACT: 1.06 ADR: 74.8 KPR: 0.69 Headshot: 54.1% K/D Ratio: 1.04
