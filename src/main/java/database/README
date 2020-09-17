@@ -1,0 +1,5 @@
+Right team = 1   &&   Left team = 2
+
+If we have a stat bigger than 1 like 1.04, 1.2, it means that the RIGHT team (1) is better in this characteristic.
+This rule does NOT apply to *RANKING DIFFERENCE*, *WINNER*.
+If we have *RANKING DIFFERENCE* less than zero, it means that the RIGHT team (1) is better in this characteristic.
