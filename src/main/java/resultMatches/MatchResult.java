@@ -23,6 +23,7 @@ public class MatchResult implements IResults, IMatch {
     public MatchResult(String matchLink) throws Exception {
         matchDoc = General.getHtml(matchLink);
     }
+    public MatchResult(){};
 
     public static String dateOfMatch() {
         String date = matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div.timeAndEvent > div.date").text();
@@ -55,7 +56,7 @@ public class MatchResult implements IResults, IMatch {
         FileWriter writer = new FileWriter("src/main/java/resultMatches/resultLinks.txt", true);
         ArrayList<String> linksList = new ArrayList<>();
         int offset = 100;
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 220; i++) {
             Document hltvResults = General.getHtml("https://www.hltv.org/results?offset=" + offset);
             Elements links = hltvResults.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.results > div.results-holder > div.results-all").select("a");
             for (Element link : links) {
@@ -102,13 +103,16 @@ public class MatchResult implements IResults, IMatch {
         return list;
     }
 
-    //if winner = 1 -> right won
+    //if winner = 1 -> right won. left = 0
     public int winner() {
         if (matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(1) > div > div").hasClass("won")) {
-            return 1;
-        } else return 2;
+            return 0;
+        } else return 1;
     }
 
+    public static void main(String[] args) throws Exception {
+        new MatchResult().writeResultLinks();
+    }
 }
 
 

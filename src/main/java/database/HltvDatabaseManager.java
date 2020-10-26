@@ -6,21 +6,19 @@ import org.apache.commons.math3.util.Precision;
 import resultMatches.MatchResult;
 
 import java.sql.*;
-import java.text.DecimalFormat;
 
 public class HltvDatabaseManager implements IHltvDatabase {
-    private static final String URL = "jdbc:mysql://localhost:3306/hltvbase?serverTimezone=UTC";
+    private static final String URL = "jdbc:mysql://localhost:3306/myhltv?serverTimezone=UTC";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "2714OrgD2.";
 
-    private static final String INSERT_NEW = "INSERT INTO hltv (KDRatioAttitude,headshotAttitude,damagePerRoundAttitude,assistsPerRoundAttitude,impactAttitude,kastAttitude,openingKillRatioAttitude,rating3mAttitude,ratingVStop5Attitude,ratingVStop10Attitude,ratingVStop20Attitude,ratingVStop30Attitude,ratingVStop50Attitude,totalKillsAttitude,mapsPlayedAttitude,rankingDifference,winner) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    private static final String INSERT_NEW = "INSERT INTO hltv2 (KDRatioAttitude,headshotAttitude,damagePerRoundAttitude,assistsPerRoundAttitude,impactAttitude,kastAttitude,openingKillRatioAttitude,rating3mAttitude,ratingVStop5Attitude,ratingVStop10Attitude,ratingVStop20Attitude,ratingVStop30Attitude,ratingVStop50Attitude,totalKillsAttitude,mapsPlayedAttitude,rankingDifference,winner) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     private final AdvantageGenerator advantageGenerator;
     private final MatchResult matchResult;
 
     private Connection connection;
 
-    private final DecimalFormat df = new DecimalFormat("###.###");
 
     public HltvDatabaseManager(AdvantageGenerator advantageGenerator, MatchResult matchResult) {
         this.matchResult = matchResult;
@@ -57,5 +55,50 @@ public class HltvDatabaseManager implements IHltvDatabase {
         statement.close();
         connection.close();
     }
+
+    /**SET ALLL RANKING DIFF. BEFORE *(-1)  / winner -1 **/
+    public static void main(String[] args) throws SQLException {
+        String URL = "jdbc:mysql://localhost:3306/myhltv?serverTimezone=UTC";
+        String USERNAME = "root";
+        String PASSWORD = "2714OrgD2.";
+
+        String UPDATE_NEW = "UPDATE hltv SET winner = ? WHERE id = ?";
+        String SELECT = "SELECT winner FROM hltv WHERE id = ?";
+
+        try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
+            PreparedStatement preparedStatement;
+            int before = 0;
+            ResultSet resultSet;
+
+            for (int id = 1; id < 2119; id++) {
+                preparedStatement = connection.prepareStatement(SELECT);
+                preparedStatement.setInt(1, id);
+                resultSet = preparedStatement.executeQuery();
+
+                while (resultSet.next()) {
+                    before = resultSet.getInt("winner");
+                }
+
+                preparedStatement = connection.prepareStatement(UPDATE_NEW);
+                preparedStatement.setInt(1, before -1);
+                preparedStatement.setInt(2, id);
+                preparedStatement.executeUpdate();
+
+                preparedStatement = connection.prepareStatement(SELECT);
+                preparedStatement.setInt(1, id);
+                resultSet = preparedStatement.executeQuery();
+                while (resultSet.next()) {
+                    if(before == resultSet.getInt("winner")){
+                        throw new Exception();
+                    } else System.out.println("Success №" + id);
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
+
 
 }

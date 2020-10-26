@@ -261,6 +261,6 @@ public class AdvantageGenerator implements IAdvantageGenerator {
 
     @Override
     public int rankingDifference() {
-        return firstTeam.getCurrentRanking() - secondTeam.getCurrentRanking();
+        return (firstTeam.getCurrentRanking() - secondTeam.getCurrentRanking())*(-1);
     }
 }

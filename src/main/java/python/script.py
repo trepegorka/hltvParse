@@ -1,13 +1,25 @@
-import csv
-
+import sys
 import pandas as pd
-from sklearn.naive_bayes import GaussianNB
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier  # Import Decision Tree Classifier
-from sklearn.model_selection import train_test_split, GridSearchCV  # Import train_test_split function
-from sklearn import metrics  # Import scikit-learn metrics module for accuracy calculation
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestClassifier
+from sklearn import svm
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
+from sklearn.ensemble import VotingClassifier
+
+# print(sys.argv[1])
+
+col_names = ['id', 'KDRatioAttitude', 'headshotAttitude', 'damagePerRoundAttitude', 'assistsPerRoundAttitude',
+             'impactAttitude',
+             'kastAttitude', 'openingKillRatioAttitude', 'rating3mAttitude', 'ratingVStop5Attitude',
+             'ratingVStop10Attitude',
+             'ratingVStop20Attitude', 'ratingVStop30Attitude', 'ratingVStop50Attitude', 'totalKillsAttitude',
+             'mapsPlayedAttitude',
+             'rankingDifference', 'winner']
 
 feature_cols = [
     'KDRatioAttitude',
@@ -110,134 +122,21 @@ for i in range(0, 16):
                                                                        feature_cols[e], feature_cols[f]]
                                                                 arrays.append(arr)
 
-
-def count_tree(array, depth):
-    col_names = ['id', 'KDRatioAttitude', 'headshotAttitude', 'damagePerRoundAttitude', 'assistsPerRoundAttitude',
-                 'impactAttitude',
-                 'kastAttitude', 'openingKillRatioAttitude', 'rating3mAttitude', 'ratingVStop5Attitude',
-                 'ratingVStop10Attitude',
-                 'ratingVStop20Attitude', 'ratingVStop30Attitude', 'ratingVStop50Attitude', 'totalKillsAttitude',
-                 'mapsPlayedAttitude',
-                 'rankingDifference', 'winner']
-    # read file
-    pima = pd.read_csv("hltvCSV.csv")
+def count_svc(array, random_st):
+    pima = pd.read_csv("hltv2CSV.csv")
     pima.columns = col_names
 
-    # столбцы для x это array
+    X = pima[array]
+    y = pima.winner
 
-    # внедрение
-    X = pima[array]  # Features
-    y = pima.winner  # Target variable
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=random_st)
 
-    # Split dataset into training set and test set
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=1)
+    svc = make_pipeline(StandardScaler(), svm.SVC())
 
-    # Create Decision Tree classifer object а также создание knn объекта модели
-    tree = DecisionTreeClassifier()
+    svc.fit(X_train, y_train)
 
-    # 72%
-    #tree = DecisionTreeClassifier(criterion="entropy", max_depth=depth)
+    pred = svc.predict(X_test)
 
-    # тренировка модели
-    tree = tree.fit(X_train, y_train)
+    return accuracy_score(y_test, pred)
 
-    # тесты
-    y_pred = tree.predict(X_test)
-
-    return "Accuracy tree:", metrics.accuracy_score(y_test, y_pred)
-
-
-def count_gnb(array):
-    col_names = ['id', 'KDRatioAttitude', 'headshotAttitude', 'damagePerRoundAttitude', 'assistsPerRoundAttitude',
-                 'impactAttitude',
-                 'kastAttitude', 'openingKillRatioAttitude', 'rating3mAttitude', 'ratingVStop5Attitude',
-                 'ratingVStop10Attitude',
-                 'ratingVStop20Attitude', 'ratingVStop30Attitude', 'ratingVStop50Attitude', 'totalKillsAttitude',
-                 'mapsPlayedAttitude',
-                 'rankingDifference', 'winner']
-    # read file
-    pima = pd.read_csv("hltvCSV.csv")
-    pima.columns = col_names
-
-    # столбцы для x это array
-
-    # внедрение
-    X = pima[array]  # Features
-    y = pima.winner  # Target variable
-
-    # Split dataset into training set and test set
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=1)
-
-    # Create Decision Tree classifer object а также создание knn объекта модели
-    gnb = GaussianNB()
-
-
-    #tree = DecisionTreeClassifier(criterion="entropy", max_depth=depth)
-
-    # тренировка модели
-    gnb = gnb.fit(X_train, y_train)
-
-    # тесты
-    y_pred = gnb.predict(X_test)
-
-    return "Accuracy tree:", metrics.accuracy_score(y_test, y_pred)
-
-def count_knn(array, neighbors):
-    col_names = ['id', 'KDRatioAttitude', 'headshotAttitude', 'damagePerRoundAttitude', 'assistsPerRoundAttitude',
-                 'impactAttitude',
-                 'kastAttitude', 'openingKillRatioAttitude', 'rating3mAttitude', 'ratingVStop5Attitude',
-                 'ratingVStop10Attitude',
-                 'ratingVStop20Attitude', 'ratingVStop30Attitude', 'ratingVStop50Attitude', 'totalKillsAttitude',
-                 'mapsPlayedAttitude',
-                 'rankingDifference', 'winner']
-    # read file
-    pima = pd.read_csv("hltvCSV.csv")
-    pima.columns = col_names
-
-    # столбцы для x это array
-
-    # внедрение
-    X = pima[array]  # Features
-    y = pima.winner  # Target variable
-
-    # Split dataset into training set and test set
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=2)
-
-    # Create Decision Tree classifer object а также создание knn объекта модели
-
-    # 68%
-    knn = KNeighborsClassifier(n_neighbors=neighbors)
-
-    # тренировка моделей
-    knn.fit(X_train, y_train)
-
-    # тесты
-    knn_pred = knn.predict(X_test)
-    return "Accuracy knn:", accuracy_score(y_test, knn_pred)
-
-
-def main():
-    # ['headshotAttitude', 'assistsPerRoundAttitude', 'impactAttitude', 'openingKillRatioAttitude', 'ratingVStop5Attitude', 'ratingVStop20Attitude', 'ratingVStop30Attitude', 'ratingVStop50Attitude', 'totalKillsAttitude', 'mapsPlayedAttitude', 'rankingDifference']
-    accuracy_array = [];
-    n_operation = 1;
-    # for n_depth in range(1, 16):
-    for mas in range(0, len(arrays)):
-        accuracy_array.append(count_gnb(arrays[mas]))
-        print('Operation №', n_operation)
-        n_operation = n_operation+1
-
-
-    # Initialize max with first element of array.
-    max = accuracy_array[0];
-    ibd=0
-    for ib in range(0, len(accuracy_array)):
-        if (accuracy_array[ib] > max):
-            max = accuracy_array[ib];
-            ibd = ib
-
-
-    print("Largest element present in given array: " + str(max));
-    print(ibd)
-
-
-main()
+print(count_svc(arrays[1], 2))

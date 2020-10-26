@@ -56,7 +56,7 @@ public class Team  implements ITeam {
         ArrayList<Player> playersList = new ArrayList<>();
         for (Element e : list) {
             String link = "https://www.hltv.org" + e.attr("href");
-            String statLink = "https://www.hltv.org/stats/players/" + link.substring(28) + get3mFormat();
+            String statLink = "https://www.hltv.org/stats/players/" + link.substring(28); //+ get3mFormat();
             Document playerDoc = General.getHtml(statLink);
             playersList.add(new Player(playerDoc));
         }
