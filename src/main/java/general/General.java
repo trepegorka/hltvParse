@@ -5,11 +5,11 @@ import org.jsoup.nodes.Document;
 import proxy.UserParser;
 
 public class General {
-    public static Document getHtml(String link) throws Exception {
+    synchronized public static Document getHtml(String link) throws Exception {
         try {
             System.out.println("New request... ");
             //sleep
-            Thread.sleep(2000);
+            Thread.sleep(1700);
             return Jsoup.connect(link)
                     .referrer("https://www.hltv.org/")
                     .userAgent(UserParser.userAgent)

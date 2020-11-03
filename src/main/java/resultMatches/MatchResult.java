@@ -72,7 +72,7 @@ public class MatchResult implements IResults, IMatch {
 
     //list Of Played Maps
     @Override
-    public final ArrayList<String> mapPick() throws Exception {
+    public ArrayList<String> mapPick() throws Exception {
         ArrayList<String> list = new ArrayList<>();
         Elements column = matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small");
         if (column.text().contains("Best of 3")) {
@@ -110,9 +110,9 @@ public class MatchResult implements IResults, IMatch {
         } else return 1;
     }
 
-    public static void main(String[] args) throws Exception {
-        new MatchResult().writeResultLinks();
-    }
+//    public static void main(String[] args) throws Exception {
+//        new MatchResult().writeResultLinks();
+//    }
 }
 
 

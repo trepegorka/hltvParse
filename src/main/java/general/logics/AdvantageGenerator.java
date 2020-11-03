@@ -25,9 +25,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double KD2 = 0.0;
         for (Player player : firstListOfPlayers) {
             KD1 = KD1 + player.getKDRatio();
+            if (player.getKDRatio() == 0.0) {
+                KD1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             KD2 = KD2 + player.getKDRatio();
+            if (player.getKDRatio() == 0.0) {
+                KD2 = 0.0;
+                break;
+            }
         }
         if (KD1 == 0.0 || KD2 == 0.0) {
             return 0.0;
@@ -42,9 +50,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double headRatio2 = 0.0;
         for (Player player : firstListOfPlayers) {
             headRatio1 = headRatio1 + player.getHeadshot();
+            if (player.getHeadshot() == 0.0) {
+                headRatio1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             headRatio2 = headRatio2 + player.getHeadshot();
+            if (player.getHeadshot() == 0.0) {
+                headRatio2 = 0.0;
+                break;
+            }
         }
         if (headRatio1 == 0.0 || headRatio2 == 0.0) {
             return 0.0;
@@ -58,9 +74,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double dm2 = 0.0;
         for (Player player : firstListOfPlayers) {
             dm1 = dm1 + player.getDamagePerRound();
+            if (player.getDamagePerRound() == 0.0) {
+                dm1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             dm2 = dm2 + player.getDamagePerRound();
+            if (player.getDamagePerRound() == 0.0) {
+                dm2 = 0.0;
+                break;
+            }
         }
         if (dm1 == 0.0 || dm2 == 0.0) {
             return 0.0;
@@ -74,9 +98,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double am2 = 0.0;
         for (Player player : firstListOfPlayers) {
             am1 = am1 + player.getAssistsPerRound();
+            if (player.getAssistsPerRound() == 0.0) {
+                am1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             am2 = am2 + player.getAssistsPerRound();
+            if (player.getAssistsPerRound() == 0.0) {
+                am2 = 0.0;
+                break;
+            }
         }
         if (am1 == 0.0 || am2 == 0.0) {
             return 0.0;
@@ -90,9 +122,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double im2 = 0.0;
         for (Player player : firstListOfPlayers) {
             im1 = im1 + player.getImpact();
+            if (player.getImpact() == 0.0) {
+                im1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             im2 = im2 + player.getImpact();
+            if (player.getImpact() == 0.0) {
+                im2 = 0.0;
+                break;
+            }
         }
         if (im1 == 0.0 || im2 == 0.0) {
             return 0.0;
@@ -106,9 +146,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double ka2 = 0.0;
         for (Player player : firstListOfPlayers) {
             ka1 = ka1 + player.getKast();
+            if (player.getKast() == 0.0) {
+                ka1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             ka2 = ka2 + player.getKast();
+            if (player.getKast() == 0.0) {
+                ka2 = 0.0;
+                break;
+            }
         }
         if (ka1 == 0.0 || ka2 == 0.0) {
             return 0.0;
@@ -122,9 +170,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double okr2 = 0.0;
         for (Player player : firstListOfPlayers) {
             okr1 = okr1 + player.getOpeningKillRatio();
+            if (player.getOpeningKillRatio() == 0.0) {
+                okr1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             okr2 = okr2 + player.getOpeningKillRatio();
+            if (player.getOpeningKillRatio() == 0.0) {
+                okr2 = 0.0;
+                break;
+            }
         }
         if (okr1 == 0.0 || okr2 == 0.0) {
             return 0.0;
@@ -138,9 +194,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double r3m2 = 0.0;
         for (Player player : firstListOfPlayers) {
             r3m1 = r3m1 + player.getRating3m();
+            if (player.getRating3m() == 0.0) {
+                r3m1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             r3m2 = r3m2 + player.getRating3m();
+            if (player.getRating3m() == 0.0) {
+                r3m2 = 0.0;
+                break;
+            }
         }
         if (r3m1 == 0.0 || r3m2 == 0.0) {
             return 0.0;
@@ -154,9 +218,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double rat5VS2 = 0.0;
         for (Player player : firstListOfPlayers) {
             rat5VS1 = rat5VS1 + player.getRatingVStop5();
+            if (player.getRatingVStop5() == 0.0) {
+                rat5VS1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             rat5VS2 = rat5VS2 + player.getRatingVStop5();
+            if (player.getRatingVStop5() == 0.0) {
+                rat5VS2 = 0.0;
+                break;
+            }
         }
         if (rat5VS1 == 0.0 || rat5VS2 == 0.0) {
             return 0.0;
@@ -169,9 +241,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double rat10VS2 = 0.0;
         for (Player player : firstListOfPlayers) {
             rat10VS1 = rat10VS1 + player.getRatingVStop10();
+            if (player.getRatingVStop10() == 0.0) {
+                rat10VS1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             rat10VS2 = rat10VS2 + player.getRatingVStop10();
+            if (player.getRatingVStop10() == 0.0) {
+                rat10VS2 = 0.0;
+                break;
+            }
         }
         if (rat10VS1 == 0.0 || rat10VS2 == 0.0) {
             return 0.0;
@@ -185,9 +265,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double rat20VS2 = 0.0;
         for (Player player : firstListOfPlayers) {
             rat20VS1 = rat20VS1 + player.getRatingVStop20();
+            if (player.getRatingVStop20() == 0.0) {
+                rat20VS1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             rat20VS2 = rat20VS2 + player.getRatingVStop20();
+            if (player.getRatingVStop20() == 0.0) {
+                rat20VS2 = 0.0;
+                break;
+            }
         }
         if (rat20VS1 == 0.0 || rat20VS2 == 0.0) {
             return 0.0;
@@ -201,9 +289,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double rat30VS2 = 0.0;
         for (Player player : firstListOfPlayers) {
             rat30VS1 = rat30VS1 + player.getRatingVStop30();
+            if (player.getRatingVStop30() == 0.0) {
+                rat30VS1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             rat30VS2 = rat30VS2 + player.getRatingVStop30();
+            if (player.getRatingVStop30() == 0.0) {
+                rat30VS2 = 0.0;
+                break;
+            }
         }
         if (rat30VS1 == 0.0 || rat30VS2 == 0.0) {
             return 0.0;
@@ -217,9 +313,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double rat50VS2 = 0.0;
         for (Player player : firstListOfPlayers) {
             rat50VS1 = rat50VS1 + player.getRatingVStop50();
+            if (player.getRatingVStop50() == 0.0) {
+                rat50VS1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             rat50VS2 = rat50VS2 + player.getRatingVStop50();
+            if (player.getRatingVStop50() == 0.0) {
+                rat50VS2 = 0.0;
+                break;
+            }
         }
         if (rat50VS1 == 0.0 || rat50VS2 == 0.0) {
             return 0.0;
@@ -233,9 +337,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double tk2 = 0.0;
         for (Player player : firstListOfPlayers) {
             tk1 = tk1 + player.getTotalKills();
+            if (player.getTotalKills() == 0.0) {
+                tk1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             tk2 = tk2 + player.getTotalKills();
+            if (player.getTotalKills() == 0.0) {
+                tk2 = 0.0;
+                break;
+            }
         }
         if (tk1 == 0.0 || tk2 == 0.0) {
             return 0.0;
@@ -249,9 +361,17 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         double mapsPlayed2 = 0.0;
         for (Player player : firstListOfPlayers) {
             mapsPlayed1 = mapsPlayed1 + player.getMapsPlayed();
+            if (player.getMapsPlayed() == 0.0) {
+                mapsPlayed1 = 0.0;
+                break;
+            }
         }
         for (Player player : secondListOfPlayers) {
             mapsPlayed2 = mapsPlayed2 + player.getMapsPlayed();
+            if (player.getMapsPlayed() == 0.0) {
+                mapsPlayed2 = 0.0;
+                break;
+            }
         }
         if (mapsPlayed1 == 0.0 || mapsPlayed2 == 0.0) {
             return 0.0;
@@ -261,6 +381,6 @@ public class AdvantageGenerator implements IAdvantageGenerator {
 
     @Override
     public int rankingDifference() {
-        return (firstTeam.getCurrentRanking() - secondTeam.getCurrentRanking())*(-1);
+        return (firstTeam.getCurrentRanking() - secondTeam.getCurrentRanking()) * (-1);
     }
 }

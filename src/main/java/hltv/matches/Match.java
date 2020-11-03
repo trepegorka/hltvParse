@@ -3,6 +3,8 @@ package hltv.matches;
 import general.General;
 import interfaces.IMatch;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 
@@ -25,7 +27,27 @@ public class Match implements IMatch {
      */
     @Override
     public ArrayList<String> mapPick() throws Exception {
-        return null;
+        ArrayList<String> list = new ArrayList<>();
+        Elements column = matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small");
+        if (column.text().contains("Best of 3")) {
+            /* bo3 */
+            for (Element mapholder : column.select("div.flexbox-column > div.mapholder")) {
+                    list.add(mapholder.child(0).text());
+            }
+        } else if (column.text().contains("Best of 1")) {
+            /* bo1 */
+            for (Element mapholder : column.select("div.flexbox-column > div.mapholder")) {
+                    list.add(mapholder.child(0).text());
+            }
+        } else if (column.text().contains("Best of 5")) {
+            /* bo5 */
+            for (Element mapholder : column.select("div.flexbox-column > div.mapholder")) {
+                    list.add(mapholder.child(0).text());
+            }
+        } else {
+            throw new Exception("Error founding bo");
+        }
+        return list;
     }
 
     public String getMatchLink() {

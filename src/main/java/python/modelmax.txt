@@ -1,1298 +1,1418 @@
-0.594566098945661	svc 	n_arr: 0
 0.5861313868613139	linearsvc 	n_arr: 0
-0.5345498783454988	knn	n_arr: 0	neighbors = 1	uniform
-0.5345498783454988	knn	n_arr: 0	neighbors = 1	distance
-0.5930251419302515	pipe_knn	n_arr: 0	neighbors = 1	uniform
-0.5930251419302515	pipe_knn	n_arr: 0	neighbors = 1	distance
-0.54882400648824	knn	n_arr: 0	neighbors = 2	uniform
-0.5413625304136254	knn	n_arr: 0	neighbors = 2	distance
-0.6092457420924574	pipe_knn	n_arr: 0	neighbors = 2	uniform
-0.6017031630170318	pipe_knn	n_arr: 0	neighbors = 2	distance
-0.5492295214922953	knn	n_arr: 0	neighbors = 3	uniform
-0.545985401459854	knn	n_arr: 0	neighbors = 3	distance
-0.6095701540957017	pipe_knn	n_arr: 0	neighbors = 3	uniform
-0.605677210056772	pipe_knn	n_arr: 0	neighbors = 3	distance
-0.5575831305758314	knn	n_arr: 0	neighbors = 4	uniform
-0.5441200324412003	knn	n_arr: 0	neighbors = 4	distance
-0.6185725871857259	pipe_knn	n_arr: 0	neighbors = 4	uniform
-0.6041362530413625	pipe_knn	n_arr: 0	neighbors = 4	distance
-0.5576642335766423	knn	n_arr: 0	neighbors = 5	uniform
-0.5448499594484997	knn	n_arr: 0	neighbors = 5	distance
-0.6192214111922141	pipe_knn	n_arr: 0	neighbors = 5	uniform
-0.605433901054339	pipe_knn	n_arr: 0	neighbors = 5	distance
-0.5652068126520681	knn	n_arr: 0	neighbors = 6	uniform
-0.5467964314679643	knn	n_arr: 0	neighbors = 6	distance
-0.6279805352798054	pipe_knn	n_arr: 0	neighbors = 6	uniform
-0.6072992700729927	pipe_knn	n_arr: 0	neighbors = 6	distance
-0.564963503649635	knn	n_arr: 0	neighbors = 7	uniform
-0.5484995944849959	knn	n_arr: 0	neighbors = 7	distance
-0.6274939172749392	pipe_knn	n_arr: 0	neighbors = 7	uniform
-0.608596918085969	pipe_knn	n_arr: 0	neighbors = 7	distance
-0.5702351987023521	knn	n_arr: 0	neighbors = 8	uniform
-0.5473641524736416	knn	n_arr: 0	neighbors = 8	distance
-0.6326845093268452	pipe_knn	n_arr: 0	neighbors = 8	uniform
-0.607704785077048	pipe_knn	n_arr: 0	neighbors = 8	distance
-0.5753446877534469	knn	n_arr: 0	neighbors = 9	uniform
-0.5504460665044607	knn	n_arr: 0	neighbors = 9	distance
-0.63779399837794	pipe_knn	n_arr: 0	neighbors = 9	uniform
-0.6106244931062449	pipe_knn	n_arr: 0	neighbors = 9	distance
-0.540713706407137	forest	n_arr: 0	estimator = 1
-0.5359286293592862	forest_pipe	n_arr: 0	estimator = 1
-0.5437956204379562	forest	n_arr: 0	estimator = 2
-0.5389294403892945	forest_pipe	n_arr: 0	estimator = 2
-0.5386050283860503	forest	n_arr: 0	estimator = 3
-0.5412003244120034	forest_pipe	n_arr: 0	estimator = 3
-0.5399026763990268	forest	n_arr: 0	estimator = 4
-0.5427412814274128	forest_pipe	n_arr: 0	estimator = 4
-0.5375506893755069	forest	n_arr: 0	estimator = 5
-0.5395782643957826	forest_pipe	n_arr: 0	estimator = 5
-0.5408759124087591	forest	n_arr: 0	estimator = 6
-0.5396593673965937	forest_pipe	n_arr: 0	estimator = 6
-0.5399026763990268	forest	n_arr: 0	estimator = 7
-0.5416058394160583	forest_pipe	n_arr: 0	estimator = 7
-0.5455798864557989	forest	n_arr: 0	estimator = 8
-0.542822384428224	forest_pipe	n_arr: 0	estimator = 8
-0.5394160583941605	forest	n_arr: 0	estimator = 9
-0.5394971613949716	forest_pipe	n_arr: 0	estimator = 9
-0.5412814274128143	forest	n_arr: 0	estimator = 10
-0.5416869424168694	forest_pipe	n_arr: 0	estimator = 10
-0.5413625304136251	forest	n_arr: 0	estimator = 11
-0.540632603406326	forest_pipe	n_arr: 0	estimator = 11
-0.5391727493917275	forest	n_arr: 0	estimator = 12
-0.5432278994322789	forest_pipe	n_arr: 0	estimator = 12
-0.5386050283860503	forest	n_arr: 0	estimator = 13
-0.5369829683698296	forest_pipe	n_arr: 0	estimator = 13
-0.5418491484184914	forest	n_arr: 0	estimator = 14
-0.5388483373884834	forest_pipe	n_arr: 0	estimator = 14
-0.5388483373884834	forest	n_arr: 0	estimator = 15
-0.5386861313868613	forest_pipe	n_arr: 0	estimator = 15
-0.537712895377129	forest	n_arr: 0	estimator = 16
-0.5373073803730739	forest_pipe	n_arr: 0	estimator = 16
-0.5375506893755069	forest	n_arr: 0	estimator = 17
-0.5420113544201135	forest_pipe	n_arr: 0	estimator = 17
-0.5350364963503649	forest	n_arr: 0	estimator = 18
-0.540713706407137	forest_pipe	n_arr: 0	estimator = 18
-0.5382806163828062	forest	n_arr: 0	estimator = 19
-0.5393349553933496	forest_pipe	n_arr: 0	estimator = 19
-0.6119221411192215	svc 	n_arr: 1
 0.6127331711273317	linearsvc 	n_arr: 1
-0.5394971613949716	knn	n_arr: 1	neighbors = 1	uniform
-0.5394971613949716	knn	n_arr: 1	neighbors = 1	distance
-0.6003244120032442	pipe_knn	n_arr: 1	neighbors = 1	uniform
-0.6003244120032442	pipe_knn	n_arr: 1	neighbors = 1	distance
-0.5638280616382806	knn	n_arr: 1	neighbors = 2	uniform
-0.5418491484184915	knn	n_arr: 1	neighbors = 2	distance
-0.627331711273317	pipe_knn	n_arr: 1	neighbors = 2	uniform
-0.6025952960259531	pipe_knn	n_arr: 1	neighbors = 2	distance
-0.5740470397404703	knn	n_arr: 1	neighbors = 3	uniform
-0.5642335766423359	knn	n_arr: 1	neighbors = 3	distance
-0.6391727493917274	pipe_knn	n_arr: 1	neighbors = 3	uniform
-0.6283049472830496	pipe_knn	n_arr: 1	neighbors = 3	distance
-0.5828872668288727	knn	n_arr: 1	neighbors = 4	uniform
-0.5657745336577453	knn	n_arr: 1	neighbors = 4	distance
-0.648256285482563	pipe_knn	n_arr: 1	neighbors = 4	uniform
-0.6290348742903488	pipe_knn	n_arr: 1	neighbors = 4	distance
-0.5836171938361718	knn	n_arr: 1	neighbors = 5	uniform
-0.572749391727494	knn	n_arr: 1	neighbors = 5	distance
-0.64882400648824	pipe_knn	n_arr: 1	neighbors = 5	uniform
-0.6364963503649635	pipe_knn	n_arr: 1	neighbors = 5	distance
-0.5936739659367398	knn	n_arr: 1	neighbors = 6	uniform
-0.5753446877534469	knn	n_arr: 1	neighbors = 6	distance
-0.6607461476074615	pipe_knn	n_arr: 1	neighbors = 6	uniform
-0.6391727493917275	pipe_knn	n_arr: 1	neighbors = 6	distance
-0.5896999188969992	knn	n_arr: 1	neighbors = 7	uniform
-0.5785077047850771	knn	n_arr: 1	neighbors = 7	distance
-0.6549878345498784	pipe_knn	n_arr: 1	neighbors = 7	uniform
-0.6427412814274128	pipe_knn	n_arr: 1	neighbors = 7	distance
-0.5946472019464721	knn	n_arr: 1	neighbors = 8	uniform
-0.5815896188158962	knn	n_arr: 1	neighbors = 8	distance
-0.6611516626115167	pipe_knn	n_arr: 1	neighbors = 8	uniform
-0.6464720194647202	pipe_knn	n_arr: 1	neighbors = 8	distance
-0.5949716139497162	knn	n_arr: 1	neighbors = 9	uniform
-0.5824817518248175	knn	n_arr: 1	neighbors = 9	distance
-0.6608272506082726	pipe_knn	n_arr: 1	neighbors = 9	uniform
-0.6476074614760745	pipe_knn	n_arr: 1	neighbors = 9	distance
-0.5493917274939173	forest	n_arr: 1	estimator = 1
-0.5550689375506893	forest_pipe	n_arr: 1	estimator = 1
-0.564963503649635	forest	n_arr: 1	estimator = 2
-0.5575831305758313	forest_pipe	n_arr: 1	estimator = 2
-0.5528791565287916	forest	n_arr: 1	estimator = 3
-0.5530413625304136	forest_pipe	n_arr: 1	estimator = 3
-0.5643146796431469	forest	n_arr: 1	estimator = 4
-0.562368207623682	forest_pipe	n_arr: 1	estimator = 4
-0.5559610705596107	forest	n_arr: 1	estimator = 5
-0.5635847526358475	forest_pipe	n_arr: 1	estimator = 5
-0.5712084347120843	forest	n_arr: 1	estimator = 6
-0.5635847526358475	forest_pipe	n_arr: 1	estimator = 6
-0.5643957826439578	forest	n_arr: 1	estimator = 7
-0.5624493106244931	forest_pipe	n_arr: 1	estimator = 7
-0.5691808596918085	forest	n_arr: 1	estimator = 8
-0.5690186536901867	forest_pipe	n_arr: 1	estimator = 8
-0.5650446066504462	forest	n_arr: 1	estimator = 9
-0.564720194647202	forest_pipe	n_arr: 1	estimator = 9
-0.5697485806974858	forest	n_arr: 1	estimator = 10
-0.572668288726683	forest_pipe	n_arr: 1	estimator = 10
-0.5688564476885644	forest	n_arr: 1	estimator = 11
-0.5657745336577453	forest_pipe	n_arr: 1	estimator = 11
-0.5653690186536902	forest	n_arr: 1	estimator = 12
-0.5700729927007299	forest_pipe	n_arr: 1	estimator = 12
-0.5648824006488241	forest	n_arr: 1	estimator = 13
-0.5656123276561232	forest_pipe	n_arr: 1	estimator = 13
-0.57323600973236	forest	n_arr: 1	estimator = 14
-0.5745336577453366	forest_pipe	n_arr: 1	estimator = 14
-0.57007299270073	forest	n_arr: 1	estimator = 15
-0.5728304947283049	forest_pipe	n_arr: 1	estimator = 15
-0.5733982157339822	forest	n_arr: 1	estimator = 16
-0.5682887266828873	forest_pipe	n_arr: 1	estimator = 16
-0.5712895377128954	forest	n_arr: 1	estimator = 17
-0.5734793187347933	forest_pipe	n_arr: 1	estimator = 17
-0.573073803730738	forest	n_arr: 1	estimator = 18
-0.5708840227088401	forest_pipe	n_arr: 1	estimator = 18
-0.570154095701541	forest	n_arr: 1	estimator = 19
-0.5703974047039739	forest_pipe	n_arr: 1	estimator = 19
-0.6316301703163016	svc 	n_arr: 2
 0.6337388483373885	linearsvc 	n_arr: 2
-0.5715328467153283	knn	n_arr: 2	neighbors = 1	uniform
-0.5715328467153283	knn	n_arr: 2	neighbors = 1	distance
-0.6345498783454987	pipe_knn	n_arr: 2	neighbors = 1	uniform
-0.6345498783454987	pipe_knn	n_arr: 2	neighbors = 1	distance
-0.5827250608272506	knn	n_arr: 2	neighbors = 2	uniform
-0.5718572587185726	knn	n_arr: 2	neighbors = 2	distance
-0.6470397404703975	pipe_knn	n_arr: 2	neighbors = 2	uniform
-0.6348742903487429	pipe_knn	n_arr: 2	neighbors = 2	distance
-0.5909975669099756	knn	n_arr: 2	neighbors = 3	uniform
-0.5888077858880779	knn	n_arr: 2	neighbors = 3	distance
-0.6552311435523114	pipe_knn	n_arr: 2	neighbors = 3	uniform
-0.6525547445255475	pipe_knn	n_arr: 2	neighbors = 3	distance
-0.6010543390105433	knn	n_arr: 2	neighbors = 4	uniform
-0.5903487429034874	knn	n_arr: 2	neighbors = 4	distance
-0.6671532846715328	pipe_knn	n_arr: 2	neighbors = 4	uniform
-0.6554744525547445	pipe_knn	n_arr: 2	neighbors = 4	distance
-0.6004055150040551	knn	n_arr: 2	neighbors = 5	uniform
-0.5938361719383617	knn	n_arr: 2	neighbors = 5	distance
-0.6659367396593674	pipe_knn	n_arr: 2	neighbors = 5	uniform
-0.6579075425790754	pipe_knn	n_arr: 2	neighbors = 5	distance
-0.6044606650446067	knn	n_arr: 2	neighbors = 6	uniform
-0.5988645579886457	knn	n_arr: 2	neighbors = 6	distance
-0.6715328467153285	pipe_knn	n_arr: 2	neighbors = 6	uniform
-0.6639091646390917	pipe_knn	n_arr: 2	neighbors = 6	distance
-0.6029197080291971	knn	n_arr: 2	neighbors = 7	uniform
-0.6013787510137875	knn	n_arr: 2	neighbors = 7	distance
-0.6682887266828873	pipe_knn	n_arr: 2	neighbors = 7	uniform
-0.6662611516626115	pipe_knn	n_arr: 2	neighbors = 7	distance
-0.6089213300892132	knn	n_arr: 2	neighbors = 8	uniform
-0.6009732360097323	knn	n_arr: 2	neighbors = 8	distance
-0.6745336577453365	pipe_knn	n_arr: 2	neighbors = 8	uniform
-0.6659367396593674	pipe_knn	n_arr: 2	neighbors = 8	distance
-0.6062449310624493	knn	n_arr: 2	neighbors = 9	uniform
-0.6040551500405515	knn	n_arr: 2	neighbors = 9	distance
-0.6724249797242497	pipe_knn	n_arr: 2	neighbors = 9	uniform
-0.6701540957015409	pipe_knn	n_arr: 2	neighbors = 9	distance
-0.5574209245742092	forest	n_arr: 2	estimator = 1
-0.5606650446066505	forest_pipe	n_arr: 2	estimator = 1
-0.567639902676399	forest	n_arr: 2	estimator = 2
-0.5759124087591242	forest_pipe	n_arr: 2	estimator = 2
-0.5770478507704785	forest	n_arr: 2	estimator = 3
-0.5610705596107056	forest_pipe	n_arr: 2	estimator = 3
-0.5821573398215735	forest	n_arr: 2	estimator = 4
-0.58110300081103	forest_pipe	n_arr: 2	estimator = 4
-0.5797242497972426	forest	n_arr: 2	estimator = 5
-0.586455798864558	forest_pipe	n_arr: 2	estimator = 5
-0.5846715328467154	forest	n_arr: 2	estimator = 6
-0.5868613138686132	forest_pipe	n_arr: 2	estimator = 6
-0.5849959448499595	forest	n_arr: 2	estimator = 7
-0.5832116788321167	forest_pipe	n_arr: 2	estimator = 7
-0.5818329278183293	forest	n_arr: 2	estimator = 8
-0.5908353609083535	forest_pipe	n_arr: 2	estimator = 8
-0.591970802919708	forest	n_arr: 2	estimator = 9
-0.5846715328467154	forest_pipe	n_arr: 2	estimator = 9
-0.5929440389294405	forest	n_arr: 2	estimator = 10
-0.591646390916464	forest_pipe	n_arr: 2	estimator = 10
-0.5841849148418492	forest	n_arr: 2	estimator = 11
-0.5859691808596917	forest_pipe	n_arr: 2	estimator = 11
-0.5917274939172749	forest	n_arr: 2	estimator = 12
-0.5933495539334955	forest_pipe	n_arr: 2	estimator = 12
-0.5879156528791566	forest	n_arr: 2	estimator = 13
-0.594160583941606	forest_pipe	n_arr: 2	estimator = 13
-0.5886455798864558	forest	n_arr: 2	estimator = 14
-0.591727493917275	forest_pipe	n_arr: 2	estimator = 14
-0.5892944038929442	forest	n_arr: 2	estimator = 15
-0.5943227899432278	forest_pipe	n_arr: 2	estimator = 15
-0.5893755068937551	forest	n_arr: 2	estimator = 16
-0.5930251419302514	forest_pipe	n_arr: 2	estimator = 16
-0.5880778588807787	forest	n_arr: 2	estimator = 17
-0.5886455798864558	forest_pipe	n_arr: 2	estimator = 17
-0.5922141119221411	forest	n_arr: 2	estimator = 18
-0.5935117599351176	forest_pipe	n_arr: 2	estimator = 18
-0.5969180859691808	forest	n_arr: 2	estimator = 19
-0.594160583941606	forest_pipe	n_arr: 2	estimator = 19
-0.6304136253041362	svc 	n_arr: 3
-0.6386050283860503	linearsvc 	n_arr: 3
-0.5744525547445256	knn	n_arr: 3	neighbors = 1	uniform
-0.5744525547445256	knn	n_arr: 3	neighbors = 1	distance
-0.6381184103811841	pipe_knn	n_arr: 3	neighbors = 1	uniform
-0.6381184103811841	pipe_knn	n_arr: 3	neighbors = 1	distance
-0.5909975669099756	knn	n_arr: 3	neighbors = 2	uniform
-0.5742092457420925	knn	n_arr: 3	neighbors = 2	distance
-0.6558799675587996	pipe_knn	n_arr: 3	neighbors = 2	uniform
-0.63779399837794	pipe_knn	n_arr: 3	neighbors = 2	distance
-0.5927818329278184	knn	n_arr: 3	neighbors = 3	uniform
-0.5931062449310625	knn	n_arr: 3	neighbors = 3	distance
-0.6583130575831306	pipe_knn	n_arr: 3	neighbors = 3	uniform
-0.6585563665855637	pipe_knn	n_arr: 3	neighbors = 3	distance
-0.599837793998378	knn	n_arr: 3	neighbors = 4	uniform
-0.5912408759124088	knn	n_arr: 3	neighbors = 4	distance
-0.6654501216545012	pipe_knn	n_arr: 3	neighbors = 4	uniform
-0.6551500405515004	pipe_knn	n_arr: 3	neighbors = 4	distance
-0.5979724249797242	knn	n_arr: 3	neighbors = 5	uniform
-0.5963503649635037	knn	n_arr: 3	neighbors = 5	distance
-0.6643146796431468	pipe_knn	n_arr: 3	neighbors = 5	uniform
-0.6622871046228711	pipe_knn	n_arr: 3	neighbors = 5	distance
-0.599837793998378	knn	n_arr: 3	neighbors = 6	uniform
-0.5988645579886456	knn	n_arr: 3	neighbors = 6	distance
-0.6660178426601785	pipe_knn	n_arr: 3	neighbors = 6	uniform
-0.6647201946472019	pipe_knn	n_arr: 3	neighbors = 6	distance
-0.5938361719383617	knn	n_arr: 3	neighbors = 7	uniform
-0.5960259529602596	knn	n_arr: 3	neighbors = 7	distance
-0.6591240875912409	pipe_knn	n_arr: 3	neighbors = 7	uniform
-0.6622871046228711	pipe_knn	n_arr: 3	neighbors = 7	distance
-0.602433090024331	knn	n_arr: 3	neighbors = 8	uniform
-0.5991889699918898	knn	n_arr: 3	neighbors = 8	distance
-0.6690186536901865	pipe_knn	n_arr: 3	neighbors = 8	uniform
-0.6641524736415247	pipe_knn	n_arr: 3	neighbors = 8	distance
-0.599837793998378	knn	n_arr: 3	neighbors = 9	uniform
-0.6008921330089215	knn	n_arr: 3	neighbors = 9	distance
-0.6652068126520683	pipe_knn	n_arr: 3	neighbors = 9	uniform
-0.6669910786699109	pipe_knn	n_arr: 3	neighbors = 9	distance
-0.559529602595296	forest	n_arr: 3	estimator = 1
-0.5562854825628548	forest_pipe	n_arr: 3	estimator = 1
-0.5736415247364153	forest	n_arr: 3	estimator = 2
-0.5769667477696674	forest_pipe	n_arr: 3	estimator = 2
-0.5763179237631791	forest	n_arr: 3	estimator = 3
-0.5747769667477697	forest_pipe	n_arr: 3	estimator = 3
-0.592295214922952	forest	n_arr: 3	estimator = 4
-0.583860502838605	forest_pipe	n_arr: 3	estimator = 4
-0.5859691808596919	forest	n_arr: 3	estimator = 5
-0.5792376317923763	forest_pipe	n_arr: 3	estimator = 5
-0.5923763179237631	forest	n_arr: 3	estimator = 6
-0.5935117599351176	forest_pipe	n_arr: 3	estimator = 6
-0.58661800486618	forest	n_arr: 3	estimator = 7
-0.5914841849148419	forest_pipe	n_arr: 3	estimator = 7
-0.5960259529602596	forest	n_arr: 3	estimator = 8
-0.600324412003244	forest_pipe	n_arr: 3	estimator = 8
-0.5954582319545823	forest	n_arr: 3	estimator = 9
-0.5899432278994322	forest_pipe	n_arr: 3	estimator = 9
-0.5939172749391728	forest	n_arr: 3	estimator = 10
-0.6030008110300081	forest_pipe	n_arr: 3	estimator = 10
-0.5976480129764802	forest	n_arr: 3	estimator = 11
-0.5957015409570154	forest_pipe	n_arr: 3	estimator = 11
-0.5995133819951337	forest	n_arr: 3	estimator = 12
-0.5966747769667476	forest_pipe	n_arr: 3	estimator = 12
-0.5963503649635037	forest	n_arr: 3	estimator = 13
-0.5966747769667479	forest_pipe	n_arr: 3	estimator = 13
-0.6017842660178427	forest	n_arr: 3	estimator = 14
-0.6013787510137876	forest_pipe	n_arr: 3	estimator = 14
-0.5960259529602595	forest	n_arr: 3	estimator = 15
-0.5983779399837794	forest_pipe	n_arr: 3	estimator = 15
-0.6011354420113544	forest	n_arr: 3	estimator = 16
-0.6020275750202757	forest_pipe	n_arr: 3	estimator = 16
-0.5986212489862125	forest	n_arr: 3	estimator = 17
-0.6018653690186536	forest_pipe	n_arr: 3	estimator = 17
-0.6002433090024331	forest	n_arr: 3	estimator = 18
-0.6009732360097323	forest_pipe	n_arr: 3	estimator = 18
-0.6019464720194647	forest	n_arr: 3	estimator = 19
-0.5995944849959449	forest_pipe	n_arr: 3	estimator = 19
-0.62992700729927	svc 	n_arr: 4
-0.6383617193836171	linearsvc 	n_arr: 4
-0.5702351987023521	knn	n_arr: 4	neighbors = 1	uniform
-0.5702351987023521	knn	n_arr: 4	neighbors = 1	distance
-0.6334144363341444	pipe_knn	n_arr: 4	neighbors = 1	uniform
-0.6334144363341444	pipe_knn	n_arr: 4	neighbors = 1	distance
-0.5805352798053528	knn	n_arr: 4	neighbors = 2	uniform
-0.5699918896999189	knn	n_arr: 4	neighbors = 2	distance
-0.643633414436334	pipe_knn	n_arr: 4	neighbors = 2	uniform
-0.6330900243309002	pipe_knn	n_arr: 4	neighbors = 2	distance
-0.5754257907542579	knn	n_arr: 4	neighbors = 3	uniform
-0.5755879967558799	knn	n_arr: 4	neighbors = 3	distance
-0.6386861313868614	pipe_knn	n_arr: 4	neighbors = 3	uniform
-0.6388483373884833	pipe_knn	n_arr: 4	neighbors = 3	distance
-0.5922141119221411	knn	n_arr: 4	neighbors = 4	uniform
-0.5819951338199513	knn	n_arr: 4	neighbors = 4	distance
-0.6570965125709651	pipe_knn	n_arr: 4	neighbors = 4	uniform
-0.645985401459854	pipe_knn	n_arr: 4	neighbors = 4	distance
-0.5938361719383617	knn	n_arr: 4	neighbors = 5	uniform
-0.594241686942417	knn	n_arr: 4	neighbors = 5	distance
-0.6578264395782644	pipe_knn	n_arr: 4	neighbors = 5	uniform
-0.6583941605839416	pipe_knn	n_arr: 4	neighbors = 5	distance
-0.6020275750202758	knn	n_arr: 4	neighbors = 6	uniform
-0.59683698296837	knn	n_arr: 4	neighbors = 6	distance
-0.6675587996755881	pipe_knn	n_arr: 4	neighbors = 6	uniform
-0.6620437956204381	pipe_knn	n_arr: 4	neighbors = 6	distance
-0.5965125709651257	knn	n_arr: 4	neighbors = 7	uniform
-0.5952960259529603	knn	n_arr: 4	neighbors = 7	distance
-0.6614760746147607	pipe_knn	n_arr: 4	neighbors = 7	uniform
-0.6600973236009733	pipe_knn	n_arr: 4	neighbors = 7	distance
-0.6044606650446066	knn	n_arr: 4	neighbors = 8	uniform
-0.5963503649635036	knn	n_arr: 4	neighbors = 8	distance
-0.6699918896999189	pipe_knn	n_arr: 4	neighbors = 8	uniform
-0.6607461476074614	pipe_knn	n_arr: 4	neighbors = 8	distance
-0.6042173560421735	knn	n_arr: 4	neighbors = 9	uniform
-0.6011354420113544	knn	n_arr: 4	neighbors = 9	distance
-0.6708840227088402	pipe_knn	n_arr: 4	neighbors = 9	uniform
-0.6676399026763989	pipe_knn	n_arr: 4	neighbors = 9	distance
-0.5554744525547446	forest	n_arr: 4	estimator = 1
-0.56220600162206	forest_pipe	n_arr: 4	estimator = 1
-0.5778588807785887	forest	n_arr: 4	estimator = 2
-0.5696674776966748	forest_pipe	n_arr: 4	estimator = 2
-0.5700729927007299	forest	n_arr: 4	estimator = 3
-0.5786699107866992	forest_pipe	n_arr: 4	estimator = 3
-0.5804541768045417	forest	n_arr: 4	estimator = 4
-0.5836171938361719	forest_pipe	n_arr: 4	estimator = 4
-0.5884833738848338	forest	n_arr: 4	estimator = 5
-0.5831305758313058	forest_pipe	n_arr: 4	estimator = 5
-0.5894566098945663	forest	n_arr: 4	estimator = 6
-0.5969991889699919	forest_pipe	n_arr: 4	estimator = 6
-0.5911597729115977	forest	n_arr: 4	estimator = 7
-0.589456609894566	forest_pipe	n_arr: 4	estimator = 7
-0.5975669099756691	forest	n_arr: 4	estimator = 8
-0.591727493917275	forest_pipe	n_arr: 4	estimator = 8
-0.5906731549067316	forest	n_arr: 4	estimator = 9
-0.5974858069748581	forest_pipe	n_arr: 4	estimator = 9
-0.5913219789132198	forest	n_arr: 4	estimator = 10
-0.5922141119221411	forest_pipe	n_arr: 4	estimator = 10
-0.5961881589618816	forest	n_arr: 4	estimator = 11
-0.5971613949716139	forest_pipe	n_arr: 4	estimator = 11
-0.6024330900243309	forest	n_arr: 4	estimator = 12
-0.5964314679643147	forest_pipe	n_arr: 4	estimator = 12
-0.5966747769667478	forest	n_arr: 4	estimator = 13
-0.6002433090024332	forest_pipe	n_arr: 4	estimator = 13
-0.6012976480129765	forest	n_arr: 4	estimator = 14
-0.6064071370640713	forest_pipe	n_arr: 4	estimator = 14
-0.602676399026764	forest	n_arr: 4	estimator = 15
-0.6060016220600162	forest_pipe	n_arr: 4	estimator = 15
-0.6034063260340632	forest	n_arr: 4	estimator = 16
-0.5979724249797241	forest_pipe	n_arr: 4	estimator = 16
-0.600162206001622	forest	n_arr: 4	estimator = 17
-0.6014598540145987	forest_pipe	n_arr: 4	estimator = 17
-0.6059205190592052	forest	n_arr: 4	estimator = 18
-0.605433901054339	forest_pipe	n_arr: 4	estimator = 18
-0.5985401459854014	forest	n_arr: 4	estimator = 19
-0.6045417680454177	forest_pipe	n_arr: 4	estimator = 19
-0.6278183292781834	svc 	n_arr: 5
-0.6371451743714517	linearsvc 	n_arr: 5
-0.5686131386861314	knn	n_arr: 5	neighbors = 1	uniform
-0.5686131386861314	knn	n_arr: 5	neighbors = 1	distance
-0.6321978913219789	pipe_knn	n_arr: 5	neighbors = 1	uniform
-0.6321978913219789	pipe_knn	n_arr: 5	neighbors = 1	distance
-0.5791565287915652	knn	n_arr: 5	neighbors = 2	uniform
-0.5681265206812652	knn	n_arr: 5	neighbors = 2	distance
-0.643633414436334	pipe_knn	n_arr: 5	neighbors = 2	uniform
-0.6316301703163018	pipe_knn	n_arr: 5	neighbors = 2	distance
-0.578345498783455	knn	n_arr: 5	neighbors = 3	uniform
-0.5768856447688564	knn	n_arr: 5	neighbors = 3	distance
-0.6443633414436334	pipe_knn	n_arr: 5	neighbors = 3	uniform
-0.6426601784266018	pipe_knn	n_arr: 5	neighbors = 3	distance
-0.5955393349553934	knn	n_arr: 5	neighbors = 4	uniform
-0.5805352798053529	knn	n_arr: 5	neighbors = 4	distance
-0.6614760746147608	pipe_knn	n_arr: 5	neighbors = 4	uniform
-0.6463909164639092	pipe_knn	n_arr: 5	neighbors = 4	distance
-0.5936739659367398	knn	n_arr: 5	neighbors = 5	uniform
-0.5923763179237631	knn	n_arr: 5	neighbors = 5	distance
-0.658880778588808	pipe_knn	n_arr: 5	neighbors = 5	uniform
-0.6576642335766424	pipe_knn	n_arr: 5	neighbors = 5	distance
-0.6017031630170316	knn	n_arr: 5	neighbors = 6	uniform
-0.5927818329278183	knn	n_arr: 5	neighbors = 6	distance
-0.6665855636658556	pipe_knn	n_arr: 5	neighbors = 6	uniform
-0.6586374695863747	pipe_knn	n_arr: 5	neighbors = 6	distance
-0.5979724249797242	knn	n_arr: 5	neighbors = 7	uniform
-0.5975669099756692	knn	n_arr: 5	neighbors = 7	distance
-0.6646390916463908	pipe_knn	n_arr: 5	neighbors = 7	uniform
-0.664476885644769	pipe_knn	n_arr: 5	neighbors = 7	distance
-0.6051905920519061	knn	n_arr: 5	neighbors = 8	uniform
-0.5957015409570154	knn	n_arr: 5	neighbors = 8	distance
-0.6726682887266829	pipe_knn	n_arr: 5	neighbors = 8	uniform
-0.662043795620438	pipe_knn	n_arr: 5	neighbors = 8	distance
-0.6044606650446067	knn	n_arr: 5	neighbors = 9	uniform
-0.6027575020275749	knn	n_arr: 5	neighbors = 9	distance
-0.6719383617193837	pipe_knn	n_arr: 5	neighbors = 9	uniform
-0.6703163017031629	pipe_knn	n_arr: 5	neighbors = 9	distance
-0.5585563665855636	forest	n_arr: 5	estimator = 1
-0.5508515815085158	forest_pipe	n_arr: 5	estimator = 1
-0.578183292781833	forest	n_arr: 5	estimator = 2
-0.5687753446877535	forest_pipe	n_arr: 5	estimator = 2
-0.5849148418491484	forest	n_arr: 5	estimator = 3
-0.5775344687753446	forest_pipe	n_arr: 5	estimator = 3
-0.5842660178426601	forest	n_arr: 5	estimator = 4
-0.58345498783455	forest_pipe	n_arr: 5	estimator = 4
-0.5871046228710461	forest	n_arr: 5	estimator = 5
-0.5860502838605028	forest_pipe	n_arr: 5	estimator = 5
-0.5899432278994323	forest	n_arr: 5	estimator = 6
-0.5934306569343065	forest_pipe	n_arr: 5	estimator = 6
-0.5927818329278183	forest	n_arr: 5	estimator = 7
-0.5905109489051096	forest_pipe	n_arr: 5	estimator = 7
-0.6004055150040551	forest	n_arr: 5	estimator = 8
-0.597485806974858	forest_pipe	n_arr: 5	estimator = 8
-0.5939172749391726	forest	n_arr: 5	estimator = 9
-0.5997566909975669	forest_pipe	n_arr: 5	estimator = 9
-0.6035685320356854	forest	n_arr: 5	estimator = 10
-0.5982968369829683	forest_pipe	n_arr: 5	estimator = 10
-0.5965125709651258	forest	n_arr: 5	estimator = 11
-0.6047039740470398	forest_pipe	n_arr: 5	estimator = 11
-0.6064071370640715	forest	n_arr: 5	estimator = 12
-0.6018653690186536	forest_pipe	n_arr: 5	estimator = 12
-0.5979724249797242	forest	n_arr: 5	estimator = 13
-0.6069748580697486	forest_pipe	n_arr: 5	estimator = 13
-0.6016220600162206	forest	n_arr: 5	estimator = 14
-0.6017842660178426	forest_pipe	n_arr: 5	estimator = 14
-0.6013787510137875	forest	n_arr: 5	estimator = 15
-0.6021086780210867	forest_pipe	n_arr: 5	estimator = 15
-0.6014598540145986	forest	n_arr: 5	estimator = 16
-0.6030008110300081	forest_pipe	n_arr: 5	estimator = 16
-0.6034874290348742	forest	n_arr: 5	estimator = 17
-0.6034874290348742	forest_pipe	n_arr: 5	estimator = 17
-0.6048661800486618	forest	n_arr: 5	estimator = 18
-0.610705596107056	forest_pipe	n_arr: 5	estimator = 18
-0.6083536090835361	forest	n_arr: 5	estimator = 19
-0.6028386050283862	forest_pipe	n_arr: 5	estimator = 19
-0.6282238442822384	svc 	n_arr: 6
-0.635279805352798	linearsvc 	n_arr: 6
-0.5602595296025953	knn	n_arr: 6	neighbors = 1	uniform
-0.5602595296025953	knn	n_arr: 6	neighbors = 1	distance
-0.6232765612327655	pipe_knn	n_arr: 6	neighbors = 1	uniform
-0.6232765612327655	pipe_knn	n_arr: 6	neighbors = 1	distance
-0.5741281427412814	knn	n_arr: 6	neighbors = 2	uniform
-0.5599351175993512	knn	n_arr: 6	neighbors = 2	distance
-0.6389294403892944	pipe_knn	n_arr: 6	neighbors = 2	uniform
-0.6229521492295215	pipe_knn	n_arr: 6	neighbors = 2	distance
-0.5755879967558799	knn	n_arr: 6	neighbors = 3	uniform
-0.5718572587185726	knn	n_arr: 6	neighbors = 3	distance
-0.6403081914030818	pipe_knn	n_arr: 6	neighbors = 3	uniform
-0.6368207623682076	pipe_knn	n_arr: 6	neighbors = 3	distance
-0.5829683698296837	knn	n_arr: 6	neighbors = 4	uniform
-0.5774533657745335	knn	n_arr: 6	neighbors = 4	distance
-0.648742903487429	pipe_knn	n_arr: 6	neighbors = 4	uniform
-0.6416869424168693	pipe_knn	n_arr: 6	neighbors = 4	distance
-0.5894566098945663	knn	n_arr: 6	neighbors = 5	uniform
-0.5852392538523925	knn	n_arr: 6	neighbors = 5	distance
-0.6551500405515005	pipe_knn	n_arr: 6	neighbors = 5	uniform
-0.6505271695052718	pipe_knn	n_arr: 6	neighbors = 5	distance
-0.5992700729927009	knn	n_arr: 6	neighbors = 6	uniform
-0.5898621248986212	knn	n_arr: 6	neighbors = 6	distance
-0.6655312246553123	pipe_knn	n_arr: 6	neighbors = 6	uniform
-0.65433901054339	pipe_knn	n_arr: 6	neighbors = 6	distance
-0.6006488240064882	knn	n_arr: 6	neighbors = 7	uniform
-0.5959448499594484	knn	n_arr: 6	neighbors = 7	distance
-0.6672343876723439	pipe_knn	n_arr: 6	neighbors = 7	uniform
-0.6618815896188158	pipe_knn	n_arr: 6	neighbors = 7	distance
-0.610705596107056	knn	n_arr: 6	neighbors = 8	uniform
-0.5980535279805353	knn	n_arr: 6	neighbors = 8	distance
-0.6776155717761557	pipe_knn	n_arr: 6	neighbors = 8	uniform
-0.6639902676399028	pipe_knn	n_arr: 6	neighbors = 8	distance
-0.6075425790754259	knn	n_arr: 6	neighbors = 9	uniform
-0.602757502027575	knn	n_arr: 6	neighbors = 9	distance
-0.6738037307380373	pipe_knn	n_arr: 6	neighbors = 9	uniform
-0.6685320356853204	pipe_knn	n_arr: 6	neighbors = 9	distance
-0.5506082725060828	forest	n_arr: 6	estimator = 1
-0.5582319545823196	forest_pipe	n_arr: 6	estimator = 1
-0.5738037307380373	forest	n_arr: 6	estimator = 2
-0.5733171127331711	forest_pipe	n_arr: 6	estimator = 2
-0.5728304947283048	forest	n_arr: 6	estimator = 3
-0.5796431467964314	forest_pipe	n_arr: 6	estimator = 3
-0.5853203568532036	forest	n_arr: 6	estimator = 4
-0.5826439578264396	forest_pipe	n_arr: 6	estimator = 4
-0.5838605028386049	forest	n_arr: 6	estimator = 5
-0.5825628548256286	forest_pipe	n_arr: 6	estimator = 5
-0.5977291159772912	forest	n_arr: 6	estimator = 6
-0.5927818329278183	forest_pipe	n_arr: 6	estimator = 6
-0.5897810218978102	forest	n_arr: 6	estimator = 7
-0.5888077858880778	forest_pipe	n_arr: 6	estimator = 7
-0.5905109489051095	forest	n_arr: 6	estimator = 8
-0.5976480129764802	forest_pipe	n_arr: 6	estimator = 8
-0.5982968369829684	forest	n_arr: 6	estimator = 9
-0.5914841849148418	forest_pipe	n_arr: 6	estimator = 9
-0.5991078669910787	forest	n_arr: 6	estimator = 10
-0.6004866180048662	forest_pipe	n_arr: 6	estimator = 10
-0.6037307380373074	forest	n_arr: 6	estimator = 11
-0.5971613949716139	forest_pipe	n_arr: 6	estimator = 11
-0.6034874290348743	forest	n_arr: 6	estimator = 12
-0.6030008110300081	forest_pipe	n_arr: 6	estimator = 12
-0.6010543390105434	forest	n_arr: 6	estimator = 13
-0.6011354420113545	forest_pipe	n_arr: 6	estimator = 13
-0.605433901054339	forest	n_arr: 6	estimator = 14
-0.602919708029197	forest_pipe	n_arr: 6	estimator = 14
-0.6010543390105435	forest	n_arr: 6	estimator = 15
-0.6032441200324413	forest_pipe	n_arr: 6	estimator = 15
-0.6031630170316301	forest	n_arr: 6	estimator = 16
-0.6008110300081103	forest_pipe	n_arr: 6	estimator = 16
-0.6101378751013787	forest	n_arr: 6	estimator = 17
-0.6036496350364963	forest_pipe	n_arr: 6	estimator = 17
-0.6066504460665044	forest	n_arr: 6	estimator = 18
-0.6038118410381184	forest_pipe	n_arr: 6	estimator = 18
-0.6059205190592052	forest	n_arr: 6	estimator = 19
-0.6037307380373074	forest_pipe	n_arr: 6	estimator = 19
-0.6266017842660179	svc 	n_arr: 7
-0.6426601784266018	linearsvc 	n_arr: 7
-0.5614760746147608	knn	n_arr: 7	neighbors = 1	uniform
-0.5614760746147608	knn	n_arr: 7	neighbors = 1	distance
-0.6238442822384429	pipe_knn	n_arr: 7	neighbors = 1	uniform
-0.6238442822384429	pipe_knn	n_arr: 7	neighbors = 1	distance
-0.5742092457420925	knn	n_arr: 7	neighbors = 2	uniform
-0.5611516626115167	knn	n_arr: 7	neighbors = 2	distance
-0.6392538523925385	pipe_knn	n_arr: 7	neighbors = 2	uniform
-0.6235198702351988	pipe_knn	n_arr: 7	neighbors = 2	distance
-0.575506893755069	knn	n_arr: 7	neighbors = 3	uniform
-0.5716950527169504	knn	n_arr: 7	neighbors = 3	distance
-0.640470397404704	pipe_knn	n_arr: 7	neighbors = 3	uniform
-0.6368207623682075	pipe_knn	n_arr: 7	neighbors = 3	distance
-0.586455798864558	knn	n_arr: 7	neighbors = 4	uniform
-0.5807785888077858	knn	n_arr: 7	neighbors = 4	distance
-0.6530413625304137	pipe_knn	n_arr: 7	neighbors = 4	uniform
-0.6445255474452554	pipe_knn	n_arr: 7	neighbors = 4	distance
-0.591889699918897	knn	n_arr: 7	neighbors = 5	uniform
-0.5884022708840227	knn	n_arr: 7	neighbors = 5	distance
-0.6587185725871857	pipe_knn	n_arr: 7	neighbors = 5	uniform
-0.6548256285482563	pipe_knn	n_arr: 7	neighbors = 5	distance
-0.5981346309813463	knn	n_arr: 7	neighbors = 6	uniform
-0.5889699918896998	knn	n_arr: 7	neighbors = 6	distance
-0.6636658556366586	pipe_knn	n_arr: 7	neighbors = 6	uniform
-0.6537712895377128	pipe_knn	n_arr: 7	neighbors = 6	distance
-0.6008110300081102	knn	n_arr: 7	neighbors = 7	uniform
-0.5965125709651257	knn	n_arr: 7	neighbors = 7	distance
-0.6676399026763989	pipe_knn	n_arr: 7	neighbors = 7	uniform
-0.6624493106244931	pipe_knn	n_arr: 7	neighbors = 7	distance
-0.6050283860502839	knn	n_arr: 7	neighbors = 8	uniform
-0.5958637469586374	knn	n_arr: 7	neighbors = 8	distance
-0.6712084347120844	pipe_knn	n_arr: 7	neighbors = 8	uniform
-0.6613949716139497	pipe_knn	n_arr: 7	neighbors = 8	distance
-0.605352798053528	knn	n_arr: 7	neighbors = 9	uniform
-0.6008921330089214	knn	n_arr: 7	neighbors = 9	distance
-0.6716139497161396	pipe_knn	n_arr: 7	neighbors = 9	uniform
-0.6665855636658556	pipe_knn	n_arr: 7	neighbors = 9	distance
-0.559367396593674	forest	n_arr: 7	estimator = 1
-0.5554744525547446	forest_pipe	n_arr: 7	estimator = 1
-0.5789132197891322	forest	n_arr: 7	estimator = 2
-0.5750202757502028	forest_pipe	n_arr: 7	estimator = 2
-0.5742092457420925	forest	n_arr: 7	estimator = 3
-0.5800486618004866	forest_pipe	n_arr: 7	estimator = 3
-0.5809407948094081	forest	n_arr: 7	estimator = 4
-0.5892944038929441	forest_pipe	n_arr: 7	estimator = 4
-0.5884022708840226	forest	n_arr: 7	estimator = 5
-0.5817518248175184	forest_pipe	n_arr: 7	estimator = 5
-0.5965125709651259	forest	n_arr: 7	estimator = 6
-0.591727493917275	forest_pipe	n_arr: 7	estimator = 6
-0.5899432278994322	forest	n_arr: 7	estimator = 7
-0.5965125709651258	forest_pipe	n_arr: 7	estimator = 7
-0.5964314679643148	forest	n_arr: 7	estimator = 8
-0.5967558799675587	forest_pipe	n_arr: 7	estimator = 8
-0.5964314679643147	forest	n_arr: 7	estimator = 9
-0.6008921330089214	forest_pipe	n_arr: 7	estimator = 9
-0.591808596918086	forest	n_arr: 7	estimator = 10
-0.5961070559610707	forest_pipe	n_arr: 7	estimator = 10
-0.6065693430656934	forest	n_arr: 7	estimator = 11
-0.5988645579886457	forest_pipe	n_arr: 7	estimator = 11
-0.6036496350364964	forest	n_arr: 7	estimator = 12
-0.6015409570154095	forest_pipe	n_arr: 7	estimator = 12
-0.6056772100567721	forest	n_arr: 7	estimator = 13
-0.6037307380373075	forest_pipe	n_arr: 7	estimator = 13
-0.6075425790754257	forest	n_arr: 7	estimator = 14
-0.6062449310624493	forest_pipe	n_arr: 7	estimator = 14
-0.6128953771289538	forest	n_arr: 7	estimator = 15
-0.6039740470397406	forest_pipe	n_arr: 7	estimator = 15
-0.6045417680454177	forest	n_arr: 7	estimator = 16
-0.603000811030008	forest_pipe	n_arr: 7	estimator = 16
-0.6099756690997568	forest	n_arr: 7	estimator = 17
-0.6072992700729928	forest_pipe	n_arr: 7	estimator = 17
-0.6081914030819141	forest	n_arr: 7	estimator = 18
-0.6091646390916464	forest_pipe	n_arr: 7	estimator = 18
-0.6055961070559612	forest	n_arr: 7	estimator = 19
-0.6098134630981347	forest_pipe	n_arr: 7	estimator = 19
-0.6255474452554745	svc 	n_arr: 8
-0.6392538523925384	linearsvc 	n_arr: 8
-0.5685320356853203	knn	n_arr: 8	neighbors = 1	uniform
-0.5685320356853203	knn	n_arr: 8	neighbors = 1	distance
-0.6320356853203568	pipe_knn	n_arr: 8	neighbors = 1	uniform
-0.6320356853203568	pipe_knn	n_arr: 8	neighbors = 1	distance
-0.5763990267639904	knn	n_arr: 8	neighbors = 2	uniform
-0.5685320356853203	knn	n_arr: 8	neighbors = 2	distance
-0.6421735604217358	pipe_knn	n_arr: 8	neighbors = 2	uniform
-0.6320356853203568	pipe_knn	n_arr: 8	neighbors = 2	distance
-0.5815085158150851	knn	n_arr: 8	neighbors = 3	uniform
-0.5791565287915652	knn	n_arr: 8	neighbors = 3	distance
-0.646228710462287	pipe_knn	n_arr: 8	neighbors = 3	uniform
-0.6437145174371451	pipe_knn	n_arr: 8	neighbors = 3	distance
-0.5914841849148418	knn	n_arr: 8	neighbors = 4	uniform
-0.5883211678832118	knn	n_arr: 8	neighbors = 4	distance
-0.6571776155717761	pipe_knn	n_arr: 8	neighbors = 4	uniform
-0.6531224655312248	pipe_knn	n_arr: 8	neighbors = 4	distance
-0.6004055150040553	knn	n_arr: 8	neighbors = 5	uniform
-0.5989456609894567	knn	n_arr: 8	neighbors = 5	distance
-0.6662611516626116	pipe_knn	n_arr: 8	neighbors = 5	uniform
-0.6648012976480131	pipe_knn	n_arr: 8	neighbors = 5	distance
-0.599837793998378	knn	n_arr: 8	neighbors = 6	uniform
-0.5989456609894566	knn	n_arr: 8	neighbors = 6	distance
-0.6661800486618006	pipe_knn	n_arr: 8	neighbors = 6	uniform
-0.6644768856447688	pipe_knn	n_arr: 8	neighbors = 6	distance
-0.603081914030819	knn	n_arr: 8	neighbors = 7	uniform
-0.6015409570154095	knn	n_arr: 8	neighbors = 7	distance
-0.6686942416869424	pipe_knn	n_arr: 8	neighbors = 7	uniform
-0.6669099756690997	pipe_knn	n_arr: 8	neighbors = 7	distance
-0.6074614760746146	knn	n_arr: 8	neighbors = 8	uniform
-0.6042984590429846	knn	n_arr: 8	neighbors = 8	distance
-0.6725871857258717	pipe_knn	n_arr: 8	neighbors = 8	uniform
-0.6699107866991079	pipe_knn	n_arr: 8	neighbors = 8	distance
-0.6103811841038118	knn	n_arr: 8	neighbors = 9	uniform
-0.6083536090835361	knn	n_arr: 8	neighbors = 9	distance
-0.6762368207623681	pipe_knn	n_arr: 8	neighbors = 9	uniform
-0.6744525547445255	pipe_knn	n_arr: 8	neighbors = 9	distance
-0.5600973236009732	forest	n_arr: 8	estimator = 1
-0.5638280616382806	forest_pipe	n_arr: 8	estimator = 1
-0.5805352798053528	forest	n_arr: 8	estimator = 2
-0.572992700729927	forest_pipe	n_arr: 8	estimator = 2
-0.57323600973236	forest	n_arr: 8	estimator = 3
-0.5818329278183293	forest_pipe	n_arr: 8	estimator = 3
-0.5849148418491484	forest	n_arr: 8	estimator = 4
-0.5871857258718572	forest_pipe	n_arr: 8	estimator = 4
-0.5927818329278184	forest	n_arr: 8	estimator = 5
-0.5901865369018653	forest_pipe	n_arr: 8	estimator = 5
-0.5947283049472829	forest	n_arr: 8	estimator = 6
-0.5954582319545824	forest_pipe	n_arr: 8	estimator = 6
-0.5958637469586373	forest	n_arr: 8	estimator = 7
-0.5952149229521493	forest_pipe	n_arr: 8	estimator = 7
-0.6017842660178426	forest	n_arr: 8	estimator = 8
-0.6024330900243309	forest_pipe	n_arr: 8	estimator = 8
-0.6046228710462287	forest	n_arr: 8	estimator = 9
-0.6004055150040551	forest_pipe	n_arr: 8	estimator = 9
-0.5992700729927007	forest	n_arr: 8	estimator = 10
-0.6103811841038119	forest_pipe	n_arr: 8	estimator = 10
-0.6091646390916464	forest	n_arr: 8	estimator = 11
-0.6064882400648826	forest_pipe	n_arr: 8	estimator = 11
-0.6083536090835362	forest	n_arr: 8	estimator = 12
-0.6055961070559611	forest_pipe	n_arr: 8	estimator = 12
-0.5982157339821574	forest	n_arr: 8	estimator = 13
-0.6056772100567721	forest_pipe	n_arr: 8	estimator = 13
-0.6021897810218978	forest	n_arr: 8	estimator = 14
-0.6125709651257097	forest_pipe	n_arr: 8	estimator = 14
-0.6118410381184104	forest	n_arr: 8	estimator = 15
-0.6156528791565288	forest_pipe	n_arr: 8	estimator = 15
-0.6108678021086781	forest	n_arr: 8	estimator = 16
-0.6173560421735604	forest_pipe	n_arr: 8	estimator = 16
-0.6099756690997566	forest	n_arr: 8	estimator = 17
-0.6095701540957015	forest_pipe	n_arr: 8	estimator = 17
-0.613300892133009	forest	n_arr: 8	estimator = 18
-0.6112733171127331	forest_pipe	n_arr: 8	estimator = 18
-0.6117599351175994	forest	n_arr: 8	estimator = 19
-0.6064882400648823	forest_pipe	n_arr: 8	estimator = 19
-0.6216545012165451	svc 	n_arr: 9
-0.6426601784266018	linearsvc 	n_arr: 9
-0.567477696674777	knn	n_arr: 9	neighbors = 1	uniform
-0.567477696674777	knn	n_arr: 9	neighbors = 1	distance
-0.6307380373073804	pipe_knn	n_arr: 9	neighbors = 1	uniform
-0.6307380373073804	pipe_knn	n_arr: 9	neighbors = 1	distance
-0.5816707218167071	knn	n_arr: 9	neighbors = 2	uniform
-0.567477696674777	knn	n_arr: 9	neighbors = 2	distance
-0.6463098134630979	pipe_knn	n_arr: 9	neighbors = 2	uniform
-0.6307380373073804	pipe_knn	n_arr: 9	neighbors = 2	distance
-0.5810218978102191	knn	n_arr: 9	neighbors = 3	uniform
-0.580859691808597	knn	n_arr: 9	neighbors = 3	distance
-0.6455798864557989	pipe_knn	n_arr: 9	neighbors = 3	uniform
-0.6454176804541769	pipe_knn	n_arr: 9	neighbors = 3	distance
-0.5950527169505271	knn	n_arr: 9	neighbors = 4	uniform
-0.5861313868613138	knn	n_arr: 9	neighbors = 4	distance
-0.6600162206001622	pipe_knn	n_arr: 9	neighbors = 4	uniform
-0.651419302514193	pipe_knn	n_arr: 9	neighbors = 4	distance
-0.5935928629359287	knn	n_arr: 9	neighbors = 5	uniform
-0.5930251419302514	knn	n_arr: 9	neighbors = 5	distance
-0.6586374695863748	pipe_knn	n_arr: 9	neighbors = 5	uniform
-0.6587185725871857	pipe_knn	n_arr: 9	neighbors = 5	distance
-0.5970802919708028	knn	n_arr: 9	neighbors = 6	uniform
-0.5956204379562045	knn	n_arr: 9	neighbors = 6	distance
-0.6617193836171937	pipe_knn	n_arr: 9	neighbors = 6	uniform
-0.6613138686131388	pipe_knn	n_arr: 9	neighbors = 6	distance
-0.6025952960259529	knn	n_arr: 9	neighbors = 7	uniform
-0.6004866180048662	knn	n_arr: 9	neighbors = 7	distance
-0.667802108678021	pipe_knn	n_arr: 9	neighbors = 7	uniform
-0.6650446066504461	pipe_knn	n_arr: 9	neighbors = 7	distance
-0.6058394160583942	knn	n_arr: 9	neighbors = 8	uniform
-0.6030819140308191	knn	n_arr: 9	neighbors = 8	distance
-0.672587185725872	pipe_knn	n_arr: 9	neighbors = 8	uniform
-0.6694241686942417	pipe_knn	n_arr: 9	neighbors = 8	distance
-0.6060827250608273	knn	n_arr: 9	neighbors = 9	uniform
-0.6055961070559611	knn	n_arr: 9	neighbors = 9	distance
-0.6733171127331712	pipe_knn	n_arr: 9	neighbors = 9	uniform
-0.6721816707218167	pipe_knn	n_arr: 9	neighbors = 9	distance
-0.5662611516626116	forest	n_arr: 9	estimator = 1
-0.5657745336577453	forest_pipe	n_arr: 9	estimator = 1
-0.5774533657745337	forest	n_arr: 9	estimator = 2
-0.5768856447688564	forest_pipe	n_arr: 9	estimator = 2
-0.5845904298459043	forest	n_arr: 9	estimator = 3
-0.5835360908353608	forest_pipe	n_arr: 9	estimator = 3
-0.5815896188158961	forest	n_arr: 9	estimator = 4
-0.5877534468775344	forest_pipe	n_arr: 9	estimator = 4
-0.5897810218978102	forest	n_arr: 9	estimator = 5
-0.5980535279805353	forest_pipe	n_arr: 9	estimator = 5
-0.5940794809407949	forest	n_arr: 9	estimator = 6
-0.6072992700729928	forest_pipe	n_arr: 9	estimator = 6
-0.6004866180048662	forest	n_arr: 9	estimator = 7
-0.5999188969991889	forest_pipe	n_arr: 9	estimator = 7
-0.6047850770478508	forest	n_arr: 9	estimator = 8
-0.608191403081914	forest_pipe	n_arr: 9	estimator = 8
-0.608272506082725	forest	n_arr: 9	estimator = 9
-0.6043795620437957	forest_pipe	n_arr: 9	estimator = 9
-0.6038118410381184	forest	n_arr: 9	estimator = 10
-0.6135442011354422	forest_pipe	n_arr: 9	estimator = 10
-0.6114355231143552	forest	n_arr: 9	estimator = 11
-0.60551500405515	forest_pipe	n_arr: 9	estimator = 11
-0.6138686131386861	forest	n_arr: 9	estimator = 12
-0.6111111111111112	forest_pipe	n_arr: 9	estimator = 12
-0.6121654501216545	forest	n_arr: 9	estimator = 13
-0.6145985401459855	forest_pipe	n_arr: 9	estimator = 13
-0.615896188158962	forest	n_arr: 9	estimator = 14
-0.6124898621248986	forest_pipe	n_arr: 9	estimator = 14
-0.6137064071370639	forest	n_arr: 9	estimator = 15
-0.6129764801297648	forest_pipe	n_arr: 9	estimator = 15
-0.6102189781021897	forest	n_arr: 9	estimator = 16
-0.6145985401459855	forest_pipe	n_arr: 9	estimator = 16
-0.6151662611516627	forest	n_arr: 9	estimator = 17
-0.6140308191403082	forest_pipe	n_arr: 9	estimator = 17
-0.6141930251419303	forest	n_arr: 9	estimator = 18
-0.6090835360908353	forest_pipe	n_arr: 9	estimator = 18
-0.6147607461476075	forest	n_arr: 9	estimator = 19
-0.6186536901865369	forest_pipe	n_arr: 9	estimator = 19
-0.6235198702351987	svc 	n_arr: 10
-0.6419302514193025	linearsvc 	n_arr: 10
-0.5716139497161395	knn	n_arr: 10	neighbors = 1	uniform
-0.5716139497161395	knn	n_arr: 10	neighbors = 1	distance
-0.6362530413625305	pipe_knn	n_arr: 10	neighbors = 1	uniform
-0.6362530413625305	pipe_knn	n_arr: 10	neighbors = 1	distance
-0.5874290348742903	knn	n_arr: 10	neighbors = 2	uniform
-0.5712084347120844	knn	n_arr: 10	neighbors = 2	distance
-0.6544201135442012	pipe_knn	n_arr: 10	neighbors = 2	uniform
-0.6358475263584753	pipe_knn	n_arr: 10	neighbors = 2	distance
-0.586699107866991	knn	n_arr: 10	neighbors = 3	uniform
-0.5859691808596917	knn	n_arr: 10	neighbors = 3	distance
-0.6519870235198701	pipe_knn	n_arr: 10	neighbors = 3	uniform
-0.6507704785077048	pipe_knn	n_arr: 10	neighbors = 3	distance
-0.5920519059205192	knn	n_arr: 10	neighbors = 4	uniform
-0.5881589618815897	knn	n_arr: 10	neighbors = 4	distance
-0.6581508515815087	pipe_knn	n_arr: 10	neighbors = 4	uniform
-0.6523114355231143	pipe_knn	n_arr: 10	neighbors = 4	distance
-0.5913219789132197	knn	n_arr: 10	neighbors = 5	uniform
-0.5943227899432277	knn	n_arr: 10	neighbors = 5	distance
-0.6557988645579885	pipe_knn	n_arr: 10	neighbors = 5	uniform
-0.6585563665855635	pipe_knn	n_arr: 10	neighbors = 5	distance
-0.5980535279805352	knn	n_arr: 10	neighbors = 6	uniform
-0.5927818329278183	knn	n_arr: 10	neighbors = 6	distance
-0.6644768856447688	pipe_knn	n_arr: 10	neighbors = 6	uniform
-0.6575831305758313	pipe_knn	n_arr: 10	neighbors = 6	distance
-0.5976480129764801	knn	n_arr: 10	neighbors = 7	uniform
-0.59683698296837	knn	n_arr: 10	neighbors = 7	distance
-0.6637469586374695	pipe_knn	n_arr: 10	neighbors = 7	uniform
-0.6619626926196269	pipe_knn	n_arr: 10	neighbors = 7	distance
-0.602595296025953	knn	n_arr: 10	neighbors = 8	uniform
-0.5966747769667478	knn	n_arr: 10	neighbors = 8	distance
-0.6687753446877535	pipe_knn	n_arr: 10	neighbors = 8	uniform
-0.662287104622871	pipe_knn	n_arr: 10	neighbors = 8	distance
-0.6009732360097324	knn	n_arr: 10	neighbors = 9	uniform
-0.6008921330089214	knn	n_arr: 10	neighbors = 9	distance
-0.6668288726682888	pipe_knn	n_arr: 10	neighbors = 9	uniform
-0.6669910786699108	pipe_knn	n_arr: 10	neighbors = 9	distance
-0.5683698296836984	forest	n_arr: 10	estimator = 1
-0.568045417680454	forest_pipe	n_arr: 10	estimator = 1
-0.5802919708029197	forest	n_arr: 10	estimator = 2
-0.5770478507704785	forest_pipe	n_arr: 10	estimator = 2
-0.5881589618815896	forest	n_arr: 10	estimator = 3
-0.5828061638280616	forest_pipe	n_arr: 10	estimator = 3
-0.5886455798864557	forest	n_arr: 10	estimator = 4
-0.5934306569343066	forest_pipe	n_arr: 10	estimator = 4
-0.5970802919708028	forest	n_arr: 10	estimator = 5
-0.5970802919708029	forest_pipe	n_arr: 10	estimator = 5
-0.6010543390105432	forest	n_arr: 10	estimator = 6
-0.6003244120032442	forest_pipe	n_arr: 10	estimator = 6
-0.605028386050284	forest	n_arr: 10	estimator = 7
-0.6153284671532846	forest_pipe	n_arr: 10	estimator = 7
-0.6077047850770478	forest	n_arr: 10	estimator = 8
-0.6124087591240875	forest_pipe	n_arr: 10	estimator = 8
-0.60551500405515	forest	n_arr: 10	estimator = 9
-0.608272506082725	forest_pipe	n_arr: 10	estimator = 9
-0.6120032441200325	forest	n_arr: 10	estimator = 10
-0.6135442011354421	forest_pipe	n_arr: 10	estimator = 10
-0.6160583941605839	forest	n_arr: 10	estimator = 11
-0.6052716950527169	forest_pipe	n_arr: 10	estimator = 11
-0.6171938361719383	forest	n_arr: 10	estimator = 12
-0.6147607461476075	forest_pipe	n_arr: 10	estimator = 12
-0.6199513381995133	forest	n_arr: 10	estimator = 13
-0.6111922141119221	forest_pipe	n_arr: 10	estimator = 13
-0.6192214111922142	forest	n_arr: 10	estimator = 14
-0.6227088402270883	forest_pipe	n_arr: 10	estimator = 14
-0.6221411192214112	forest	n_arr: 10	estimator = 15
-0.6166261151662611	forest_pipe	n_arr: 10	estimator = 15
-0.6188158961881589	forest	n_arr: 10	estimator = 16
-0.6225466342254662	forest_pipe	n_arr: 10	estimator = 16
-0.6195458231954583	forest	n_arr: 10	estimator = 17
-0.6199513381995134	forest_pipe	n_arr: 10	estimator = 17
-0.6155717761557178	forest	n_arr: 10	estimator = 18
-0.6172749391727494	forest_pipe	n_arr: 10	estimator = 18
-0.6200324412003244	forest	n_arr: 10	estimator = 19
-0.6236820762368207	forest_pipe	n_arr: 10	estimator = 19
-0.6260340632603406	svc 	n_arr: 11
-0.6427412814274128	linearsvc 	n_arr: 11
-0.5706407137064072	knn	n_arr: 11	neighbors = 1	uniform
-0.5706407137064072	knn	n_arr: 11	neighbors = 1	distance
-0.6357664233576643	pipe_knn	n_arr: 11	neighbors = 1	uniform
-0.6357664233576643	pipe_knn	n_arr: 11	neighbors = 1	distance
-0.5844282238442822	knn	n_arr: 11	neighbors = 2	uniform
-0.5703974047039742	knn	n_arr: 11	neighbors = 2	distance
-0.6512570965125709	pipe_knn	n_arr: 11	neighbors = 2	uniform
-0.6355231143552312	pipe_knn	n_arr: 11	neighbors = 2	distance
-0.589537712895377	knn	n_arr: 11	neighbors = 3	uniform
-0.5893755068937552	knn	n_arr: 11	neighbors = 3	distance
-0.6565287915652879	pipe_knn	n_arr: 11	neighbors = 3	uniform
-0.6559610705596107	pipe_knn	n_arr: 11	neighbors = 3	distance
-0.5977291159772912	knn	n_arr: 11	neighbors = 4	uniform
-0.5884022708840227	knn	n_arr: 11	neighbors = 4	distance
-0.6642335766423357	pipe_knn	n_arr: 11	neighbors = 4	uniform
-0.6549878345498784	pipe_knn	n_arr: 11	neighbors = 4	distance
-0.5977291159772911	knn	n_arr: 11	neighbors = 5	uniform
-0.5961881589618817	knn	n_arr: 11	neighbors = 5	distance
-0.6643146796431467	pipe_knn	n_arr: 11	neighbors = 5	uniform
-0.661881589618816	pipe_knn	n_arr: 11	neighbors = 5	distance
-0.6031630170316302	knn	n_arr: 11	neighbors = 6	uniform
-0.5974858069748582	knn	n_arr: 11	neighbors = 6	distance
-0.6705596107055961	pipe_knn	n_arr: 11	neighbors = 6	uniform
-0.6627737226277374	pipe_knn	n_arr: 11	neighbors = 6	distance
-0.6059205190592052	knn	n_arr: 11	neighbors = 7	uniform
-0.6030819140308191	knn	n_arr: 11	neighbors = 7	distance
-0.6725871857258718	pipe_knn	n_arr: 11	neighbors = 7	uniform
-0.6686942416869424	pipe_knn	n_arr: 11	neighbors = 7	distance
-0.6085158150851582	knn	n_arr: 11	neighbors = 8	uniform
-0.6033252230332523	knn	n_arr: 11	neighbors = 8	distance
-0.6762368207623682	pipe_knn	n_arr: 11	neighbors = 8	uniform
-0.6694241686942417	pipe_knn	n_arr: 11	neighbors = 8	distance
-0.6077047850770478	knn	n_arr: 11	neighbors = 9	uniform
-0.6065693430656934	knn	n_arr: 11	neighbors = 9	distance
-0.6750202757502027	pipe_knn	n_arr: 11	neighbors = 9	uniform
-0.6734793187347932	pipe_knn	n_arr: 11	neighbors = 9	distance
-0.5579886455798865	forest	n_arr: 11	estimator = 1
-0.5639902676399027	forest_pipe	n_arr: 11	estimator = 1
-0.5824817518248175	forest	n_arr: 11	estimator = 2
-0.5748580697485807	forest_pipe	n_arr: 11	estimator = 2
-0.5856447688564477	forest	n_arr: 11	estimator = 3
-0.5905109489051095	forest_pipe	n_arr: 11	estimator = 3
-0.5931873479318734	forest	n_arr: 11	estimator = 4
-0.6012165450121655	forest_pipe	n_arr: 11	estimator = 4
-0.597323600973236	forest	n_arr: 11	estimator = 5
-0.6073803730738037	forest_pipe	n_arr: 11	estimator = 5
-0.6010543390105435	forest	n_arr: 11	estimator = 6
-0.5992700729927009	forest_pipe	n_arr: 11	estimator = 6
-0.6116788321167883	forest	n_arr: 11	estimator = 7
-0.6041362530413625	forest_pipe	n_arr: 11	estimator = 7
-0.6076236820762368	forest	n_arr: 11	estimator = 8
-0.6086780210867802	forest_pipe	n_arr: 11	estimator = 8
-0.6097323600973237	forest	n_arr: 11	estimator = 9
-0.610705596107056	forest_pipe	n_arr: 11	estimator = 9
-0.6138686131386861	forest	n_arr: 11	estimator = 10
-0.6082725060827251	forest_pipe	n_arr: 11	estimator = 10
-0.6121654501216545	forest	n_arr: 11	estimator = 11
-0.6102189781021896	forest_pipe	n_arr: 11	estimator = 11
-0.6157339821573399	forest	n_arr: 11	estimator = 12
-0.6148418491484184	forest_pipe	n_arr: 11	estimator = 12
-0.6158150851581509	forest	n_arr: 11	estimator = 13
-0.6152473641524736	forest_pipe	n_arr: 11	estimator = 13
-0.6193836171938361	forest	n_arr: 11	estimator = 14
-0.6180048661800486	forest_pipe	n_arr: 11	estimator = 14
-0.6195458231954581	forest	n_arr: 11	estimator = 15
-0.6208434712084346	forest_pipe	n_arr: 11	estimator = 15
-0.6208434712084347	forest	n_arr: 11	estimator = 16
-0.6220600162206003	forest_pipe	n_arr: 11	estimator = 16
-0.6171938361719385	forest	n_arr: 11	estimator = 17
-0.6193836171938361	forest_pipe	n_arr: 11	estimator = 17
-0.6227899432278995	forest	n_arr: 11	estimator = 18
-0.618978102189781	forest_pipe	n_arr: 11	estimator = 18
-0.624006488240065	forest	n_arr: 11	estimator = 19
-0.6263584752635847	forest_pipe	n_arr: 11	estimator = 19
-0.6290348742903489	svc 	n_arr: 12
-0.6442822384428223	linearsvc 	n_arr: 12
-0.5682887266828873	knn	n_arr: 12	neighbors = 1	uniform
-0.5682887266828873	knn	n_arr: 12	neighbors = 1	distance
-0.6341443633414436	pipe_knn	n_arr: 12	neighbors = 1	uniform
-0.6341443633414436	pipe_knn	n_arr: 12	neighbors = 1	distance
-0.5876723438767234	knn	n_arr: 12	neighbors = 2	uniform
-0.5681265206812651	knn	n_arr: 12	neighbors = 2	distance
-0.6544201135442012	pipe_knn	n_arr: 12	neighbors = 2	uniform
-0.6339821573398216	pipe_knn	n_arr: 12	neighbors = 2	distance
-0.5908353609083536	knn	n_arr: 12	neighbors = 3	uniform
-0.5888077858880778	knn	n_arr: 12	neighbors = 3	distance
-0.657015409570154	pipe_knn	n_arr: 12	neighbors = 3	uniform
-0.6545012165450123	pipe_knn	n_arr: 12	neighbors = 3	distance
-0.5962692619626926	knn	n_arr: 12	neighbors = 4	uniform
-0.5903487429034874	knn	n_arr: 12	neighbors = 4	distance
-0.6628548256285482	pipe_knn	n_arr: 12	neighbors = 4	uniform
-0.6576642335766424	pipe_knn	n_arr: 12	neighbors = 4	distance
-0.597404703974047	knn	n_arr: 12	neighbors = 5	uniform
-0.594728304947283	knn	n_arr: 12	neighbors = 5	distance
-0.6646390916463909	pipe_knn	n_arr: 12	neighbors = 5	uniform
-0.6609083536090835	pipe_knn	n_arr: 12	neighbors = 5	distance
-0.6073803730738037	knn	n_arr: 12	neighbors = 6	uniform
-0.5953771289537713	knn	n_arr: 12	neighbors = 6	distance
-0.675831305758313	pipe_knn	n_arr: 12	neighbors = 6	uniform
-0.6627737226277373	pipe_knn	n_arr: 12	neighbors = 6	distance
-0.6063260340632604	knn	n_arr: 12	neighbors = 7	uniform
-0.6030008110300081	knn	n_arr: 12	neighbors = 7	distance
-0.6741281427412815	pipe_knn	n_arr: 12	neighbors = 7	uniform
-0.6704785077047851	pipe_knn	n_arr: 12	neighbors = 7	distance
-0.6099756690997566	knn	n_arr: 12	neighbors = 8	uniform
-0.6021897810218978	knn	n_arr: 12	neighbors = 8	distance
-0.678264395782644	pipe_knn	n_arr: 12	neighbors = 8	uniform
-0.6696674776966748	pipe_knn	n_arr: 12	neighbors = 8	distance
-0.6082725060827251	knn	n_arr: 12	neighbors = 9	uniform
-0.6047850770478508	knn	n_arr: 12	neighbors = 9	distance
-0.6753446877534469	pipe_knn	n_arr: 12	neighbors = 9	uniform
-0.6721005677210057	pipe_knn	n_arr: 12	neighbors = 9	distance
-0.5642335766423359	forest	n_arr: 12	estimator = 1
-0.5749391727493918	forest_pipe	n_arr: 12	estimator = 1
-0.5901054339010544	forest	n_arr: 12	estimator = 2
-0.5777777777777778	forest_pipe	n_arr: 12	estimator = 2
-0.5886455798864557	forest	n_arr: 12	estimator = 3
-0.5855636658556367	forest_pipe	n_arr: 12	estimator = 3
-0.5944849959448502	forest	n_arr: 12	estimator = 4
-0.5935928629359286	forest_pipe	n_arr: 12	estimator = 4
-0.5991889699918898	forest	n_arr: 12	estimator = 5
-0.5955393349553932	forest_pipe	n_arr: 12	estimator = 5
-0.6052716950527169	forest	n_arr: 12	estimator = 6
-0.603000811030008	forest_pipe	n_arr: 12	estimator = 6
-0.6074614760746148	forest	n_arr: 12	estimator = 7
-0.6119221411192214	forest_pipe	n_arr: 12	estimator = 7
-0.6095701540957016	forest	n_arr: 12	estimator = 8
-0.6098945660989457	forest_pipe	n_arr: 12	estimator = 8
-0.6087591240875913	forest	n_arr: 12	estimator = 9
-0.608272506082725	forest_pipe	n_arr: 12	estimator = 9
-0.6103000811030008	forest	n_arr: 12	estimator = 10
-0.6151662611516627	forest_pipe	n_arr: 12	estimator = 10
-0.6072181670721818	forest	n_arr: 12	estimator = 11
-0.6124898621248985	forest_pipe	n_arr: 12	estimator = 11
-0.6185725871857259	forest	n_arr: 12	estimator = 12
-0.6113544201135442	forest_pipe	n_arr: 12	estimator = 12
-0.6168694241686942	forest	n_arr: 12	estimator = 13
-0.6172749391727494	forest_pipe	n_arr: 12	estimator = 13
-0.6214922952149231	forest	n_arr: 12	estimator = 14
-0.6218978102189782	forest_pipe	n_arr: 12	estimator = 14
-0.6191403081914032	forest	n_arr: 12	estimator = 15
-0.6175993511759935	forest_pipe	n_arr: 12	estimator = 15
-0.6193836171938361	forest	n_arr: 12	estimator = 16
-0.6231143552311436	forest_pipe	n_arr: 12	estimator = 16
-0.6200324412003244	forest	n_arr: 12	estimator = 17
-0.621492295214923	forest_pipe	n_arr: 12	estimator = 17
-0.619140308191403	forest	n_arr: 12	estimator = 18
-0.6279805352798054	forest_pipe	n_arr: 12	estimator = 18
-0.6218978102189782	forest	n_arr: 12	estimator = 19
-0.6211678832116789	forest_pipe	n_arr: 12	estimator = 19
-0.6313057583130577	svc 	n_arr: 13
-0.6475263584752635	linearsvc 	n_arr: 13
-0.5751013787510137	knn	n_arr: 13	neighbors = 1	uniform
-0.5751013787510137	knn	n_arr: 13	neighbors = 1	distance
-0.6416869424168694	pipe_knn	n_arr: 13	neighbors = 1	uniform
-0.6416869424168694	pipe_knn	n_arr: 13	neighbors = 1	distance
-0.5831305758313057	knn	n_arr: 13	neighbors = 2	uniform
-0.57558799675588	knn	n_arr: 13	neighbors = 2	distance
-0.6503649635036495	pipe_knn	n_arr: 13	neighbors = 2	uniform
-0.6421735604217357	pipe_knn	n_arr: 13	neighbors = 2	distance
-0.5887266828872668	knn	n_arr: 13	neighbors = 3	uniform
-0.5855636658556366	knn	n_arr: 13	neighbors = 3	distance
-0.6562854825628548	pipe_knn	n_arr: 13	neighbors = 3	uniform
-0.6523925385239253	pipe_knn	n_arr: 13	neighbors = 3	distance
-0.597242497972425	knn	n_arr: 13	neighbors = 4	uniform
-0.5862124898621248	knn	n_arr: 13	neighbors = 4	distance
-0.6641524736415247	pipe_knn	n_arr: 13	neighbors = 4	uniform
-0.6532846715328466	pipe_knn	n_arr: 13	neighbors = 4	distance
-0.5948094079480941	knn	n_arr: 13	neighbors = 5	uniform
-0.591889699918897	knn	n_arr: 13	neighbors = 5	distance
-0.6633414436334145	pipe_knn	n_arr: 13	neighbors = 5	uniform
-0.659205190592052	pipe_knn	n_arr: 13	neighbors = 5	distance
-0.5976480129764802	knn	n_arr: 13	neighbors = 6	uniform
-0.594322789943228	knn	n_arr: 13	neighbors = 6	distance
-0.6665044606650447	pipe_knn	n_arr: 13	neighbors = 6	uniform
-0.6621248986212491	pipe_knn	n_arr: 13	neighbors = 6	distance
-0.6025141930251419	knn	n_arr: 13	neighbors = 7	uniform
-0.5991078669910788	knn	n_arr: 13	neighbors = 7	distance
-0.6709651257096512	pipe_knn	n_arr: 13	neighbors = 7	uniform
-0.6668288726682889	pipe_knn	n_arr: 13	neighbors = 7	distance
-0.6044606650446066	knn	n_arr: 13	neighbors = 8	uniform
-0.6017842660178426	knn	n_arr: 13	neighbors = 8	distance
-0.6735604217356042	pipe_knn	n_arr: 13	neighbors = 8	uniform
-0.6696674776966748	pipe_knn	n_arr: 13	neighbors = 8	distance
-0.608110300081103	knn	n_arr: 13	neighbors = 9	uniform
-0.6056772100567722	knn	n_arr: 13	neighbors = 9	distance
-0.6763990267639903	pipe_knn	n_arr: 13	neighbors = 9	uniform
-0.6738848337388484	pipe_knn	n_arr: 13	neighbors = 9	distance
-0.5699918896999189	forest	n_arr: 13	estimator = 1
-0.5630981346309815	forest_pipe	n_arr: 13	estimator = 1
-0.5874290348742903	forest	n_arr: 13	estimator = 2
-0.5821573398215735	forest_pipe	n_arr: 13	estimator = 2
-0.589213300892133	forest	n_arr: 13	estimator = 3
-0.589213300892133	forest_pipe	n_arr: 13	estimator = 3
-0.5983779399837794	forest	n_arr: 13	estimator = 4
-0.5982968369829683	forest_pipe	n_arr: 13	estimator = 4
-0.6020275750202758	forest	n_arr: 13	estimator = 5
-0.5996755879967559	forest_pipe	n_arr: 13	estimator = 5
-0.6098945660989457	forest	n_arr: 13	estimator = 6
-0.6017031630170316	forest_pipe	n_arr: 13	estimator = 6
-0.6095701540957016	forest	n_arr: 13	estimator = 7
-0.6115977291159773	forest_pipe	n_arr: 13	estimator = 7
-0.6105433901054338	forest	n_arr: 13	estimator = 8
-0.6093268450932684	forest_pipe	n_arr: 13	estimator = 8
-0.6072181670721817	forest	n_arr: 13	estimator = 9
-0.6162206001622059	forest_pipe	n_arr: 13	estimator = 9
-0.6129764801297648	forest	n_arr: 13	estimator = 10
-0.6169505271695053	forest_pipe	n_arr: 13	estimator = 10
-0.6197891321978913	forest	n_arr: 13	estimator = 11
-0.6175182481751824	forest_pipe	n_arr: 13	estimator = 11
-0.6211678832116789	forest	n_arr: 13	estimator = 12
-0.6229521492295215	forest_pipe	n_arr: 13	estimator = 12
-0.6184914841849148	forest	n_arr: 13	estimator = 13
-0.6204379562043796	forest_pipe	n_arr: 13	estimator = 13
-0.624574209245742	forest	n_arr: 13	estimator = 14
-0.6288726682887267	forest_pipe	n_arr: 13	estimator = 14
-0.6230332522303326	forest	n_arr: 13	estimator = 15
-0.6298459042984591	forest_pipe	n_arr: 13	estimator = 15
-0.6313868613138686	forest	n_arr: 13	estimator = 16
-0.6295214922952149	forest_pipe	n_arr: 13	estimator = 16
-0.6227088402270884	forest	n_arr: 13	estimator = 17
-0.6254663422546635	forest_pipe	n_arr: 13	estimator = 17
-0.6286293592862936	forest	n_arr: 13	estimator = 18
-0.624087591240876	forest_pipe	n_arr: 13	estimator = 18
-0.6270884022708839	forest	n_arr: 13	estimator = 19
-0.6249797242497972	forest_pipe	n_arr: 13	estimator = 19
-0.6302514193025143	svc 	n_arr: 14
-0.6501216545012165	linearsvc 	n_arr: 14
-0.5708840227088402	knn	n_arr: 14	neighbors = 1	uniform
-0.5708840227088402	knn	n_arr: 14	neighbors = 1	distance
-0.6377128953771289	pipe_knn	n_arr: 14	neighbors = 1	uniform
-0.6377128953771289	pipe_knn	n_arr: 14	neighbors = 1	distance
-0.5822384428223845	knn	n_arr: 14	neighbors = 2	uniform
-0.5714517437145173	knn	n_arr: 14	neighbors = 2	distance
-0.6493106244931063	pipe_knn	n_arr: 14	neighbors = 2	uniform
-0.6382806163828061	pipe_knn	n_arr: 14	neighbors = 2	distance
-0.5921330089213301	knn	n_arr: 14	neighbors = 3	uniform
-0.5886455798864557	knn	n_arr: 14	neighbors = 3	distance
-0.659529602595296	pipe_knn	n_arr: 14	neighbors = 3	uniform
-0.6556366585563665	pipe_knn	n_arr: 14	neighbors = 3	distance
-0.5980535279805353	knn	n_arr: 14	neighbors = 4	uniform
-0.5908353609083536	knn	n_arr: 14	neighbors = 4	distance
-0.6648824006488241	pipe_knn	n_arr: 14	neighbors = 4	uniform
-0.6581508515815087	pipe_knn	n_arr: 14	neighbors = 4	distance
-0.6016220600162206	knn	n_arr: 14	neighbors = 5	uniform
-0.5988645579886455	knn	n_arr: 14	neighbors = 5	distance
-0.670316301703163	pipe_knn	n_arr: 14	neighbors = 5	uniform
-0.6663422546634225	pipe_knn	n_arr: 14	neighbors = 5	distance
-0.6026763990267641	knn	n_arr: 14	neighbors = 6	uniform
-0.5988645579886456	knn	n_arr: 14	neighbors = 6	distance
-0.6716950527169506	pipe_knn	n_arr: 14	neighbors = 6	uniform
-0.6661800486618005	pipe_knn	n_arr: 14	neighbors = 6	distance
-0.6100567721005677	knn	n_arr: 14	neighbors = 7	uniform
-0.605596107055961	knn	n_arr: 14	neighbors = 7	distance
-0.6781021897810219	pipe_knn	n_arr: 14	neighbors = 7	uniform
-0.6729927007299269	pipe_knn	n_arr: 14	neighbors = 7	distance
-0.6083536090835361	knn	n_arr: 14	neighbors = 8	uniform
-0.6045417680454177	knn	n_arr: 14	neighbors = 8	distance
-0.6769667477696674	pipe_knn	n_arr: 14	neighbors = 8	uniform
-0.6719383617193837	pipe_knn	n_arr: 14	neighbors = 8	distance
-0.6095701540957015	knn	n_arr: 14	neighbors = 9	uniform
-0.605190592051906	knn	n_arr: 14	neighbors = 9	distance
-0.6768045417680454	pipe_knn	n_arr: 14	neighbors = 9	uniform
-0.6720194647201947	pipe_knn	n_arr: 14	neighbors = 9	distance
-0.5744525547445254	forest	n_arr: 14	estimator = 1
-0.5696674776966747	forest_pipe	n_arr: 14	estimator = 1
-0.5848337388483373	forest	n_arr: 14	estimator = 2
-0.5750202757502028	forest_pipe	n_arr: 14	estimator = 2
-0.5938361719383618	forest	n_arr: 14	estimator = 3
-0.5948094079480941	forest_pipe	n_arr: 14	estimator = 3
-0.5931062449310625	forest	n_arr: 14	estimator = 4
-0.5995133819951337	forest_pipe	n_arr: 14	estimator = 4
-0.6012165450121655	forest	n_arr: 14	estimator = 5
-0.6037307380373074	forest_pipe	n_arr: 14	estimator = 5
-0.6011354420113544	forest	n_arr: 14	estimator = 6
-0.6098134630981347	forest_pipe	n_arr: 14	estimator = 6
-0.600324412003244	forest	n_arr: 14	estimator = 7
-0.6093268450932685	forest_pipe	n_arr: 14	estimator = 7
-0.6060016220600163	forest	n_arr: 14	estimator = 8
-0.6124898621248988	forest_pipe	n_arr: 14	estimator = 8
-0.6140308191403082	forest	n_arr: 14	estimator = 9
-0.613463098134631	forest_pipe	n_arr: 14	estimator = 9
-0.6125709651257096	forest	n_arr: 14	estimator = 10
-0.6139497161394971	forest_pipe	n_arr: 14	estimator = 10
-0.6210867802108678	forest	n_arr: 14	estimator = 11
-0.6197080291970802	forest_pipe	n_arr: 14	estimator = 11
-0.621573398215734	forest	n_arr: 14	estimator = 12
-0.616301703163017	forest_pipe	n_arr: 14	estimator = 12
-0.6204379562043796	forest	n_arr: 14	estimator = 13
-0.6225466342254663	forest_pipe	n_arr: 14	estimator = 13
-0.6168694241686943	forest	n_arr: 14	estimator = 14
-0.6204379562043796	forest_pipe	n_arr: 14	estimator = 14
-0.6227899432278995	forest	n_arr: 14	estimator = 15
-0.6222222222222222	forest_pipe	n_arr: 14	estimator = 15
-0.6226277372262774	forest	n_arr: 14	estimator = 16
-0.6261151662611517	forest_pipe	n_arr: 14	estimator = 16
-0.6235198702351987	forest	n_arr: 14	estimator = 17
-0.6227088402270884	forest_pipe	n_arr: 14	estimator = 17
-0.6232765612327656	forest	n_arr: 14	estimator = 18
-0.6235198702351988	forest_pipe	n_arr: 14	estimator = 18
-0.6317923763179238	forest	n_arr: 14	estimator = 19
-0.6299270072992701	forest_pipe	n_arr: 14	estimator = 19
-0.6411192214111923	svc 	n_arr: 15
-0.651257096512571	linearsvc 	n_arr: 15
-0.5771289537712895	knn	n_arr: 15	neighbors = 1	uniform
-0.5771289537712895	knn	n_arr: 15	neighbors = 1	distance
-0.6443633414436333	pipe_knn	n_arr: 15	neighbors = 1	uniform
-0.6443633414436333	pipe_knn	n_arr: 15	neighbors = 1	distance
-0.5846715328467152	knn	n_arr: 15	neighbors = 2	uniform
-0.5772911597729117	knn	n_arr: 15	neighbors = 2	distance
-0.6510948905109488	pipe_knn	n_arr: 15	neighbors = 2	uniform
-0.6445255474452556	pipe_knn	n_arr: 15	neighbors = 2	distance
-0.5881589618815897	knn	n_arr: 15	neighbors = 3	uniform
-0.5842660178426601	knn	n_arr: 15	neighbors = 3	distance
-0.656528791565288	pipe_knn	n_arr: 15	neighbors = 3	uniform
-0.6523114355231142	pipe_knn	n_arr: 15	neighbors = 3	distance
-0.5907542579075427	knn	n_arr: 15	neighbors = 4	uniform
-0.586780210867802	knn	n_arr: 15	neighbors = 4	distance
-0.659124087591241	pipe_knn	n_arr: 15	neighbors = 4	uniform
-0.654420113544201	pipe_knn	n_arr: 15	neighbors = 4	distance
-0.5964314679643147	knn	n_arr: 15	neighbors = 5	uniform
-0.5912408759124088	knn	n_arr: 15	neighbors = 5	distance
-0.6640713706407136	pipe_knn	n_arr: 15	neighbors = 5	uniform
-0.6582319545823195	pipe_knn	n_arr: 15	neighbors = 5	distance
-0.5971613949716139	knn	n_arr: 15	neighbors = 6	uniform
-0.5966747769667478	knn	n_arr: 15	neighbors = 6	distance
-0.6666666666666666	pipe_knn	n_arr: 15	neighbors = 6	uniform
-0.6640713706407138	pipe_knn	n_arr: 15	neighbors = 6	distance
-0.6012165450121654	knn	n_arr: 15	neighbors = 7	uniform
-0.5962692619626927	knn	n_arr: 15	neighbors = 7	distance
-0.6692619626926195	pipe_knn	n_arr: 15	neighbors = 7	uniform
-0.6643957826439579	pipe_knn	n_arr: 15	neighbors = 7	distance
-0.6012976480129765	knn	n_arr: 15	neighbors = 8	uniform
-0.5978913219789131	knn	n_arr: 15	neighbors = 8	distance
-0.6696674776966748	pipe_knn	n_arr: 15	neighbors = 8	uniform
-0.6664233576642336	pipe_knn	n_arr: 15	neighbors = 8	distance
-0.605596107055961	knn	n_arr: 15	neighbors = 9	uniform
-0.6000000000000001	knn	n_arr: 15	neighbors = 9	distance
-0.6743714517437145	pipe_knn	n_arr: 15	neighbors = 9	uniform
-0.6684509326845094	pipe_knn	n_arr: 15	neighbors = 9	distance
-0.5742092457420924	forest	n_arr: 15	estimator = 1
-0.57007299270073	forest_pipe	n_arr: 15	estimator = 1
-0.589456609894566	forest	n_arr: 15	estimator = 2
-0.5896999188969992	forest_pipe	n_arr: 15	estimator = 2
-0.597242497972425	forest	n_arr: 15	estimator = 3
-0.5971613949716139	forest_pipe	n_arr: 15	estimator = 3
-0.5983779399837794	forest	n_arr: 15	estimator = 4
-0.5944849959448499	forest_pipe	n_arr: 15	estimator = 4
-0.6124087591240878	forest	n_arr: 15	estimator = 5
-0.6021897810218978	forest_pipe	n_arr: 15	estimator = 5
-0.6052716950527169	forest	n_arr: 15	estimator = 6
-0.6115166261151663	forest_pipe	n_arr: 15	estimator = 6
-0.6177615571776156	forest	n_arr: 15	estimator = 7
-0.6148418491484186	forest_pipe	n_arr: 15	estimator = 7
-0.6182481751824818	forest	n_arr: 15	estimator = 8
-0.6206812652068127	forest_pipe	n_arr: 15	estimator = 8
-0.624493106244931	forest	n_arr: 15	estimator = 9
-0.6222222222222222	forest_pipe	n_arr: 15	estimator = 9
-0.6227899432278995	forest	n_arr: 15	estimator = 10
-0.6175182481751825	forest_pipe	n_arr: 15	estimator = 10
-0.6253041362530414	forest	n_arr: 15	estimator = 11
-0.6309813463098135	forest_pipe	n_arr: 15	estimator = 11
-0.632360097323601	forest	n_arr: 15	estimator = 12
-0.6220600162206	forest_pipe	n_arr: 15	estimator = 12
-0.6334955393349555	forest	n_arr: 15	estimator = 13
-0.6267639902676398	forest_pipe	n_arr: 15	estimator = 13
-0.6287915652879157	forest	n_arr: 15	estimator = 14
-0.6275750202757502	forest_pipe	n_arr: 15	estimator = 14
-0.6287104622871047	forest	n_arr: 15	estimator = 15
-0.6278183292781834	forest_pipe	n_arr: 15	estimator = 15
-0.6320356853203568	forest	n_arr: 15	estimator = 16
-0.6312246553122466	forest_pipe	n_arr: 15	estimator = 16
-0.6300081103000811	forest	n_arr: 15	estimator = 17
-0.6255474452554746	forest_pipe	n_arr: 15	estimator = 17
-0.6318734793187347	forest	n_arr: 15	estimator = 18
-0.6290348742903489	forest_pipe	n_arr: 15	estimator = 18
-0.6292781832927817	forest	n_arr: 15	estimator = 19
-0.6324412003244119	forest_pipe	n_arr: 15	estimator = 19
-0.6422546634225467	svc 	n_arr: 16
-0.6521492295214922	linearsvc 	n_arr: 16
-0.5749391727493918	knn	n_arr: 16	neighbors = 1	uniform
-0.5749391727493918	knn	n_arr: 16	neighbors = 1	distance
-0.6410381184103813	pipe_knn	n_arr: 16	neighbors = 1	uniform
-0.6410381184103813	pipe_knn	n_arr: 16	neighbors = 1	distance
-0.5828061638280617	knn	n_arr: 16	neighbors = 2	uniform
-0.5751824817518248	knn	n_arr: 16	neighbors = 2	distance
-0.6494728304947284	pipe_knn	n_arr: 16	neighbors = 2	uniform
-0.6413625304136253	pipe_knn	n_arr: 16	neighbors = 2	distance
-0.5914841849148418	knn	n_arr: 16	neighbors = 3	uniform
-0.5875101378751014	knn	n_arr: 16	neighbors = 3	distance
-0.6593673965936739	pipe_knn	n_arr: 16	neighbors = 3	uniform
-0.6549878345498784	pipe_knn	n_arr: 16	neighbors = 3	distance
-0.5909975669099756	knn	n_arr: 16	neighbors = 4	uniform
-0.586780210867802	knn	n_arr: 16	neighbors = 4	distance
-0.6592051905920518	pipe_knn	n_arr: 16	neighbors = 4	uniform
-0.6536090835360908	pipe_knn	n_arr: 16	neighbors = 4	distance
-0.5987023519870235	knn	n_arr: 16	neighbors = 5	uniform
-0.5945660989456609	knn	n_arr: 16	neighbors = 5	distance
-0.6675587996755881	pipe_knn	n_arr: 16	neighbors = 5	uniform
-0.6627737226277373	pipe_knn	n_arr: 16	neighbors = 5	distance
-0.5982968369829684	knn	n_arr: 16	neighbors = 6	uniform
-0.5927007299270072	knn	n_arr: 16	neighbors = 6	distance
-0.6669099756690998	pipe_knn	n_arr: 16	neighbors = 6	uniform
-0.6603406326034063	pipe_knn	n_arr: 16	neighbors = 6	distance
-0.6022708840227088	knn	n_arr: 16	neighbors = 7	uniform
-0.5978913219789131	knn	n_arr: 16	neighbors = 7	distance
-0.6698296836982968	pipe_knn	n_arr: 16	neighbors = 7	uniform
-0.6652879156528791	pipe_knn	n_arr: 16	neighbors = 7	distance
-0.6007299270072992	knn	n_arr: 16	neighbors = 8	uniform
-0.5987023519870235	knn	n_arr: 16	neighbors = 8	distance
-0.6696674776966747	pipe_knn	n_arr: 16	neighbors = 8	uniform
-0.6662611516626115	pipe_knn	n_arr: 16	neighbors = 8	distance
-0.60551500405515	knn	n_arr: 16	neighbors = 9	uniform
-0.6011354420113544	knn	n_arr: 16	neighbors = 9	distance
-0.6745336577453365	pipe_knn	n_arr: 16	neighbors = 9	uniform
-0.6695863746958638	pipe_knn	n_arr: 16	neighbors = 9	distance
-0.5709651257096513	forest	n_arr: 16	estimator = 1
-0.5691808596918086	forest_pipe	n_arr: 16	estimator = 1
-0.5861313868613139	forest	n_arr: 16	estimator = 2
-0.581265206812652	forest_pipe	n_arr: 16	estimator = 2
-0.5909164639091646	forest	n_arr: 16	estimator = 3
-0.597404703974047	forest_pipe	n_arr: 16	estimator = 3
-0.6061638280616383	forest	n_arr: 16	estimator = 4
-0.5993511759935117	forest_pipe	n_arr: 16	estimator = 4
-0.6076236820762368	forest	n_arr: 16	estimator = 5
-0.6103000811030008	forest_pipe	n_arr: 16	estimator = 5
-0.6105433901054339	forest	n_arr: 16	estimator = 6
-0.6120032441200325	forest_pipe	n_arr: 16	estimator = 6
-0.6249797242497972	forest	n_arr: 16	estimator = 7
-0.618815896188159	forest_pipe	n_arr: 16	estimator = 7
-0.6197080291970802	forest	n_arr: 16	estimator = 8
-0.6203568532035686	forest_pipe	n_arr: 16	estimator = 8
-0.6191403081914031	forest	n_arr: 16	estimator = 9
-0.6193025141930252	forest_pipe	n_arr: 16	estimator = 9
-0.6280616382806163	forest	n_arr: 16	estimator = 10
-0.6240875912408759	forest_pipe	n_arr: 16	estimator = 10
-0.6287915652879157	forest	n_arr: 16	estimator = 11
-0.6304947283049472	forest_pipe	n_arr: 16	estimator = 11
-0.6227088402270885	forest	n_arr: 16	estimator = 12
-0.6284671532846714	forest_pipe	n_arr: 16	estimator = 12
-0.6310624493106245	forest	n_arr: 16	estimator = 13
-0.6284671532846714	forest_pipe	n_arr: 16	estimator = 13
-0.6300081103000812	forest	n_arr: 16	estimator = 14
-0.6289537712895377	forest_pipe	n_arr: 16	estimator = 14
-0.6313868613138687	forest	n_arr: 16	estimator = 15
-0.6278994322789943	forest_pipe	n_arr: 16	estimator = 15
-0.6329278183292781	forest	n_arr: 16	estimator = 16
-0.6340632603406325	forest_pipe	n_arr: 16	estimator = 16
-0.6357664233576641	forest	n_arr: 16	estimator = 17
-0.6339821573398216	forest_pipe	n_arr: 16	estimator = 17
-0.6333333333333333	forest	n_arr: 16	estimator = 18
-0.6282238442822385	forest_pipe	n_arr: 16	estimator = 18
-0.6311435523114355	forest	n_arr: 16	estimator = 19
-0.6342254663422546	forest_pipe	n_arr: 16	estimator = 19
-0.6309002433090024	svc 	n_arr: 17
-0.6489862124898621	linearsvc 	n_arr: 17
-0.573154906731549	knn	n_arr: 17	neighbors = 1	uniform
-0.573154906731549	knn	n_arr: 17	neighbors = 1	distance
-0.6401459854014598	pipe_knn	n_arr: 17	neighbors = 1	uniform
-0.6401459854014598	pipe_knn	n_arr: 17	neighbors = 1	distance
+0.6388483373884832	linearsvc 	n_arr: 3
+0.6386050283860504	linearsvc 	n_arr: 4
+0.6377128953771289	linearsvc 	n_arr: 5
+0.6365774533657744	linearsvc 	n_arr: 6
+0.6424168694241686	linearsvc 	n_arr: 7
+0.6469586374695864	linearsvc 	n_arr: 8
+0.6478507704785077	linearsvc 	n_arr: 9
+0.6530413625304136	linearsvc 	n_arr: 10
+0.6525547445255475	linearsvc 	n_arr: 11
+0.6515004055150041	linearsvc 	n_arr: 12
+0.6536901865369018	linearsvc 	n_arr: 13
+0.6531224655312247	linearsvc 	n_arr: 14
+0.653852392538524	linearsvc 	n_arr: 15
+0.6545012165450123	linearsvc 	n_arr: 16
+0.6530413625304136	linearsvc 	n_arr: 17
+0.6543390105433899	linearsvc 	n_arr: 18
+0.6540957015409572	linearsvc 	n_arr: 19
+0.6534468775344688	linearsvc 	n_arr: 20
+0.6532846715328466	linearsvc 	n_arr: 21
+0.654014598540146	linearsvc 	n_arr: 22
+0.6541768045417682	linearsvc 	n_arr: 23
+0.6534468775344688	linearsvc 	n_arr: 24
+0.6536901865369019	linearsvc 	n_arr: 25
+0.6535279805352797	linearsvc 	n_arr: 26
+0.6501216545012165	linearsvc 	n_arr: 27
+0.6519870235198703	linearsvc 	n_arr: 28
+0.6519059205190593	linearsvc 	n_arr: 29
+0.6527980535279805	linearsvc 	n_arr: 30
+0.6535279805352798	linearsvc 	n_arr: 31
+0.6518248175182483	linearsvc 	n_arr: 32
+0.6532846715328466	linearsvc 	n_arr: 33
+0.6528791565287916	linearsvc 	n_arr: 34
+0.654257907542579	linearsvc 	n_arr: 35
+0.6545012165450121	linearsvc 	n_arr: 36
+0.6544201135442012	linearsvc 	n_arr: 37
+0.6549067315490675	linearsvc 	n_arr: 38
+0.6548256285482563	linearsvc 	n_arr: 39
+0.65433901054339	linearsvc 	n_arr: 40
+0.6544201135442012	linearsvc 	n_arr: 41
+0.648580697485807	linearsvc 	n_arr: 42
+0.64882400648824	linearsvc 	n_arr: 43
+0.6514193025141931	linearsvc 	n_arr: 44
+0.651419302514193	linearsvc 	n_arr: 45
+0.6528791565287917	linearsvc 	n_arr: 46
+0.6546634225466342	linearsvc 	n_arr: 47
+0.651419302514193	linearsvc 	n_arr: 48
+0.6539334955393348	linearsvc 	n_arr: 49
+0.654014598540146	linearsvc 	n_arr: 50
+0.6530413625304136	linearsvc 	n_arr: 51
+0.6523114355231144	linearsvc 	n_arr: 52
+0.6509326845093268	linearsvc 	n_arr: 53
+0.6528791565287916	linearsvc 	n_arr: 54
+0.6534468775344687	linearsvc 	n_arr: 55
+0.6519059205190592	linearsvc 	n_arr: 56
+0.6520681265206812	linearsvc 	n_arr: 57
+0.6489051094890511	linearsvc 	n_arr: 58
+0.651257096512571	linearsvc 	n_arr: 59
+0.6518248175182481	linearsvc 	n_arr: 60
+0.6528791565287916	linearsvc 	n_arr: 61
+0.6546634225466342	linearsvc 	n_arr: 62
+0.6517437145174372	linearsvc 	n_arr: 63
+0.654176804541768	linearsvc 	n_arr: 64
+0.6536090835360908	linearsvc 	n_arr: 65
+0.6535279805352798	linearsvc 	n_arr: 66
+0.6526358475263585	linearsvc 	n_arr: 67
+0.6522303325223032	linearsvc 	n_arr: 68
+0.6531224655312247	linearsvc 	n_arr: 69
+0.6546634225466341	linearsvc 	n_arr: 70
+0.6524736415247364	linearsvc 	n_arr: 71
+0.6525547445255474	linearsvc 	n_arr: 72
+0.654014598540146	linearsvc 	n_arr: 73
+0.6544201135442012	linearsvc 	n_arr: 74
+0.6530413625304137	linearsvc 	n_arr: 75
+0.6544201135442012	linearsvc 	n_arr: 76
+0.6536090835360908	linearsvc 	n_arr: 77
+0.6549878345498784	linearsvc 	n_arr: 78
+0.6555555555555556	linearsvc 	n_arr: 79
+0.6531224655312247	linearsvc 	n_arr: 80
+0.6563665855636658	linearsvc 	n_arr: 81
+0.6542579075425791	linearsvc 	n_arr: 82
+0.6552311435523115	linearsvc 	n_arr: 83
+0.6545823195458231	linearsvc 	n_arr: 84
+0.6543390105433902	linearsvc 	n_arr: 85
+0.6554744525547446	linearsvc 	n_arr: 86
+0.6557177615571776	linearsvc 	n_arr: 87
+0.6549878345498784	linearsvc 	n_arr: 88
+0.6533657745336577	linearsvc 	n_arr: 89
+0.6520681265206814	linearsvc 	n_arr: 90
+0.6530413625304136	linearsvc 	n_arr: 91
+0.6536901865369018	linearsvc 	n_arr: 92
+0.6535279805352798	linearsvc 	n_arr: 93
+0.6548256285482563	linearsvc 	n_arr: 94
+0.6527169505271695	linearsvc 	n_arr: 95
+0.6551500405515005	linearsvc 	n_arr: 96
+0.6531224655312247	linearsvc 	n_arr: 97
+0.6558799675587996	linearsvc 	n_arr: 98
+0.6564476885644769	linearsvc 	n_arr: 99
+0.6547445255474453	linearsvc 	n_arr: 100
+0.6550689375506895	linearsvc 	n_arr: 101
+0.656772100567721	linearsvc 	n_arr: 102
+0.6554744525547446	linearsvc 	n_arr: 103
+0.6535279805352797	linearsvc 	n_arr: 104
+0.6499594484995944	linearsvc 	n_arr: 105
+0.6497161394971614	linearsvc 	n_arr: 106
+0.6525547445255474	linearsvc 	n_arr: 107
+0.6529602595296026	linearsvc 	n_arr: 108
+0.6546634225466341	linearsvc 	n_arr: 109
+0.6549878345498783	linearsvc 	n_arr: 110
+0.6526358475263584	linearsvc 	n_arr: 111
+0.6553933495539336	linearsvc 	n_arr: 112
+0.6526358475263585	linearsvc 	n_arr: 113
+0.6544201135442012	linearsvc 	n_arr: 114
+0.6542579075425792	linearsvc 	n_arr: 115
+0.651581508515815	linearsvc 	n_arr: 116
+0.6527980535279805	linearsvc 	n_arr: 117
+0.6547445255474452	linearsvc 	n_arr: 118
+0.6527980535279806	linearsvc 	n_arr: 119
+0.6523114355231144	linearsvc 	n_arr: 120
+0.6499594484995944	linearsvc 	n_arr: 121
+0.6536090835360908	linearsvc 	n_arr: 122
+0.6541768045417681	linearsvc 	n_arr: 123
+0.6539334955393349	linearsvc 	n_arr: 124
+0.6555555555555556	linearsvc 	n_arr: 125
+0.6531224655312248	linearsvc 	n_arr: 126
+0.6553933495539336	linearsvc 	n_arr: 127
+0.6523925385239253	linearsvc 	n_arr: 128
+0.654095701540957	linearsvc 	n_arr: 129
+0.6543390105433902	linearsvc 	n_arr: 130
+0.6510948905109488	linearsvc 	n_arr: 131
+0.6521492295214922	linearsvc 	n_arr: 132
+0.6550689375506893	linearsvc 	n_arr: 133
+0.6517437145174372	linearsvc 	n_arr: 134
+0.6520681265206814	linearsvc 	n_arr: 135
+0.6466342254663423	linearsvc 	n_arr: 136
+0.6519870235198701	linearsvc 	n_arr: 137
+0.6518248175182482	linearsvc 	n_arr: 138
+0.6510948905109488	linearsvc 	n_arr: 139
+0.6529602595296026	linearsvc 	n_arr: 140
+0.6530413625304137	linearsvc 	n_arr: 141
+0.654014598540146	linearsvc 	n_arr: 142
+0.6543390105433902	linearsvc 	n_arr: 143
+0.6527980535279805	linearsvc 	n_arr: 144
+0.6550689375506893	linearsvc 	n_arr: 145
+0.6517437145174372	linearsvc 	n_arr: 146
+0.6528791565287916	linearsvc 	n_arr: 147
+0.6538523925385239	linearsvc 	n_arr: 148
+0.6529602595296026	linearsvc 	n_arr: 149
+0.6538523925385239	linearsvc 	n_arr: 150
+0.6535279805352798	linearsvc 	n_arr: 151
+0.6536090835360908	linearsvc 	n_arr: 152
+0.6516626115166261	linearsvc 	n_arr: 153
+0.6489051094890511	linearsvc 	n_arr: 154
+0.6518248175182483	linearsvc 	n_arr: 155
+0.6522303325223032	linearsvc 	n_arr: 156
+0.6529602595296026	linearsvc 	n_arr: 157
+0.6540957015409571	linearsvc 	n_arr: 158
+0.6513381995133819	linearsvc 	n_arr: 159
+0.6546634225466342	linearsvc 	n_arr: 160
+0.651338199513382	linearsvc 	n_arr: 161
+0.6542579075425792	linearsvc 	n_arr: 162
+0.654582319545823	linearsvc 	n_arr: 163
+0.654014598540146	linearsvc 	n_arr: 164
+0.6542579075425791	linearsvc 	n_arr: 165
+0.6552311435523114	linearsvc 	n_arr: 166
+0.6545823195458232	linearsvc 	n_arr: 167
+0.6527980535279805	linearsvc 	n_arr: 168
+0.6476074614760746	linearsvc 	n_arr: 169
+0.648661800486618	linearsvc 	n_arr: 170
+0.6516626115166261	linearsvc 	n_arr: 171
+0.6528791565287916	linearsvc 	n_arr: 172
+0.6532035685320356	linearsvc 	n_arr: 173
+0.6533657745336579	linearsvc 	n_arr: 174
+0.651500405515004	linearsvc 	n_arr: 175
+0.65433901054339	linearsvc 	n_arr: 176
+0.6519870235198704	linearsvc 	n_arr: 177
+0.6533657745336579	linearsvc 	n_arr: 178
+0.6522303325223033	linearsvc 	n_arr: 179
+0.6510948905109489	linearsvc 	n_arr: 180
+0.6519059205190592	linearsvc 	n_arr: 181
+0.6531224655312248	linearsvc 	n_arr: 182
+0.651338199513382	linearsvc 	n_arr: 183
+0.6508515815085159	linearsvc 	n_arr: 184
+0.648661800486618	linearsvc 	n_arr: 185
+0.6515004055150041	linearsvc 	n_arr: 186
+0.6528791565287916	linearsvc 	n_arr: 187
+0.6532846715328468	linearsvc 	n_arr: 188
+0.6545012165450123	linearsvc 	n_arr: 189
+0.651500405515004	linearsvc 	n_arr: 190
+0.6541768045417681	linearsvc 	n_arr: 191
+0.6524736415247364	linearsvc 	n_arr: 192
+0.6519059205190592	linearsvc 	n_arr: 193
+0.6525547445255475	linearsvc 	n_arr: 194
+0.6506893755068938	linearsvc 	n_arr: 195
+0.6519059205190592	linearsvc 	n_arr: 196
+0.6523925385239253	linearsvc 	n_arr: 197
+0.6510948905109488	linearsvc 	n_arr: 198
+0.6517437145174371	linearsvc 	n_arr: 199
+0.6495539334955392	linearsvc 	n_arr: 200
+0.6494728304947284	linearsvc 	n_arr: 201
+0.6503649635036497	linearsvc 	n_arr: 202
+0.6522303325223033	linearsvc 	n_arr: 203
+0.6526358475263585	linearsvc 	n_arr: 204
+0.6535279805352798	linearsvc 	n_arr: 205
+0.653933495539335	linearsvc 	n_arr: 206
+0.651257096512571	linearsvc 	n_arr: 207
+0.6545823195458234	linearsvc 	n_arr: 208
+0.6522303325223033	linearsvc 	n_arr: 209
+0.6523925385239254	linearsvc 	n_arr: 210
+0.6532035685320356	linearsvc 	n_arr: 211
+0.6536901865369019	linearsvc 	n_arr: 212
+0.6523114355231142	linearsvc 	n_arr: 213
+0.6531224655312247	linearsvc 	n_arr: 214
+0.6529602595296026	linearsvc 	n_arr: 215
+0.6507704785077048	linearsvc 	n_arr: 216
+0.6500405515004055	linearsvc 	n_arr: 217
+0.6509326845093268	linearsvc 	n_arr: 218
+0.6525547445255475	linearsvc 	n_arr: 219
+0.6533657745336579	linearsvc 	n_arr: 220
+0.6536090835360908	linearsvc 	n_arr: 221
+0.6504460665044607	linearsvc 	n_arr: 222
+0.6536901865369019	linearsvc 	n_arr: 223
+0.6511759935117599	linearsvc 	n_arr: 224
+0.6541768045417681	linearsvc 	n_arr: 225
+0.6548256285482563	linearsvc 	n_arr: 226
+0.654257907542579	linearsvc 	n_arr: 227
+0.6528791565287916	linearsvc 	n_arr: 228
+0.6546634225466342	linearsvc 	n_arr: 229
+0.6532846715328468	linearsvc 	n_arr: 230
+0.651500405515004	linearsvc 	n_arr: 231
+0.6463909164639092	linearsvc 	n_arr: 232
+0.6476074614760745	linearsvc 	n_arr: 233
+0.6510948905109488	linearsvc 	n_arr: 234
+0.6538523925385239	linearsvc 	n_arr: 235
+0.65433901054339	linearsvc 	n_arr: 236
+0.6526358475263585	linearsvc 	n_arr: 237
+0.6522303325223033	linearsvc 	n_arr: 238
+0.6533657745336577	linearsvc 	n_arr: 239
+0.6506893755068938	linearsvc 	n_arr: 240
+0.6514193025141931	linearsvc 	n_arr: 241
+0.6553122465531226	linearsvc 	n_arr: 242
+0.6508515815085159	linearsvc 	n_arr: 243
+0.6516626115166261	linearsvc 	n_arr: 244
+0.6536901865369019	linearsvc 	n_arr: 245
+0.6517437145174372	linearsvc 	n_arr: 246
+0.64882400648824	linearsvc 	n_arr: 247
+0.6476885644768857	linearsvc 	n_arr: 248
+0.6518248175182482	linearsvc 	n_arr: 249
+0.6537712895377129	linearsvc 	n_arr: 250
+0.6530413625304136	linearsvc 	n_arr: 251
+0.6529602595296026	linearsvc 	n_arr: 252
+0.6517437145174371	linearsvc 	n_arr: 253
+0.6524736415247364	linearsvc 	n_arr: 254
+0.6500405515004055	linearsvc 	n_arr: 255
+0.6484995944849961	linearsvc 	n_arr: 256
+0.6502838605028387	linearsvc 	n_arr: 257
+0.6489862124898621	linearsvc 	n_arr: 258
+0.6502838605028385	linearsvc 	n_arr: 259
+0.6497161394971613	linearsvc 	n_arr: 260
+0.6500405515004055	linearsvc 	n_arr: 261
+0.6491484184914841	linearsvc 	n_arr: 262
+0.6462287104622871	linearsvc 	n_arr: 263
+0.648499594484996	linearsvc 	n_arr: 264
+0.6494728304947284	linearsvc 	n_arr: 265
+0.6500405515004055	linearsvc 	n_arr: 266
+0.6492295214922952	linearsvc 	n_arr: 267
+0.6502838605028385	linearsvc 	n_arr: 268
+0.6502027575020277	linearsvc 	n_arr: 269
+0.6480940794809409	linearsvc 	n_arr: 270
+0.6467964314679643	linearsvc 	n_arr: 271
+0.6497972424979724	linearsvc 	n_arr: 272
+0.6467153284671532	linearsvc 	n_arr: 273
+0.6472830494728306	linearsvc 	n_arr: 274
+0.6497161394971614	linearsvc 	n_arr: 275
+0.6497972424979724	linearsvc 	n_arr: 276
+0.6472019464720193	linearsvc 	n_arr: 277
+0.6464720194647202	linearsvc 	n_arr: 278
+0.6493917274939173	linearsvc 	n_arr: 279
+0.6464720194647202	linearsvc 	n_arr: 280
+0.645904298459043	linearsvc 	n_arr: 281
+0.6518248175182482	linearsvc 	n_arr: 282
+0.6522303325223033	linearsvc 	n_arr: 283
+0.6510948905109489	linearsvc 	n_arr: 284
+0.6501216545012167	linearsvc 	n_arr: 285
+0.6495539334955394	linearsvc 	n_arr: 286
+0.6518248175182482	linearsvc 	n_arr: 287
+0.6490673154906731	linearsvc 	n_arr: 288
+0.6484995944849961	linearsvc 	n_arr: 289
+0.6495539334955394	linearsvc 	n_arr: 290
+0.6499594484995944	linearsvc 	n_arr: 291
+0.6468775344687753	linearsvc 	n_arr: 292
+0.6467153284671533	linearsvc 	n_arr: 293
+0.6493106244931063	linearsvc 	n_arr: 294
+0.6466342254663423	linearsvc 	n_arr: 295
+0.6454176804541767	linearsvc 	n_arr: 296
+0.64882400648824	linearsvc 	n_arr: 297
+0.6494728304947284	linearsvc 	n_arr: 298
+0.6515004055150041	linearsvc 	n_arr: 299
+0.6510948905109488	linearsvc 	n_arr: 300
+0.64882400648824	linearsvc 	n_arr: 301
+0.6483373884833739	linearsvc 	n_arr: 302
+0.6516626115166262	linearsvc 	n_arr: 303
+0.6485806974858069	linearsvc 	n_arr: 304
+0.6478507704785077	linearsvc 	n_arr: 305
+0.6506082725060827	linearsvc 	n_arr: 306
+0.6509326845093268	linearsvc 	n_arr: 307
+0.6468775344687754	linearsvc 	n_arr: 308
+0.6484184914841848	linearsvc 	n_arr: 309
+0.6505271695052717	linearsvc 	n_arr: 310
+0.6471208434712084	linearsvc 	n_arr: 311
+0.6465531224655312	linearsvc 	n_arr: 312
+0.6491484184914841	linearsvc 	n_arr: 313
+0.6516626115166261	linearsvc 	n_arr: 314
+0.6522303325223033	linearsvc 	n_arr: 315
+0.6501216545012165	linearsvc 	n_arr: 316
+0.6496350364963503	linearsvc 	n_arr: 317
+0.6527169505271696	linearsvc 	n_arr: 318
+0.6496350364963503	linearsvc 	n_arr: 319
+0.6482562854825628	linearsvc 	n_arr: 320
+0.6519059205190592	linearsvc 	n_arr: 321
+0.6517437145174372	linearsvc 	n_arr: 322
+0.646066504460665	linearsvc 	n_arr: 323
+0.645985401459854	linearsvc 	n_arr: 324
+0.6511759935117599	linearsvc 	n_arr: 325
+0.646066504460665	linearsvc 	n_arr: 326
+0.6446877534468775	linearsvc 	n_arr: 327
+0.651581508515815	linearsvc 	n_arr: 328
+0.6523114355231142	linearsvc 	n_arr: 329
+0.6510137875101378	linearsvc 	n_arr: 330
+0.6510137875101379	linearsvc 	n_arr: 331
+0.6503649635036496	linearsvc 	n_arr: 332
+0.6497161394971613	linearsvc 	n_arr: 333
+0.6481751824817518	linearsvc 	n_arr: 334
+0.6502838605028386	linearsvc 	n_arr: 335
+0.6489862124898621	linearsvc 	n_arr: 336
+0.648742903487429	linearsvc 	n_arr: 337
+0.6516626115166261	linearsvc 	n_arr: 338
+0.6525547445255474	linearsvc 	n_arr: 339
+0.6476074614760745	linearsvc 	n_arr: 340
+0.6471208434712085	linearsvc 	n_arr: 341
+0.6519870235198701	linearsvc 	n_arr: 342
+0.6476074614760745	linearsvc 	n_arr: 343
+0.6470397404703975	linearsvc 	n_arr: 344
+0.6527980535279806	linearsvc 	n_arr: 345
+0.6526358475263584	linearsvc 	n_arr: 346
+0.6524736415247365	linearsvc 	n_arr: 347
+0.6506893755068938	linearsvc 	n_arr: 348
+0.6495539334955392	linearsvc 	n_arr: 349
+0.6524736415247364	linearsvc 	n_arr: 350
+0.6494728304947281	linearsvc 	n_arr: 351
+0.6490673154906732	linearsvc 	n_arr: 352
+0.6518248175182482	linearsvc 	n_arr: 353
+0.6519059205190592	linearsvc 	n_arr: 354
+0.6476885644768857	linearsvc 	n_arr: 355
+0.6479318734793187	linearsvc 	n_arr: 356
+0.6510948905109489	linearsvc 	n_arr: 357
+0.6474452554744526	linearsvc 	n_arr: 358
+0.6470397404703974	linearsvc 	n_arr: 359
+0.6506082725060827	linearsvc 	n_arr: 360
+0.6484184914841848	linearsvc 	n_arr: 361
+0.6523925385239253	linearsvc 	n_arr: 362
+0.6510137875101379	linearsvc 	n_arr: 363
+0.6502027575020276	linearsvc 	n_arr: 364
+0.6498783454987834	linearsvc 	n_arr: 365
+0.6519059205190592	linearsvc 	n_arr: 366
+0.6503649635036497	linearsvc 	n_arr: 367
+0.6484995944849958	linearsvc 	n_arr: 368
+0.6532035685320356	linearsvc 	n_arr: 369
+0.6519059205190592	linearsvc 	n_arr: 370
+0.6476074614760745	linearsvc 	n_arr: 371
+0.6489051094890511	linearsvc 	n_arr: 372
+0.6528791565287916	linearsvc 	n_arr: 373
+0.6486618004866179	linearsvc 	n_arr: 374
+0.6469586374695864	linearsvc 	n_arr: 375
+0.6490673154906732	linearsvc 	n_arr: 376
+0.651581508515815	linearsvc 	n_arr: 377
+0.6515815085158151	linearsvc 	n_arr: 378
+0.6500405515004055	linearsvc 	n_arr: 379
+0.6492295214922952	linearsvc 	n_arr: 380
+0.6518248175182482	linearsvc 	n_arr: 381
+0.6497161394971614	linearsvc 	n_arr: 382
+0.6480940794809408	linearsvc 	n_arr: 383
+0.6511759935117598	linearsvc 	n_arr: 384
+0.651419302514193	linearsvc 	n_arr: 385
+0.645904298459043	linearsvc 	n_arr: 386
+0.645985401459854	linearsvc 	n_arr: 387
+0.6507704785077048	linearsvc 	n_arr: 388
+0.6455798864557989	linearsvc 	n_arr: 389
+0.6443633414436334	linearsvc 	n_arr: 390
+0.648418491484185	linearsvc 	n_arr: 391
+0.6501216545012165	linearsvc 	n_arr: 392
+0.6510948905109489	linearsvc 	n_arr: 393
+0.6505271695052718	linearsvc 	n_arr: 394
+0.6494728304947284	linearsvc 	n_arr: 395
+0.6482562854825629	linearsvc 	n_arr: 396
+0.6470397404703974	linearsvc 	n_arr: 397
+0.6463098134630981	linearsvc 	n_arr: 398
+0.64882400648824	linearsvc 	n_arr: 399
+0.6465531224655312	linearsvc 	n_arr: 400
+0.6472019464720193	linearsvc 	n_arr: 401
+0.6489051094890511	linearsvc 	n_arr: 402
+0.6498783454987834	linearsvc 	n_arr: 403
+0.6465531224655312	linearsvc 	n_arr: 404
+0.6468775344687754	linearsvc 	n_arr: 405
+0.6494728304947283	linearsvc 	n_arr: 406
+0.6468775344687754	linearsvc 	n_arr: 407
+0.6454987834549879	linearsvc 	n_arr: 408
+0.6535279805352798	linearsvc 	n_arr: 409
+0.6500405515004055	linearsvc 	n_arr: 410
+0.6499594484995946	linearsvc 	n_arr: 411
+0.6501216545012165	linearsvc 	n_arr: 412
+0.6494728304947284	linearsvc 	n_arr: 413
+0.6499594484995944	linearsvc 	n_arr: 414
+0.6498783454987834	linearsvc 	n_arr: 415
+0.6482562854825629	linearsvc 	n_arr: 416
+0.6498783454987834	linearsvc 	n_arr: 417
+0.6496350364963503	linearsvc 	n_arr: 418
+0.6472830494728306	linearsvc 	n_arr: 419
+0.6468775344687754	linearsvc 	n_arr: 420
+0.6491484184914841	linearsvc 	n_arr: 421
+0.6474452554744525	linearsvc 	n_arr: 422
+0.6456609894566099	linearsvc 	n_arr: 423
+0.6497161394971614	linearsvc 	n_arr: 424
+0.6501216545012165	linearsvc 	n_arr: 425
+0.6502027575020276	linearsvc 	n_arr: 426
+0.6497161394971614	linearsvc 	n_arr: 427
+0.6476885644768857	linearsvc 	n_arr: 428
+0.645904298459043	linearsvc 	n_arr: 429
+0.6504460665044607	linearsvc 	n_arr: 430
+0.6464720194647202	linearsvc 	n_arr: 431
+0.645904298459043	linearsvc 	n_arr: 432
+0.6502027575020276	linearsvc 	n_arr: 433
+0.6492295214922953	linearsvc 	n_arr: 434
+0.6466342254663422	linearsvc 	n_arr: 435
+0.6473641524736415	linearsvc 	n_arr: 436
+0.6497972424979724	linearsvc 	n_arr: 437
+0.6465531224655312	linearsvc 	n_arr: 438
+0.6466342254663423	linearsvc 	n_arr: 439
+0.6499594484995944	linearsvc 	n_arr: 440
+0.6502027575020276	linearsvc 	n_arr: 441
+0.6510137875101379	linearsvc 	n_arr: 442
+0.6494728304947284	linearsvc 	n_arr: 443
+0.6476885644768857	linearsvc 	n_arr: 444
+0.651419302514193	linearsvc 	n_arr: 445
+0.6483373884833737	linearsvc 	n_arr: 446
+0.6467964314679644	linearsvc 	n_arr: 447
+0.6489862124898621	linearsvc 	n_arr: 448
+0.6491484184914842	linearsvc 	n_arr: 449
+0.6462287104622871	linearsvc 	n_arr: 450
+0.6456609894566099	linearsvc 	n_arr: 451
+0.6483373884833737	linearsvc 	n_arr: 452
+0.645823195458232	linearsvc 	n_arr: 453
+0.6443633414436333	linearsvc 	n_arr: 454
+0.6493106244931063	linearsvc 	n_arr: 455
+0.6502027575020276	linearsvc 	n_arr: 456
+0.6494728304947283	linearsvc 	n_arr: 457
+0.6513381995133821	linearsvc 	n_arr: 458
+0.6507704785077046	linearsvc 	n_arr: 459
+0.648418491484185	linearsvc 	n_arr: 460
+0.6462287104622871	linearsvc 	n_arr: 461
+0.6508515815085159	linearsvc 	n_arr: 462
+0.6469586374695865	linearsvc 	n_arr: 463
+0.6459854014598541	linearsvc 	n_arr: 464
+0.6499594484995944	linearsvc 	n_arr: 465
+0.6503649635036497	linearsvc 	n_arr: 466
+0.6461476074614761	linearsvc 	n_arr: 467
+0.6455798864557989	linearsvc 	n_arr: 468
+0.6504460665044607	linearsvc 	n_arr: 469
+0.646066504460665	linearsvc 	n_arr: 470
+0.6446066504460665	linearsvc 	n_arr: 471
+0.651338199513382	linearsvc 	n_arr: 472
+0.6519870235198701	linearsvc 	n_arr: 473
+0.6516626115166262	linearsvc 	n_arr: 474
+0.6497161394971614	linearsvc 	n_arr: 475
+0.6477696674776967	linearsvc 	n_arr: 476
+0.6525547445255475	linearsvc 	n_arr: 477
+0.6480940794809409	linearsvc 	n_arr: 478
+0.645823195458232	linearsvc 	n_arr: 479
+0.6493917274939173	linearsvc 	n_arr: 480
+0.6497972424979724	linearsvc 	n_arr: 481
+0.6465531224655313	linearsvc 	n_arr: 482
+0.6452554744525548	linearsvc 	n_arr: 483
+0.6495539334955394	linearsvc 	n_arr: 484
+0.6457420924574209	linearsvc 	n_arr: 485
+0.6455798864557988	linearsvc 	n_arr: 486
+0.6464720194647202	linearsvc 	n_arr: 487
+0.6459042984590431	linearsvc 	n_arr: 488
+0.6498783454987834	linearsvc 	n_arr: 489
+0.6491484184914841	linearsvc 	n_arr: 490
+0.6480129764801297	linearsvc 	n_arr: 491
+0.6468775344687754	linearsvc 	n_arr: 492
+0.6488240064882401	linearsvc 	n_arr: 493
+0.6475263584752636	linearsvc 	n_arr: 494
+0.6445255474452555	linearsvc 	n_arr: 495
+0.6487429034874289	linearsvc 	n_arr: 496
+0.6494728304947283	linearsvc 	n_arr: 497
+0.6452554744525547	linearsvc 	n_arr: 498
+0.645904298459043	linearsvc 	n_arr: 499
+0.6494728304947283	linearsvc 	n_arr: 500
+0.6454987834549879	linearsvc 	n_arr: 501
+0.6455798864557988	linearsvc 	n_arr: 502
+0.6454987834549879	linearsvc 	n_arr: 503
+0.6490673154906731	linearsvc 	n_arr: 504
+0.6498783454987834	linearsvc 	n_arr: 505
+0.6471208434712084	linearsvc 	n_arr: 506
+0.6469586374695864	linearsvc 	n_arr: 507
+0.6493917274939174	linearsvc 	n_arr: 508
+0.6472830494728306	linearsvc 	n_arr: 509
+0.6430656934306569	linearsvc 	n_arr: 510
+0.6454987834549878	linearsvc 	n_arr: 511
+0.6450121654501216	linearsvc 	n_arr: 512
+0.6404703974047039	linearsvc 	n_arr: 513
+0.6411192214111923	linearsvc 	n_arr: 514
+0.6457420924574209	linearsvc 	n_arr: 515
+0.6404703974047039	linearsvc 	n_arr: 516
+0.640713706407137	linearsvc 	n_arr: 517
+0.6434712084347121	linearsvc 	n_arr: 518
+0.6467153284671532	linearsvc 	n_arr: 519
+0.6480129764801297	linearsvc 	n_arr: 520
+0.6525547445255474	linearsvc 	n_arr: 521
+0.6526358475263585	linearsvc 	n_arr: 522
+0.6517437145174372	linearsvc 	n_arr: 523
+0.6524736415247365	linearsvc 	n_arr: 524
+0.6514193025141931	linearsvc 	n_arr: 525
+0.6517437145174372	linearsvc 	n_arr: 526
+0.6527169505271695	linearsvc 	n_arr: 527
+0.6508515815085159	linearsvc 	n_arr: 528
+0.6521492295214923	linearsvc 	n_arr: 529
+0.6532846715328468	linearsvc 	n_arr: 530
+0.6526358475263586	linearsvc 	n_arr: 531
+0.6520681265206814	linearsvc 	n_arr: 532
+0.6532035685320358	linearsvc 	n_arr: 533
+0.6526358475263585	linearsvc 	n_arr: 534
+0.6530413625304137	linearsvc 	n_arr: 535
+0.6538523925385239	linearsvc 	n_arr: 536
+0.6523925385239253	linearsvc 	n_arr: 537
+0.6508515815085159	linearsvc 	n_arr: 538
+0.6510948905109489	linearsvc 	n_arr: 539
+0.6508515815085159	linearsvc 	n_arr: 540
+0.6517437145174373	linearsvc 	n_arr: 541
+0.6525547445255475	linearsvc 	n_arr: 542
+0.6503649635036496	linearsvc 	n_arr: 543
+0.6520681265206814	linearsvc 	n_arr: 544
+0.6528791565287915	linearsvc 	n_arr: 545
+0.6528791565287916	linearsvc 	n_arr: 546
+0.6524736415247364	linearsvc 	n_arr: 547
+0.654014598540146	linearsvc 	n_arr: 548
+0.6536090835360908	linearsvc 	n_arr: 549
+0.6535279805352798	linearsvc 	n_arr: 550
+0.6545823195458231	linearsvc 	n_arr: 551
+0.6522303325223033	linearsvc 	n_arr: 552
+0.6503649635036496	linearsvc 	n_arr: 553
+0.6497161394971614	linearsvc 	n_arr: 554
+0.6510948905109488	linearsvc 	n_arr: 555
+0.6495539334955392	linearsvc 	n_arr: 556
+0.6503649635036496	linearsvc 	n_arr: 557
+0.6536090835360908	linearsvc 	n_arr: 558
+0.6501216545012165	linearsvc 	n_arr: 559
+0.6532846715328468	linearsvc 	n_arr: 560
+0.6527169505271695	linearsvc 	n_arr: 561
+0.6522303325223033	linearsvc 	n_arr: 562
+0.6516626115166262	linearsvc 	n_arr: 563
+0.6502838605028387	linearsvc 	n_arr: 564
+0.6520681265206812	linearsvc 	n_arr: 565
+0.6518248175182482	linearsvc 	n_arr: 566
+0.6520681265206814	linearsvc 	n_arr: 567
+0.6503649635036496	linearsvc 	n_arr: 568
+0.6494728304947283	linearsvc 	n_arr: 569
+0.6515815085158152	linearsvc 	n_arr: 570
+0.6502838605028385	linearsvc 	n_arr: 571
+0.6510948905109488	linearsvc 	n_arr: 572
+0.6542579075425791	linearsvc 	n_arr: 573
+0.6508515815085157	linearsvc 	n_arr: 574
+0.6533657745336579	linearsvc 	n_arr: 575
+0.6532846715328468	linearsvc 	n_arr: 576
+0.6530413625304137	linearsvc 	n_arr: 577
+0.6519059205190592	linearsvc 	n_arr: 578
+0.6521492295214922	linearsvc 	n_arr: 579
+0.651500405515004	linearsvc 	n_arr: 580
+0.6519059205190592	linearsvc 	n_arr: 581
+0.6526358475263585	linearsvc 	n_arr: 582
+0.6506082725060828	linearsvc 	n_arr: 583
+0.654014598540146	linearsvc 	n_arr: 584
+0.6543390105433899	linearsvc 	n_arr: 585
+0.6529602595296026	linearsvc 	n_arr: 586
+0.6532846715328468	linearsvc 	n_arr: 587
+0.6535279805352797	linearsvc 	n_arr: 588
+0.654420113544201	linearsvc 	n_arr: 589
+0.654014598540146	linearsvc 	n_arr: 590
+0.6531224655312245	linearsvc 	n_arr: 591
+0.654014598540146	linearsvc 	n_arr: 592
+0.65433901054339	linearsvc 	n_arr: 593
+0.6555555555555554	linearsvc 	n_arr: 594
+0.6551500405515004	linearsvc 	n_arr: 595
+0.6536901865369019	linearsvc 	n_arr: 596
+0.6527980535279805	linearsvc 	n_arr: 597
+0.6556366585563667	linearsvc 	n_arr: 598
+0.6534468775344687	linearsvc 	n_arr: 599
+0.6526358475263584	linearsvc 	n_arr: 600
+0.6519870235198701	linearsvc 	n_arr: 601
+0.6533657745336577	linearsvc 	n_arr: 602
+0.6538523925385239	linearsvc 	n_arr: 603
+0.6537712895377131	linearsvc 	n_arr: 604
+0.6532846715328466	linearsvc 	n_arr: 605
+0.6531224655312247	linearsvc 	n_arr: 606
+0.6532846715328468	linearsvc 	n_arr: 607
+0.653771289537713	linearsvc 	n_arr: 608
+0.6544201135442012	linearsvc 	n_arr: 609
+0.6546634225466342	linearsvc 	n_arr: 610
+0.6543390105433902	linearsvc 	n_arr: 611
+0.6536901865369019	linearsvc 	n_arr: 612
+0.6554744525547446	linearsvc 	n_arr: 613
+0.6542579075425792	linearsvc 	n_arr: 614
+0.6532035685320358	linearsvc 	n_arr: 615
+0.6521492295214922	linearsvc 	n_arr: 616
+0.6492295214922952	linearsvc 	n_arr: 617
+0.6521492295214925	linearsvc 	n_arr: 618
+0.6505271695052717	linearsvc 	n_arr: 619
+0.6532846715328468	linearsvc 	n_arr: 620
+0.6529602595296027	linearsvc 	n_arr: 621
+0.6512570965125709	linearsvc 	n_arr: 622
+0.6535279805352798	linearsvc 	n_arr: 623
+0.6523925385239253	linearsvc 	n_arr: 624
+0.6541768045417681	linearsvc 	n_arr: 625
+0.6540957015409572	linearsvc 	n_arr: 626
+0.6515815085158151	linearsvc 	n_arr: 627
+0.651500405515004	linearsvc 	n_arr: 628
+0.6545012165450121	linearsvc 	n_arr: 629
+0.651257096512571	linearsvc 	n_arr: 630
+0.651013787510138	linearsvc 	n_arr: 631
+0.6493917274939174	linearsvc 	n_arr: 632
+0.6526358475263585	linearsvc 	n_arr: 633
+0.6515004055150041	linearsvc 	n_arr: 634
+0.6535279805352797	linearsvc 	n_arr: 635
+0.6530413625304137	linearsvc 	n_arr: 636
+0.6528791565287916	linearsvc 	n_arr: 637
+0.6531224655312247	linearsvc 	n_arr: 638
+0.6525547445255474	linearsvc 	n_arr: 639
+0.6525547445255474	linearsvc 	n_arr: 640
+0.6532035685320356	linearsvc 	n_arr: 641
+0.6519059205190592	linearsvc 	n_arr: 642
+0.6521492295214922	linearsvc 	n_arr: 643
+0.6531224655312245	linearsvc 	n_arr: 644
+0.6519870235198704	linearsvc 	n_arr: 645
+0.6523925385239253	linearsvc 	n_arr: 646
+0.6472830494728306	linearsvc 	n_arr: 647
+0.6516626115166262	linearsvc 	n_arr: 648
+0.6523925385239254	linearsvc 	n_arr: 649
+0.6513381995133821	linearsvc 	n_arr: 650
+0.6507704785077049	linearsvc 	n_arr: 651
+0.6511759935117599	linearsvc 	n_arr: 652
+0.6519870235198703	linearsvc 	n_arr: 653
+0.6524736415247365	linearsvc 	n_arr: 654
+0.6506893755068938	linearsvc 	n_arr: 655
+0.6521492295214922	linearsvc 	n_arr: 656
+0.651257096512571	linearsvc 	n_arr: 657
+0.651581508515815	linearsvc 	n_arr: 658
+0.6525547445255475	linearsvc 	n_arr: 659
+0.6516626115166262	linearsvc 	n_arr: 660
+0.6516626115166262	linearsvc 	n_arr: 661
+0.6523925385239253	linearsvc 	n_arr: 662
+0.6524736415247365	linearsvc 	n_arr: 663
+0.6510948905109489	linearsvc 	n_arr: 664
+0.6497972424979724	linearsvc 	n_arr: 665
+0.6504460665044607	linearsvc 	n_arr: 666
+0.6514193025141931	linearsvc 	n_arr: 667
+0.6515004055150041	linearsvc 	n_arr: 668
+0.6527169505271695	linearsvc 	n_arr: 669
+0.65117599351176	linearsvc 	n_arr: 670
+0.6530413625304136	linearsvc 	n_arr: 671
+0.6522303325223033	linearsvc 	n_arr: 672
+0.6523925385239254	linearsvc 	n_arr: 673
+0.6535279805352798	linearsvc 	n_arr: 674
+0.6527980535279806	linearsvc 	n_arr: 675
+0.6523925385239254	linearsvc 	n_arr: 676
+0.6532035685320356	linearsvc 	n_arr: 677
+0.6535279805352798	linearsvc 	n_arr: 678
+0.6515004055150041	linearsvc 	n_arr: 679
+0.6497972424979724	linearsvc 	n_arr: 680
+0.6489051094890511	linearsvc 	n_arr: 681
+0.6501216545012165	linearsvc 	n_arr: 682
+0.6506893755068938	linearsvc 	n_arr: 683
+0.6514193025141931	linearsvc 	n_arr: 684
+0.6528791565287916	linearsvc 	n_arr: 685
+0.6506893755068938	linearsvc 	n_arr: 686
+0.6528791565287917	linearsvc 	n_arr: 687
+0.6511759935117598	linearsvc 	n_arr: 688
+0.6504460665044607	linearsvc 	n_arr: 689
+0.6511759935117598	linearsvc 	n_arr: 690
+0.6504460665044607	linearsvc 	n_arr: 691
+0.6506893755068937	linearsvc 	n_arr: 692
+0.6510948905109488	linearsvc 	n_arr: 693
+0.6512570965125709	linearsvc 	n_arr: 694
+0.648499594484996	linearsvc 	n_arr: 695
+0.648742903487429	linearsvc 	n_arr: 696
+0.6503649635036495	linearsvc 	n_arr: 697
+0.6515815085158151	linearsvc 	n_arr: 698
+0.6519059205190592	linearsvc 	n_arr: 699
+0.6529602595296027	linearsvc 	n_arr: 700
+0.6503649635036496	linearsvc 	n_arr: 701
+0.6524736415247363	linearsvc 	n_arr: 702
+0.651338199513382	linearsvc 	n_arr: 703
+0.6515815085158151	linearsvc 	n_arr: 704
+0.6505271695052718	linearsvc 	n_arr: 705
+0.6506893755068937	linearsvc 	n_arr: 706
+0.6503649635036496	linearsvc 	n_arr: 707
+0.6508515815085159	linearsvc 	n_arr: 708
+0.6510137875101378	linearsvc 	n_arr: 709
+0.6504460665044607	linearsvc 	n_arr: 710
+0.6512570965125709	linearsvc 	n_arr: 711
+0.6516626115166261	linearsvc 	n_arr: 712
+0.6506893755068937	linearsvc 	n_arr: 713
+0.6529602595296026	linearsvc 	n_arr: 714
+0.6535279805352798	linearsvc 	n_arr: 715
+0.6527980535279805	linearsvc 	n_arr: 716
+0.6517437145174372	linearsvc 	n_arr: 717
+0.6530413625304136	linearsvc 	n_arr: 718
+0.6518248175182482	linearsvc 	n_arr: 719
+0.6521492295214923	linearsvc 	n_arr: 720
+0.6530413625304136	linearsvc 	n_arr: 721
+0.6542579075425791	linearsvc 	n_arr: 722
+0.6536090835360908	linearsvc 	n_arr: 723
+0.651500405515004	linearsvc 	n_arr: 724
+0.6530413625304137	linearsvc 	n_arr: 725
+0.6520681265206814	linearsvc 	n_arr: 726
+0.6506082725060828	linearsvc 	n_arr: 727
+0.6515004055150041	linearsvc 	n_arr: 728
+0.6523925385239253	linearsvc 	n_arr: 729
+0.6537712895377129	linearsvc 	n_arr: 730
+0.6532035685320358	linearsvc 	n_arr: 731
+0.6517437145174372	linearsvc 	n_arr: 732
+0.6525547445255475	linearsvc 	n_arr: 733
+0.6526358475263585	linearsvc 	n_arr: 734
+0.6523925385239253	linearsvc 	n_arr: 735
+0.6535279805352797	linearsvc 	n_arr: 736
+0.6544201135442012	linearsvc 	n_arr: 737
+0.6536090835360908	linearsvc 	n_arr: 738
+0.6523925385239253	linearsvc 	n_arr: 739
+0.6531224655312245	linearsvc 	n_arr: 740
+0.6528791565287916	linearsvc 	n_arr: 741
+0.6506082725060827	linearsvc 	n_arr: 742
+0.6485806974858069	linearsvc 	n_arr: 743
+0.6474452554744525	linearsvc 	n_arr: 744
+0.6521492295214925	linearsvc 	n_arr: 745
+0.6517437145174372	linearsvc 	n_arr: 746
+0.6542579075425791	linearsvc 	n_arr: 747
+0.6531224655312247	linearsvc 	n_arr: 748
+0.6520681265206814	linearsvc 	n_arr: 749
+0.6541768045417681	linearsvc 	n_arr: 750
+0.6520681265206812	linearsvc 	n_arr: 751
+0.6528791565287916	linearsvc 	n_arr: 752
+0.6545823195458232	linearsvc 	n_arr: 753
+0.6528791565287916	linearsvc 	n_arr: 754
+0.6526358475263585	linearsvc 	n_arr: 755
+0.6538523925385238	linearsvc 	n_arr: 756
+0.6526358475263585	linearsvc 	n_arr: 757
+0.6489862124898622	linearsvc 	n_arr: 758
+0.6477696674776967	linearsvc 	n_arr: 759
+0.6517437145174372	linearsvc 	n_arr: 760
+0.6536090835360908	linearsvc 	n_arr: 761
+0.6531224655312247	linearsvc 	n_arr: 762
+0.6527169505271694	linearsvc 	n_arr: 763
+0.6523925385239253	linearsvc 	n_arr: 764
+0.6531224655312245	linearsvc 	n_arr: 765
+0.6516626115166262	linearsvc 	n_arr: 766
+0.6494728304947281	linearsvc 	n_arr: 767
+0.6508515815085159	linearsvc 	n_arr: 768
+0.6482562854825629	linearsvc 	n_arr: 769
+0.6492295214922952	linearsvc 	n_arr: 770
+0.6506893755068938	linearsvc 	n_arr: 771
+0.6485806974858068	linearsvc 	n_arr: 772
+0.6485806974858069	linearsvc 	n_arr: 773
+0.6472830494728306	linearsvc 	n_arr: 774
+0.6496350364963503	linearsvc 	n_arr: 775
+0.6505271695052718	linearsvc 	n_arr: 776
+0.6506082725060828	linearsvc 	n_arr: 777
+0.6510137875101379	linearsvc 	n_arr: 778
+0.6508515815085159	linearsvc 	n_arr: 779
+0.6507704785077046	linearsvc 	n_arr: 780
+0.6472830494728304	linearsvc 	n_arr: 781
+0.6465531224655313	linearsvc 	n_arr: 782
+0.6507704785077046	linearsvc 	n_arr: 783
+0.6466342254663423	linearsvc 	n_arr: 784
+0.6479318734793187	linearsvc 	n_arr: 785
+0.6483373884833739	linearsvc 	n_arr: 786
+0.6494728304947284	linearsvc 	n_arr: 787
+0.6467153284671532	linearsvc 	n_arr: 788
+0.6473641524736415	linearsvc 	n_arr: 789
+0.64882400648824	linearsvc 	n_arr: 790
+0.6471208434712084	linearsvc 	n_arr: 791
+0.6467964314679643	linearsvc 	n_arr: 792
+0.6524736415247365	linearsvc 	n_arr: 793
+0.6535279805352798	linearsvc 	n_arr: 794
+0.6507704785077048	linearsvc 	n_arr: 795
+0.6493106244931063	linearsvc 	n_arr: 796
+0.6490673154906731	linearsvc 	n_arr: 797
+0.6519870235198703	linearsvc 	n_arr: 798
+0.648661800486618	linearsvc 	n_arr: 799
+0.6494728304947283	linearsvc 	n_arr: 800
+0.6489862124898621	linearsvc 	n_arr: 801
+0.6496350364963503	linearsvc 	n_arr: 802
+0.6472019464720193	linearsvc 	n_arr: 803
+0.6472830494728306	linearsvc 	n_arr: 804
+0.6489862124898621	linearsvc 	n_arr: 805
+0.6470397404703975	linearsvc 	n_arr: 806
+0.64566098945661	linearsvc 	n_arr: 807
+0.6496350364963503	linearsvc 	n_arr: 808
+0.6499594484995944	linearsvc 	n_arr: 809
+0.651419302514193	linearsvc 	n_arr: 810
+0.6508515815085159	linearsvc 	n_arr: 811
+0.6473641524736413	linearsvc 	n_arr: 812
+0.648337388483374	linearsvc 	n_arr: 813
+0.6521492295214923	linearsvc 	n_arr: 814
+0.6478507704785077	linearsvc 	n_arr: 815
+0.6476885644768857	linearsvc 	n_arr: 816
+0.6501216545012166	linearsvc 	n_arr: 817
+0.6504460665044607	linearsvc 	n_arr: 818
+0.645742092457421	linearsvc 	n_arr: 819
+0.6469586374695863	linearsvc 	n_arr: 820
+0.6503649635036497	linearsvc 	n_arr: 821
+0.646147607461476	linearsvc 	n_arr: 822
+0.6463909164639091	linearsvc 	n_arr: 823
+0.6497161394971614	linearsvc 	n_arr: 824
+0.651338199513382	linearsvc 	n_arr: 825
+0.6523925385239253	linearsvc 	n_arr: 826
+0.6479318734793188	linearsvc 	n_arr: 827
+0.6489051094890511	linearsvc 	n_arr: 828
+0.6527169505271695	linearsvc 	n_arr: 829
+0.6492295214922952	linearsvc 	n_arr: 830
+0.6479318734793187	linearsvc 	n_arr: 831
+0.6493106244931064	linearsvc 	n_arr: 832
+0.6501216545012166	linearsvc 	n_arr: 833
+0.6442011354420113	linearsvc 	n_arr: 834
+0.6439578264395782	linearsvc 	n_arr: 835
+0.6498783454987834	linearsvc 	n_arr: 836
+0.6454987834549878	linearsvc 	n_arr: 837
+0.6452554744525547	linearsvc 	n_arr: 838
+0.6522303325223033	linearsvc 	n_arr: 839
+0.6519870235198701	linearsvc 	n_arr: 840
+0.6519870235198701	linearsvc 	n_arr: 841
+0.6527169505271696	linearsvc 	n_arr: 842
+0.651338199513382	linearsvc 	n_arr: 843
+0.6485806974858069	linearsvc 	n_arr: 844
+0.648337388483374	linearsvc 	n_arr: 845
+0.6520681265206814	linearsvc 	n_arr: 846
+0.64882400648824	linearsvc 	n_arr: 847
+0.648499594484996	linearsvc 	n_arr: 848
+0.6506082725060827	linearsvc 	n_arr: 849
+0.651500405515004	linearsvc 	n_arr: 850
+0.6477696674776967	linearsvc 	n_arr: 851
+0.648418491484185	linearsvc 	n_arr: 852
+0.6507704785077048	linearsvc 	n_arr: 853
+0.6472830494728304	linearsvc 	n_arr: 854
+0.6480129764801298	linearsvc 	n_arr: 855
+0.6534468775344688	linearsvc 	n_arr: 856
+0.6540957015409571	linearsvc 	n_arr: 857
+0.6529602595296027	linearsvc 	n_arr: 858
+0.6490673154906731	linearsvc 	n_arr: 859
+0.6499594484995944	linearsvc 	n_arr: 860
+0.6532035685320356	linearsvc 	n_arr: 861
+0.6496350364963503	linearsvc 	n_arr: 862
+0.6502027575020276	linearsvc 	n_arr: 863
+0.6510948905109488	linearsvc 	n_arr: 864
+0.651257096512571	linearsvc 	n_arr: 865
+0.6479318734793188	linearsvc 	n_arr: 866
+0.6484995944849961	linearsvc 	n_arr: 867
+0.6507704785077048	linearsvc 	n_arr: 868
+0.6480940794809408	linearsvc 	n_arr: 869
+0.6470397404703974	linearsvc 	n_arr: 870
+0.6500405515004055	linearsvc 	n_arr: 871
+0.648661800486618	linearsvc 	n_arr: 872
+0.6510948905109489	linearsvc 	n_arr: 873
+0.6503649635036496	linearsvc 	n_arr: 874
+0.6493917274939173	linearsvc 	n_arr: 875
+0.6489051094890511	linearsvc 	n_arr: 876
+0.6518248175182482	linearsvc 	n_arr: 877
+0.6492295214922952	linearsvc 	n_arr: 878
+0.648418491484185	linearsvc 	n_arr: 879
+0.6511759935117598	linearsvc 	n_arr: 880
+0.6504460665044606	linearsvc 	n_arr: 881
+0.646147607461476	linearsvc 	n_arr: 882
+0.6482562854825629	linearsvc 	n_arr: 883
+0.6505271695052718	linearsvc 	n_arr: 884
+0.6470397404703974	linearsvc 	n_arr: 885
+0.6479318734793187	linearsvc 	n_arr: 886
+0.648905109489051	linearsvc 	n_arr: 887
+0.6519059205190592	linearsvc 	n_arr: 888
+0.6517437145174372	linearsvc 	n_arr: 889
+0.6487429034874289	linearsvc 	n_arr: 890
+0.6489862124898621	linearsvc 	n_arr: 891
+0.6520681265206812	linearsvc 	n_arr: 892
+0.6486618004866179	linearsvc 	n_arr: 893
+0.648661800486618	linearsvc 	n_arr: 894
+0.6495539334955394	linearsvc 	n_arr: 895
+0.6510137875101379	linearsvc 	n_arr: 896
+0.6447688564476884	linearsvc 	n_arr: 897
+0.6437956204379561	linearsvc 	n_arr: 898
+0.6506893755068938	linearsvc 	n_arr: 899
+0.6441200324412003	linearsvc 	n_arr: 900
+0.643552311435523	linearsvc 	n_arr: 901
+0.6503649635036495	linearsvc 	n_arr: 902
+0.6505271695052718	linearsvc 	n_arr: 903
+0.6507704785077049	linearsvc 	n_arr: 904
+0.6515815085158151	linearsvc 	n_arr: 905
+0.6499594484995944	linearsvc 	n_arr: 906
+0.6495539334955394	linearsvc 	n_arr: 907
+0.6464720194647202	linearsvc 	n_arr: 908
+0.6476885644768857	linearsvc 	n_arr: 909
+0.6498783454987835	linearsvc 	n_arr: 910
+0.6470397404703974	linearsvc 	n_arr: 911
+0.6477696674776967	linearsvc 	n_arr: 912
+0.6489051094890511	linearsvc 	n_arr: 913
+0.6490673154906732	linearsvc 	n_arr: 914
+0.6466342254663421	linearsvc 	n_arr: 915
+0.6468775344687753	linearsvc 	n_arr: 916
+0.6493106244931063	linearsvc 	n_arr: 917
+0.6467153284671533	linearsvc 	n_arr: 918
+0.645823195458232	linearsvc 	n_arr: 919
+0.6534468775344688	linearsvc 	n_arr: 920
+0.6525547445255475	linearsvc 	n_arr: 921
+0.6504460665044606	linearsvc 	n_arr: 922
+0.6489862124898621	linearsvc 	n_arr: 923
+0.6499594484995944	linearsvc 	n_arr: 924
+0.6508515815085159	linearsvc 	n_arr: 925
+0.648742903487429	linearsvc 	n_arr: 926
+0.6497161394971613	linearsvc 	n_arr: 927
+0.6489051094890512	linearsvc 	n_arr: 928
+0.6499594484995944	linearsvc 	n_arr: 929
+0.6470397404703974	linearsvc 	n_arr: 930
+0.6472019464720195	linearsvc 	n_arr: 931
+0.6489862124898621	linearsvc 	n_arr: 932
+0.6472019464720195	linearsvc 	n_arr: 933
+0.6448499594484995	linearsvc 	n_arr: 934
+0.6497161394971614	linearsvc 	n_arr: 935
+0.6496350364963503	linearsvc 	n_arr: 936
+0.6501216545012166	linearsvc 	n_arr: 937
+0.6508515815085157	linearsvc 	n_arr: 938
+0.6469586374695864	linearsvc 	n_arr: 939
+0.6469586374695865	linearsvc 	n_arr: 940
+0.6509326845093267	linearsvc 	n_arr: 941
+0.6472019464720195	linearsvc 	n_arr: 942
+0.6456609894566099	linearsvc 	n_arr: 943
+0.6490673154906731	linearsvc 	n_arr: 944
+0.6493106244931063	linearsvc 	n_arr: 945
+0.6454176804541768	linearsvc 	n_arr: 946
+0.6463909164639091	linearsvc 	n_arr: 947
+0.6494728304947284	linearsvc 	n_arr: 948
+0.6456609894566099	linearsvc 	n_arr: 949
+0.6461476074614761	linearsvc 	n_arr: 950
+0.6493917274939173	linearsvc 	n_arr: 951
+0.6498783454987835	linearsvc 	n_arr: 952
+0.6516626115166262	linearsvc 	n_arr: 953
+0.6478507704785077	linearsvc 	n_arr: 954
+0.6480940794809409	linearsvc 	n_arr: 955
+0.6511759935117598	linearsvc 	n_arr: 956
+0.648418491484185	linearsvc 	n_arr: 957
+0.6469586374695865	linearsvc 	n_arr: 958
+0.6472830494728306	linearsvc 	n_arr: 959
+0.6478507704785077	linearsvc 	n_arr: 960
+0.6441200324412004	linearsvc 	n_arr: 961
+0.6432278994322789	linearsvc 	n_arr: 962
+0.6471208434712084	linearsvc 	n_arr: 963
+0.6440389294403892	linearsvc 	n_arr: 964
+0.6440389294403892	linearsvc 	n_arr: 965
+0.6505271695052718	linearsvc 	n_arr: 966
+0.6503649635036497	linearsvc 	n_arr: 967
+0.6523925385239253	linearsvc 	n_arr: 968
+0.6531224655312247	linearsvc 	n_arr: 969
+0.6526358475263585	linearsvc 	n_arr: 970
+0.6473641524736415	linearsvc 	n_arr: 971
+0.6476885644768857	linearsvc 	n_arr: 972
+0.6528791565287916	linearsvc 	n_arr: 973
+0.6476885644768857	linearsvc 	n_arr: 974
+0.6453365774533658	linearsvc 	n_arr: 975
+0.6512570965125709	linearsvc 	n_arr: 976
+0.6515815085158151	linearsvc 	n_arr: 977
+0.6463909164639091	linearsvc 	n_arr: 978
+0.6463909164639091	linearsvc 	n_arr: 979
+0.6509326845093268	linearsvc 	n_arr: 980
+0.6464720194647202	linearsvc 	n_arr: 981
+0.6442011354420113	linearsvc 	n_arr: 982
+0.6527980535279805	linearsvc 	n_arr: 983
+0.6543390105433902	linearsvc 	n_arr: 984
+0.653933495539335	linearsvc 	n_arr: 985
+0.6481751824817519	linearsvc 	n_arr: 986
+0.648661800486618	linearsvc 	n_arr: 987
+0.654095701540957	linearsvc 	n_arr: 988
+0.6476074614760745	linearsvc 	n_arr: 989
+0.6470397404703975	linearsvc 	n_arr: 990
+0.6503649635036496	linearsvc 	n_arr: 991
+0.6511759935117599	linearsvc 	n_arr: 992
+0.645823195458232	linearsvc 	n_arr: 993
+0.6467153284671532	linearsvc 	n_arr: 994
+0.6500405515004055	linearsvc 	n_arr: 995
+0.6465531224655313	linearsvc 	n_arr: 996
+0.6446066504460666	linearsvc 	n_arr: 997
+0.645823195458232	linearsvc 	n_arr: 998
+0.645742092457421	linearsvc 	n_arr: 999
+0.6496350364963503	linearsvc 	n_arr: 1000
+0.6497161394971614	linearsvc 	n_arr: 1001
+0.6472830494728306	linearsvc 	n_arr: 1002
+0.6476885644768857	linearsvc 	n_arr: 1003
+0.6504460665044607	linearsvc 	n_arr: 1004
+0.6469586374695864	linearsvc 	n_arr: 1005
+0.6446877534468776	linearsvc 	n_arr: 1006
+0.6489051094890511	linearsvc 	n_arr: 1007
+0.6506082725060828	linearsvc 	n_arr: 1008
+0.6453365774533659	linearsvc 	n_arr: 1009
+0.6453365774533657	linearsvc 	n_arr: 1010
+0.6497161394971614	linearsvc 	n_arr: 1011
+0.6450932684509326	linearsvc 	n_arr: 1012
+0.6450932684509327	linearsvc 	n_arr: 1013
+0.6453365774533658	linearsvc 	n_arr: 1014
+0.6491484184914843	linearsvc 	n_arr: 1015
+0.6499594484995943	linearsvc 	n_arr: 1016
+0.6475263584752636	linearsvc 	n_arr: 1017
+0.6461476074614761	linearsvc 	n_arr: 1018
+0.6487429034874289	linearsvc 	n_arr: 1019
+0.6472019464720193	linearsvc 	n_arr: 1020
+0.6439578264395782	linearsvc 	n_arr: 1021
+0.6439578264395781	linearsvc 	n_arr: 1022
+0.6452554744525546	linearsvc 	n_arr: 1023
+0.6397404703974048	linearsvc 	n_arr: 1024
+0.6390916463909164	linearsvc 	n_arr: 1025
+0.6455798864557988	linearsvc 	n_arr: 1026
+0.6382806163828062	linearsvc 	n_arr: 1027
+0.6400648824006487	linearsvc 	n_arr: 1028
+0.6381995133819951	linearsvc 	n_arr: 1029
+0.6399026763990268	linearsvc 	n_arr: 1030
+0.645823195458232	linearsvc 	n_arr: 1031
+0.6476074614760746	linearsvc 	n_arr: 1032
+0.6510948905109489	linearsvc 	n_arr: 1033
+0.6511759935117598	linearsvc 	n_arr: 1034
+0.6505271695052718	linearsvc 	n_arr: 1035
+0.6527169505271695	linearsvc 	n_arr: 1036
+0.6527980535279805	linearsvc 	n_arr: 1037
+0.6501216545012166	linearsvc 	n_arr: 1038
+0.6501216545012165	linearsvc 	n_arr: 1039
+0.6529602595296027	linearsvc 	n_arr: 1040
+0.6498783454987834	linearsvc 	n_arr: 1041
+0.6506893755068939	linearsvc 	n_arr: 1042
+0.6524736415247365	linearsvc 	n_arr: 1043
+0.6531224655312247	linearsvc 	n_arr: 1044
+0.6510948905109489	linearsvc 	n_arr: 1045
+0.6508515815085159	linearsvc 	n_arr: 1046
+0.6530413625304136	linearsvc 	n_arr: 1047
+0.6510948905109489	linearsvc 	n_arr: 1048
+0.6493917274939173	linearsvc 	n_arr: 1049
+0.6506893755068937	linearsvc 	n_arr: 1050
+0.6536090835360908	linearsvc 	n_arr: 1051
+0.6533657745336577	linearsvc 	n_arr: 1052
+0.651500405515004	linearsvc 	n_arr: 1053
+0.6527169505271695	linearsvc 	n_arr: 1054
+0.653933495539335	linearsvc 	n_arr: 1055
+0.6513381995133821	linearsvc 	n_arr: 1056
+0.6519059205190592	linearsvc 	n_arr: 1057
+0.6531224655312247	linearsvc 	n_arr: 1058
+0.6539334955393349	linearsvc 	n_arr: 1059
+0.651338199513382	linearsvc 	n_arr: 1060
+0.6518248175182482	linearsvc 	n_arr: 1061
+0.654014598540146	linearsvc 	n_arr: 1062
+0.6509326845093268	linearsvc 	n_arr: 1063
+0.6505271695052718	linearsvc 	n_arr: 1064
+0.6517437145174372	linearsvc 	n_arr: 1065
+0.6505271695052717	linearsvc 	n_arr: 1066
+0.651500405515004	linearsvc 	n_arr: 1067
+0.6507704785077046	linearsvc 	n_arr: 1068
+0.6538523925385239	linearsvc 	n_arr: 1069
+0.6543390105433902	linearsvc 	n_arr: 1070
+0.6509326845093268	linearsvc 	n_arr: 1071
+0.6534468775344688	linearsvc 	n_arr: 1072
+0.6532846715328469	linearsvc 	n_arr: 1073
+0.6509326845093268	linearsvc 	n_arr: 1074
+0.651581508515815	linearsvc 	n_arr: 1075
+0.6522303325223033	linearsvc 	n_arr: 1076
+0.6527980535279805	linearsvc 	n_arr: 1077
+0.651500405515004	linearsvc 	n_arr: 1078
+0.6524736415247365	linearsvc 	n_arr: 1079
+0.6517437145174373	linearsvc 	n_arr: 1080
+0.6501216545012165	linearsvc 	n_arr: 1081
+0.6515815085158151	linearsvc 	n_arr: 1082
+0.6515004055150039	linearsvc 	n_arr: 1083
+0.654014598540146	linearsvc 	n_arr: 1084
+0.6543390105433899	linearsvc 	n_arr: 1085
+0.6516626115166261	linearsvc 	n_arr: 1086
+0.6538523925385239	linearsvc 	n_arr: 1087
+0.6536901865369019	linearsvc 	n_arr: 1088
+0.6517437145174373	linearsvc 	n_arr: 1089
+0.651419302514193	linearsvc 	n_arr: 1090
+0.6508515815085157	linearsvc 	n_arr: 1091
+0.6511759935117599	linearsvc 	n_arr: 1092
+0.6521492295214922	linearsvc 	n_arr: 1093
+0.651257096512571	linearsvc 	n_arr: 1094
+0.6489862124898621	linearsvc 	n_arr: 1095
+0.6533657745336579	linearsvc 	n_arr: 1096
+0.6530413625304137	linearsvc 	n_arr: 1097
+0.6519870235198703	linearsvc 	n_arr: 1098
+0.6543390105433902	linearsvc 	n_arr: 1099
+0.654014598540146	linearsvc 	n_arr: 1100
+0.6509326845093268	linearsvc 	n_arr: 1101
+0.6512570965125709	linearsvc 	n_arr: 1102
+0.6543390105433902	linearsvc 	n_arr: 1103
+0.6507704785077048	linearsvc 	n_arr: 1104
+0.6507704785077048	linearsvc 	n_arr: 1105
+0.6529602595296026	linearsvc 	n_arr: 1106
+0.6534468775344688	linearsvc 	n_arr: 1107
+0.6509326845093267	linearsvc 	n_arr: 1108
+0.6499594484995944	linearsvc 	n_arr: 1109
+0.6536901865369018	linearsvc 	n_arr: 1110
+0.6509326845093268	linearsvc 	n_arr: 1111
+0.6480940794809408	linearsvc 	n_arr: 1112
+0.6521492295214923	linearsvc 	n_arr: 1113
+0.6544201135442012	linearsvc 	n_arr: 1114
+0.6552311435523114	linearsvc 	n_arr: 1115
+0.6515815085158151	linearsvc 	n_arr: 1116
+0.6527980535279805	linearsvc 	n_arr: 1117
+0.6553122465531224	linearsvc 	n_arr: 1118
+0.6521492295214923	linearsvc 	n_arr: 1119
+0.6520681265206812	linearsvc 	n_arr: 1120
+0.6548256285482563	linearsvc 	n_arr: 1121
+0.6549067315490672	linearsvc 	n_arr: 1122
+0.6508515815085159	linearsvc 	n_arr: 1123
+0.6507704785077048	linearsvc 	n_arr: 1124
+0.6553933495539336	linearsvc 	n_arr: 1125
+0.650932684509327	linearsvc 	n_arr: 1126
+0.6497972424979723	linearsvc 	n_arr: 1127
+0.6519870235198701	linearsvc 	n_arr: 1128
+0.6519870235198701	linearsvc 	n_arr: 1129
+0.6510137875101378	linearsvc 	n_arr: 1130
+0.6513381995133819	linearsvc 	n_arr: 1131
+0.6534468775344687	linearsvc 	n_arr: 1132
+0.6542579075425792	linearsvc 	n_arr: 1133
+0.6520681265206812	linearsvc 	n_arr: 1134
+0.6533657745336577	linearsvc 	n_arr: 1135
+0.6536090835360908	linearsvc 	n_arr: 1136
+0.651338199513382	linearsvc 	n_arr: 1137
+0.6527980535279805	linearsvc 	n_arr: 1138
+0.6520681265206812	linearsvc 	n_arr: 1139
+0.6522303325223032	linearsvc 	n_arr: 1140
+0.6528791565287916	linearsvc 	n_arr: 1141
+0.6518248175182482	linearsvc 	n_arr: 1142
+0.6503649635036497	linearsvc 	n_arr: 1143
+0.6515004055150039	linearsvc 	n_arr: 1144
+0.6504460665044607	linearsvc 	n_arr: 1145
+0.651338199513382	linearsvc 	n_arr: 1146
+0.6536901865369019	linearsvc 	n_arr: 1147
+0.6545823195458231	linearsvc 	n_arr: 1148
+0.6521492295214922	linearsvc 	n_arr: 1149
+0.6539334955393349	linearsvc 	n_arr: 1150
+0.6536090835360908	linearsvc 	n_arr: 1151
+0.651257096512571	linearsvc 	n_arr: 1152
+0.6515815085158151	linearsvc 	n_arr: 1153
+0.6521492295214923	linearsvc 	n_arr: 1154
+0.6526358475263586	linearsvc 	n_arr: 1155
+0.6516626115166261	linearsvc 	n_arr: 1156
+0.6523925385239253	linearsvc 	n_arr: 1157
+0.6485806974858069	linearsvc 	n_arr: 1158
+0.6472830494728306	linearsvc 	n_arr: 1159
+0.6493917274939174	linearsvc 	n_arr: 1160
+0.6497972424979724	linearsvc 	n_arr: 1161
+0.6491484184914842	linearsvc 	n_arr: 1162
+0.6521492295214923	linearsvc 	n_arr: 1163
+0.6514193025141929	linearsvc 	n_arr: 1164
+0.6512570965125709	linearsvc 	n_arr: 1165
+0.6519059205190592	linearsvc 	n_arr: 1166
+0.6519059205190592	linearsvc 	n_arr: 1167
+0.6516626115166262	linearsvc 	n_arr: 1168
+0.6501216545012165	linearsvc 	n_arr: 1169
+0.6510137875101379	linearsvc 	n_arr: 1170
+0.6516626115166262	linearsvc 	n_arr: 1171
+0.6514193025141929	linearsvc 	n_arr: 1172
+0.65117599351176	linearsvc 	n_arr: 1173
+0.651338199513382	linearsvc 	n_arr: 1174
+0.651257096512571	linearsvc 	n_arr: 1175
+0.64882400648824	linearsvc 	n_arr: 1176
+0.6504460665044607	linearsvc 	n_arr: 1177
+0.6530413625304136	linearsvc 	n_arr: 1178
+0.6531224655312245	linearsvc 	n_arr: 1179
+0.6534468775344688	linearsvc 	n_arr: 1180
+0.6539334955393349	linearsvc 	n_arr: 1181
+0.6534468775344687	linearsvc 	n_arr: 1182
+0.6534468775344688	linearsvc 	n_arr: 1183
+0.6519870235198701	linearsvc 	n_arr: 1184
+0.6519870235198701	linearsvc 	n_arr: 1185
+0.6532846715328469	linearsvc 	n_arr: 1186
+0.6515004055150041	linearsvc 	n_arr: 1187
+0.651419302514193	linearsvc 	n_arr: 1188
+0.6532035685320356	linearsvc 	n_arr: 1189
+0.6515004055150041	linearsvc 	n_arr: 1190
+0.6497972424979724	linearsvc 	n_arr: 1191
+0.6507704785077049	linearsvc 	n_arr: 1192
+0.65117599351176	linearsvc 	n_arr: 1193
+0.6509326845093268	linearsvc 	n_arr: 1194
+0.6504460665044607	linearsvc 	n_arr: 1195
+0.6553933495539336	linearsvc 	n_arr: 1196
+0.6557177615571776	linearsvc 	n_arr: 1197
+0.6507704785077048	linearsvc 	n_arr: 1198
+0.6550689375506894	linearsvc 	n_arr: 1199
+0.6528791565287916	linearsvc 	n_arr: 1200
+0.6499594484995944	linearsvc 	n_arr: 1201
+0.6507704785077048	linearsvc 	n_arr: 1202
+0.6526358475263585	linearsvc 	n_arr: 1203
+0.6533657745336579	linearsvc 	n_arr: 1204
+0.6509326845093268	linearsvc 	n_arr: 1205
+0.6529602595296026	linearsvc 	n_arr: 1206
+0.6502027575020277	linearsvc 	n_arr: 1207
+0.6508515815085159	linearsvc 	n_arr: 1208
+0.6510137875101378	linearsvc 	n_arr: 1209
+0.6507704785077049	linearsvc 	n_arr: 1210
+0.6550689375506893	linearsvc 	n_arr: 1211
+0.6562043795620438	linearsvc 	n_arr: 1212
+0.6510948905109488	linearsvc 	n_arr: 1213
+0.6549878345498782	linearsvc 	n_arr: 1214
+0.6530413625304136	linearsvc 	n_arr: 1215
+0.6498783454987834	linearsvc 	n_arr: 1216
+0.6496350364963503	linearsvc 	n_arr: 1217
+0.6519059205190592	linearsvc 	n_arr: 1218
+0.6525547445255475	linearsvc 	n_arr: 1219
+0.6500405515004055	linearsvc 	n_arr: 1220
+0.6515815085158151	linearsvc 	n_arr: 1221
+0.6486618004866179	linearsvc 	n_arr: 1222
+0.6468775344687754	linearsvc 	n_arr: 1223
+0.6475263584752636	linearsvc 	n_arr: 1224
+0.6482562854825629	linearsvc 	n_arr: 1225
+0.6518248175182481	linearsvc 	n_arr: 1226
+0.6514193025141931	linearsvc 	n_arr: 1227
+0.6495539334955394	linearsvc 	n_arr: 1228
+0.6498783454987834	linearsvc 	n_arr: 1229
+0.6515815085158151	linearsvc 	n_arr: 1230
+0.6497972424979725	linearsvc 	n_arr: 1231
+0.6465531224655312	linearsvc 	n_arr: 1232
+0.6503649635036496	linearsvc 	n_arr: 1233
+0.6510948905109489	linearsvc 	n_arr: 1234
+0.6484184914841848	linearsvc 	n_arr: 1235
+0.6477696674776967	linearsvc 	n_arr: 1236
+0.6509326845093268	linearsvc 	n_arr: 1237
+0.648337388483374	linearsvc 	n_arr: 1238
+0.6450121654501216	linearsvc 	n_arr: 1239
+0.6480940794809409	linearsvc 	n_arr: 1240
+0.6529602595296027	linearsvc 	n_arr: 1241
+0.6526358475263584	linearsvc 	n_arr: 1242
+0.6506082725060828	linearsvc 	n_arr: 1243
+0.6508515815085159	linearsvc 	n_arr: 1244
+0.6527169505271694	linearsvc 	n_arr: 1245
+0.6506082725060828	linearsvc 	n_arr: 1246
+0.6480129764801297	linearsvc 	n_arr: 1247
+0.6499594484995944	linearsvc 	n_arr: 1248
+0.6510137875101378	linearsvc 	n_arr: 1249
+0.6482562854825629	linearsvc 	n_arr: 1250
+0.6479318734793188	linearsvc 	n_arr: 1251
+0.650932684509327	linearsvc 	n_arr: 1252
+0.6479318734793187	linearsvc 	n_arr: 1253
+0.6453365774533657	linearsvc 	n_arr: 1254
+0.6455798864557988	linearsvc 	n_arr: 1255
+0.6464720194647202	linearsvc 	n_arr: 1256
+0.6495539334955391	linearsvc 	n_arr: 1257
+0.6499594484995944	linearsvc 	n_arr: 1258
+0.6484184914841848	linearsvc 	n_arr: 1259
+0.6483373884833739	linearsvc 	n_arr: 1260
+0.6493106244931063	linearsvc 	n_arr: 1261
+0.6489862124898621	linearsvc 	n_arr: 1262
+0.6467964314679642	linearsvc 	n_arr: 1263
+0.648742903487429	linearsvc 	n_arr: 1264
+0.6496350364963503	linearsvc 	n_arr: 1265
+0.6480940794809408	linearsvc 	n_arr: 1266
+0.6483373884833739	linearsvc 	n_arr: 1267
+0.6493106244931063	linearsvc 	n_arr: 1268
+0.648499594484996	linearsvc 	n_arr: 1269
+0.6442822384428223	linearsvc 	n_arr: 1270
+0.6458231954582319	linearsvc 	n_arr: 1271
+0.6494728304947283	linearsvc 	n_arr: 1272
+0.6502027575020275	linearsvc 	n_arr: 1273
+0.6493917274939174	linearsvc 	n_arr: 1274
+0.6493917274939173	linearsvc 	n_arr: 1275
+0.6496350364963503	linearsvc 	n_arr: 1276
+0.6490673154906732	linearsvc 	n_arr: 1277
+0.6463098134630981	linearsvc 	n_arr: 1278
+0.646066504460665	linearsvc 	n_arr: 1279
+0.6456609894566099	linearsvc 	n_arr: 1280
+0.6467964314679644	linearsvc 	n_arr: 1281
+0.6454176804541768	linearsvc 	n_arr: 1282
+0.646228710462287	linearsvc 	n_arr: 1283
+0.6468775344687754	linearsvc 	n_arr: 1284
+0.6434712084347122	linearsvc 	n_arr: 1285
+0.6467153284671533	linearsvc 	n_arr: 1286
+0.6470397404703974	linearsvc 	n_arr: 1287
+0.650932684509327	linearsvc 	n_arr: 1288
+0.6505271695052716	linearsvc 	n_arr: 1289
+0.6496350364963503	linearsvc 	n_arr: 1290
+0.6500405515004055	linearsvc 	n_arr: 1291
+0.6506082725060828	linearsvc 	n_arr: 1292
+0.6496350364963503	linearsvc 	n_arr: 1293
+0.6501216545012166	linearsvc 	n_arr: 1294
+0.6500405515004055	linearsvc 	n_arr: 1295
+0.6491484184914841	linearsvc 	n_arr: 1296
+0.6477696674776967	linearsvc 	n_arr: 1297
+0.6515004055150041	linearsvc 	n_arr: 1298
+0.6514193025141929	linearsvc 	n_arr: 1299
+0.6491484184914841	linearsvc 	n_arr: 1300
+0.6493917274939172	linearsvc 	n_arr: 1301
+0.6511759935117599	linearsvc 	n_arr: 1302
+0.6491484184914841	linearsvc 	n_arr: 1303
+0.645904298459043	linearsvc 	n_arr: 1304
+0.6506893755068938	linearsvc 	n_arr: 1305
+0.6505271695052718	linearsvc 	n_arr: 1306
+0.6509326845093271	linearsvc 	n_arr: 1307
+0.6517437145174372	linearsvc 	n_arr: 1308
+0.6522303325223034	linearsvc 	n_arr: 1309
+0.6503649635036497	linearsvc 	n_arr: 1310
+0.6517437145174372	linearsvc 	n_arr: 1311
+0.6499594484995944	linearsvc 	n_arr: 1312
+0.6526358475263585	linearsvc 	n_arr: 1313
+0.6525547445255475	linearsvc 	n_arr: 1314
+0.6489862124898621	linearsvc 	n_arr: 1315
+0.6497972424979725	linearsvc 	n_arr: 1316
+0.6524736415247363	linearsvc 	n_arr: 1317
+0.6492295214922953	linearsvc 	n_arr: 1318
+0.6467964314679642	linearsvc 	n_arr: 1319
+0.6484995944849961	linearsvc 	n_arr: 1320
+0.6493106244931064	linearsvc 	n_arr: 1321
+0.648499594484996	linearsvc 	n_arr: 1322
+0.6489051094890512	linearsvc 	n_arr: 1323
+0.6510948905109489	linearsvc 	n_arr: 1324
+0.6532846715328468	linearsvc 	n_arr: 1325
+0.648580697485807	linearsvc 	n_arr: 1326
+0.6514193025141931	linearsvc 	n_arr: 1327
+0.6505271695052718	linearsvc 	n_arr: 1328
+0.6503649635036497	linearsvc 	n_arr: 1329
+0.6493917274939174	linearsvc 	n_arr: 1330
+0.6506082725060828	linearsvc 	n_arr: 1331
+0.6506893755068938	linearsvc 	n_arr: 1332
+0.6495539334955392	linearsvc 	n_arr: 1333
+0.6508515815085159	linearsvc 	n_arr: 1334
+0.6489862124898621	linearsvc 	n_arr: 1335
+0.6493106244931064	linearsvc 	n_arr: 1336
+0.648742903487429	linearsvc 	n_arr: 1337
+0.6489051094890511	linearsvc 	n_arr: 1338
+0.6515815085158151	linearsvc 	n_arr: 1339
+0.6534468775344688	linearsvc 	n_arr: 1340
+0.6491484184914841	linearsvc 	n_arr: 1341
+0.6521492295214923	linearsvc 	n_arr: 1342
+0.6516626115166262	linearsvc 	n_arr: 1343
+0.6503649635036496	linearsvc 	n_arr: 1344
+0.6511759935117599	linearsvc 	n_arr: 1345
+0.6483373884833739	linearsvc 	n_arr: 1346
+0.6480940794809409	linearsvc 	n_arr: 1347
+0.6513381995133821	linearsvc 	n_arr: 1348
+0.6480940794809409	linearsvc 	n_arr: 1349
+0.6462287104622872	linearsvc 	n_arr: 1350
+0.6530413625304134	linearsvc 	n_arr: 1351
+0.6523925385239254	linearsvc 	n_arr: 1352
+0.6506082725060828	linearsvc 	n_arr: 1353
+0.651257096512571	linearsvc 	n_arr: 1354
+0.6514193025141931	linearsvc 	n_arr: 1355
+0.6490673154906731	linearsvc 	n_arr: 1356
+0.6506893755068938	linearsvc 	n_arr: 1357
+0.6506082725060828	linearsvc 	n_arr: 1358
+0.6496350364963503	linearsvc 	n_arr: 1359
+0.6475263584752636	linearsvc 	n_arr: 1360
+0.6532035685320356	linearsvc 	n_arr: 1361
+0.6527980535279805	linearsvc 	n_arr: 1362
+0.648499594484996	linearsvc 	n_arr: 1363
+0.64882400648824	linearsvc 	n_arr: 1364
+0.6528791565287916	linearsvc 	n_arr: 1365
+0.6484184914841848	linearsvc 	n_arr: 1366
+0.6463098134630981	linearsvc 	n_arr: 1367
+0.651419302514193	linearsvc 	n_arr: 1368
+0.651500405515004	linearsvc 	n_arr: 1369
+0.651094890510949	linearsvc 	n_arr: 1370
+0.6515004055150041	linearsvc 	n_arr: 1371
+0.651581508515815	linearsvc 	n_arr: 1372
+0.6510948905109489	linearsvc 	n_arr: 1373
+0.6510948905109489	linearsvc 	n_arr: 1374
+0.6497161394971616	linearsvc 	n_arr: 1375
+0.6538523925385239	linearsvc 	n_arr: 1376
+0.6540957015409571	linearsvc 	n_arr: 1377
+0.6491484184914842	linearsvc 	n_arr: 1378
+0.6491484184914841	linearsvc 	n_arr: 1379
+0.6545012165450123	linearsvc 	n_arr: 1380
+0.6492295214922952	linearsvc 	n_arr: 1381
+0.6460665044606649	linearsvc 	n_arr: 1382
+0.6510948905109489	linearsvc 	n_arr: 1383
+0.6511759935117599	linearsvc 	n_arr: 1384
+0.6501216545012166	linearsvc 	n_arr: 1385
+0.6502027575020277	linearsvc 	n_arr: 1386
+0.6504460665044607	linearsvc 	n_arr: 1387
+0.6511759935117599	linearsvc 	n_arr: 1388
+0.6502027575020275	linearsvc 	n_arr: 1389
+0.6504460665044607	linearsvc 	n_arr: 1390
+0.6495539334955394	linearsvc 	n_arr: 1391
+0.6521492295214923	linearsvc 	n_arr: 1392
+0.6511759935117599	linearsvc 	n_arr: 1393
+0.6505271695052717	linearsvc 	n_arr: 1394
+0.6503649635036496	linearsvc 	n_arr: 1395
+0.6515815085158151	linearsvc 	n_arr: 1396
+0.6504460665044607	linearsvc 	n_arr: 1397
+0.648742903487429	linearsvc 	n_arr: 1398
+0.6515004055150039	linearsvc 	n_arr: 1399
+0.6501216545012166	linearsvc 	n_arr: 1400
+0.6500405515004055	linearsvc 	n_arr: 1401
+0.6509326845093268	linearsvc 	n_arr: 1402
+0.6518248175182483	linearsvc 	n_arr: 1403
+0.6500405515004055	linearsvc 	n_arr: 1404
+0.6510137875101378	linearsvc 	n_arr: 1405
+0.6504460665044606	linearsvc 	n_arr: 1406
+0.6500405515004055	linearsvc 	n_arr: 1407
+0.650932684509327	linearsvc 	n_arr: 1408
+0.6476885644768857	linearsvc 	n_arr: 1409
+0.6478507704785076	linearsvc 	n_arr: 1410
+0.6510137875101378	linearsvc 	n_arr: 1411
+0.6483373884833739	linearsvc 	n_arr: 1412
+0.6457420924574209	linearsvc 	n_arr: 1413
+0.6455798864557988	linearsvc 	n_arr: 1414
+0.6493106244931063	linearsvc 	n_arr: 1415
+0.6498783454987834	linearsvc 	n_arr: 1416
+0.6483373884833737	linearsvc 	n_arr: 1417
