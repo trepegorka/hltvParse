@@ -23,7 +23,10 @@ public class Match implements IMatch {
     }
 
     /**
-     * mapPick
+     * mapPick FOR LIFE MATCHES ONlY
+     * mapPick FOR LIFE MATCHES ONlY
+     * mapPick FOR LIFE MATCHES ONlY
+     * mapPick FOR LIFE MATCHES ONlY
      */
     @Override
     public ArrayList<String> mapPick() throws Exception {

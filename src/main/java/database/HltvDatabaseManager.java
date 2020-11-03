@@ -31,7 +31,7 @@ public class HltvDatabaseManager implements IHltvDatabase {
     }
 
     @Override
-    public void fillLine() throws Exception {
+    public void fillLine(int mapNumber) throws Exception {
         PreparedStatement statement = connection.prepareStatement(INSERT_NEW, Statement.RETURN_GENERATED_KEYS);
         statement.setDouble(1, Precision.round(advantageGenerator.KDRatioAttitude(), 3));
         statement.setDouble(2, Precision.round(advantageGenerator.headshotAttitude(), 3));
@@ -49,7 +49,7 @@ public class HltvDatabaseManager implements IHltvDatabase {
         statement.setDouble(14, Precision.round(advantageGenerator.totalKillsAttitude(), 3));
         statement.setDouble(15, Precision.round(advantageGenerator.mapsPlayedAttitude(), 3));
         statement.setInt(16, advantageGenerator.rankingDifference());
-        statement.setInt(17, matchResult.winner());
+        statement.setInt(17, matchResult.mapWinner(mapNumber));
         statement.executeUpdate();
 
         statement.close();

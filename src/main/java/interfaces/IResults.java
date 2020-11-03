@@ -13,6 +13,6 @@ public interface IResults {
 
     ArrayList<String> mapPick() throws Exception;     //list Of Played Maps
 
-    int winner();     //if winner = 1 -> right won
+    int matchWinner();     //if winner = 1 -> right won
 
 }

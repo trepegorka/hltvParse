@@ -29,10 +29,6 @@ public class MatchResult implements IResults, IMatch {
         matchDoc = General.getHtml(matchLink);
     }
 
-    public MatchResult() {
-    }
-
-    ;
 
     public static String dateOfMatch() {
         String date = matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div.timeAndEvent > div.date").text();
@@ -79,7 +75,12 @@ public class MatchResult implements IResults, IMatch {
         writer.close();
     }
 
-    //list Of Played Maps
+    /**
+     * mapPick FOR PAST MATCHES ONlY
+     * mapPick FOR PAST MATCHES ONlY
+     * mapPick FOR PAST MATCHES ONlY
+     * mapPick FOR PAST MATCHES ONlY
+     */
     @Override
     public ArrayList<String> mapPick() throws Exception {
         ArrayList<String> list = new ArrayList<>();
@@ -113,8 +114,14 @@ public class MatchResult implements IResults, IMatch {
     }
 
     //if winner = 1 -> right won. left = 0
-    public int winner() {
+    public int matchWinner() {
         if (matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(1) > div > div").hasClass("won")) {
+            return 0;
+        } else return 1;
+    }
+
+    public int mapWinner(int numberOfMap) {
+        if (matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small > div.flexbox-column > div:nth-child(" + numberOfMap + ") > div.results.played > div.results-left").hasClass("won")){
             return 0;
         } else return 1;
     }
@@ -129,7 +136,9 @@ public class MatchResult implements IResults, IMatch {
             System.out.println("Match download...");
             MatchResult matchResult = new MatchResult(scanner.nextLine());
             System.out.println("Match downloaded successfully\n");
+            int mapNumber = 0;
             for (String map : matchResult.mapPick()) {
+                System.out.println(map);
                 try {
                     System.out.println("First team download...");
                     Team firstTeam = new Team(matchResult.getFirstTeamLink(), map);
@@ -140,7 +149,8 @@ public class MatchResult implements IResults, IMatch {
                     AdvantageGenerator generator = new AdvantageGenerator(firstTeam, secondTeam);
                     System.out.println("Database filling...");
                     HltvDatabaseManager manager = new HltvDatabaseManager(generator, matchResult);
-                    manager.fillLine();
+                    manager.fillLine(mapNumber);
+                    mapNumber++;
                     System.out.println("Database filled successful\n");
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -152,6 +162,7 @@ public class MatchResult implements IResults, IMatch {
             }
         }
     }
+
 }
 
 

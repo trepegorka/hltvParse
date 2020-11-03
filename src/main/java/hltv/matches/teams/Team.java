@@ -71,6 +71,12 @@ public class Team implements ITeam {
         return playersList;
     }
 
+    /**
+     * CHANGE IT BEFORE START FOR LIFE/PAST MATCHES
+     * CHANGE IT BEFORE START FOR LIFE/PAST MATCHES
+     * CHANGE IT BEFORE START FOR LIFE/PAST MATCHES
+     * CHANGE IT BEFORE START FOR LIFE/PAST MATCHES
+     * **/
     private String get3mFormat() throws ParseException { //?startDate=2020-06-02&endDate=2020-09-02 will return like that
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = sdf.parse(MatchResult.dateOfMatch()); // for past
