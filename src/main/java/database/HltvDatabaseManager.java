@@ -12,7 +12,7 @@ public class HltvDatabaseManager implements IHltvDatabase {
     private static final String USERNAME = "root";
     private static final String PASSWORD = "2714OrgD2.";
 
-    private static final String INSERT_NEW = "INSERT INTO hltv2 (KDRatioAttitude,headshotAttitude,damagePerRoundAttitude,assistsPerRoundAttitude,impactAttitude,kastAttitude,openingKillRatioAttitude,rating3mAttitude,ratingVStop5Attitude,ratingVStop10Attitude,ratingVStop20Attitude,ratingVStop30Attitude,ratingVStop50Attitude,totalKillsAttitude,mapsPlayedAttitude,rankingDifference,winner) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    private static final String INSERT_NEW = "INSERT INTO hltv (KDRatioAttitude,headshotAttitude,damagePerRoundAttitude,assistsPerRoundAttitude,impactAttitude,kastAttitude,openingKillRatioAttitude,rating3mAttitude,ratingVStop5Attitude,ratingVStop10Attitude,ratingVStop20Attitude,ratingVStop30Attitude,ratingVStop50Attitude,totalKillsAttitude,mapsPlayedAttitude,rankingDifference,winner) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     private final AdvantageGenerator advantageGenerator;
     private final MatchResult matchResult;

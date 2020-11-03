@@ -1,14 +1,19 @@
 package resultMatches;
 
+import database.HltvDatabaseManager;
 import general.General;
+import general.logics.AdvantageGenerator;
+import hltv.matches.teams.Team;
 import interfaces.IMatch;
 import interfaces.IResults;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -23,7 +28,11 @@ public class MatchResult implements IResults, IMatch {
     public MatchResult(String matchLink) throws Exception {
         matchDoc = General.getHtml(matchLink);
     }
-    public MatchResult(){};
+
+    public MatchResult() {
+    }
+
+    ;
 
     public static String dateOfMatch() {
         String date = matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div.timeAndEvent > div.date").text();
@@ -110,10 +119,42 @@ public class MatchResult implements IResults, IMatch {
         } else return 1;
     }
 
-//    public static void main(String[] args) throws Exception {
-//        new MatchResult().writeResultLinks();
-//    }
+    //fill database by team attitudes for all played maps.
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(new File("src/main/java/resultMatches/resultLinks.txt"));
+        int number = 0;
+        while (scanner.hasNextLine()) {
+            number++;
+            System.out.println("Match №" + number);
+            System.out.println("Match download...");
+            MatchResult matchResult = new MatchResult(scanner.nextLine());
+            System.out.println("Match downloaded successfully\n");
+            for (String map : matchResult.mapPick()) {
+                try {
+                    System.out.println("First team download...");
+                    Team firstTeam = new Team(matchResult.getFirstTeamLink(), map);
+                    System.out.println("First team downloaded successfully\n");
+                    System.out.println("Second team download...");
+                    Team secondTeam = new Team(matchResult.getSecondTeamLink(), map);
+                    System.out.println("Second team downloaded successfully\n");
+                    AdvantageGenerator generator = new AdvantageGenerator(firstTeam, secondTeam);
+                    System.out.println("Database filling...");
+                    HltvDatabaseManager manager = new HltvDatabaseManager(generator, matchResult);
+                    manager.fillLine();
+                    System.out.println("Database filled successful\n");
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    Thread.sleep(30000);
+                }
+            }
+            for (int i = 0; i < 35; i++) {
+                System.out.print("*");
+            }
+        }
+    }
 }
+
+
 
 
 

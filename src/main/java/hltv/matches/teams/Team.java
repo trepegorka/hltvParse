@@ -73,13 +73,14 @@ public class Team implements ITeam {
 
     private String get3mFormat() throws ParseException { //?startDate=2020-06-02&endDate=2020-09-02 will return like that
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-//        Date date = sdf.parse(MatchResult.dateOfMatch()); //matchresult.dateOfMatch;
-        Date date = sdf.parse(String.valueOf(java.time.LocalDate.now())); //matchresult.dateOfMatch;
+        Date date = sdf.parse(MatchResult.dateOfMatch()); // for past
+//        Date date = sdf.parse(String.valueOf(java.time.LocalDate.now())); // for life
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         calendar.add(Calendar.DATE, -90);
         Date m3Ago = calendar.getTime();
         String formatter = sdf.format(m3Ago);
-        return ("?startDate=" + formatter + "&endDate=" + java.time.LocalDate.now());
+//        return ("?startDate=" + formatter + "&endDate=" + java.time.LocalDate.now()); //for life
+        return ("?startDate=" + formatter + "&endDate=" + MatchResult.dateOfMatch()); //for past
     }
 }
