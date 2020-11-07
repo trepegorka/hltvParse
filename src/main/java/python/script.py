@@ -22,9 +22,5 @@ Xnew = [[sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.ar
 loaded_model = pickle.load(open('final_model.sav', 'rb'))
 probability = loaded_model.predict_proba(Xnew)
 result = loaded_model.predict(Xnew)
-if result == [1]:
-    result = sys.argv[13]
-elif result == [2]:
-    result = sys.argv[12]
-print(sys.argv[12], "\tVS\t", sys.argv[13], "\nMap: ", sys.argv[14], "\nProbability: ", probability, "\nResult: ",
-      result)
+arr = probability[0]
+print(arr[0], arr[1])

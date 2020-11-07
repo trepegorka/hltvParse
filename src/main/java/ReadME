@@ -1,0 +1,5 @@
+Before start change for LIFE/PAST matches in classes:
+hltv.matches.teams.Team
+
+For LIFE matches run java.Main
+For PAST matches run java.resultMatches.MatchResult (for data analysing)

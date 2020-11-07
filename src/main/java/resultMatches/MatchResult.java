@@ -85,30 +85,12 @@ public class MatchResult implements IResults, IMatch {
     public ArrayList<String> mapPick() throws Exception {
         ArrayList<String> list = new ArrayList<>();
         Elements column = matchDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.g-grid.maps > div.col-6.col-7-small");
-        if (column.text().contains("Best of 3")) {
-            /* bo3 */
+
             for (Element mapholder : column.select("div.flexbox-column > div.mapholder")) {
                 if (mapholder.child(0).hasClass("played")) {
                     list.add(mapholder.child(0).text());
                 }
             }
-        } else if (column.text().contains("Best of 1")) {
-            /* bo1 */
-            for (Element mapholder : column.select("div.flexbox-column > div.mapholder")) {
-                if (mapholder.child(0).hasClass("played")) {
-                    list.add(mapholder.child(0).text());
-                }
-            }
-        } else if (column.text().contains("Best of 5")) {
-            /* bo5 */
-            for (Element mapholder : column.select("div.flexbox-column > div.mapholder")) {
-                if (mapholder.child(0).hasClass("played")) {
-                    list.add(mapholder.child(0).text());
-                }
-            }
-        } else {
-            throw new Exception("Error founding bo");
-        }
 
         return list;
     }
@@ -136,9 +118,10 @@ public class MatchResult implements IResults, IMatch {
             System.out.println("Match download...");
             MatchResult matchResult = new MatchResult(scanner.nextLine());
             System.out.println("Match downloaded successfully\n");
-            int mapNumber = 0;
+            int mapNumber = 1;
             for (String map : matchResult.mapPick()) {
                 System.out.println(map);
+                if (map.equals("Default")) continue;
                 try {
                     System.out.println("First team download...");
                     Team firstTeam = new Team(matchResult.getFirstTeamLink(), map);
