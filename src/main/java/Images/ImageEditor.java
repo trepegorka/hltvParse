@@ -3,12 +3,12 @@ package Images;
 import java.awt.*;
 import java.io.*;
 
-
 import net.coobird.thumbnailator.Thumbnails;
 import org.apache.batik.transcoder.TranscoderException;
 import org.apache.batik.transcoder.image.PNGTranscoder;
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
+import org.apache.commons.math3.util.Precision;
 
 import java.nio.file.Paths;
 import javax.imageio.ImageIO;
@@ -19,34 +19,19 @@ import java.util.Map;
 
 public class ImageEditor {
     public static void main(String[] args) throws IOException {
-        //convert SVG to PNG -> Resize Team Images -> Stick Team Images -> Stick Text.
+
         String leftTeamName = "FORZE";
         String rightTeamName = "VIRTUS.PRO";
-        String dateOfMatch = "6th of November 2020".toUpperCase();
+        String dateOfMatch = "6th of May 2020";
         String timeOfMatch = "12:50";
 
-        String[] maps1 = {"DUST2", "NUKE", "TRAIN", "OVERPASS", "MIRAGE"};
-        //key = map, value = [0.66 | 0.24]
-        Map<String, String[]> map1 = new LinkedHashMap<>();
-        map1.put(maps1[0], new String[]{"0,67", "0,23"});
-        map1.put(maps1[1], new String[]{"0,17", "0,83"});
-        map1.put(maps1[2], new String[]{"0,54", "0,46"});
-        map1.put(maps1[3], new String[]{"0,60", "0,40"});
-        map1.put(maps1[4], new String[]{"0,55", "0,45"});
+        String[] maps = {"DUST2", "TRAIN", "MIRAGE"};
+        Map<String, String[]> map = new LinkedHashMap<>();
+        map.put(maps[0], new String[]{"0,17", "0,83"});
+        map.put(maps[1], new String[]{"0,54", "0,46"});
+        map.put(maps[2], new String[]{"0,60", "0,40"});
 
-        String[] maps2 = {"DUST2", "TRAIN", "MIRAGE"};
-        Map<String, String[]> map2 = new LinkedHashMap<>();
-        map2.put(maps2[0], new String[]{"0,17", "0,83"});
-        map2.put(maps2[1], new String[]{"0,54", "0,46"});
-        map2.put(maps2[2], new String[]{"0,60", "0,40"});
-
-        String[] maps3 = {"OVERPASS"};
-        Map<String, String[]> map3 = new LinkedHashMap<>();
-        map3.put(maps3[0], new String[]{"0,67", "0,23"});
-
-        fillImage(leftTeamName, rightTeamName, dateOfMatch, timeOfMatch, map1);
-
-
+        fillImage(leftTeamName, rightTeamName, dateOfMatch, timeOfMatch, map);
     }
 
     // Before call method DOWNLOAD IMAGES OF TEAM
@@ -62,18 +47,63 @@ public class ImageEditor {
         int x1TName = 180 - (int) (leftTeamName.length() * 21.5 / 2);
         int x2TName = 620 - (int) (rightTeamName.length() * 21.5 / 2);
         //PRINT NAMES OF TEAMS
-        printTextToImage("result", leftTeamName, x1TName, 470);
-        printTextToImage("result", rightTeamName, x2TName, 470);
+        //FONT 0 = PLAIN, 1 = BOLD
+        printTextToImage("result", leftTeamName, x1TName, 470, 1, 50);
+        printTextToImage("result", rightTeamName, x2TName, 470, 1, 50);
 
         //PRINT DATE AND TIME OF MATCH
-        printTextToImage("result", timeOfMatch, 360, 350);
-        printTextToImage("result", dateOfMatch, 390 - (dateOfMatch.length() * 10), 400);
+        printTextToImage("result", dateOfMatch, 420 - (dateOfMatch.length() * 10), 40, 0, 50);
+        printTextToImage("result", timeOfMatch, 360, 90, 0, 50);
 
-        //PRINT MAPS TO CENTER
+        //PRINT MAPS TO CENTER AND DIGITS
         int yMap = 570;
-        int xMap = 400;
+        int xMap = 415;
         for (Map.Entry<String, String[]> entry : mapName_perWin.entrySet()) {
-            printTextToImage("result", entry.getKey(), (xMap - (11 * entry.getKey().length())), yMap);
+            if (entry.getKey().contains("i")) {
+                xMap = xMap + 7;
+            }
+            double leftPercentage = Double.parseDouble(entry.getValue()[0].replace(',', '.')) * 100;
+            double rightPercentage = Double.parseDouble(entry.getValue()[1].replace(',', '.')) * 100;
+            leftPercentage = Precision.round(leftPercentage, 1);
+            rightPercentage = Precision.round(rightPercentage, 1);
+            double leftCoeff = Precision.round(100 / leftPercentage, 2);
+            double rightCoeff = Precision.round(100 / rightPercentage, 2);
+            String leftPerc = String.valueOf(leftPercentage);
+            String rightPerc = String.valueOf(rightPercentage);
+            String leftCoefficient = String.valueOf(leftCoeff);
+            String rightCoefficient = String.valueOf(rightCoeff);
+            if (leftPerc.length() == 3) leftPerc = leftPerc + "0";
+            if (rightPerc.length() == 3) rightPerc = rightPerc + "0";
+            if (leftCoefficient.length() == 3) leftCoefficient = leftCoefficient + "0";
+            if (rightCoefficient.length() == 3) rightCoefficient = rightCoefficient + "0";
+
+            //PRINT MAPS
+            printTextToImage("result", entry.getKey(), (xMap - (11 * entry.getKey().length())), yMap, 0, 45);
+
+            //PRINT DIGITS PERCENTAGE
+            int xPercL = 70;
+            if (leftPerc.contains("1")) {
+                xPercL = xPercL + 5;
+            }
+            int xPercR = 670;
+            if (rightPerc.contains("1")) {
+                xPercR = xPercR + 5;
+            }
+            printTextToImage("result", leftPerc, xPercL, yMap, 0, 45);
+            printTextToImage("result", rightPerc, xPercR, yMap, 0, 45);
+
+            //PRINT DIGITS COEFF.
+            int xCoeffL = 230;
+            if (leftCoefficient.contains("1")) {
+                xCoeffL = xCoeffL + 5;
+            }
+            int xCoeffR = 520;
+            if (rightCoefficient.contains("1")) {
+                xCoeffR = xCoeffR + 5;
+            }
+            printTextToImage("result", leftCoefficient, xCoeffL, yMap, 0, 45);
+            printTextToImage("result", rightCoefficient, xCoeffR, yMap, 0, 45);
+
             yMap = yMap + 50;
         }
     }
@@ -116,11 +146,11 @@ public class ImageEditor {
         ImageIO.write(thumbnail, "png", new File("src/main/java/Images/imageLibrary/" + imageName + ".png"));
     }
 
-    private static void printTextToImage(String whereToWrite, String whatToWrite, int x, int y) throws IOException {
+    private static void printTextToImage(String whereToWrite, String whatToWrite, int x, int y, int font, int fontSize) throws IOException {
         BufferedImage image = ImageIO.read(new File("src/main/java/Images/imageLibrary/" + whereToWrite + ".png"));
 
         Graphics2D g = (Graphics2D) image.getGraphics();
-        g.setFont(new Font("Uroob", Font.BOLD, 50));
+        g.setFont(new Font("Uroob", font, fontSize));
         g.setColor(Color.WHITE);
         g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         g.drawString(whatToWrite, x, y);

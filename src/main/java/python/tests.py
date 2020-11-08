@@ -104,6 +104,12 @@ for i in range(0, 16):
                                                                        feature_cols[e], feature_cols[f]]
                                                                 arrays.append(arr)
 
+for array in arrays:
+    if len(array) < 6:
+        arrays.remove(array)
+
+print(len(arrays))
+
 
 def count_linearsvc(array, random_st):
     pima = pd.read_csv("hltv2CSV.csv")
@@ -130,7 +136,7 @@ def count_linearsvc(array, random_st):
 def main():
     file = open('modelmax.txt', 'a')
 
-    for arr_n in range(1417, len(arrays)):
+    for arr_n in range(0, len(arrays)):
         print("arr=", arr_n, sep=" ")
         average_acc1 = 0.0
         for r_state in range(1, 10):

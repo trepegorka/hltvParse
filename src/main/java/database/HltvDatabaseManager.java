@@ -56,49 +56,5 @@ public class HltvDatabaseManager implements IHltvDatabase {
         connection.close();
     }
 
-    /**SET ALLL RANKING DIFF. BEFORE *(-1)  / winner -1 **/
-    public static void main(String[] args) throws SQLException {
-        String URL = "jdbc:mysql://localhost:3306/myhltv?serverTimezone=UTC";
-        String USERNAME = "root";
-        String PASSWORD = "2714OrgD2.";
-
-        String UPDATE_NEW = "UPDATE hltv SET winner = ? WHERE id = ?";
-        String SELECT = "SELECT winner FROM hltv WHERE id = ?";
-
-        try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD)) {
-            PreparedStatement preparedStatement;
-            int before = 0;
-            ResultSet resultSet;
-
-            for (int id = 1; id < 2119; id++) {
-                preparedStatement = connection.prepareStatement(SELECT);
-                preparedStatement.setInt(1, id);
-                resultSet = preparedStatement.executeQuery();
-
-                while (resultSet.next()) {
-                    before = resultSet.getInt("winner");
-                }
-
-                preparedStatement = connection.prepareStatement(UPDATE_NEW);
-                preparedStatement.setInt(1, before -1);
-                preparedStatement.setInt(2, id);
-                preparedStatement.executeUpdate();
-
-                preparedStatement = connection.prepareStatement(SELECT);
-                preparedStatement.setInt(1, id);
-                resultSet = preparedStatement.executeQuery();
-                while (resultSet.next()) {
-                    if(before == resultSet.getInt("winner")){
-                        throw new Exception();
-                    } else System.out.println("Success №" + id);
-                }
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
-
 
 }

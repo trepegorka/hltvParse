@@ -18,7 +18,7 @@ Output like : [[0.33 0.67]] , 1 = right team won?
 """
 # load model
 Xnew = [[sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6],
-         sys.argv[7], sys.argv[8], sys.argv[9], sys.argv[10], sys.argv[11]]]
+         sys.argv[7], sys.argv[8], sys.argv[9], sys.argv[10], sys.argv[11], sys.argv[12], sys.argv[13]]]
 loaded_model = pickle.load(open('final_model.sav', 'rb'))
 probability = loaded_model.predict_proba(Xnew)
 result = loaded_model.predict(Xnew)
