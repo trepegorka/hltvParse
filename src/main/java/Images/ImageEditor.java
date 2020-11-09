@@ -3,12 +3,17 @@ package Images;
 import java.awt.*;
 import java.io.*;
 
+import general.General;
+import hltv.matches.Match;
 import net.coobird.thumbnailator.Thumbnails;
 import org.apache.batik.transcoder.TranscoderException;
 import org.apache.batik.transcoder.image.PNGTranscoder;
 import org.apache.batik.transcoder.TranscoderInput;
 import org.apache.batik.transcoder.TranscoderOutput;
 import org.apache.commons.math3.util.Precision;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import java.nio.file.Paths;
 import javax.imageio.ImageIO;
@@ -31,11 +36,27 @@ public class ImageEditor {
         map.put(maps[1], new String[]{"0,54", "0,46"});
         map.put(maps[2], new String[]{"0,60", "0,40"});
 
-        fillImage(leftTeamName, rightTeamName, dateOfMatch, timeOfMatch, map);
+
+        try {
+            Match match = new Match("https://www.hltv.org/matches/2345222/liquid-vs-chaos-iem-beijing-haidian-2020-north-america");
+            fillImage(match, map);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
     // Before call method DOWNLOAD IMAGES OF TEAM
-    public static void fillImage(String leftTeamName, String rightTeamName, String dateOfMatch, String timeOfMatch, Map<String, String[]> mapName_perWin) throws IOException {
+    public static void fillImage(Match match, Map<String, String[]> mapName_perWin) throws Exception {
+        String leftTeamName = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(1) > div > a > div").text();
+        String rightTeamName = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(3) > div > a > div").text();
+        String dateOfMatch = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div.timeAndEvent > div.date").text();
+        String timeOfMatch = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div.timeAndEvent > div.time").text();
+
+        downloadImagesSvg(match);
+        convertSVGToPNG(leftTeamName);
+        convertSVGToPNG(rightTeamName);
+
         //RESIZE LOGO TO 200x200
         resizeImage(leftTeamName);
         resizeImage(rightTeamName);
@@ -121,6 +142,26 @@ public class ImageEditor {
         png_ostream.flush();
         png_ostream.close();
         file.delete();
+    }
+
+    private static void downloadImagesSvg(Match match) throws Exception {
+        String leftTeamName = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(1) > div > a > div").text();
+        String leftImageLink = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(1) > div > a > img").attr("src");
+        svgWriter(leftTeamName, leftImageLink);
+
+        String rightTeamName = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(3) > div > a > div").text();
+        String rightImageLink = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(3) > div > a > img").attr("src");
+        svgWriter(rightTeamName, rightImageLink);
+    }
+
+    private static void svgWriter(String leftTeamName, String leftImageLink) throws IOException {
+        Document leftDoc = Jsoup.connect(leftImageLink).ignoreContentType(true).get();
+        File fileLeft = new File("src/main/java/Images/imageLibrary/"+leftTeamName+".svg");
+        Elements el1 = leftDoc.select("#Layer_1");
+        String a1 = String.valueOf(el1.get(0));
+        BufferedWriter writer1 = new BufferedWriter(new FileWriter(fileLeft));
+        writer1.write(a1);
+        writer1.close();
     }
 
     private static void stickImageTeam(String imageName, String whereToStick, int x, int y) {
