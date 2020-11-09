@@ -1,4 +1,5 @@
 import pickle
+import sys
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import StandardScaler
@@ -7,24 +8,16 @@ from sklearn import model_selection
 from sklearn import svm
 import pandas as pd
 
-x1 = 1.1
-x2 = 0
-x3 = 1.1
-x4 = 1.1
-x5 = 1.0
-x6 = 1.1
-x7 = 1.1
-x8 = 1.1
+x1 = sys.argv[1]
+x2 = sys.argv[2]
+x3 = sys.argv[3]
+x4 = sys.argv[4]
+x5 = sys.argv[5]
+x6 = sys.argv[6]
+x7 = sys.argv[7]
+x8 = sys.argv[8]
 Xnew = [[x1, x2, x3, x4, x5, x6, x7, x8]]
 
-# sys.argv[1]
-# sys.argv[2]
-# sys.argv[3]
-# sys.argv[4]
-# sys.argv[5]
-# sys.argv[6]
-# sys.argv[7]
-# sys.argv[8]
 
 def toFixed(numObj, digits=2):
     return f"{numObj:.{digits}f}"
