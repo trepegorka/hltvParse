@@ -16,6 +16,7 @@ x5 = sys.argv[5]
 x6 = sys.argv[6]
 x7 = sys.argv[7]
 x8 = sys.argv[8]
+
 Xnew = [[x1, x2, x3, x4, x5, x6, x7, x8]]
 
 
@@ -45,25 +46,25 @@ def new_model_drops():
                    'ratingVStop30Attitude', 'ratingVStop50Attitude',
                    'totalKillsAttitude', 'mapsPlayedAttitude',
                    'rankingDifference', 'winner']
-    if x2 == 0:
+    if x2 == 0.0:
         arrayToDrop.append('headshotAttitude')
         Xnew[0].remove(x2)
-    if x3 == 0:
+    if x3 == 0.0:
         arrayToDrop.append('damagePerRoundAttitude')
         Xnew[0].remove(x3)
-    if x4 == 0:
+    if x4 == 0.0:
         arrayToDrop.append('assistsPerRoundAttitude')
         Xnew[0].remove(x4)
-    if x5 == 0:
+    if x5 == 0.0:
         arrayToDrop.append('impactAttitude')
         Xnew[0].remove(x5)
-    if x6 == 0:
+    if x6 == 0.0:
         arrayToDrop.append('kastAttitude')
         Xnew[0].remove(x6)
-    if x7 == 0:
+    if x7 == 0.0:
         arrayToDrop.append('openingKillRatioAttitude')
         Xnew[0].remove(x7)
-    if x8 == 0:
+    if x8 == 0.0:
         arrayToDrop.append('rating3mAttitude')
         Xnew[0].remove(x8)
 
@@ -71,7 +72,7 @@ def new_model_drops():
 
 
 # load model
-if x2 != 0 and x3 != 0 and x4 != 0 and x5 != 0 and x6 != 0 and x7 != 0 and x8 != 0:
+if x2 != 0.0 and x3 != 0.0 and x4 != 0.0 and x5 != 0.0 and x6 != 0.0 and x7 != 0.0 and x8 != 0.0:
     loaded_model = pickle.load(open('final_model.sav', 'rb'))
 else:
     new_model_drops()
@@ -79,4 +80,4 @@ else:
 probability = loaded_model.predict_proba(Xnew)
 result = loaded_model.predict(Xnew)
 arr = probability[0]
-print(toFixed(arr[0]), "VS", toFixed(arr[1]))
+print(toFixed(arr[0]), ":", toFixed(arr[1]))

@@ -1,75 +1,719 @@
-0.6879543094496365	linearsvc 	n_arr: 0
-0.7078141225337488	linearsvc 	n_arr: 1
-0.7062564901349948	linearsvc 	n_arr: 2
-0.7076843198338526	linearsvc 	n_arr: 3
-0.7109293873312564	linearsvc 	n_arr: 4
-0.7122274143302181	linearsvc 	n_arr: 5
-0.7110591900311526	linearsvc 	n_arr: 6
-0.7115784008307373	linearsvc 	n_arr: 7
-0.7110591900311527	linearsvc 	n_arr: 8
-0.7127466251298027	linearsvc 	n_arr: 9
-0.7122274143302181	linearsvc 	n_arr: 10
-0.7122274143302181	linearsvc 	n_arr: 11
-0.7167705088265836	linearsvc 	n_arr: 12
-0.7165109034267912	linearsvc 	n_arr: 13
-0.7127466251298027	linearsvc 	n_arr: 14
-0.7166407061266874	linearsvc 	n_arr: 15
-0.7144340602284528	linearsvc 	n_arr: 16
-0.7126168224299065	linearsvc 	n_arr: 17
-0.7124870197300104	linearsvc 	n_arr: 18
-0.7146936656282451	linearsvc 	n_arr: 19
-0.7148234683281413	linearsvc 	n_arr: 20
-0.7131360332294912	linearsvc 	n_arr: 21
-0.7144340602284528	linearsvc 	n_arr: 22
-0.7136552440290758	linearsvc 	n_arr: 23
-0.7145638629283488	linearsvc 	n_arr: 24
-0.7140446521287642	linearsvc 	n_arr: 25
-0.714563862928349	linearsvc 	n_arr: 26
-0.7175493250259606	linearsvc 	n_arr: 27
-0.7175493250259605	linearsvc 	n_arr: 28
-0.7141744548286605	linearsvc 	n_arr: 29
-0.7172897196261682	linearsvc 	n_arr: 30
-0.716251298026999	linearsvc 	n_arr: 31
-0.7109293873312564	linearsvc 	n_arr: 32
-0.7101505711318795	linearsvc 	n_arr: 33
-0.7156022845275182	linearsvc 	n_arr: 34
-0.7157320872274143	linearsvc 	n_arr: 35
-0.7102803738317757	linearsvc 	n_arr: 36
-0.7156022845275182	linearsvc 	n_arr: 37
-0.7150830737279336	linearsvc 	n_arr: 38
-0.7111889927310489	linearsvc 	n_arr: 39
-0.7123572170301142	linearsvc 	n_arr: 40
-0.7104101765316719	linearsvc 	n_arr: 41
-0.7109293873312565	linearsvc 	n_arr: 42
-0.7145638629283488	linearsvc 	n_arr: 43
-0.714693665628245	linearsvc 	n_arr: 44
-0.7107995846313604	linearsvc 	n_arr: 45
-0.7146936656282451	linearsvc 	n_arr: 46
-0.7136552440290758	linearsvc 	n_arr: 47
-0.7106697819314642	linearsvc 	n_arr: 48
-0.711318795430945	linearsvc 	n_arr: 49
-0.714563862928349	linearsvc 	n_arr: 50
-0.7139148494288681	linearsvc 	n_arr: 51
-0.7110591900311527	linearsvc 	n_arr: 52
-0.7144340602284527	linearsvc 	n_arr: 53
-0.7137850467289719	linearsvc 	n_arr: 54
-0.7136552440290758	linearsvc 	n_arr: 55
-0.714693665628245	linearsvc 	n_arr: 56
-0.7148234683281411	linearsvc 	n_arr: 57
-0.7165109034267911	linearsvc 	n_arr: 58
-0.7162512980269988	linearsvc 	n_arr: 59
-0.714563862928349	linearsvc 	n_arr: 60
-0.716381100726895	linearsvc 	n_arr: 61
-0.7148234683281411	linearsvc 	n_arr: 62
-0.7106697819314642	linearsvc 	n_arr: 63
-0.7098909657320872	linearsvc 	n_arr: 64
-0.715472481827622	linearsvc 	n_arr: 65
-0.7161214953271028	linearsvc 	n_arr: 66
-0.7098909657320872	linearsvc 	n_arr: 67
-0.7157320872274143	linearsvc 	n_arr: 68
-0.7143042575285565	linearsvc 	n_arr: 69
-0.7115784008307373	linearsvc 	n_arr: 70
-0.7114485981308412	linearsvc 	n_arr: 71
-0.710539979231568	linearsvc 	n_arr: 253
-0.7095015576323987	linearsvc 	n_arr: 254
-0.7109293873312564	linearsvc 	n_arr: 7
+0.6850986500519212	linearsvc 	n_arr: 0
+0.5974818276220145	knn	n_arr: 0	neighbors = 1	uniform
+0.5974818276220145	knn	n_arr: 0	neighbors = 1	distance
+0.5976116303219107	pipe_knn	n_arr: 0	neighbors = 1	uniform
+0.5976116303219107	pipe_knn	n_arr: 0	neighbors = 1	distance
+0.6087746625129804	knn	n_arr: 0	neighbors = 2	uniform
+0.6091640706126689	knn	n_arr: 0	neighbors = 2	distance
+0.609293873312565	pipe_knn	n_arr: 0	neighbors = 2	uniform
+0.6086448598130842	pipe_knn	n_arr: 0	neighbors = 2	distance
+0.6296728971962616	knn	n_arr: 0	neighbors = 3	uniform
+0.6205867082035306	knn	n_arr: 0	neighbors = 3	distance
+0.6301921079958462	pipe_knn	n_arr: 0	neighbors = 3	uniform
+0.6207165109034266	pipe_knn	n_arr: 0	neighbors = 3	distance
+0.6370716510903427	knn	n_arr: 0	neighbors = 4	uniform
+0.6256490134994809	knn	n_arr: 0	neighbors = 4	distance
+0.6377206645898235	pipe_knn	n_arr: 0	neighbors = 4	uniform
+0.6256490134994809	pipe_knn	n_arr: 0	neighbors = 4	distance
+0.6491433021806853	knn	n_arr: 0	neighbors = 5	uniform
+0.6292834890965732	knn	n_arr: 0	neighbors = 5	distance
+0.6497923156801662	pipe_knn	n_arr: 0	neighbors = 5	uniform
+0.6292834890965732	pipe_knn	n_arr: 0	neighbors = 5	distance
+0.6518691588785047	knn	n_arr: 0	neighbors = 6	uniform
+0.6279854620976116	knn	n_arr: 0	neighbors = 6	distance
+0.6516095534787124	pipe_knn	n_arr: 0	neighbors = 6	uniform
+0.6279854620976116	pipe_knn	n_arr: 0	neighbors = 6	distance
+0.6547248182762202	knn	n_arr: 0	neighbors = 7	uniform
+0.6317497403946002	knn	n_arr: 0	neighbors = 7	distance
+0.6548546209761164	pipe_knn	n_arr: 0	neighbors = 7	uniform
+0.631619937694704	pipe_knn	n_arr: 0	neighbors = 7	distance
+0.6591381100726896	knn	n_arr: 0	neighbors = 8	uniform
+0.6304517133956387	knn	n_arr: 0	neighbors = 8	distance
+0.6597871235721704	pipe_knn	n_arr: 0	neighbors = 8	uniform
+0.6303219106957425	pipe_knn	n_arr: 0	neighbors = 8	distance
+0.6555036344755971	knn	n_arr: 0	neighbors = 9	uniform
+0.6264278296988578	knn	n_arr: 0	neighbors = 9	distance
+0.6564122533748702	pipe_knn	n_arr: 0	neighbors = 9	uniform
+0.6262980269989616	pipe_knn	n_arr: 0	neighbors = 9	distance
+0.6699117341640706	knn	n_arr: 0	neighbors = 10	uniform
+0.6288940809968848	knn	n_arr: 0	neighbors = 10	distance
+0.6696521287642783	pipe_knn	n_arr: 0	neighbors = 10	uniform
+0.6288940809968848	pipe_knn	n_arr: 0	neighbors = 10	distance
+0.6682242990654206	knn	n_arr: 0	neighbors = 11	uniform
+0.6277258566978194	knn	n_arr: 0	neighbors = 11	distance
+0.6683541017653167	pipe_knn	n_arr: 0	neighbors = 11	uniform
+0.6277258566978194	pipe_knn	n_arr: 0	neighbors = 11	distance
+0.6730269989615784	knn	n_arr: 0	neighbors = 12	uniform
+0.6286344755970925	knn	n_arr: 0	neighbors = 12	distance
+0.6723779854620976	pipe_knn	n_arr: 0	neighbors = 12	uniform
+0.6286344755970925	pipe_knn	n_arr: 0	neighbors = 12	distance
+0.6682242990654206	knn	n_arr: 0	neighbors = 13	uniform
+0.6273364485981309	knn	n_arr: 0	neighbors = 13	distance
+0.6690031152647975	pipe_knn	n_arr: 0	neighbors = 13	uniform
+0.6273364485981309	pipe_knn	n_arr: 0	neighbors = 13	distance
+0.6713395638629284	knn	n_arr: 0	neighbors = 14	uniform
+0.6275960539979233	knn	n_arr: 0	neighbors = 14	distance
+0.6714693665628244	pipe_knn	n_arr: 0	neighbors = 14	uniform
+0.6275960539979233	pipe_knn	n_arr: 0	neighbors = 14	distance
+0.6693925233644858	knn	n_arr: 0	neighbors = 15	uniform
+0.6278556593977155	knn	n_arr: 0	neighbors = 15	distance
+0.6709501557632398	pipe_knn	n_arr: 0	neighbors = 15	uniform
+0.6278556593977155	pipe_knn	n_arr: 0	neighbors = 15	distance
+0.674454828660436	knn	n_arr: 0	neighbors = 16	uniform
+0.6285046728971962	knn	n_arr: 0	neighbors = 16	distance
+0.6754932502596055	pipe_knn	n_arr: 0	neighbors = 16	uniform
+0.6285046728971962	pipe_knn	n_arr: 0	neighbors = 16	distance
+0.6747144340602286	knn	n_arr: 0	neighbors = 17	uniform
+0.6279854620976117	knn	n_arr: 0	neighbors = 17	distance
+0.6779595015576325	pipe_knn	n_arr: 0	neighbors = 17	uniform
+0.6279854620976117	pipe_knn	n_arr: 0	neighbors = 17	distance
+0.6766614745586709	knn	n_arr: 0	neighbors = 18	uniform
+0.6285046728971964	knn	n_arr: 0	neighbors = 18	distance
+0.6786085150571133	pipe_knn	n_arr: 0	neighbors = 18	uniform
+0.6285046728971964	pipe_knn	n_arr: 0	neighbors = 18	distance
+0.6756230529595015	knn	n_arr: 0	neighbors = 19	uniform
+0.628245067497404	knn	n_arr: 0	neighbors = 19	distance
+0.676791277258567	pipe_knn	n_arr: 0	neighbors = 19	uniform
+0.628245067497404	pipe_knn	n_arr: 0	neighbors = 19	distance
+0.6778296988577361	knn	n_arr: 0	neighbors = 20	uniform
+0.6283748701973001	knn	n_arr: 0	neighbors = 20	distance
+0.6773104880581516	pipe_knn	n_arr: 0	neighbors = 20	uniform
+0.6283748701973001	pipe_knn	n_arr: 0	neighbors = 20	distance
+0.6770508826583593	knn	n_arr: 0	neighbors = 21	uniform
+0.6283748701973001	knn	n_arr: 0	neighbors = 21	distance
+0.675103842159917	pipe_knn	n_arr: 0	neighbors = 21	uniform
+0.6283748701973001	pipe_knn	n_arr: 0	neighbors = 21	distance
+0.676791277258567	knn	n_arr: 0	neighbors = 22	uniform
+0.6285046728971964	knn	n_arr: 0	neighbors = 22	distance
+0.6754932502596055	pipe_knn	n_arr: 0	neighbors = 22	uniform
+0.6285046728971964	pipe_knn	n_arr: 0	neighbors = 22	distance
+0.6789979231568017	knn	n_arr: 0	neighbors = 23	uniform
+0.6287642782969887	knn	n_arr: 0	neighbors = 23	distance
+0.6779595015576325	pipe_knn	n_arr: 0	neighbors = 23	uniform
+0.6287642782969887	pipe_knn	n_arr: 0	neighbors = 23	distance
+0.6722481827622014	knn	n_arr: 0	neighbors = 24	uniform
+0.6286344755970924	knn	n_arr: 0	neighbors = 24	distance
+0.6723779854620976	pipe_knn	n_arr: 0	neighbors = 24	uniform
+0.6287642782969887	pipe_knn	n_arr: 0	neighbors = 24	distance
+0.6751038421599169	knn	n_arr: 0	neighbors = 25	uniform
+0.6287642782969887	knn	n_arr: 0	neighbors = 25	distance
+0.6734164070612669	pipe_knn	n_arr: 0	neighbors = 25	uniform
+0.6287642782969887	pipe_knn	n_arr: 0	neighbors = 25	distance
+0.6712097611630322	knn	n_arr: 0	neighbors = 26	uniform
+0.6287642782969887	knn	n_arr: 0	neighbors = 26	distance
+0.671079958463136	pipe_knn	n_arr: 0	neighbors = 26	uniform
+0.6287642782969887	pipe_knn	n_arr: 0	neighbors = 26	distance
+0.6722481827622016	knn	n_arr: 0	neighbors = 27	uniform
+0.6287642782969887	knn	n_arr: 0	neighbors = 27	distance
+0.6710799584631361	pipe_knn	n_arr: 0	neighbors = 27	uniform
+0.6287642782969887	pipe_knn	n_arr: 0	neighbors = 27	distance
+0.6709501557632399	knn	n_arr: 0	neighbors = 28	uniform
+0.6287642782969887	knn	n_arr: 0	neighbors = 28	distance
+0.6712097611630322	pipe_knn	n_arr: 0	neighbors = 28	uniform
+0.6287642782969887	pipe_knn	n_arr: 0	neighbors = 28	distance
+0.6726375908618899	knn	n_arr: 0	neighbors = 29	uniform
+0.6286344755970924	knn	n_arr: 0	neighbors = 29	distance
+0.6708203530633438	pipe_knn	n_arr: 0	neighbors = 29	uniform
+0.6286344755970924	pipe_knn	n_arr: 0	neighbors = 29	distance
+0.6879543094496365	linearsvc 	n_arr: 1
+0.6099428868120457	knn	n_arr: 1	neighbors = 1	uniform
+0.6099428868120457	knn	n_arr: 1	neighbors = 1	distance
+0.6103322949117341	pipe_knn	n_arr: 1	neighbors = 1	uniform
+0.6103322949117341	pipe_knn	n_arr: 1	neighbors = 1	distance
+0.6294132917964693	knn	n_arr: 1	neighbors = 2	uniform
+0.6103322949117341	knn	n_arr: 1	neighbors = 2	distance
+0.6298026998961578	pipe_knn	n_arr: 1	neighbors = 2	uniform
+0.6108515057113187	pipe_knn	n_arr: 1	neighbors = 2	distance
+0.6418743509865005	knn	n_arr: 1	neighbors = 3	uniform
+0.6308411214953271	knn	n_arr: 1	neighbors = 3	distance
+0.6435617860851506	pipe_knn	n_arr: 1	neighbors = 3	uniform
+0.633177570093458	pipe_knn	n_arr: 1	neighbors = 3	distance
+0.6534267912772586	knn	n_arr: 1	neighbors = 4	uniform
+0.6336967808930425	knn	n_arr: 1	neighbors = 4	distance
+0.6526479750778815	pipe_knn	n_arr: 1	neighbors = 4	uniform
+0.6366822429906542	pipe_knn	n_arr: 1	neighbors = 4	distance
+0.6543354101765317	knn	n_arr: 1	neighbors = 5	uniform
+0.6429127725856697	knn	n_arr: 1	neighbors = 5	distance
+0.6569314641744548	pipe_knn	n_arr: 1	neighbors = 5	uniform
+0.6453790238836968	pipe_knn	n_arr: 1	neighbors = 5	distance
+0.6586188992731048	knn	n_arr: 1	neighbors = 6	uniform
+0.6444704049844237	knn	n_arr: 1	neighbors = 6	distance
+0.6627725856697819	pipe_knn	n_arr: 1	neighbors = 6	uniform
+0.6470664589823468	pipe_knn	n_arr: 1	neighbors = 6	distance
+0.6643302180685358	knn	n_arr: 1	neighbors = 7	uniform
+0.6514797507788161	knn	n_arr: 1	neighbors = 7	distance
+0.6635514018691588	pipe_knn	n_arr: 1	neighbors = 7	uniform
+0.6521287642782969	pipe_knn	n_arr: 1	neighbors = 7	distance
+0.6700415368639666	knn	n_arr: 1	neighbors = 8	uniform
+0.654595015576324	knn	n_arr: 1	neighbors = 8	distance
+0.6690031152647975	pipe_knn	n_arr: 1	neighbors = 8	uniform
+0.6532969885773624	pipe_knn	n_arr: 1	neighbors = 8	distance
+0.668613707165109	knn	n_arr: 1	neighbors = 9	uniform
+0.6557632398753894	knn	n_arr: 1	neighbors = 9	distance
+0.6683541017653167	pipe_knn	n_arr: 1	neighbors = 9	uniform
+0.6580996884735204	pipe_knn	n_arr: 1	neighbors = 9	distance
+0.6739356178608514	knn	n_arr: 1	neighbors = 10	uniform
+0.6592679127725858	knn	n_arr: 1	neighbors = 10	distance
+0.6704309449636552	pipe_knn	n_arr: 1	neighbors = 10	uniform
+0.6605659397715473	pipe_knn	n_arr: 1	neighbors = 10	distance
+0.6700415368639668	knn	n_arr: 1	neighbors = 11	uniform
+0.6610851505711319	knn	n_arr: 1	neighbors = 11	distance
+0.6714693665628246	pipe_knn	n_arr: 1	neighbors = 11	uniform
+0.662123572170301	pipe_knn	n_arr: 1	neighbors = 11	distance
+0.6747144340602285	knn	n_arr: 1	neighbors = 12	uniform
+0.6640706126687436	knn	n_arr: 1	neighbors = 12	distance
+0.673546209761163	pipe_knn	n_arr: 1	neighbors = 12	uniform
+0.6660176531671858	pipe_knn	n_arr: 1	neighbors = 12	distance
+0.6688733125649013	knn	n_arr: 1	neighbors = 13	uniform
+0.6673156801661474	knn	n_arr: 1	neighbors = 13	distance
+0.6688733125649015	pipe_knn	n_arr: 1	neighbors = 13	uniform
+0.6687435098650051	pipe_knn	n_arr: 1	neighbors = 13	distance
+0.6725077881619939	knn	n_arr: 1	neighbors = 14	uniform
+0.6669262720664589	knn	n_arr: 1	neighbors = 14	distance
+0.675233644859813	pipe_knn	n_arr: 1	neighbors = 14	uniform
+0.6680944963655242	pipe_knn	n_arr: 1	neighbors = 14	distance
+0.6732866043613708	knn	n_arr: 1	neighbors = 15	uniform
+0.666147455867082	knn	n_arr: 1	neighbors = 15	distance
+0.6738058151609553	pipe_knn	n_arr: 1	neighbors = 15	uniform
+0.6664070612668742	pipe_knn	n_arr: 1	neighbors = 15	distance
+0.671079958463136	knn	n_arr: 1	neighbors = 16	uniform
+0.6666666666666667	knn	n_arr: 1	neighbors = 16	distance
+0.67601246105919	pipe_knn	n_arr: 1	neighbors = 16	uniform
+0.6674454828660435	pipe_knn	n_arr: 1	neighbors = 16	distance
+0.671858774662513	knn	n_arr: 1	neighbors = 17	uniform
+0.6671858774662511	knn	n_arr: 1	neighbors = 17	distance
+0.6744548286604363	pipe_knn	n_arr: 1	neighbors = 17	uniform
+0.667834890965732	pipe_knn	n_arr: 1	neighbors = 17	distance
+0.6699117341640706	knn	n_arr: 1	neighbors = 18	uniform
+0.6667964693665628	knn	n_arr: 1	neighbors = 18	distance
+0.6725077881619939	pipe_knn	n_arr: 1	neighbors = 18	uniform
+0.6683541017653166	pipe_knn	n_arr: 1	neighbors = 18	distance
+0.6697819314641744	knn	n_arr: 1	neighbors = 19	uniform
+0.6687435098650051	knn	n_arr: 1	neighbors = 19	distance
+0.6773104880581516	pipe_knn	n_arr: 1	neighbors = 19	uniform
+0.6687435098650052	pipe_knn	n_arr: 1	neighbors = 19	distance
+0.6696521287642783	knn	n_arr: 1	neighbors = 20	uniform
+0.6683541017653166	knn	n_arr: 1	neighbors = 20	distance
+0.6736760124610591	pipe_knn	n_arr: 1	neighbors = 20	uniform
+0.6677050882658359	pipe_knn	n_arr: 1	neighbors = 20	distance
+0.6713395638629284	knn	n_arr: 1	neighbors = 21	uniform
+0.6688733125649013	knn	n_arr: 1	neighbors = 21	distance
+0.6727673935617862	pipe_knn	n_arr: 1	neighbors = 21	uniform
+0.6679646936656283	pipe_knn	n_arr: 1	neighbors = 21	distance
+0.6727673935617862	knn	n_arr: 1	neighbors = 22	uniform
+0.6680944963655243	knn	n_arr: 1	neighbors = 22	distance
+0.6739356178608515	pipe_knn	n_arr: 1	neighbors = 22	uniform
+0.667834890965732	pipe_knn	n_arr: 1	neighbors = 22	distance
+0.6753634475597091	knn	n_arr: 1	neighbors = 23	uniform
+0.6725077881619937	knn	n_arr: 1	neighbors = 23	distance
+0.6783489096573209	pipe_knn	n_arr: 1	neighbors = 23	uniform
+0.6699117341640706	pipe_knn	n_arr: 1	neighbors = 23	distance
+0.677570093457944	knn	n_arr: 1	neighbors = 24	uniform
+0.6726375908618898	knn	n_arr: 1	neighbors = 24	distance
+0.6799065420560747	pipe_knn	n_arr: 1	neighbors = 24	uniform
+0.6717289719626168	pipe_knn	n_arr: 1	neighbors = 24	distance
+0.6789979231568017	knn	n_arr: 1	neighbors = 25	uniform
+0.6732866043613707	knn	n_arr: 1	neighbors = 25	distance
+0.6788681204569055	pipe_knn	n_arr: 1	neighbors = 25	uniform
+0.6728971962616821	pipe_knn	n_arr: 1	neighbors = 25	distance
+0.6792575285565939	knn	n_arr: 1	neighbors = 26	uniform
+0.6722481827622013	knn	n_arr: 1	neighbors = 26	distance
+0.6799065420560747	pipe_knn	n_arr: 1	neighbors = 26	uniform
+0.675233644859813	pipe_knn	n_arr: 1	neighbors = 26	distance
+0.6821131879543095	knn	n_arr: 1	neighbors = 27	uniform
+0.6740654205607476	knn	n_arr: 1	neighbors = 27	distance
+0.6831516095534786	pipe_knn	n_arr: 1	neighbors = 27	uniform
+0.6739356178608514	pipe_knn	n_arr: 1	neighbors = 27	distance
+0.6788681204569056	knn	n_arr: 1	neighbors = 28	uniform
+0.6743250259605399	knn	n_arr: 1	neighbors = 28	distance
+0.6831516095534789	pipe_knn	n_arr: 1	neighbors = 28	uniform
+0.676142263759086	pipe_knn	n_arr: 1	neighbors = 28	distance
+0.6827622014537903	knn	n_arr: 1	neighbors = 29	uniform
+0.6758826583592937	knn	n_arr: 1	neighbors = 29	distance
+0.6838006230529595	pipe_knn	n_arr: 1	neighbors = 29	uniform
+0.675233644859813	pipe_knn	n_arr: 1	neighbors = 29	distance
+0.7071651090342681	linearsvc 	n_arr: 2
+0.6253894080996886	knn	n_arr: 2	neighbors = 1	uniform
+0.6253894080996886	knn	n_arr: 2	neighbors = 1	distance
+0.6201973001038421	pipe_knn	n_arr: 2	neighbors = 1	uniform
+0.6201973001038421	pipe_knn	n_arr: 2	neighbors = 1	distance
+0.639018691588785	knn	n_arr: 2	neighbors = 2	uniform
+0.6255192107995847	knn	n_arr: 2	neighbors = 2	distance
+0.6379802699896158	pipe_knn	n_arr: 2	neighbors = 2	uniform
+0.6203271028037383	pipe_knn	n_arr: 2	neighbors = 2	distance
+0.6600467289719627	knn	n_arr: 2	neighbors = 3	uniform
+0.6566718587746625	knn	n_arr: 2	neighbors = 3	distance
+0.6596573208722742	pipe_knn	n_arr: 2	neighbors = 3	uniform
+0.6534267912772586	pipe_knn	n_arr: 2	neighbors = 3	distance
+0.6593977154724818	knn	n_arr: 2	neighbors = 4	uniform
+0.6548546209761162	knn	n_arr: 2	neighbors = 4	distance
+0.6596573208722741	pipe_knn	n_arr: 2	neighbors = 4	uniform
+0.6539460020768433	pipe_knn	n_arr: 2	neighbors = 4	distance
+0.6703011422637591	knn	n_arr: 2	neighbors = 5	uniform
+0.6666666666666665	knn	n_arr: 2	neighbors = 5	distance
+0.6705607476635514	pipe_knn	n_arr: 2	neighbors = 5	uniform
+0.666147455867082	pipe_knn	n_arr: 2	neighbors = 5	distance
+0.6728971962616822	knn	n_arr: 2	neighbors = 6	uniform
+0.6688733125649013	knn	n_arr: 2	neighbors = 6	distance
+0.6696521287642783	pipe_knn	n_arr: 2	neighbors = 6	uniform
+0.6658878504672896	pipe_knn	n_arr: 2	neighbors = 6	distance
+0.6799065420560749	knn	n_arr: 2	neighbors = 7	uniform
+0.6748442367601245	knn	n_arr: 2	neighbors = 7	distance
+0.6756230529595015	pipe_knn	n_arr: 2	neighbors = 7	uniform
+0.6683541017653166	pipe_knn	n_arr: 2	neighbors = 7	distance
+0.6792575285565939	knn	n_arr: 2	neighbors = 8	uniform
+0.6760124610591901	knn	n_arr: 2	neighbors = 8	distance
+0.6784787123572172	pipe_knn	n_arr: 2	neighbors = 8	uniform
+0.6753634475597092	pipe_knn	n_arr: 2	neighbors = 8	distance
+0.6818535825545171	knn	n_arr: 2	neighbors = 9	uniform
+0.6789979231568016	knn	n_arr: 2	neighbors = 9	distance
+0.6850986500519212	pipe_knn	n_arr: 2	neighbors = 9	uniform
+0.6805555555555556	pipe_knn	n_arr: 2	neighbors = 9	distance
+0.6838006230529596	knn	n_arr: 2	neighbors = 10	uniform
+0.6810747663551402	knn	n_arr: 2	neighbors = 10	distance
+0.6870456905503635	pipe_knn	n_arr: 2	neighbors = 10	uniform
+0.6805555555555556	pipe_knn	n_arr: 2	neighbors = 10	distance
+0.6839304257528557	knn	n_arr: 2	neighbors = 11	uniform
+0.6834112149532712	knn	n_arr: 2	neighbors = 11	distance
+0.6853582554517134	pipe_knn	n_arr: 2	neighbors = 11	uniform
+0.6843198338525441	pipe_knn	n_arr: 2	neighbors = 11	distance
+0.6854880581516096	knn	n_arr: 2	neighbors = 12	uniform
+0.685877466251298	knn	n_arr: 2	neighbors = 12	distance
+0.6879543094496365	pipe_knn	n_arr: 2	neighbors = 12	uniform
+0.6847092419522327	pipe_knn	n_arr: 2	neighbors = 12	distance
+0.6880841121495327	knn	n_arr: 2	neighbors = 13	uniform
+0.6844496365524403	knn	n_arr: 2	neighbors = 13	distance
+0.6863966770508826	pipe_knn	n_arr: 2	neighbors = 13	uniform
+0.6871754932502596	pipe_knn	n_arr: 2	neighbors = 13	distance
+0.688343717549325	knn	n_arr: 2	neighbors = 14	uniform
+0.688343717549325	knn	n_arr: 2	neighbors = 14	distance
+0.6882139148494288	pipe_knn	n_arr: 2	neighbors = 14	uniform
+0.6857476635514019	pipe_knn	n_arr: 2	neighbors = 14	distance
+0.6901609553478711	knn	n_arr: 2	neighbors = 15	uniform
+0.6891225337487019	knn	n_arr: 2	neighbors = 15	distance
+0.6882139148494288	pipe_knn	n_arr: 2	neighbors = 15	uniform
+0.6895119418483904	pipe_knn	n_arr: 2	neighbors = 15	distance
+0.688343717549325	knn	n_arr: 2	neighbors = 16	uniform
+0.6853582554517134	knn	n_arr: 2	neighbors = 16	distance
+0.690031152647975	pipe_knn	n_arr: 2	neighbors = 16	uniform
+0.6887331256490136	pipe_knn	n_arr: 2	neighbors = 16	distance
+0.6879543094496365	knn	n_arr: 2	neighbors = 17	uniform
+0.6882139148494288	knn	n_arr: 2	neighbors = 17	distance
+0.686656282450675	pipe_knn	n_arr: 2	neighbors = 17	uniform
+0.6902907580477673	pipe_knn	n_arr: 2	neighbors = 17	distance
+0.689901349948079	knn	n_arr: 2	neighbors = 18	uniform
+0.6876947040498442	knn	n_arr: 2	neighbors = 18	distance
+0.6889927310488058	pipe_knn	n_arr: 2	neighbors = 18	uniform
+0.6891225337487019	pipe_knn	n_arr: 2	neighbors = 18	distance
+0.6902907580477673	knn	n_arr: 2	neighbors = 19	uniform
+0.6922377985462097	knn	n_arr: 2	neighbors = 19	distance
+0.6875649013499481	pipe_knn	n_arr: 2	neighbors = 19	uniform
+0.693146417445483	pipe_knn	n_arr: 2	neighbors = 19	distance
+0.6882139148494288	knn	n_arr: 2	neighbors = 20	uniform
+0.6902907580477673	knn	n_arr: 2	neighbors = 20	distance
+0.690809968847352	pipe_knn	n_arr: 2	neighbors = 20	uniform
+0.6923676012461059	pipe_knn	n_arr: 2	neighbors = 20	distance
+0.6921079958463136	knn	n_arr: 2	neighbors = 21	uniform
+0.6921079958463136	knn	n_arr: 2	neighbors = 21	distance
+0.689901349948079	pipe_knn	n_arr: 2	neighbors = 21	uniform
+0.694833852544133	pipe_knn	n_arr: 2	neighbors = 21	distance
+0.6897715472481828	knn	n_arr: 2	neighbors = 22	uniform
+0.6930166147455866	knn	n_arr: 2	neighbors = 22	distance
+0.689122533748702	pipe_knn	n_arr: 2	neighbors = 22	uniform
+0.6934060228452751	pipe_knn	n_arr: 2	neighbors = 22	distance
+0.6909397715472481	knn	n_arr: 2	neighbors = 23	uniform
+0.6930166147455867	knn	n_arr: 2	neighbors = 23	distance
+0.691588785046729	pipe_knn	n_arr: 2	neighbors = 23	uniform
+0.695742471443406	pipe_knn	n_arr: 2	neighbors = 23	distance
+0.6900311526479751	knn	n_arr: 2	neighbors = 24	uniform
+0.6891225337487019	knn	n_arr: 2	neighbors = 24	distance
+0.6921079958463137	pipe_knn	n_arr: 2	neighbors = 24	uniform
+0.6952232606438213	pipe_knn	n_arr: 2	neighbors = 24	distance
+0.6902907580477674	knn	n_arr: 2	neighbors = 25	uniform
+0.6917185877466251	knn	n_arr: 2	neighbors = 25	distance
+0.6939252336448599	pipe_knn	n_arr: 2	neighbors = 25	uniform
+0.6960020768431983	pipe_knn	n_arr: 2	neighbors = 25	distance
+0.6882139148494288	knn	n_arr: 2	neighbors = 26	uniform
+0.692367601246106	knn	n_arr: 2	neighbors = 26	distance
+0.6952232606438213	pipe_knn	n_arr: 2	neighbors = 26	uniform
+0.6956126687435098	pipe_knn	n_arr: 2	neighbors = 26	distance
+0.6870456905503635	knn	n_arr: 2	neighbors = 27	uniform
+0.6921079958463136	knn	n_arr: 2	neighbors = 27	distance
+0.6943146417445484	pipe_knn	n_arr: 2	neighbors = 27	uniform
+0.6963914849428868	pipe_knn	n_arr: 2	neighbors = 27	distance
+0.6888629283489096	knn	n_arr: 2	neighbors = 28	uniform
+0.6913291796469366	knn	n_arr: 2	neighbors = 28	distance
+0.694184839044652	pipe_knn	n_arr: 2	neighbors = 28	uniform
+0.6974299065420559	pipe_knn	n_arr: 2	neighbors = 28	distance
+0.6867860851505712	knn	n_arr: 2	neighbors = 29	uniform
+0.6930166147455867	knn	n_arr: 2	neighbors = 29	distance
+0.6950934579439252	pipe_knn	n_arr: 2	neighbors = 29	uniform
+0.695742471443406	pipe_knn	n_arr: 2	neighbors = 29	distance
+0.7078141225337488	linearsvc 	n_arr: 3
+0.6321391484942888	knn	n_arr: 3	neighbors = 1	uniform
+0.6321391484942888	knn	n_arr: 3	neighbors = 1	distance
+0.6303219106957425	pipe_knn	n_arr: 3	neighbors = 1	uniform
+0.6303219106957425	pipe_knn	n_arr: 3	neighbors = 1	distance
+0.6321391484942886	knn	n_arr: 3	neighbors = 2	uniform
+0.6321391484942888	knn	n_arr: 3	neighbors = 2	distance
+0.6364226375908619	pipe_knn	n_arr: 3	neighbors = 2	uniform
+0.6300623052959502	pipe_knn	n_arr: 3	neighbors = 2	distance
+0.6421339563862928	knn	n_arr: 3	neighbors = 3	uniform
+0.6430425752855659	knn	n_arr: 3	neighbors = 3	distance
+0.648104880581516	pipe_knn	n_arr: 3	neighbors = 3	uniform
+0.6486240913811008	pipe_knn	n_arr: 3	neighbors = 3	distance
+0.6477154724818277	knn	n_arr: 3	neighbors = 4	uniform
+0.6469366562824507	knn	n_arr: 3	neighbors = 4	distance
+0.6519989615784009	pipe_knn	n_arr: 3	neighbors = 4	uniform
+0.6527777777777778	pipe_knn	n_arr: 3	neighbors = 4	distance
+0.6509605399792316	knn	n_arr: 3	neighbors = 5	uniform
+0.6545950155763242	knn	n_arr: 3	neighbors = 5	distance
+0.6596573208722741	pipe_knn	n_arr: 3	neighbors = 5	uniform
+0.6599169262720664	pipe_knn	n_arr: 3	neighbors = 5	distance
+0.6526479750778816	knn	n_arr: 3	neighbors = 6	uniform
+0.6560228452751817	knn	n_arr: 3	neighbors = 6	distance
+0.6645898234683281	pipe_knn	n_arr: 3	neighbors = 6	uniform
+0.6632917964693666	pipe_knn	n_arr: 3	neighbors = 6	distance
+0.6478452751817237	knn	n_arr: 3	neighbors = 7	uniform
+0.650571131879543	knn	n_arr: 3	neighbors = 7	distance
+0.6631619937694704	pipe_knn	n_arr: 3	neighbors = 7	uniform
+0.664460020768432	pipe_knn	n_arr: 3	neighbors = 7	distance
+0.6543354101765316	knn	n_arr: 3	neighbors = 8	uniform
+0.6516095534787123	knn	n_arr: 3	neighbors = 8	distance
+0.6678348909657321	pipe_knn	n_arr: 3	neighbors = 8	uniform
+0.6671858774662512	pipe_knn	n_arr: 3	neighbors = 8	distance
+0.6557632398753894	knn	n_arr: 3	neighbors = 9	uniform
+0.6573208722741433	knn	n_arr: 3	neighbors = 9	distance
+0.666147455867082	pipe_knn	n_arr: 3	neighbors = 9	uniform
+0.6653686396677051	pipe_knn	n_arr: 3	neighbors = 9	distance
+0.6614745586708204	knn	n_arr: 3	neighbors = 10	uniform
+0.6575804776739356	knn	n_arr: 3	neighbors = 10	distance
+0.6677050882658359	pipe_knn	n_arr: 3	neighbors = 10	uniform
+0.6665368639667706	pipe_knn	n_arr: 3	neighbors = 10	distance
+0.6629023883696781	knn	n_arr: 3	neighbors = 11	uniform
+0.6627725856697819	knn	n_arr: 3	neighbors = 11	distance
+0.6642004153686397	pipe_knn	n_arr: 3	neighbors = 11	uniform
+0.6649792315680166	pipe_knn	n_arr: 3	neighbors = 11	distance
+0.6656282450674974	knn	n_arr: 3	neighbors = 12	uniform
+0.6629023883696781	knn	n_arr: 3	neighbors = 12	distance
+0.6662772585669782	pipe_knn	n_arr: 3	neighbors = 12	uniform
+0.6673156801661474	pipe_knn	n_arr: 3	neighbors = 12	distance
+0.6654984423676013	knn	n_arr: 3	neighbors = 13	uniform
+0.6664070612668743	knn	n_arr: 3	neighbors = 13	distance
+0.6642004153686396	pipe_knn	n_arr: 3	neighbors = 13	uniform
+0.667705088265836	pipe_knn	n_arr: 3	neighbors = 13	distance
+0.6695223260643822	knn	n_arr: 3	neighbors = 14	uniform
+0.6671858774662512	knn	n_arr: 3	neighbors = 14	distance
+0.6669262720664589	pipe_knn	n_arr: 3	neighbors = 14	uniform
+0.6695223260643821	pipe_knn	n_arr: 3	neighbors = 14	distance
+0.6713395638629283	knn	n_arr: 3	neighbors = 15	uniform
+0.6709501557632398	knn	n_arr: 3	neighbors = 15	distance
+0.6682242990654206	pipe_knn	n_arr: 3	neighbors = 15	uniform
+0.6697819314641744	pipe_knn	n_arr: 3	neighbors = 15	distance
+0.6736760124610591	knn	n_arr: 3	neighbors = 16	uniform
+0.6696521287642783	knn	n_arr: 3	neighbors = 16	distance
+0.6741952232606438	pipe_knn	n_arr: 3	neighbors = 16	uniform
+0.6725077881619937	pipe_knn	n_arr: 3	neighbors = 16	distance
+0.6765316718587747	knn	n_arr: 3	neighbors = 17	uniform
+0.6730269989615785	knn	n_arr: 3	neighbors = 17	distance
+0.6735462097611631	pipe_knn	n_arr: 3	neighbors = 17	uniform
+0.6761422637590861	pipe_knn	n_arr: 3	neighbors = 17	distance
+0.6779595015576324	knn	n_arr: 3	neighbors = 18	uniform
+0.6728971962616822	knn	n_arr: 3	neighbors = 18	distance
+0.6799065420560748	pipe_knn	n_arr: 3	neighbors = 18	uniform
+0.6752336448598132	pipe_knn	n_arr: 3	neighbors = 18	distance
+0.6754932502596054	knn	n_arr: 3	neighbors = 19	uniform
+0.6722481827622014	knn	n_arr: 3	neighbors = 19	distance
+0.6774402907580478	pipe_knn	n_arr: 3	neighbors = 19	uniform
+0.6749740394600209	pipe_knn	n_arr: 3	neighbors = 19	distance
+0.6806853582554517	knn	n_arr: 3	neighbors = 20	uniform
+0.6758826583592938	knn	n_arr: 3	neighbors = 20	distance
+0.6847092419522325	pipe_knn	n_arr: 3	neighbors = 20	uniform
+0.680944963655244	pipe_knn	n_arr: 3	neighbors = 20	distance
+0.678478712357217	knn	n_arr: 3	neighbors = 21	uniform
+0.676791277258567	knn	n_arr: 3	neighbors = 21	distance
+0.6841900311526481	pipe_knn	n_arr: 3	neighbors = 21	uniform
+0.6827622014537902	pipe_knn	n_arr: 3	neighbors = 21	distance
+0.6826323987538941	knn	n_arr: 3	neighbors = 22	uniform
+0.6788681204569055	knn	n_arr: 3	neighbors = 22	distance
+0.6876947040498441	pipe_knn	n_arr: 3	neighbors = 22	uniform
+0.6852284527518173	pipe_knn	n_arr: 3	neighbors = 22	distance
+0.6831516095534789	knn	n_arr: 3	neighbors = 23	uniform
+0.6801661474558671	knn	n_arr: 3	neighbors = 23	distance
+0.6886033229491174	pipe_knn	n_arr: 3	neighbors = 23	uniform
+0.6854880581516095	pipe_knn	n_arr: 3	neighbors = 23	distance
+0.6865264797507789	knn	n_arr: 3	neighbors = 24	uniform
+0.684190031152648	knn	n_arr: 3	neighbors = 24	distance
+0.6902907580477674	pipe_knn	n_arr: 3	neighbors = 24	uniform
+0.6878245067497404	pipe_knn	n_arr: 3	neighbors = 24	distance
+0.6844496365524403	knn	n_arr: 3	neighbors = 25	uniform
+0.6814641744548287	knn	n_arr: 3	neighbors = 25	distance
+0.6879543094496365	pipe_knn	n_arr: 3	neighbors = 25	uniform
+0.6876947040498442	pipe_knn	n_arr: 3	neighbors = 25	distance
+0.6865264797507789	knn	n_arr: 3	neighbors = 26	uniform
+0.6836708203530633	knn	n_arr: 3	neighbors = 26	distance
+0.6909397715472482	pipe_knn	n_arr: 3	neighbors = 26	uniform
+0.6875649013499481	pipe_knn	n_arr: 3	neighbors = 26	distance
+0.6856178608515058	knn	n_arr: 3	neighbors = 27	uniform
+0.6827622014537903	knn	n_arr: 3	neighbors = 27	distance
+0.6889927310488058	pipe_knn	n_arr: 3	neighbors = 27	uniform
+0.6889927310488058	pipe_knn	n_arr: 3	neighbors = 27	distance
+0.6860072689511942	knn	n_arr: 3	neighbors = 28	uniform
+0.6831516095534789	knn	n_arr: 3	neighbors = 28	distance
+0.6917185877466252	pipe_knn	n_arr: 3	neighbors = 28	uniform
+0.6891225337487019	pipe_knn	n_arr: 3	neighbors = 28	distance
+0.6858774662512981	knn	n_arr: 3	neighbors = 29	uniform
+0.6823727933541018	knn	n_arr: 3	neighbors = 29	distance
+0.6927570093457944	pipe_knn	n_arr: 3	neighbors = 29	uniform
+0.6892523364485981	pipe_knn	n_arr: 3	neighbors = 29	distance
+0.7063862928348911	linearsvc 	n_arr: 4
+0.6147455867082036	knn	n_arr: 4	neighbors = 1	uniform
+0.6147455867082036	knn	n_arr: 4	neighbors = 1	distance
+0.618509865005192	pipe_knn	n_arr: 4	neighbors = 1	uniform
+0.618509865005192	pipe_knn	n_arr: 4	neighbors = 1	distance
+0.6191588785046729	knn	n_arr: 4	neighbors = 2	uniform
+0.614356178608515	knn	n_arr: 4	neighbors = 2	distance
+0.6343457943925235	pipe_knn	n_arr: 4	neighbors = 2	uniform
+0.6179906542056074	pipe_knn	n_arr: 4	neighbors = 2	distance
+0.6420041536863967	knn	n_arr: 4	neighbors = 3	uniform
+0.6408359293873312	knn	n_arr: 4	neighbors = 3	distance
+0.6555036344755971	pipe_knn	n_arr: 4	neighbors = 3	uniform
+0.6531671858774662	pipe_knn	n_arr: 4	neighbors = 3	distance
+0.643042575285566	knn	n_arr: 4	neighbors = 4	uniform
+0.6426531671858774	knn	n_arr: 4	neighbors = 4	distance
+0.6538161993769471	pipe_knn	n_arr: 4	neighbors = 4	uniform
+0.6547248182762202	pipe_knn	n_arr: 4	neighbors = 4	distance
+0.6522585669781932	knn	n_arr: 4	neighbors = 5	uniform
+0.6509605399792314	knn	n_arr: 4	neighbors = 5	distance
+0.655373831775701	pipe_knn	n_arr: 4	neighbors = 5	uniform
+0.655373831775701	pipe_knn	n_arr: 4	neighbors = 5	distance
+0.6543354101765316	knn	n_arr: 4	neighbors = 6	uniform
+0.6504413291796469	knn	n_arr: 4	neighbors = 6	distance
+0.6612149532710281	pipe_knn	n_arr: 4	neighbors = 6	uniform
+0.6591381100726895	pipe_knn	n_arr: 4	neighbors = 6	distance
+0.6592679127725857	knn	n_arr: 4	neighbors = 7	uniform
+0.6555036344755971	knn	n_arr: 4	neighbors = 7	distance
+0.6660176531671859	pipe_knn	n_arr: 4	neighbors = 7	uniform
+0.6657580477673937	pipe_knn	n_arr: 4	neighbors = 7	distance
+0.663681204569055	knn	n_arr: 4	neighbors = 8	uniform
+0.6591381100726895	knn	n_arr: 4	neighbors = 8	distance
+0.6690031152647976	pipe_knn	n_arr: 4	neighbors = 8	uniform
+0.6666666666666666	pipe_knn	n_arr: 4	neighbors = 8	distance
+0.6644600207684319	knn	n_arr: 4	neighbors = 9	uniform
+0.6600467289719626	knn	n_arr: 4	neighbors = 9	distance
+0.6682242990654205	pipe_knn	n_arr: 4	neighbors = 9	uniform
+0.6651090342679128	pipe_knn	n_arr: 4	neighbors = 9	distance
+0.6696521287642783	knn	n_arr: 4	neighbors = 10	uniform
+0.6665368639667705	knn	n_arr: 4	neighbors = 10	distance
+0.6734164070612669	pipe_knn	n_arr: 4	neighbors = 10	uniform
+0.6697819314641744	pipe_knn	n_arr: 4	neighbors = 10	distance
+0.6690031152647975	knn	n_arr: 4	neighbors = 11	uniform
+0.6658878504672897	knn	n_arr: 4	neighbors = 11	distance
+0.6719885773624091	pipe_knn	n_arr: 4	neighbors = 11	uniform
+0.668613707165109	pipe_knn	n_arr: 4	neighbors = 11	distance
+0.6725077881619937	knn	n_arr: 4	neighbors = 12	uniform
+0.6715991692627206	knn	n_arr: 4	neighbors = 12	distance
+0.676791277258567	pipe_knn	n_arr: 4	neighbors = 12	uniform
+0.6728971962616822	pipe_knn	n_arr: 4	neighbors = 12	distance
+0.6764018691588785	knn	n_arr: 4	neighbors = 13	uniform
+0.6726375908618899	knn	n_arr: 4	neighbors = 13	distance
+0.6786085150571132	pipe_knn	n_arr: 4	neighbors = 13	uniform
+0.6749740394600208	pipe_knn	n_arr: 4	neighbors = 13	distance
+0.676791277258567	knn	n_arr: 4	neighbors = 14	uniform
+0.6747144340602285	knn	n_arr: 4	neighbors = 14	distance
+0.682372793354102	pipe_knn	n_arr: 4	neighbors = 14	uniform
+0.6786085150571132	pipe_knn	n_arr: 4	neighbors = 14	distance
+0.6792575285565939	knn	n_arr: 4	neighbors = 15	uniform
+0.6770508826583591	knn	n_arr: 4	neighbors = 15	distance
+0.6787383177570094	pipe_knn	n_arr: 4	neighbors = 15	uniform
+0.6780893042575284	pipe_knn	n_arr: 4	neighbors = 15	distance
+0.6787383177570094	knn	n_arr: 4	neighbors = 16	uniform
+0.6747144340602285	knn	n_arr: 4	neighbors = 16	distance
+0.6840602284527519	pipe_knn	n_arr: 4	neighbors = 16	uniform
+0.6761422637590861	pipe_knn	n_arr: 4	neighbors = 16	distance
+0.6779595015576324	knn	n_arr: 4	neighbors = 17	uniform
+0.6765316718587746	knn	n_arr: 4	neighbors = 17	distance
+0.6779595015576324	pipe_knn	n_arr: 4	neighbors = 17	uniform
+0.6762720664589823	pipe_knn	n_arr: 4	neighbors = 17	distance
+0.6844496365524404	knn	n_arr: 4	neighbors = 18	uniform
+0.6784787123572171	knn	n_arr: 4	neighbors = 18	distance
+0.6814641744548288	pipe_knn	n_arr: 4	neighbors = 18	uniform
+0.6787383177570093	pipe_knn	n_arr: 4	neighbors = 18	distance
+0.6793873312564901	knn	n_arr: 4	neighbors = 19	uniform
+0.6787383177570093	knn	n_arr: 4	neighbors = 19	distance
+0.6823727933541017	pipe_knn	n_arr: 4	neighbors = 19	uniform
+0.678478712357217	pipe_knn	n_arr: 4	neighbors = 19	distance
+0.684968847352025	knn	n_arr: 4	neighbors = 20	uniform
+0.6806853582554517	knn	n_arr: 4	neighbors = 20	distance
+0.6878245067497404	pipe_knn	n_arr: 4	neighbors = 20	uniform
+0.682372793354102	pipe_knn	n_arr: 4	neighbors = 20	distance
+0.6835410176531672	knn	n_arr: 4	neighbors = 21	uniform
+0.6799065420560747	knn	n_arr: 4	neighbors = 21	distance
+0.6840602284527518	pipe_knn	n_arr: 4	neighbors = 21	uniform
+0.6804257528556593	pipe_knn	n_arr: 4	neighbors = 21	distance
+0.6854880581516096	knn	n_arr: 4	neighbors = 22	uniform
+0.6799065420560749	knn	n_arr: 4	neighbors = 22	distance
+0.6884735202492213	pipe_knn	n_arr: 4	neighbors = 22	uniform
+0.6808151609553478	pipe_knn	n_arr: 4	neighbors = 22	distance
+0.6826323987538941	knn	n_arr: 4	neighbors = 23	uniform
+0.6792575285565939	knn	n_arr: 4	neighbors = 23	distance
+0.6882139148494288	pipe_knn	n_arr: 4	neighbors = 23	uniform
+0.6844496365524404	pipe_knn	n_arr: 4	neighbors = 23	distance
+0.6852284527518173	knn	n_arr: 4	neighbors = 24	uniform
+0.679257528556594	knn	n_arr: 4	neighbors = 24	distance
+0.6936656282450674	pipe_knn	n_arr: 4	neighbors = 24	uniform
+0.6832814122533749	pipe_knn	n_arr: 4	neighbors = 24	distance
+0.6873052959501558	knn	n_arr: 4	neighbors = 25	uniform
+0.6828920041536864	knn	n_arr: 4	neighbors = 25	distance
+0.6876947040498442	pipe_knn	n_arr: 4	neighbors = 25	uniform
+0.6831516095534786	pipe_knn	n_arr: 4	neighbors = 25	distance
+0.686656282450675	knn	n_arr: 4	neighbors = 26	uniform
+0.6812045690550365	knn	n_arr: 4	neighbors = 26	distance
+0.6892523364485981	pipe_knn	n_arr: 4	neighbors = 26	uniform
+0.6845794392523364	pipe_knn	n_arr: 4	neighbors = 26	distance
+0.6838006230529595	knn	n_arr: 4	neighbors = 27	uniform
+0.6804257528556595	knn	n_arr: 4	neighbors = 27	distance
+0.6869158878504673	pipe_knn	n_arr: 4	neighbors = 27	uniform
+0.6826323987538941	pipe_knn	n_arr: 4	neighbors = 27	distance
+0.6879543094496365	knn	n_arr: 4	neighbors = 28	uniform
+0.6818535825545171	knn	n_arr: 4	neighbors = 28	distance
+0.6909397715472482	pipe_knn	n_arr: 4	neighbors = 28	uniform
+0.6852284527518173	pipe_knn	n_arr: 4	neighbors = 28	distance
+0.6862668743509865	knn	n_arr: 4	neighbors = 29	uniform
+0.6827622014537902	knn	n_arr: 4	neighbors = 29	distance
+0.6914589823468328	pipe_knn	n_arr: 4	neighbors = 29	uniform
+0.6874350986500519	pipe_knn	n_arr: 4	neighbors = 29	distance
+0.7062564901349948	linearsvc 	n_arr: 5
+0.6129283489096573	knn	n_arr: 5	neighbors = 1	uniform
+0.6129283489096573	knn	n_arr: 5	neighbors = 1	distance
+0.6120197300103842	pipe_knn	n_arr: 5	neighbors = 1	uniform
+0.6120197300103842	pipe_knn	n_arr: 5	neighbors = 1	distance
+0.6227933541017653	knn	n_arr: 5	neighbors = 2	uniform
+0.612668743509865	knn	n_arr: 5	neighbors = 2	distance
+0.6298026998961579	pipe_knn	n_arr: 5	neighbors = 2	uniform
+0.6116303219106958	pipe_knn	n_arr: 5	neighbors = 2	distance
+0.6422637590861889	knn	n_arr: 5	neighbors = 3	uniform
+0.6422637590861889	knn	n_arr: 5	neighbors = 3	distance
+0.6474558670820353	pipe_knn	n_arr: 5	neighbors = 3	uniform
+0.6462876427829699	pipe_knn	n_arr: 5	neighbors = 3	distance
+0.6501817237798546	knn	n_arr: 5	neighbors = 4	uniform
+0.6399273104880582	knn	n_arr: 5	neighbors = 4	distance
+0.6532969885773624	pipe_knn	n_arr: 5	neighbors = 4	uniform
+0.6451194184839044	pipe_knn	n_arr: 5	neighbors = 4	distance
+0.6592679127725858	knn	n_arr: 5	neighbors = 5	uniform
+0.6578400830737281	knn	n_arr: 5	neighbors = 5	distance
+0.6584890965732088	pipe_knn	n_arr: 5	neighbors = 5	uniform
+0.6558930425752856	pipe_knn	n_arr: 5	neighbors = 5	distance
+0.6630321910695742	knn	n_arr: 5	neighbors = 6	uniform
+0.6569314641744548	knn	n_arr: 5	neighbors = 6	distance
+0.6665368639667705	pipe_knn	n_arr: 5	neighbors = 6	uniform
+0.6593977154724819	pipe_knn	n_arr: 5	neighbors = 6	distance
+0.666926272066459	knn	n_arr: 5	neighbors = 7	uniform
+0.6674454828660437	knn	n_arr: 5	neighbors = 7	distance
+0.6658878504672896	pipe_knn	n_arr: 5	neighbors = 7	uniform
+0.6666666666666666	pipe_knn	n_arr: 5	neighbors = 7	distance
+0.6691329179646937	knn	n_arr: 5	neighbors = 8	uniform
+0.6626427829698858	knn	n_arr: 5	neighbors = 8	distance
+0.6717289719626167	pipe_knn	n_arr: 5	neighbors = 8	uniform
+0.6600467289719627	pipe_knn	n_arr: 5	neighbors = 8	distance
+0.6712097611630322	knn	n_arr: 5	neighbors = 9	uniform
+0.6699117341640707	knn	n_arr: 5	neighbors = 9	distance
+0.6747144340602284	pipe_knn	n_arr: 5	neighbors = 9	uniform
+0.673546209761163	pipe_knn	n_arr: 5	neighbors = 9	distance
+0.672767393561786	knn	n_arr: 5	neighbors = 10	uniform
+0.6705607476635514	knn	n_arr: 5	neighbors = 10	distance
+0.6797767393561787	pipe_knn	n_arr: 5	neighbors = 10	uniform
+0.671988577362409	pipe_knn	n_arr: 5	neighbors = 10	distance
+0.6784787123572169	knn	n_arr: 5	neighbors = 11	uniform
+0.6757528556593976	knn	n_arr: 5	neighbors = 11	distance
+0.6808151609553479	pipe_knn	n_arr: 5	neighbors = 11	uniform
+0.6786085150571132	pipe_knn	n_arr: 5	neighbors = 11	distance
+0.6796469366562824	knn	n_arr: 5	neighbors = 12	uniform
+0.6773104880581515	knn	n_arr: 5	neighbors = 12	distance
+0.684968847352025	pipe_knn	n_arr: 5	neighbors = 12	uniform
+0.6756230529595015	pipe_knn	n_arr: 5	neighbors = 12	distance
+0.6826323987538941	knn	n_arr: 5	neighbors = 13	uniform
+0.6787383177570093	knn	n_arr: 5	neighbors = 13	distance
+0.6848390446521287	pipe_knn	n_arr: 5	neighbors = 13	uniform
+0.6825025960539978	pipe_knn	n_arr: 5	neighbors = 13	distance
+0.6793873312564902	knn	n_arr: 5	neighbors = 14	uniform
+0.677570093457944	knn	n_arr: 5	neighbors = 14	distance
+0.687435098650052	pipe_knn	n_arr: 5	neighbors = 14	uniform
+0.6792575285565939	pipe_knn	n_arr: 5	neighbors = 14	distance
+0.6795171339563864	knn	n_arr: 5	neighbors = 15	uniform
+0.6796469366562824	knn	n_arr: 5	neighbors = 15	distance
+0.6836708203530635	pipe_knn	n_arr: 5	neighbors = 15	uniform
+0.6827622014537903	pipe_knn	n_arr: 5	neighbors = 15	distance
+0.6854880581516096	knn	n_arr: 5	neighbors = 16	uniform
+0.6810747663551403	knn	n_arr: 5	neighbors = 16	distance
+0.6838006230529596	pipe_knn	n_arr: 5	neighbors = 16	uniform
+0.6806853582554518	pipe_knn	n_arr: 5	neighbors = 16	distance
+0.6852284527518173	knn	n_arr: 5	neighbors = 17	uniform
+0.6828920041536863	knn	n_arr: 5	neighbors = 17	distance
+0.6823727933541018	pipe_knn	n_arr: 5	neighbors = 17	uniform
+0.6813343717549325	pipe_knn	n_arr: 5	neighbors = 17	distance
+0.6848390446521289	knn	n_arr: 5	neighbors = 18	uniform
+0.6840602284527519	knn	n_arr: 5	neighbors = 18	distance
+0.6819833852544133	pipe_knn	n_arr: 5	neighbors = 18	uniform
+0.6808151609553479	pipe_knn	n_arr: 5	neighbors = 18	distance
+0.6839304257528557	knn	n_arr: 5	neighbors = 19	uniform
+0.6814641744548287	knn	n_arr: 5	neighbors = 19	distance
+0.6828920041536866	pipe_knn	n_arr: 5	neighbors = 19	uniform
+0.6819833852544134	pipe_knn	n_arr: 5	neighbors = 19	distance
+0.6867860851505712	knn	n_arr: 5	neighbors = 20	uniform
+0.6810747663551402	knn	n_arr: 5	neighbors = 20	distance
+0.6874350986500519	pipe_knn	n_arr: 5	neighbors = 20	uniform
+0.6841900311526481	pipe_knn	n_arr: 5	neighbors = 20	distance
+0.6827622014537903	knn	n_arr: 5	neighbors = 21	uniform
+0.6784787123572171	knn	n_arr: 5	neighbors = 21	distance
+0.6845794392523363	pipe_knn	n_arr: 5	neighbors = 21	uniform
+0.6854880581516096	pipe_knn	n_arr: 5	neighbors = 21	distance
+0.6836708203530634	knn	n_arr: 5	neighbors = 22	uniform
+0.6796469366562824	knn	n_arr: 5	neighbors = 22	distance
+0.6867860851505712	pipe_knn	n_arr: 5	neighbors = 22	uniform
+0.6840602284527518	pipe_knn	n_arr: 5	neighbors = 22	distance
+0.6802959501557635	knn	n_arr: 5	neighbors = 23	uniform
+0.6771806853582554	knn	n_arr: 5	neighbors = 23	distance
+0.686656282450675	pipe_knn	n_arr: 5	neighbors = 23	uniform
+0.6857476635514019	pipe_knn	n_arr: 5	neighbors = 23	distance
+0.6852284527518173	knn	n_arr: 5	neighbors = 24	uniform
+0.6800363447559711	knn	n_arr: 5	neighbors = 24	distance
+0.6887331256490135	pipe_knn	n_arr: 5	neighbors = 24	uniform
+0.6861370716510904	pipe_knn	n_arr: 5	neighbors = 24	distance
+0.6860072689511942	knn	n_arr: 5	neighbors = 25	uniform
+0.6806853582554518	knn	n_arr: 5	neighbors = 25	distance
+0.6874350986500519	pipe_knn	n_arr: 5	neighbors = 25	uniform
+0.6861370716510904	pipe_knn	n_arr: 5	neighbors = 25	distance
+0.6882139148494288	knn	n_arr: 5	neighbors = 26	uniform
+0.6834112149532711	knn	n_arr: 5	neighbors = 26	distance
+0.6906801661474559	pipe_knn	n_arr: 5	neighbors = 26	uniform
+0.6876947040498442	pipe_knn	n_arr: 5	neighbors = 26	distance
+0.6878245067497405	knn	n_arr: 5	neighbors = 27	uniform
+0.6819833852544134	knn	n_arr: 5	neighbors = 27	distance
+0.6911993769470405	pipe_knn	n_arr: 5	neighbors = 27	uniform
+0.6871754932502596	pipe_knn	n_arr: 5	neighbors = 27	distance
+0.6919781931464174	knn	n_arr: 5	neighbors = 28	uniform
+0.6856178608515058	knn	n_arr: 5	neighbors = 28	distance
+0.6913291796469366	pipe_knn	n_arr: 5	neighbors = 28	uniform
+0.6897715472481828	pipe_knn	n_arr: 5	neighbors = 28	distance
+0.6895119418483905	knn	n_arr: 5	neighbors = 29	uniform
+0.6845794392523366	knn	n_arr: 5	neighbors = 29	distance
+0.6902907580477674	pipe_knn	n_arr: 5	neighbors = 29	uniform
+0.6879543094496365	pipe_knn	n_arr: 5	neighbors = 29	distance
+0.7076843198338526	linearsvc 	n_arr: 6
+0.612668743509865	knn	n_arr: 6	neighbors = 1	uniform
+0.612668743509865	knn	n_arr: 6	neighbors = 1	distance
+0.6099428868120457	pipe_knn	n_arr: 6	neighbors = 1	uniform
+0.6099428868120457	pipe_knn	n_arr: 6	neighbors = 1	distance
+0.6231827622014536	knn	n_arr: 6	neighbors = 2	uniform
+0.6127985462097612	knn	n_arr: 6	neighbors = 2	distance
+0.6294132917964694	pipe_knn	n_arr: 6	neighbors = 2	uniform
+0.610202492211838	pipe_knn	n_arr: 6	neighbors = 2	distance
+0.6278556593977155	knn	n_arr: 6	neighbors = 3	uniform
+0.6287642782969886	knn	n_arr: 6	neighbors = 3	distance
+0.6329179646936657	pipe_knn	n_arr: 6	neighbors = 3	uniform
+0.6338265835929388	pipe_knn	n_arr: 6	neighbors = 3	distance
+0.6392782969885773	knn	n_arr: 6	neighbors = 4	uniform
+0.6281152647975078	knn	n_arr: 6	neighbors = 4	distance
+0.6486240913811007	pipe_knn	n_arr: 6	neighbors = 4	uniform
+0.6355140186915887	pipe_knn	n_arr: 6	neighbors = 4	distance

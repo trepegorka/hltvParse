@@ -1,5 +1,6 @@
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.impute import SimpleImputer
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import make_pipeline
 from sklearn import model_selection
@@ -7,16 +8,6 @@ from sklearn import svm
 import pandas as pd
 import pickle
 
-"""
-1 KDRatioAttitude
-2 headshotAttitude
-3 damagePerRoundAttitude
-4 assistsPerRoundAttitude
-5 impactAttitude
-6 kastAttitude
-7 openingKillRatioAttitude
-8 rating3mAttitude
-"""
 
 df = pd.read_csv("hltv2CSV.csv")
 

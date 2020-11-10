@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn import svm
@@ -126,10 +127,11 @@ def count_linearsvc(array, random_st):
     return accuracy_score(y_test, pred)
 
 
+
 def main():
     file = open('modelmax.txt', 'a')
 
-    for arr_n in range(7, 8):
+    for arr_n in range(0, len(arrays)):
         print("arr=", arr_n, sep=" ")
         average_acc1 = 0.0
         for r_state in range(1, 10):
@@ -137,7 +139,6 @@ def main():
         average_acc1 = average_acc1 / 9
         file.write(str(average_acc1) + '\tlinearsvc ' + '\tn_arr: ' + str(arr_n) + '\n')
         file.flush()
-
     file.close()
 
 
