@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Match implements IMatch {
 
-    private final Document matchDoc;
+    private Document matchDoc;
     private final String matchLink;
 
     public Match(String matchLink) throws Exception {
@@ -53,6 +53,9 @@ public class Match implements IMatch {
         return list;
     }
 
+    public Match updatedDoc() throws Exception {
+        return new Match(matchLink);
+    }
     public String getMatchLink() {
         return matchLink;
     }

@@ -9,7 +9,7 @@ import pandas as pd
 import pickle
 
 
-df = pd.read_csv("hltv2CSV.csv")
+df = pd.read_csv("hltv2.csv")
 
 X = df.drop(['id', 'ratingVStop5Attitude',
              'ratingVStop10Attitude', 'ratingVStop20Attitude',

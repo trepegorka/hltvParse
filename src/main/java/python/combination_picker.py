@@ -111,7 +111,7 @@ for i in range(0, 16):
 
 
 def count_svc(array, random_st):
-    pima = pd.read_csv("hltv2CSV.csv")
+    pima = pd.read_csv("hltv2.csv")
     pima.columns = col_names
 
     X = pima[array]

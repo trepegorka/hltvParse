@@ -6,7 +6,6 @@ import java.io.*;
 
 import gui.ava.html.image.generator.HtmlImageGenerator;
 import hltv.matches.Match;
-import hltv.matches.teams.Team;
 import net.coobird.thumbnailator.Thumbnails;
 import org.apache.batik.transcoder.TranscoderException;
 import org.apache.batik.transcoder.image.PNGTranscoder;
@@ -21,19 +20,12 @@ import java.nio.file.Paths;
 import javax.imageio.ImageIO;
 import java.io.File;
 
-import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class ImageEditor {
 
     public static void main(String[] args) throws Exception {
-        String[] maps = {"Inferno", "Vertigo", "Nuke"};
-        Map<String, String[]> map = new LinkedHashMap<>();
-        map.put(maps[0], new String[]{"0,17", "0,83"});
-        map.put(maps[1], new String[]{"0,54", "0,46"});
-        map.put(maps[2], new String[]{"0,60", "0,40"});
-
-        fillImage(new Match("https://www.hltv.org/matches/2345294/big-vs-mibr-flashpoint-2"), map);
+        convertSVGToPNG("paiN");
 
     }
 
@@ -111,8 +103,12 @@ public class ImageEditor {
             double rightCoeff = Precision.round(100 / rightPercentage, 2);
             String leftPerc = String.valueOf(leftPercentage);
             String rightPerc = String.valueOf(rightPercentage);
-            String leftCoefficient = String.valueOf(leftCoeff);
-            String rightCoefficient = String.valueOf(rightCoeff);
+            String leftCoefficient;
+            if (leftPercentage == 0.0) leftCoefficient = "-";
+            else leftCoefficient = String.valueOf(leftCoeff);
+            String rightCoefficient;
+            if (rightPercentage == 0.0) rightCoefficient = "-";
+            else rightCoefficient = String.valueOf(rightCoeff);
             if (leftPerc.length() == 3) leftPerc = leftPerc + "0";
             if (rightPerc.length() == 3) rightPerc = rightPerc + "0";
             if (leftCoefficient.length() == 3) leftCoefficient = leftCoefficient + "0";
@@ -130,8 +126,10 @@ public class ImageEditor {
             if (rightPerc.contains("1")) {
                 xPercR = xPercR + 5;
             }
-            printTextToImage("result", leftPerc, xPercL, yMap, 0, 45);
-            printTextToImage("result", rightPerc, xPercR, yMap, 0, 45);
+            if (leftPerc.equals("0.0")) printTextToImage("result", "-", xPercL, yMap, 0, 45);
+            else printTextToImage("result", leftPerc, xPercL, yMap, 0, 45);
+            if (rightPerc.equals("0.0")) printTextToImage("result", "-", xPercR, yMap, 0, 45);
+            else printTextToImage("result", rightPerc, xPercR, yMap, 0, 45);
 
             //PRINT DIGITS COEFF.
             int xCoeffL = 230;
@@ -180,7 +178,11 @@ public class ImageEditor {
                 File file = new File("src/main/java/Images/imageLibrary/" + TeamName + ".svg");
                 Document Doc = Jsoup.connect(ImageLink).ignoreContentType(true).get();
                 Elements el1 = Doc.select("#Layer_1");
-                String a1 = String.valueOf(el1.get(0));
+                String a1 = "";
+                if (el1.size() == 0) {
+                    el1 = Doc.select("#Слой_1");
+                    a1 = String.valueOf(el1.get(0));
+                }
                 a1 = a1.replaceAll("\\bviewbox\\b", "viewBox");
                 a1 = a1.replaceAll("\\bclippath\\b", "clipPath");
                 BufferedWriter writer1 = new BufferedWriter(new FileWriter(file));

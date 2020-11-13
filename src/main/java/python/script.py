@@ -25,7 +25,7 @@ def toFixed(numObj, digits=2):
 
 
 def rebuilder(arraytoDrop):
-    df = pd.read_csv("hltv2CSV.csv")
+    df = pd.read_csv("hltv2.csv")
     X = df.drop(arraytoDrop, 1)
     Y = df['winner']
     imputer = SimpleImputer(missing_values=0, strategy='mean')

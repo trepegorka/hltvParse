@@ -106,7 +106,7 @@ for i in range(0, 16):
                                                                 arrays.append(arr)
 
 def count_linearsvc(array, random_st):
-    pima = pd.read_csv("hltv2CSV.csv")
+    pima = pd.read_csv("hltv2.csv")
     pima.columns = col_names
 
     X = pima[array]
