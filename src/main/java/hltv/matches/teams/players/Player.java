@@ -1,11 +1,10 @@
 package hltv.matches.teams.players;
 
 import general.General;
-import interfaces.IPlayer;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
-public class Player implements IPlayer {
+public class Player {
     /**
      * All stats for the last 3 month before date of match
      **/
@@ -103,6 +102,7 @@ public class Player implements IPlayer {
         Elements ratingsBlock = playerDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.featured-ratings-container > div");
 
         KDRatio = getStat(statBlock, "div:nth-child(1) > div:nth-child(4) > span:nth-child(2)");
+        System.out.println("KD = " + KDRatio);
 
         damagePerRound = getStat(statBlock, "div:nth-child(1) > div:nth-child(5) > span:nth-child(2)");
 
@@ -114,7 +114,6 @@ public class Player implements IPlayer {
             openingKillRatio = Double.parseDouble(General.getHtml("https://www.hltv.org" + playerDoc.select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-overview > div.gtSmartphone-only > div > div > a:nth-child(2)")
                     .attr("href")).select("body > div.bgPadding > div > div.colCon > div.contentCol > div.stats-section.stats-player.stats-player-individual > div.statistics > div > div:nth-child(1) > div:nth-child(5) > div:nth-child(3) > span:nth-child(2)").text());
         } catch (Exception e) {
-            System.out.println("Player has no stat OKR");
             openingKillRatio = 0.0;
         }
 
@@ -135,14 +134,12 @@ public class Player implements IPlayer {
         try {
             totalKills = Integer.parseInt(statBlock.select("div:nth-child(1) > div:nth-child(1) > span:nth-child(2)").text());
         } catch (Exception e) {
-            System.out.println("Player has no TotalKills");
             totalKills = 0;
         }
 
         try {
             mapsPlayed = Integer.parseInt(statBlock.select("div:nth-child(1) > div:nth-child(7) > span:nth-child(2)").text());
         } catch (Exception e) {
-            System.out.println("Player has no PlayedMaps");
             mapsPlayed = 0;
         }
 
@@ -150,7 +147,6 @@ public class Player implements IPlayer {
             headshot = Double.parseDouble(statBlock.select("div:nth-child(1) > div:nth-child(2) > span:nth-child(2)")
                     .text().substring(0, statBlock.select("div:nth-child(1) > div:nth-child(2) > span:nth-child(2)").text().length() - 1));
         } catch (Exception e) {
-            System.out.println("Player has no Headshot percentage");
             headshot = 0.0;
         }
 
@@ -158,7 +154,6 @@ public class Player implements IPlayer {
             kast = Double.parseDouble(highStatContainer.select("div:nth-child(2) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue")
                     .text().substring(0, highStatContainer.select("div:nth-child(2) > div:nth-child(3) > div.summaryStatBreakdownData > div.summaryStatBreakdownDataValue").text().length() - 1));
         } catch (Exception e) {
-            System.out.println("Player has no kast");
             kast = 0;
         }
 
@@ -168,7 +163,6 @@ public class Player implements IPlayer {
         try {
             return Double.parseDouble(from.select(selector).text());
         } catch (Exception e) {
-            System.out.println("Player has no stat");
             return 0.0;
         }
     }

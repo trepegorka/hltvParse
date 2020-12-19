@@ -9,7 +9,7 @@ public class General {
         try {
             System.out.println("New request... ");
             //sleep
-            Thread.sleep(1700);
+            Thread.sleep(1300);
             return Jsoup.connect(link)
                     .referrer("https://www.hltv.org/")
                     .userAgent(UserParser.userAgent)
@@ -23,4 +23,6 @@ public class General {
         }
         return null;
     }
+
+
 }

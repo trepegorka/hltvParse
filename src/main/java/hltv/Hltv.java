@@ -1,20 +1,14 @@
 package hltv;
 
 import general.General;
-import general.logics.AdvantageGenerator;
-import hltv.matches.Match;
-import hltv.matches.teams.Team;
-import interfaces.IHltv;
-import org.apache.commons.math3.util.Precision;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import java.io.FileWriter;
 import java.util.*;
 
 
-public class Hltv implements IHltv {
+public class Hltv {
 
     private Document documentHltvLink;
 

@@ -1,27 +1,26 @@
 package database;
 
+import Abstraction.Match;
 import general.logics.AdvantageGenerator;
-import interfaces.IHltvDatabase;
 import org.apache.commons.math3.util.Precision;
 import resultMatches.MatchResult;
 
 import java.sql.*;
 
-public class HltvDatabaseManager implements IHltvDatabase {
+public class HltvDatabaseManager {
     private static final String URL = "jdbc:mysql://localhost:3306/myhltv?serverTimezone=UTC";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "2714OrgD2.";
 
-    private static final String INSERT_NEW = "INSERT INTO hltv (KDRatioAttitude,headshotAttitude,damagePerRoundAttitude,assistsPerRoundAttitude,impactAttitude,kastAttitude,openingKillRatioAttitude,rating3mAttitude,ratingVStop5Attitude,ratingVStop10Attitude,ratingVStop20Attitude,ratingVStop30Attitude,ratingVStop50Attitude,totalKillsAttitude,mapsPlayedAttitude,rankingDifference,winner) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+    private static final String INSERT_NEW = "INSERT INTO hltv3 (KDRatioAttitude,headshotAttitude,damagePerRoundAttitude,assistsPerRoundAttitude,impactAttitude,kastAttitude,openingKillRatioAttitude,rating3mAttitude,ratingVStop5Attitude,ratingVStop10Attitude,ratingVStop20Attitude,ratingVStop30Attitude,ratingVStop50Attitude,totalKillsAttitude,mapsPlayedAttitude,rankingDifference, mapPicker, winner) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
     private final AdvantageGenerator advantageGenerator;
     private final MatchResult matchResult;
 
     private Connection connection;
 
-
-    public HltvDatabaseManager(AdvantageGenerator advantageGenerator, MatchResult matchResult) {
-        this.matchResult = matchResult;
+    public HltvDatabaseManager(AdvantageGenerator advantageGenerator, Match match) {
+        this.matchResult = (MatchResult) match;
         this.advantageGenerator = advantageGenerator;
         try {
             connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
@@ -30,7 +29,6 @@ public class HltvDatabaseManager implements IHltvDatabase {
         }
     }
 
-    @Override
     public void fillLine(int mapNumber) throws Exception {
         PreparedStatement statement = connection.prepareStatement(INSERT_NEW, Statement.RETURN_GENERATED_KEYS);
         statement.setDouble(1, Precision.round(advantageGenerator.KDRatioAttitude(), 3));
@@ -49,12 +47,10 @@ public class HltvDatabaseManager implements IHltvDatabase {
         statement.setDouble(14, Precision.round(advantageGenerator.totalKillsAttitude(), 3));
         statement.setDouble(15, Precision.round(advantageGenerator.mapsPlayedAttitude(), 3));
         statement.setInt(16, advantageGenerator.rankingDifference());
-        statement.setInt(17, matchResult.mapWinner(mapNumber));
+        statement.setInt(17, matchResult.mapPicker(mapNumber));
+        statement.setInt(18, matchResult.mapWinner(mapNumber));
         statement.executeUpdate();
-
         statement.close();
         connection.close();
     }
-
-
 }

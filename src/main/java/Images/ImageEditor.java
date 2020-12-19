@@ -4,8 +4,8 @@ import java.awt.*;
 import java.awt.image.*;
 import java.io.*;
 
+import Abstraction.Match;
 import gui.ava.html.image.generator.HtmlImageGenerator;
-import hltv.matches.Match;
 import net.coobird.thumbnailator.Thumbnails;
 import org.apache.batik.transcoder.TranscoderException;
 import org.apache.batik.transcoder.image.PNGTranscoder;
@@ -15,6 +15,7 @@ import org.apache.commons.math3.util.Precision;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
+import telegramBot.Bot;
 
 import java.nio.file.Paths;
 import javax.imageio.ImageIO;
@@ -25,8 +26,7 @@ import java.util.Map;
 public class ImageEditor {
 
     public static void main(String[] args) throws Exception {
-        convertSVGToPNG("paiN");
-
+        convertSVGToPNG("9INE");
     }
 
     private static Image makeWhiteBGToTransparent(final BufferedImage im) {
@@ -60,7 +60,7 @@ public class ImageEditor {
     }
 
     // Before call method DOWNLOAD IMAGES OF TEAM
-    public static void fillImage(Match match, Map<String, String[]> mapName_perWin) throws Exception {
+    public synchronized static void fillImage(Match match, Map<String, String[]> mapName_perWin) throws Exception {
         String leftTeamName = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(1) > div > a > div").text();
         String rightTeamName = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div:nth-child(3) > div > a > div").text();
         String dateOfMatch = match.getMatchDoc().select("body > div.bgPadding > div > div.colCon > div.contentCol > div.match-page > div.standard-box.teamsBox > div.timeAndEvent > div.date").text();
@@ -80,12 +80,12 @@ public class ImageEditor {
         int x2TName = 620 - (int) (rightTeamName.length() * 21.5 / 2);
         //PRINT NAMES OF TEAMS
         //FONT 0 = PLAIN, 1 = BOLD
-        printTextToImage("result", leftTeamName, x1TName, 470, 1, 50);
-        printTextToImage("result", rightTeamName, x2TName, 470, 1, 50);
+        printTextToImage(leftTeamName, x1TName, 470, 1, 50,Color.WHITE);
+        printTextToImage(rightTeamName, x2TName, 470, 1, 50,Color.WHITE);
 
         //PRINT DATE AND TIME OF MATCH
-        printTextToImage("result", dateOfMatch, 420 - (dateOfMatch.length() * 10), 40, 0, 50);
-        printTextToImage("result", timeOfMatch, 360, 90, 0, 50);
+        printTextToImage(dateOfMatch, 420 - (dateOfMatch.length() * 10), 40, 0, 50,Color.WHITE);
+        printTextToImage(timeOfMatch, 360, 90, 0, 50, Color.WHITE);
 
         //PRINT MAPS TO CENTER AND DIGITS
         int yMap = 570;
@@ -99,8 +99,8 @@ public class ImageEditor {
             double rightPercentage = Double.parseDouble(entry.getValue()[1].replace(',', '.')) * 100;
             leftPercentage = Precision.round(leftPercentage, 1);
             rightPercentage = Precision.round(rightPercentage, 1);
-            double leftCoeff = Precision.round(100 / leftPercentage, 2);
-            double rightCoeff = Precision.round(100 / rightPercentage, 2);
+            double leftCoeff = Precision.round((100 / leftPercentage)+0.05, 2);
+            double rightCoeff = Precision.round((100 / rightPercentage)+0.05, 2);
             String leftPerc = String.valueOf(leftPercentage);
             String rightPerc = String.valueOf(rightPercentage);
             String leftCoefficient;
@@ -114,8 +114,12 @@ public class ImageEditor {
             if (leftCoefficient.length() == 3) leftCoefficient = leftCoefficient + "0";
             if (rightCoefficient.length() == 3) rightCoefficient = rightCoefficient + "0";
 
+            Color color = Color.WHITE;
+            if(rightPercentage>50.0){
+                color = Color.WHITE;
+            }
             //PRINT MAPS
-            printTextToImage("result", entry.getKey(), (xMap - (12 * entry.getKey().length())), yMap, 0, 45);
+            printTextToImage(entry.getKey(), (xMap - (12 * entry.getKey().length())), yMap, 0, 45, color);
 
             //PRINT DIGITS PERCENTAGE
             int xPercL = 70;
@@ -126,10 +130,10 @@ public class ImageEditor {
             if (rightPerc.contains("1")) {
                 xPercR = xPercR + 5;
             }
-            if (leftPerc.equals("0.0")) printTextToImage("result", "-", xPercL, yMap, 0, 45);
-            else printTextToImage("result", leftPerc, xPercL, yMap, 0, 45);
-            if (rightPerc.equals("0.0")) printTextToImage("result", "-", xPercR, yMap, 0, 45);
-            else printTextToImage("result", rightPerc, xPercR, yMap, 0, 45);
+            if (leftPerc.equals("0.0")) printTextToImage("-", xPercL, yMap, 0, 45, color);
+            else printTextToImage(leftPerc, xPercL, yMap, 0, 45, color);
+            if (rightPerc.equals("0.0")) printTextToImage("-", xPercR, yMap, 0, 45, color);
+            else printTextToImage(rightPerc, xPercR, yMap, 0, 45, color);
 
             //PRINT DIGITS COEFF.
             int xCoeffL = 230;
@@ -140,11 +144,12 @@ public class ImageEditor {
             if (rightCoefficient.contains("1")) {
                 xCoeffR = xCoeffR + 5;
             }
-            printTextToImage("result", leftCoefficient, xCoeffL, yMap, 0, 45);
-            printTextToImage("result", rightCoefficient, xCoeffR, yMap, 0, 45);
+            printTextToImage(leftCoefficient, xCoeffL, yMap, 0, 45, color);
+            printTextToImage(rightCoefficient, xCoeffR, yMap, 0, 45, color);
 
             yMap = yMap + 50;
         }
+        Bot.getBot().sendPhoto("src/main/java/Images/imageLibrary/result.png");
     }
 
     // imageName = teamName
@@ -224,11 +229,11 @@ public class ImageEditor {
         ImageIO.write(thumbnail, "png", new File("src/main/java/Images/imageLibrary/" + imageName + ".png"));
     }
 
-    private static void printTextToImage(String whereToWrite, String whatToWrite, int x, int y, int font, int fontSize) throws IOException {
-        BufferedImage image = ImageIO.read(new File("src/main/java/Images/imageLibrary/" + whereToWrite + ".png"));
+    private static void printTextToImage(String whatToWrite, int x, int y, int font, int fontSize, Color color) throws IOException {
+        BufferedImage image = ImageIO.read(new File("src/main/java/Images/imageLibrary/" + "result" + ".png"));
         Graphics2D g = (Graphics2D) image.getGraphics();
         g.setFont(new Font("Uroob", font, fontSize));
-        g.setColor(Color.WHITE);
+        g.setColor(color);
         g.setRenderingHint(RenderingHints.KEY_TEXT_ANTIALIASING, RenderingHints.VALUE_TEXT_ANTIALIAS_ON);
         if (whatToWrite.equals("Train") | whatToWrite.equals("Overpass") | whatToWrite.equals("Mirage") | whatToWrite.equals("Vertigo") |
                 whatToWrite.equals("Nuke") | whatToWrite.equals("Inferno") | whatToWrite.equals("Dust2")) {

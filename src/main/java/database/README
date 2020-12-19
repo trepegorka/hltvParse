@@ -3,3 +3,6 @@ left team = 0   &&   right team = 1
 If we have a stat bigger than 1 like 1.04, 1.2, it means that the LEFT team (0) is better in this characteristic.
 ranking difference: this rule work too.
 This rule does NOT apply to *WINNER*.
+
+hltv3 afterMatchResult
+

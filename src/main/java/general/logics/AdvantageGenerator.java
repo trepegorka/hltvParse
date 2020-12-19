@@ -1,12 +1,11 @@
 package general.logics;
 
-import hltv.matches.teams.Team;
+import Abstraction.Team;
 import hltv.matches.teams.players.Player;
-import interfaces.IAdvantageGenerator;
 
 import java.util.ArrayList;
 
-public class AdvantageGenerator implements IAdvantageGenerator {
+public class AdvantageGenerator {
     private final Team firstTeam;
     private final Team secondTeam;
     private final ArrayList<Player> firstListOfPlayers;
@@ -19,7 +18,6 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         this.secondListOfPlayers = secondTeam.getListOfPlayers();
     }
 
-    @Override
     public double KDRatioAttitude() {
         double KD1 = 0.0;
         double KD2 = 0.0;
@@ -39,12 +37,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (KD1 == 0.0 || KD2 == 0.0) {
             return 0.0;
+        } else if (KD1 / KD2 < 1) {
+            return (2 - (1 / (KD1 / KD2)));
         } else
             return KD1 / KD2;
-
     }
 
-    @Override
     public double headshotAttitude() {
         double headRatio1 = 0.0;
         double headRatio2 = 0.0;
@@ -64,11 +62,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (headRatio1 == 0.0 || headRatio2 == 0.0) {
             return 0.0;
+        } else if (headRatio1 / headRatio2 < 1) {
+            return (2 - (1 / (headRatio1 / headRatio2)));
         } else
             return headRatio1 / headRatio2;
     }
 
-    @Override
     public double damagePerRoundAttitude() {
         double dm1 = 0.0;
         double dm2 = 0.0;
@@ -88,11 +87,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (dm1 == 0.0 || dm2 == 0.0) {
             return 0.0;
+        } else if (dm1 / dm2 < 1) {
+            return (2 - (1 / (dm1 / dm2)));
         } else
             return dm1 / dm2;
     }
 
-    @Override
     public double assistsPerRoundAttitude() {
         double am1 = 0.0;
         double am2 = 0.0;
@@ -112,11 +112,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (am1 == 0.0 || am2 == 0.0) {
             return 0.0;
+        } else if (am1 / am2 < 1) {
+            return (2 - (1 / (am1 / am2)));
         } else
             return am1 / am2;
     }
 
-    @Override
     public double impactAttitude() {
         double im1 = 0.0;
         double im2 = 0.0;
@@ -136,11 +137,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (im1 == 0.0 || im2 == 0.0) {
             return 0.0;
+        } else if (im1 / im2 < 1) {
+            return (2 - (1 / (im1 / im2)));
         } else
             return im1 / im2;
     }
 
-    @Override
     public double kastAttitude() {
         double ka1 = 0.0;
         double ka2 = 0.0;
@@ -160,11 +162,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (ka1 == 0.0 || ka2 == 0.0) {
             return 0.0;
+        } else if (ka1 / ka2 < 1) {
+            return (2 - (1 / (ka1 / ka2)));
         } else
             return ka1 / ka2;
     }
 
-    @Override
     public double openingKillRatioAttitude() {
         double okr1 = 0.0;
         double okr2 = 0.0;
@@ -184,11 +187,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (okr1 == 0.0 || okr2 == 0.0) {
             return 0.0;
+        } else if (okr1 / okr2 < 1) {
+            return (2 - (1 / (okr1 / okr2)));
         } else
             return okr1 / okr2;
     }
 
-    @Override
     public double rating3mAttitude() {
         double r3m1 = 0.0;
         double r3m2 = 0.0;
@@ -208,11 +212,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (r3m1 == 0.0 || r3m2 == 0.0) {
             return 0.0;
+        } else if (r3m1 / r3m2 < 1) {
+            return (2 - (1 / (r3m1 / r3m2)));
         } else
             return r3m1 / r3m2;
     }
 
-    @Override
     public double ratingVStop5Attitude() {
         double rat5VS1 = 0.0;
         double rat5VS2 = 0.0;
@@ -232,10 +237,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (rat5VS1 == 0.0 || rat5VS2 == 0.0) {
             return 0.0;
-        } else return rat5VS1 / rat5VS2;
+        } else if (rat5VS1 / rat5VS2 < 1) {
+            return (2 - (1 / (rat5VS1 / rat5VS2)));
+        } else
+            return rat5VS1 / rat5VS2;
     }
 
-    @Override
     public double ratingVStop10Attitude() {
         double rat10VS1 = 0.0;
         double rat10VS2 = 0.0;
@@ -255,11 +262,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (rat10VS1 == 0.0 || rat10VS2 == 0.0) {
             return 0.0;
+        } else if (rat10VS1 / rat10VS2 < 1) {
+            return (2 - (1 / (rat10VS1 / rat10VS2)));
         } else
             return rat10VS1 / rat10VS2;
     }
 
-    @Override
     public double ratingVStop20Attitude() {
         double rat20VS1 = 0.0;
         double rat20VS2 = 0.0;
@@ -279,11 +287,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (rat20VS1 == 0.0 || rat20VS2 == 0.0) {
             return 0.0;
+        } else if (rat20VS1 / rat20VS2 < 1) {
+            return (2 - (1 / (rat20VS1 / rat20VS2)));
         } else
             return rat20VS1 / rat20VS2;
     }
 
-    @Override
     public double ratingVStop30Attitude() {
         double rat30VS1 = 0.0;
         double rat30VS2 = 0.0;
@@ -303,11 +312,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (rat30VS1 == 0.0 || rat30VS2 == 0.0) {
             return 0.0;
+        } else if (rat30VS1 / rat30VS2 < 1) {
+            return (2 - (1 / (rat30VS1 / rat30VS2)));
         } else
             return rat30VS1 / rat30VS2;
     }
 
-    @Override
     public double ratingVStop50Attitude() {
         double rat50VS1 = 0.0;
         double rat50VS2 = 0.0;
@@ -327,11 +337,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (rat50VS1 == 0.0 || rat50VS2 == 0.0) {
             return 0.0;
+        } else if (rat50VS1 / rat50VS2 < 1) {
+            return (2 - (1 / (rat50VS1 / rat50VS2)));
         } else
             return rat50VS1 / rat50VS2;
     }
 
-    @Override
     public double totalKillsAttitude() {
         double tk1 = 0.0;
         double tk2 = 0.0;
@@ -351,11 +362,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (tk1 == 0.0 || tk2 == 0.0) {
             return 0.0;
+        } else if (tk1 / tk2 < 1) {
+            return (2 - (1 / (tk1 / tk2)));
         } else
             return tk1 / tk2;
     }
 
-    @Override
     public double mapsPlayedAttitude() {
         double mapsPlayed1 = 0.0;
         double mapsPlayed2 = 0.0;
@@ -375,11 +387,12 @@ public class AdvantageGenerator implements IAdvantageGenerator {
         }
         if (mapsPlayed1 == 0.0 || mapsPlayed2 == 0.0) {
             return 0.0;
+        } else if (mapsPlayed1 / mapsPlayed2 < 1) {
+            return (2 - (1 / (mapsPlayed1 / mapsPlayed2)));
         } else
             return mapsPlayed1 / mapsPlayed2;
     }
 
-    @Override
     public int rankingDifference() {
         return (firstTeam.getCurrentRanking() - secondTeam.getCurrentRanking()) * (-1);
     }
